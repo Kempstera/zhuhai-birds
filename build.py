@@ -77,6 +77,9 @@ def load():
         a = assets.get(sp["slug"], {})
         sp["img"] = a.get("img")
         sp["audio"] = a.get("audio")
+        gal = a.get("gallery") or []
+        # 绘图排在前面：这是本页最有信息量的一张
+        sp["gallery"] = sorted(gal, key=lambda g: 0 if g.get("kind") == "plate" else 1)
     return species, assets
 
 
@@ -158,6 +161,7 @@ def main():
         sims = [by_slug[x] for x in sp["similar"]]
         html = env.get_template("detail.html").render(
             sp=sp, prev=prev, next=nxt, sims=sims, nav="species", root="../",
+            total=len(species),
             group=next(g for g in GROUPS if g["id"] == sp["group"]))
         open(os.path.join(DIST, "bird", sp["slug"] + ".html"), "w").write(html)
 

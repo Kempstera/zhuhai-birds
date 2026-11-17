@@ -19,7 +19,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/146180271",
    "title": "Pycnonotus sinensis（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-tou-bei-plate-900.webp",
+    "big": "bai-tou-bei-plate-1600.webp",
+    "w": 1593,
+    "h": 2810,
+    "credit": "Geo. S. Harris and Sons / Allen & Ginter",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chinese_Bulbul,_from_the_Song_Birds_of_the_World_series_(N23)_for_Allen_%26_Ginter_Cigarettes_MET_DP835268.jpg",
+    "title": "Chinese Bulbul, from the Song Birds of the World series (N23) for Allen & Ginter Cigarettes MET DP835268.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-tou-bei-ph1-900.webp",
+    "big": "bai-tou-bei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "白士 李",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chinese_Bulbul_(29976775422).jpg",
+    "title": "Chinese Bulbul (29976775422).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-tou-bei-ph2-900.webp",
+    "big": "bai-tou-bei-ph2-1600.webp",
+    "w": 1600,
+    "h": 2400,
+    "credit": "Herbertkikoy",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Light-vented_Bulbul_(Pycnonotus_sinensis).jpg",
+    "title": "Light-vented Bulbul (Pycnonotus sinensis).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hong-er-bei": {
   "img": {
@@ -41,7 +76,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Pycnonotus_jocosus_-_Red-whiskered_Bulbul_XC538779.mp3",
    "title": "File:Pycnonotus jocosus - Red-whiskered Bulbul XC538779.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hong-er-bei-plate-900.webp",
+    "big": "hong-er-bei-plate-1600.webp",
+    "w": 1600,
+    "h": 2222,
+    "credit": "Internet Archive Book Images",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:Articles_about_birds_from_National_geographic_magazine_((19-%3F)-(193-%3F))_(20774087016).jpg",
+    "title": "Articles about birds from National geographic magazine ((19-?)-(193-?)) (20774087016).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hong-er-bei-ph1-900.webp",
+    "big": "hong-er-bei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Artimohan",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_long_wait_for_the_mate.jpg",
+    "title": "A long wait for the mate.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hong-er-bei-ph2-900.webp",
+    "big": "hong-er-bei-ph2-1600.webp",
+    "w": 1600,
+    "h": 1252,
+    "credit": "Neeraj Menon",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_lovely_Red_Crested_Bulbul_-_Flickr_-_neerajnmenon.jpg",
+    "title": "A lovely Red Crested Bulbul - Flickr - neerajnmenon.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "zhu-jing-ban-jiu": {
   "img": {
@@ -63,7 +133,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Spilopelia_chinensis_-_Spotted_Dove_XC495643.mp3",
    "title": "File:Spilopelia chinensis - Spotted Dove XC495643.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "zhu-jing-ban-jiu-plate-900.webp",
+    "big": "zhu-jing-ban-jiu-plate-1600.webp",
+    "w": 1600,
+    "h": 926,
+    "credit": "Bucknill, John A. S.; Chasen, Frederick N.; Kloss, C. Boden; Levett-Yeats, G. A",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Barred_ground_dove_(zebra_dove;_Geopelia_striata)_and_Malayan_spotted_dove_(Spilopelia_chinensis_tigrina)_from_The_Birds_of_Singapore_Island_(1927).jpg",
+    "title": "Barred ground dove (zebra dove; Geopelia striata) and Malayan spotted dove (Spilopelia chinensis tigrina) from The Birds of Singapore Island (1927).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "zhu-jing-ban-jiu-ph1-900.webp",
+    "big": "zhu-jing-ban-jiu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Spotted_Dove_in_Kurseong_September_2026_by_Tisha_Mukherjee_01.jpg",
+    "title": "Spotted Dove in Kurseong September 2026 by Tisha Mukherjee 01.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "zhu-jing-ban-jiu-ph2-900.webp",
+    "big": "zhu-jing-ban-jiu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Manoj K",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Spotted_Dove_From_Thrissur_by_Manoj_Karingamadathil.jpg",
+    "title": "Spotted Dove From Thrissur by Manoj Karingamadathil.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "shu-ma-que": {
   "img": {
@@ -85,7 +190,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347806.mp3",
    "title": "File:Passer montanus - Eurasian Tree Sparrow XC347806.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "shu-ma-que-plate-900.webp",
+    "big": "shu-ma-que-plate-1600.webp",
+    "w": 1600,
+    "h": 1916,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20408015492).jpg",
+    "title": "British birds (1915) (20408015492).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "shu-ma-que-ph1-900.webp",
+    "big": "shu-ma-que-ph1-1600.webp",
+    "w": 1600,
+    "h": 1064,
+    "credit": "Luiz Lapa from Oeiras, Portugal",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:(1_3).._Pardal-mont%C3%AAs,_com_o_material_que_apanhou_para_construir_o_ninho,_Eurasian_Tree_Sparrow,_with_the_material_collected,_to_build_the_nest_(52075373060).jpg",
+    "title": "(1 3).. Pardal-montês, com o material que apanhou para construir o ninho, Eurasian Tree Sparrow, with the material collected, to build the nest (52075373060).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "shu-ma-que-ph2-900.webp",
+    "big": "shu-ma-que-ph2-1600.webp",
+    "w": 1600,
+    "h": 1102,
+    "credit": "Luiz Lapa from Oeiras, Portugal",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:(2_3).._Pardal-mont%C3%AAs,_a_depositar_o_material_no_ninho,_Eurasian_Tree_Sparrow,_to_deposit_material_in_the_nest_(52081005493).jpg",
+    "title": "(2 3).. Pardal-montês, a depositar o material no ninho, Eurasian Tree Sparrow, to deposit material in the nest (52081005493).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "wu-dong": {
   "img": {
@@ -107,7 +247,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/146400103",
    "title": "Turdus mandarinus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "wu-dong-plate-900.webp",
+    "big": "wu-dong-plate-1600.webp",
+    "w": 1600,
+    "h": 1958,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20229954889).jpg",
+    "title": "British birds (1915) (20229954889).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "wu-dong-ph1-900.webp",
+    "big": "wu-dong-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Bechology",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chinese_Blackbird,_Suzhou,_Jiangsu,_China,_Jun_3,_2026.jpg",
+    "title": "Chinese Blackbird, Suzhou, Jiangsu, China, Jun 3, 2026.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "wu-dong-ph2-900.webp",
+    "big": "wu-dong-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Sun Jiao (Interaccoonale)",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Turdus_mandarinus_01.jpg",
+    "title": "Turdus mandarinus 01.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "chang-wei-feng-ye-ying": {
   "img": {
@@ -129,7 +304,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Orthotomus_sutorius_93726074.mp3",
    "title": "File:Orthotomus sutorius 93726074.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "chang-wei-feng-ye-ying-plate-900.webp",
+    "big": "chang-wei-feng-ye-ying-plate-1600.webp",
+    "w": 1600,
+    "h": 2268,
+    "credit": "John Gould / Henry Constantine Richter",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:BirdsAsiaJohnGoIVGoul_0036.jpg",
+    "title": "BirdsAsiaJohnGoIVGoul 0036.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "chang-wei-feng-ye-ying-ph1-900.webp",
+    "big": "chang-wei-feng-ye-ying-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:00T6_Common_tailorbird.jpg",
+    "title": "00T6 Common tailorbird.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "chang-wei-feng-ye-ying-ph2-900.webp",
+    "big": "chang-wei-feng-ye-ying-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Prashanth dotcompals from Tattamangalam, India",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Angry_Bird1_(51315683664).jpg",
+    "title": "Angry Bird1 (51315683664).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "an-lu-xiu-yan-niao": {
   "img": {
@@ -151,7 +361,42 @@
    "license": "CC0",
    "page": "https://www.inaturalist.org/observations/81123856",
    "title": "Zosterops simplex（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "an-lu-xiu-yan-niao-plate-900.webp",
+    "big": "an-lu-xiu-yan-niao-plate-1600.webp",
+    "w": 1600,
+    "h": 2240,
+    "credit": "Utagawa Hiroshige",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E6%A4%BF%E3%81%AB%E7%9B%AE%E7%99%BD%E3%81%A8%E5%9B%9B%E5%8D%81%E9%9B%80%E5%9B%B3-Japanese_White-eye_and_Titmouse_on_a_Camellia_Branch_MET_DP121493.jpg",
+    "title": "椿に目白と四十雀図-Japanese White-eye and Titmouse on a Camellia Branch MET DP121493.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "an-lu-xiu-yan-niao-ph1-900.webp",
+    "big": "an-lu-xiu-yan-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Herbertkikoy",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Swinhoe%27s_White-eye_(Zosterops_simplex).jpg",
+    "title": "Swinhoe's White-eye (Zosterops simplex).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "an-lu-xiu-yan-niao-ph2-900.webp",
+    "big": "an-lu-xiu-yan-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Sun Jiao (Interaccoonale)",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zosterops_simplex_1.jpg",
+    "title": "Zosterops simplex 1.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "ba-ge": {
   "img": {
@@ -173,7 +418,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/146510966",
    "title": "Acridotheres cristatellus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "ba-ge-plate-900.webp",
+    "big": "ba-ge-plate-1600.webp",
+    "w": 1600,
+    "h": 1460,
+    "credit": "Itō Jakuchū",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:It%C5%8D_Jakuch%C5%AB_-_Crested_Myna_-_2015.114.17_-_Minneapolis_Institute_of_Art.jpg",
+    "title": "Itō Jakuchū - Crested Myna - 2015.114.17 - Minneapolis Institute of Art.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "ba-ge-ph1-900.webp",
+    "big": "ba-ge-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Xaxat",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crested_Myna_-_IMG_0822.jpg",
+    "title": "Crested Myna - IMG 0822.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "ba-ge-ph2-900.webp",
+    "big": "ba-ge-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Micluna",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crested_Myna-Cavite.jpg",
+    "title": "Crested Myna-Cavite.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-ling-liang-niao": {
   "img": {
@@ -195,7 +475,43 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Gracupica_nigricollis_call_and_song.ogg",
    "title": "File:Gracupica nigricollis call and song.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-ling-liang-niao-plate-900.webp",
+    "big": "hei-ling-liang-niao-plate-1600.webp",
+    "w": 968,
+    "h": 961,
+    "credit": "Eleazar Albin",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Gracupica_contra.jpg",
+    "title": "Gracupica contra.jpg",
+    "kind": "plate",
+    "note": "同属对照：斑椋鸟 Gracupica contra。本种（黑领椋鸟 G. nigricollis）暂无开放授权的历史图版，故以同属近缘种绘图对照属级形态。"
+   },
+   {
+    "card": "hei-ling-liang-niao-ph1-900.webp",
+    "big": "hei-ling-liang-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "credit": "Yifei He 何一非",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Asian_Koel_Being_Fed_by_Black-collared_Starling.jpg",
+    "title": "Asian Koel Being Fed by Black-collared Starling.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-ling-liang-niao-ph2-900.webp",
+    "big": "hei-ling-liang-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1068,
+    "credit": "Rushen",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gracupica_nigricollis,_Black-collared_starling_-_Lumpini_Park,_Bangkok_(19348985514).jpg",
+    "title": "Gracupica nigricollis, Black-collared starling - Lumpini Park, Bangkok (19348985514).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "zong-bei-bo-lao": {
   "img": {
@@ -217,7 +533,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Long-tailed_shrike_call_recorded_in_October_2010_at_Sangli.wav",
    "title": "File:Long-tailed shrike call recorded in October 2010 at Sangli.wav"
-  }
+  },
+  "gallery": [
+   {
+    "card": "zong-bei-bo-lao-plate-900.webp",
+    "big": "zong-bei-bo-lao-plate-1600.webp",
+    "w": 1600,
+    "h": 2178,
+    "credit": "Latham, John; Latham, John",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:A_general_synopsis_of_birds_(Pl._VI)_(6928214212).jpg",
+    "title": "A general synopsis of birds (Pl. VI) (6928214212).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "zong-bei-bo-lao-ph1-900.webp",
+    "big": "zong-bei-bo-lao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Long-tailed_shrike_by_Tisha_Mukherjee_05.jpg",
+    "title": "Long-tailed shrike by Tisha Mukherjee 05.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "zong-bei-bo-lao-ph2-900.webp",
+    "big": "zong-bei-bo-lao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Rohitjahnavi",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Long-tailed_Shrike_Lanius_schach_Velavadar_National_Park,_Gujarat,_India_DSCN7252.jpg",
+    "title": "Long-tailed Shrike Lanius schach Velavadar National Park, Gujarat, India DSCN7252.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "zao-juan": {
   "img": {
@@ -239,7 +590,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Eudynamys_scolopaceus_-_Asian_Koel_XC476378.mp3",
    "title": "File:Eudynamys scolopaceus - Asian Koel XC476378.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "zao-juan-plate-900.webp",
+    "big": "zao-juan-plate-1600.webp",
+    "w": 1600,
+    "h": 2143,
+    "credit": "George Edwards / Johann Michael Seligmann",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Eudynamys_horonata_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ18800283.tif",
+    "title": "Eudynamys horonata - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ18800283.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "zao-juan-ph1-900.webp",
+    "big": "zao-juan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Asian_Koel_by_Tisha_Mukherjee_04.jpg",
+    "title": "Asian Koel by Tisha Mukherjee 04.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "zao-juan-ph2-900.webp",
+    "big": "zao-juan-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Asian_Koel_by_Tisha_Mukherjee_05.jpg",
+    "title": "Asian Koel by Tisha Mukherjee 05.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "he-chi-ya-juan": {
   "img": {
@@ -261,7 +647,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Greater_Coucal_(Centropus_sinensis)_from_Ezhimala_ML155333411.wav",
    "title": "File:Greater Coucal (Centropus sinensis) from Ezhimala ML155333411.wav"
-  }
+  },
+  "gallery": [
+   {
+    "card": "he-chi-ya-juan-plate-900.webp",
+    "big": "he-chi-ya-juan-plate-1600.webp",
+    "w": 1600,
+    "h": 2141,
+    "credit": "Curtis, John; Daniell, William; Horsfield, Thomas; Hullmandel, Charles Joseph; Pelletier, A.; Taylor, W",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Zoological_researches_in_Java,_and_the_neighbouring_islands_BHL47293302.jpg",
+    "title": "Zoological researches in Java, and the neighbouring islands BHL47293302.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "he-chi-ya-juan-ph1-900.webp",
+    "big": "he-chi-ya-juan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Kingshuk Mondal",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_Greater_Coucal_sitting_on_a_layer_of_Water_Hyacinth.jpg",
+    "title": "A Greater Coucal sitting on a layer of Water Hyacinth.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "he-chi-ya-juan-ph2-900.webp",
+    "big": "he-chi-ya-juan-ph2-1600.webp",
+    "w": 1600,
+    "h": 905,
+    "credit": "Gowthaman k.a",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Coucal.jpg",
+    "title": "Coucal.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "cha-wei-tai-yang-niao": {
   "img": {
@@ -283,7 +704,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/195926613",
    "title": "Aethopyga christinae（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "cha-wei-tai-yang-niao-plate-900.webp",
+    "big": "cha-wei-tai-yang-niao-plate-1600.webp",
+    "w": 1600,
+    "h": 2267,
+    "credit": "John Gerrard Keulemans",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Aethopyga_christinae_%26_Leptocoma_sericea_grayi_1870.jpg",
+    "title": "Aethopyga christinae & Leptocoma sericea grayi 1870.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "cha-wei-tai-yang-niao-ph1-900.webp",
+    "big": "cha-wei-tai-yang-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Shining_Friend_(19280823244).jpg",
+    "title": "Shining Friend (19280823244).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "cha-wei-tai-yang-niao-ph2-900.webp",
+    "big": "cha-wei-tai-yang-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pair_(16620378447).jpg",
+    "title": "Pair (16620378447).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "chi-lu": {
   "img": {
@@ -305,7 +761,43 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/403563163",
    "title": "Ardeola bacchus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "chi-lu-plate-900.webp",
+    "big": "chi-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2006,
+    "credit": "Thomas Hardwicke",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Ardeola_grayii_Hardwicke.jpg",
+    "title": "Ardeola grayii Hardwicke.jpg",
+    "kind": "plate",
+    "note": "同属对照：印度池鹭 Ardeola grayii。本种（池鹭 A. bacchus）暂无开放授权的历史图版，故以同属近缘种绘图对照属级形态。"
+   },
+   {
+    "card": "chi-lu-ph1-900.webp",
+    "big": "chi-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ardeola_bacchus_(52).jpg",
+    "title": "Ardeola bacchus (52).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "chi-lu-ph2-900.webp",
+    "big": "chi-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ardeola_bacchus_(33).jpg",
+    "title": "Ardeola bacchus (33).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-lu": {
   "img": {
@@ -327,7 +819,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Egretta_garzetta_-_Little_Egret_XC432219.mp3",
    "title": "File:Egretta garzetta - Little Egret XC432219.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-lu-plate-900.webp",
+    "big": "bai-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2136,
+    "credit": "Thomas Hardwicke",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Egretta_garzetta_garzetta_Hardwicke.jpg",
+    "title": "Egretta garzetta garzetta Hardwicke.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-lu-ph1-900.webp",
+    "big": "bai-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1033,
+    "credit": "Tiara 786",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_Little_Egret_with_Attitude.jpg",
+    "title": "A Little Egret with Attitude.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-lu-ph2-900.webp",
+    "big": "bai-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Lune003",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aigrette_garzette_2023.jpg",
+    "title": "Aigrette garzette 2023.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "da-bai-lu": {
   "img": {
@@ -349,7 +876,42 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ardea_alba_-_Great_Egret_XC131650.ogg",
    "title": "File:Ardea alba - Great Egret XC131650.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "da-bai-lu-plate-900.webp",
+    "big": "da-bai-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 1070,
+    "credit": "Audubon, John James, 1785-1851; Havell, Robert, 1793-1878",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:White_heron_Ardea_alba,_Linn._Male,_spring_plumage_c.1_v.4_plate_386_-_DPLA_-_8785a9a5d4e6c1ce80424831dbfb1c3f_(page_1).jpg",
+    "title": "White heron Ardea alba, Linn. Male, spring plumage c.1 v.4 plate 386 - DPLA - 8785a9a5d4e6c1ce80424831dbfb1c3f (page 1).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "da-bai-lu-ph1-900.webp",
+    "big": "da-bai-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1068,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20250719_great_egret_hamm_PD200257.jpg",
+    "title": "20250719 great egret hamm PD200257.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "da-bai-lu-ph2-900.webp",
+    "big": "da-bai-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20250719_great_egret_hammonasset_beach_state_park_PD200258.jpg",
+    "title": "20250719 great egret hammonasset beach state park PD200258.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "cang-lu": {
   "img": {
@@ -371,7 +933,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ardea_cinerea_-_Grey_Heron_XC432231.mp3",
    "title": "File:Ardea cinerea - Grey Heron XC432231.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "cang-lu-plate-900.webp",
+    "big": "cang-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2231,
+    "credit": "",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aigrette_petit_h%C3%A9ron,_velin_MNHN.jpg",
+    "title": "Aigrette petit héron, velin MNHN.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "cang-lu-ph1-900.webp",
+    "big": "cang-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Grey_heron_eating_fish_near_a_pond_of_Busan_Citizens_Park_in_South_Korea.jpg",
+    "title": "Grey heron eating fish near a pond of Busan Citizens Park in South Korea.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "cang-lu-ph2-900.webp",
+    "big": "cang-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Pierre Dalous",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ardcin.jpg",
+    "title": "Ardcin.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "ye-lu": {
   "img": {
@@ -393,7 +990,42 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_-_Black-crowned_Night_Heron_XC383999.mp3",
    "title": "File:Nycticorax nycticorax - Black-crowned Night Heron XC383999.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "ye-lu-plate-900.webp",
+    "big": "ye-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2586,
+    "credit": "Alfred Brehm / Eduard Pechuël-Loesche / Wilhelm Haacke",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:Brehms_Tierleben_-_allgemeine_Kunde_des_Tierreichs_-_mit_1800_Abbildungen_im_Text,_9_Karten_und_180_Tafeln_in_Farbendruck_und_Holzschnitt_(1892)_(20414652245).jpg",
+    "title": "Brehms Tierleben - allgemeine Kunde des Tierreichs - mit 1800 Abbildungen im Text, 9 Karten und 180 Tafeln in Farbendruck und Holzschnitt (1892) (20414652245).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "ye-lu-ph1-900.webp",
+    "big": "ye-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "יוסי רון",
+    "license": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:144178_black-crowned_night_heron_PikiWiki_Israel.jpg",
+    "title": "144178 black-crowned night heron PikiWiki Israel.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "ye-lu-ph2-900.webp",
+    "big": "ye-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "C. Wladi",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:7166_-_Mogliano_Veneto,_Cave_di_Marocco,_Nitticora,_Ardeidi,_Nycthicorax_nycthyc,_anni_90.jpg",
+    "title": "7166 - Mogliano Veneto, Cave di Marocco, Nitticora, Ardeidi, Nycthicorax nycthyc, anni 90.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-xiong-ku-e-niao": {
   "img": {
@@ -415,7 +1047,42 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:AmaurornisPhoenicurusCall.ogg",
    "title": "File:AmaurornisPhoenicurusCall.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-xiong-ku-e-niao-plate-900.webp",
+    "big": "bai-xiong-ku-e-niao-plate-1600.webp",
+    "w": 1600,
+    "h": 2100,
+    "credit": "François-Nicolas Martinet",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Gallinula_phoenicura_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ17500215.tif",
+    "title": "Gallinula phoenicura - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ17500215.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-xiong-ku-e-niao-ph1-900.webp",
+    "big": "bai-xiong-ku-e-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:001_White-breasted_waterhen.jpg",
+    "title": "001 White-breasted waterhen.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-xiong-ku-e-niao-ph2-900.webp",
+    "big": "bai-xiong-ku-e-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:002_White-breasted_waterhen.jpg",
+    "title": "002 White-breasted waterhen.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-shui-ji": {
   "img": {
@@ -437,7 +1104,42 @@
    "license": "CC BY",
    "page": "https://www.inaturalist.org/observations/133001847",
    "title": "Gallinula chloropus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-shui-ji-plate-900.webp",
+    "big": "hei-shui-ji-plate-1600.webp",
+    "w": 1600,
+    "h": 1960,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(19794067864).jpg",
+    "title": "British birds (1915) (19794067864).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-shui-ji-ph1-900.webp",
+    "big": "hei-shui-ji-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Ryan Hodnett",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_Moorhen_(Gallinula_chloropus)_-_London,_England_2023-10-26_(03).jpg",
+    "title": "Common Moorhen (Gallinula chloropus) - London, England 2023-10-26 (03).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-shui-ji-ph2-900.webp",
+    "big": "hei-shui-ji-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_moorhen_(Gallinula_chloropus)_B%C3%BCrgerpark_2.jpg",
+    "title": "Common moorhen (Gallinula chloropus) Bürgerpark 2.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "xiao-pi-ti": {
   "img": {
@@ -459,7 +1161,42 @@
    "license": "CC BY",
    "page": "https://www.inaturalist.org/observations/84833089",
    "title": "Tachybaptus ruficollis（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "xiao-pi-ti-plate-900.webp",
+    "big": "xiao-pi-ti-plate-1600.webp",
+    "w": 1600,
+    "h": 1971,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20390490416).jpg",
+    "title": "British birds (1915) (20390490416).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "xiao-pi-ti-ph1-900.webp",
+    "big": "xiao-pi-ti-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Pere López Brosa",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aiguamolls_de_Can_Cabanyes_-_Granollers_-_P1150766.jpg",
+    "title": "Aiguamolls de Can Cabanyes - Granollers - P1150766.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "xiao-pi-ti-ph2-900.webp",
+    "big": "xiao-pi-ti-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Pere López Brosa",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aiguamolls_de_Can_Cabanyes_-_Granollers_-_P1150771.jpg",
+    "title": "Aiguamolls de Can Cabanyes - Granollers - P1150771.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-lian-pi-lu": {
   "img": {
@@ -481,7 +1218,43 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/385453306",
    "title": "Platalea minor（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-lian-pi-lu-plate-900.webp",
+    "big": "hei-lian-pi-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2135,
+    "credit": "Jacques Christophe Werner / Auguste Belin",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Platalea_leucorodia_-_1842-1848_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ17600079.tif",
+    "title": "Platalea leucorodia - 1842-1848 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ17600079.tif",
+    "kind": "plate",
+    "note": "同属对照：白琵鹭 Platalea leucorodia。本种（黑脸琵鹭 P. minor）暂无开放授权的历史图版，故以同属近缘种绘图对照属级形态。"
+   },
+   {
+    "card": "hei-lian-pi-lu-ph1-900.webp",
+    "big": "hei-lian-pi-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 960,
+    "credit": "YCCHEN TW",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aogu_Wetlands_and_Forest_Part_Yi-Cheng,_Chen_555593995_-_3.jpg",
+    "title": "Aogu Wetlands and Forest Part Yi-Cheng, Chen 555593995 - 3.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-lian-pi-lu-ph2-900.webp",
+    "big": "hei-lian-pi-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 960,
+    "credit": "YCCHEN TW",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aogu_Wetlands_and_Forest_Part_Yi-Cheng,_Chen_555593995_-_4.jpg",
+    "title": "Aogu Wetlands and Forest Part Yi-Cheng, Chen 555593995 - 4.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-chi-chang-jiao-yu": {
   "img": {
@@ -503,7 +1276,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Himantopus_himantopus_-_Black-winged_Stilt_XC431789.mp3",
    "title": "File:Himantopus himantopus - Black-winged Stilt XC431789.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-chi-chang-jiao-yu-plate-900.webp",
+    "big": "hei-chi-chang-jiao-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 1979,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(19794050834).jpg",
+    "title": "British birds (1915) (19794050834).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-chi-chang-jiao-yu-ph1-900.webp",
+    "big": "hei-chi-chang-jiao-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Rahul Sankar",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_Black-winged_Stilt.jpg",
+    "title": "A Black-winged Stilt.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-chi-chang-jiao-yu-ph2-900.webp",
+    "big": "hei-chi-chang-jiao-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Rahul Sankar",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Beautiful_Black-winged_stilt.jpg",
+    "title": "Beautiful Black-winged stilt.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "huan-jing-heng": {
   "img": {
@@ -525,7 +1333,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/52247311",
    "title": "Charadrius alexandrinus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "huan-jing-heng-plate-900.webp",
+    "big": "huan-jing-heng-plate-1600.webp",
+    "w": 1600,
+    "h": 1842,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20230035679).jpg",
+    "title": "British birds (1915) (20230035679).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "huan-jing-heng-ph1-900.webp",
+    "big": "huan-jing-heng-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "El Pantera",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Camino_entre_Bolonia_y_Cala_Picacho_-_IMG_20230909_184220.jpg",
+    "title": "Camino entre Bolonia y Cala Picacho - IMG 20230909 184220.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "huan-jing-heng-ph2-900.webp",
+    "big": "huan-jing-heng-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Rison Thumboor from Thrissur, India",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Charadrius_alexandrinus_(22684751300).jpg",
+    "title": "Charadrius alexandrinus (22684751300).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "qing-jiao-yu": {
   "img": {
@@ -547,7 +1390,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Tringa_nebularia_-_Common_Greenshank_XC494033.mp3",
    "title": "File:Tringa nebularia - Common Greenshank XC494033.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "qing-jiao-yu-plate-900.webp",
+    "big": "qing-jiao-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 2007,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20228714938).jpg",
+    "title": "British birds (1915) (20228714938).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "qing-jiao-yu-ph1-900.webp",
+    "big": "qing-jiao-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1891,
+    "credit": "Dr. Raju Kasambe",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_Greenshank_Tringa_nebularia_by_Dr._Raju_Kasambe_DSC_2148_(2).jpg",
+    "title": "Common Greenshank Tringa nebularia by Dr. Raju Kasambe DSC 2148 (2).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "qing-jiao-yu-ph2-900.webp",
+    "big": "qing-jiao-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Feeding_(8140395238).jpg",
+    "title": "Feeding (8140395238).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-zui-ou": {
   "img": {
@@ -569,7 +1447,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/331292538",
    "title": "Saundersilarus saundersi（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-zui-ou-plate-900.webp",
+    "big": "hei-zui-ou-plate-1600.webp",
+    "w": 1600,
+    "h": 1081,
+    "credit": "Joseph Smit",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:ChroicocephalusSaundersiKeulemans.jpg",
+    "title": "ChroicocephalusSaundersiKeulemans.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-zui-ou-ph1-900.webp",
+    "big": "hei-zui-ou-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Saunders%27s_Gull_-_Hong_Kong_5.jpg",
+    "title": "Saunders's Gull - Hong Kong 5.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-zui-ou-ph2-900.webp",
+    "big": "hei-zui-ou-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Saunders%27s_Gull_-_Hong_Kong_7.jpg",
+    "title": "Saunders's Gull - Hong Kong 7.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hong-zui-ou": {
   "img": {
@@ -591,7 +1504,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Black-headed_Gull_(Chroicocephalus_ridibundus)_-_B%C3%A6rum,_Norway_2021-04-03.mp3",
    "title": "File:Black-headed Gull (Chroicocephalus ridibundus) - Bærum, Norway 2021-04-03.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hong-zui-ou-plate-900.webp",
+    "big": "hong-zui-ou-plate-1600.webp",
+    "w": 1600,
+    "h": 2462,
+    "credit": "Wilhelm Kuhnert",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Wilhelm_Kuhnert_Haubentaucher_und_Lachm%C3%B6we.jpg",
+    "title": "Wilhelm Kuhnert Haubentaucher und Lachmöwe.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hong-zui-ou-ph1-900.webp",
+    "big": "hong-zui-ou-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Emőke Dénes",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2017_-_Chroicocephalus_ridibundus_1.jpg",
+    "title": "2017 - Chroicocephalus ridibundus 1.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hong-zui-ou-ph2-900.webp",
+    "big": "hong-zui-ou-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Emőke Dénes",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2017_-_Chroicocephalus_ridibundus_2.jpg",
+    "title": "2017 - Chroicocephalus ridibundus 2.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-yuan": {
   "img": {
@@ -613,7 +1561,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_-_Black_Kite_XC365863.mp3",
    "title": "File:Milvus migrans - Black Kite XC365863.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-yuan-plate-900.webp",
+    "big": "hei-yuan-plate-1600.webp",
+    "w": 1600,
+    "h": 2542,
+    "credit": "John Gould",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Milvus_Migrans.tif",
+    "title": "Milvus Migrans.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-yuan-ph1-900.webp",
+    "big": "hei-yuan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Dinesh Valke from Thane, India",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:..._kite_%3F_(49573320403).jpg",
+    "title": "... kite ? (49573320403).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-yuan-ph2-900.webp",
+    "big": "hei-yuan-ph2-1600.webp",
+    "w": 1600,
+    "h": 900,
+    "credit": "Dinesh Valke from Thane, India",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:..._kite_%3F_(49573828566).jpg",
+    "title": "... kite ? (49573828566).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "e": {
   "img": {
@@ -635,7 +1618,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Osprey_(Pandion_haliaetus)_(W1CDR0001434_BD8).ogg",
    "title": "File:Osprey (Pandion haliaetus) (W1CDR0001434 BD8).ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "e-plate-900.webp",
+    "big": "e-plate-1600.webp",
+    "w": 1600,
+    "h": 2642,
+    "credit": "United States. Bureau of Biological Survey",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:Bulletin_-_Biological_Survey_(1893)_(20241231178).jpg",
+    "title": "Bulletin - Biological Survey (1893) (20241231178).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "e-ph1-900.webp",
+    "big": "e-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20250719_osprey_hammonasset_beach_state_park_PD200173.jpg",
+    "title": "20250719 osprey hammonasset beach state park PD200173.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "e-ph2-900.webp",
+    "big": "e-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20250719_osprey_hammonasset_beach_state_park_PD200177.jpg",
+    "title": "20250719 osprey hammonasset beach state park PD200177.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "pu-tong-kuang": {
   "img": {
@@ -657,7 +1675,42 @@
    "license": "CC BY-NC-SA",
    "page": "https://www.inaturalist.org/observations/19221453",
    "title": "Buteo japonicus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "pu-tong-kuang-plate-900.webp",
+    "big": "pu-tong-kuang-plate-1600.webp",
+    "w": 909,
+    "h": 1438,
+    "credit": "John Gerrard Keulemans",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:ButeoPlumipesKeulemans.jpg",
+    "title": "ButeoPlumipesKeulemans.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "pu-tong-kuang-ph1-900.webp",
+    "big": "pu-tong-kuang-ph1-1600.webp",
+    "w": 1600,
+    "h": 1065,
+    "credit": "Korean National Institute of Biological Resources",
+    "license": "KOGL Type 1",
+    "page": "https://commons.wikimedia.org/wiki/File:Buzzard_taxidermied_(backside).jpg",
+    "title": "Buzzard taxidermied (backside).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "pu-tong-kuang-ph2-900.webp",
+    "big": "pu-tong-kuang-ph2-1600.webp",
+    "w": 1600,
+    "h": 1065,
+    "credit": "Korean National Institute of Biological Resources",
+    "license": "KOGL Type 1",
+    "page": "https://commons.wikimedia.org/wiki/File:Buzzard_taxidermied_(front).jpg",
+    "title": "Buzzard taxidermied (front).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "pu-tong-cui-niao": {
   "img": {
@@ -679,7 +1732,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-_Common_Kingfisher_XC476785.mp3",
    "title": "File:Alcedo atthis - Common Kingfisher XC476785.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "pu-tong-cui-niao-plate-900.webp",
+    "big": "pu-tong-cui-niao-plate-1600.webp",
+    "w": 1600,
+    "h": 1395,
+    "credit": "Rijksmuseum",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:IJsvogel_op_boomtak,_RP-P-1906-1765.jpg",
+    "title": "IJsvogel op boomtak, RP-P-1906-1765.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "pu-tong-cui-niao-ph1-900.webp",
+    "big": "pu-tong-cui-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:00A17_common_kingfisher_Adatt_Kole.jpg",
+    "title": "00A17 common kingfisher Adatt Kole.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "pu-tong-cui-niao-ph2-900.webp",
+    "big": "pu-tong-cui-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:037_Common_kingfisher_taking_off_at_Champ-Pittet_Photo_by_Giles_Laurent.jpg",
+    "title": "037 Common kingfisher taking off at Champ-Pittet Photo by Giles Laurent.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-xiong-fei-cui": {
   "img": {
@@ -701,7 +1789,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:White_throated_kingfisher_(Halcyon_smyrnensis)_sound.wav",
    "title": "File:White throated kingfisher (Halcyon smyrnensis) sound.wav"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-xiong-fei-cui-plate-900.webp",
+    "big": "bai-xiong-fei-cui-plate-1600.webp",
+    "w": 1226,
+    "h": 1623,
+    "credit": "Albin, Eleazar; Derham, W",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:A_natural_history_of_birds_(9492986339).jpg",
+    "title": "A natural history of birds (9492986339).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-xiong-fei-cui-ph1-900.webp",
+    "big": "bai-xiong-fei-cui-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:013_White-throated_kingfisher_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg",
+    "title": "013 White-throated kingfisher in Keoladeo National Park Photo by Giles Laurent.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-xiong-fei-cui-ph2-900.webp",
+    "big": "bai-xiong-fei-cui-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Thushapan96",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_bird_waiting_to_caught_the_fish.jpg",
+    "title": "A bird waiting to caught the fish.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "ban-yu-gou": {
   "img": {
@@ -723,7 +1846,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ceryle_rudis_-_Pied_Kingfisher_XC513883.mp3",
    "title": "File:Ceryle rudis - Pied Kingfisher XC513883.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "ban-yu-gou-plate-900.webp",
+    "big": "ban-yu-gou-plate-1600.webp",
+    "w": 1600,
+    "h": 2191,
+    "credit": "Alfred Brehm / Eduard Pechuël-Loesche / Wilhelm Haacke",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:Brehms_Tierleben_-_allgemeine_Kunde_des_Tierreichs_-_mit_1800_Abbildungen_im_Text,_9_Karten_und_180_Tafeln_in_Farbendruck_und_Holzschnitt_(1891)_(20414374565).jpg",
+    "title": "Brehms Tierleben - allgemeine Kunde des Tierreichs - mit 1800 Abbildungen im Text, 9 Karten und 180 Tafeln in Farbendruck und Holzschnitt (1891) (20414374565).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "ban-yu-gou-ph1-900.webp",
+    "big": "ban-yu-gou-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "25-south.com",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis)_Thamalakane_River_Botswana.jpg",
+    "title": "Pied kingfisher (Ceryle rudis) Thamalakane River Botswana.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "ban-yu-gou-ph2-900.webp",
+    "big": "ban-yu-gou-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Anjan Kumar Kundu",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pied_Kingfisher_in_fighting_for_food.jpg",
+    "title": "Pied Kingfisher in fighting for food.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-ji-ling": {
   "img": {
@@ -745,7 +1903,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Motacilla_alba_-_White_Wagtail_XC466458.mp3",
    "title": "File:Motacilla alba - White Wagtail XC466458.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-ji-ling-plate-900.webp",
+    "big": "bai-ji-ling-plate-1600.webp",
+    "w": 1600,
+    "h": 1930,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20390396516).jpg",
+    "title": "British birds (1915) (20390396516).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-ji-ling-ph1-900.webp",
+    "big": "bai-ji-ling-ph1-1600.webp",
+    "w": 1600,
+    "h": 1280,
+    "credit": "Sudha Shrestha",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:White_Wagtail_sudha.jpg",
+    "title": "White Wagtail sudha.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-ji-ling-ph2-900.webp",
+    "big": "bai-ji-ling-ph2-1600.webp",
+    "w": 1024,
+    "h": 1024,
+    "credit": "coniferconifer",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Motacilla_alba_-perching_on_reeds-8.jpg",
+    "title": "Motacilla alba -perching on reeds-8.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "huang-mei-liu-ying": {
   "img": {
@@ -767,7 +1960,42 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Phylloscopus_inornatus_-_Yellow-browed_Warbler_XC153463.mp3",
    "title": "File:Phylloscopus inornatus - Yellow-browed Warbler XC153463.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "huang-mei-liu-ying-plate-900.webp",
+    "big": "huang-mei-liu-ying-plate-1600.webp",
+    "w": 1600,
+    "h": 1867,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20228564040).jpg",
+    "title": "British birds (1915) (20228564040).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "huang-mei-liu-ying-ph1-900.webp",
+    "big": "huang-mei-liu-ying-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Yellow-browed_Warbler_by_Tisha_Mukherjee_05.jpg",
+    "title": "Yellow-browed Warbler by Tisha Mukherjee 05.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "huang-mei-liu-ying-ph2-900.webp",
+    "big": "huang-mei-liu-ying-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Yellow-browed_Warbler_by_Tisha_Mukherjee_06.jpg",
+    "title": "Yellow-browed Warbler by Tisha Mukherjee 06.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bei-hong-wei-qu": {
   "img": {
@@ -789,7 +2017,42 @@
    "license": "KOGL Type 1",
    "page": "https://commons.wikimedia.org/wiki/File:%EB%94%B1%EC%83%88.ogg",
    "title": "File:딱새.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bei-hong-wei-qu-plate-900.webp",
+    "big": "bei-hong-wei-qu-plate-1600.webp",
+    "w": 1600,
+    "h": 2602,
+    "credit": "Nihon Dbutsu Gakkai; Tky Dbutsu Gakkai",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:Dbutsugaku_zasshi_(1901)_(20221979803).jpg",
+    "title": "Dbutsugaku zasshi (1901) (20221979803).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bei-hong-wei-qu-ph1-900.webp",
+    "big": "bei-hong-wei-qu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "I13Robin",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2021-07-21_Phoenicurus_auroreus_(juvenile),_Vanino,_Khabarovsk_Krai_7630.jpg",
+    "title": "2021-07-21 Phoenicurus auroreus (juvenile), Vanino, Khabarovsk Krai 7630.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bei-hong-wei-qu-ph2-900.webp",
+    "big": "bei-hong-wei-qu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Boris Smokrovic borisworkshop",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Boris_Smokrovic_2017-01-26_(Unsplash).jpg",
+    "title": "Boris Smokrovic 2017-01-26 (Unsplash).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "chun-se-shan-jiao-ying": {
   "img": {
@@ -811,7 +2074,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Plain_prinia_song_recorded_in_July_2009_at_Sagareshwar_Sanctuary,_Sangli.wav",
    "title": "File:Plain prinia song recorded in July 2009 at Sagareshwar Sanctuary, Sangli.wav"
-  }
+  },
+  "gallery": [
+   {
+    "card": "chun-se-shan-jiao-ying-plate-900.webp",
+    "big": "chun-se-shan-jiao-ying-plate-1600.webp",
+    "w": 1600,
+    "h": 996,
+    "credit": "Forsyth, Thomas Douglas; Henderson, George; Hume, Allan Octavian",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Lahore_to_Y%C4%81rkand_(17636144248).jpg",
+    "title": "Lahore to Yārkand (17636144248).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "chun-se-shan-jiao-ying-ph1-900.webp",
+    "big": "chun-se-shan-jiao-ying-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "M.choi azis",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Perenjak_padi.jpg",
+    "title": "Perenjak padi.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "chun-se-shan-jiao-ying-ph2-900.webp",
+    "big": "chun-se-shan-jiao-ying-ph2-1600.webp",
+    "w": 1600,
+    "h": 1063,
+    "credit": "PUGUH YUDHA",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:PerenjakPadi.jpg",
+    "title": "PerenjakPadi.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "zong-shan-wei-ying": {
   "img": {
@@ -833,7 +2131,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Cisticola_juncidis_-_Zitting_Cisticola_XC586005.mp3",
    "title": "File:Cisticola juncidis - Zitting Cisticola XC586005.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "zong-shan-wei-ying-plate-900.webp",
+    "big": "zong-shan-wei-ying-plate-1600.webp",
+    "w": 1314,
+    "h": 2118,
+    "credit": "Internet Archive Book Images",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:A_history_of_the_birds_of_Europe,_not_observed_in_the_British_Isles_(1862)_(14752219602).jpg",
+    "title": "A history of the birds of Europe, not observed in the British Isles (1862) (14752219602).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "zong-shan-wei-ying-ph1-900.webp",
+    "big": "zong-shan-wei-ying-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zitting_Cisticola_in_Baruipur_September_2025_by_Tisha_Mukherjee_03.jpg",
+    "title": "Zitting Cisticola in Baruipur September 2025 by Tisha Mukherjee 03.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "zong-shan-wei-ying-ph2-900.webp",
+    "big": "zong-shan-wei-ying-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Prasan Shrestha",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_zitting_cisticola.jpg",
+    "title": "The zitting cisticola.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "jia-yan": {
   "img": {
@@ -855,7 +2188,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Hirundo_rustica_-_Barn_Swallow_XC254488.mp3",
    "title": "File:Hirundo rustica - Barn Swallow XC254488.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "jia-yan-plate-900.webp",
+    "big": "jia-yan-plate-1600.webp",
+    "w": 1600,
+    "h": 1917,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20408013102).jpg",
+    "title": "British birds (1915) (20408013102).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "jia-yan-ph1-900.webp",
+    "big": "jia-yan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20260508_barn_swallow_bafflin_audubon_PD00191.jpg",
+    "title": "20260508 barn swallow bafflin audubon PD00191.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "jia-yan-ph2-900.webp",
+    "big": "jia-yan-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20260817_barn_swallow_rocky_hill_meadows_PD04914.jpg",
+    "title": "20260817 barn swallow rocky hill meadows PD04914.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "xiao-bai-yao-yu-yan": {
   "img": {
@@ -877,7 +2245,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Apus_affinis,_swerm_sirkel_oor_Austin_Roberts-vr,_Pta,_a.mp3",
    "title": "File:Apus affinis, swerm sirkel oor Austin Roberts-vr, Pta, a.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "xiao-bai-yao-yu-yan-plate-900.webp",
+    "big": "xiao-bai-yao-yu-yan-plate-1600.webp",
+    "w": 1600,
+    "h": 2172,
+    "credit": "Creator:M. Antinori",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Cypselus_galilaeensis_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ16700095.tif",
+    "title": "Cypselus galilaeensis - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ16700095.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "xiao-bai-yao-yu-yan-ph1-900.webp",
+    "big": "xiao-bai-yao-yu-yan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1068,
+    "credit": "Derek Keats",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Little_swift,_Apus_affinis,_at_Kruger_National_Park,_South_Africa_-_49178319606.jpg",
+    "title": "Little swift, Apus affinis, at Kruger National Park, South Africa - 49178319606.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "xiao-bai-yao-yu-yan-ph2-900.webp",
+    "big": "xiao-bai-yao-yu-yan-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Prasan Shrestha",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:House_swift.jpg",
+    "title": "House swift.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "si-guang-liang-niao": {
   "img": {
@@ -899,7 +2302,42 @@
    "license": "CC BY-NC-ND",
    "page": "https://www.inaturalist.org/observations/407578283",
    "title": "Spodiopsar sericeus（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "si-guang-liang-niao-plate-900.webp",
+    "big": "si-guang-liang-niao-plate-1600.webp",
+    "w": 929,
+    "h": 1170,
+    "credit": "Gray, George Robert; Swainson, William",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Red-billed_Starling_(Spodiopsar_sericeus)_-_A_fasciculus_of_the_birds_of_China_(Pl._5).jpg",
+    "title": "Red-billed Starling (Spodiopsar sericeus) - A fasciculus of the birds of China (Pl. 5).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "si-guang-liang-niao-ph1-900.webp",
+    "big": "si-guang-liang-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Spodiopsar_sericeus_Flower_Lover.jpg",
+    "title": "Spodiopsar sericeus Flower Lover.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "si-guang-liang-niao-ph2-900.webp",
+    "big": "si-guang-liang-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Friends_(11943321405).jpg",
+    "title": "Friends (11943321405).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-juan-wei": {
   "img": {
@@ -921,7 +2359,42 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Dicrurus_macrocercus_-_Black_Drongo_XC152449.mp3",
    "title": "File:Dicrurus macrocercus - Black Drongo XC152449.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-juan-wei-plate-900.webp",
+    "big": "hei-juan-wei-plate-1600.webp",
+    "w": 826,
+    "h": 1245,
+    "credit": "KarunyaBaskar",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dicrurus_macrocercus_Illustration.png",
+    "title": "Dicrurus macrocercus Illustration.png",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-juan-wei-ph1-900.webp",
+    "big": "hei-juan-wei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Hari K Patibanda",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black_Drongo_(49262962516).jpg",
+    "title": "Black Drongo (49262962516).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-juan-wei-ph2-900.webp",
+    "big": "hei-juan-wei-ph2-1600.webp",
+    "w": 1600,
+    "h": 1230,
+    "credit": "Murugavel.T",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_flock_of_Black_drongo_(Dicrurus_macrocercus)_in_a_twig.jpg",
+    "title": "A flock of Black drongo (Dicrurus macrocercus) in a twig.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "ban-wen-niao": {
   "img": {
@@ -943,7 +2416,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Lonchura_punctulata_-_Scaly-breasted_Munia_XC585396.mp3",
    "title": "File:Lonchura punctulata - Scaly-breasted Munia XC585396.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "ban-wen-niao-plate-900.webp",
+    "big": "ban-wen-niao-plate-1600.webp",
+    "w": 1600,
+    "h": 2137,
+    "credit": "George Edwards / Johann Michael Seligmann",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Amadina_punctulata_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ15900193.tif",
+    "title": "Amadina punctulata - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ15900193.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "ban-wen-niao-ph1-900.webp",
+    "big": "ban-wen-niao-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Hari K Patibanda",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_Suspicious_Scaly_Breasted_Finch_(50185303541).jpg",
+    "title": "A Suspicious Scaly Breasted Finch (50185303541).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "ban-wen-niao-ph2-900.webp",
+    "big": "ban-wen-niao-ph2-1600.webp",
+    "w": 1600,
+    "h": 966,
+    "credit": "A.Baihaqi",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bondol_peking_(Lonchura_punctulata).jpg",
+    "title": "Bondol peking (Lonchura punctulata).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-hou-hong-tun-bei": {
   "img": {
@@ -965,7 +2473,42 @@
    "license": "CC BY",
    "page": "https://www.inaturalist.org/observations/367416446",
    "title": "Pycnonotus aurigaster（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-hou-hong-tun-bei-plate-900.webp",
+    "big": "bai-hou-hong-tun-bei-plate-1600.webp",
+    "w": 1600,
+    "h": 2146,
+    "credit": "Johann Friedrich Leberecht Reinhold",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pycnonotus_aurigaster_-_1796-1808_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ16400017.tif",
+    "title": "Pycnonotus aurigaster - 1796-1808 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ16400017.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-hou-hong-tun-bei-ph1-900.webp",
+    "big": "bai-hou-hong-tun-bei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Fauzan R. Naufal",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Burung_Kutilang.jpg",
+    "title": "Burung Kutilang.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-hou-hong-tun-bei-ph2-900.webp",
+    "big": "bai-hou-hong-tun-bei-ph2-1600.webp",
+    "w": 1600,
+    "h": 971,
+    "credit": "Spectrevers",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Burung_kutilang.jpg",
+    "title": "Burung kutilang.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hua-mei": {
   "img": {
@@ -987,7 +2530,42 @@
    "license": "CC0",
    "page": "https://commons.wikimedia.org/wiki/File:%E7%95%AB%E7%9C%89%E9%B3%A5%E5%94%B1%E3%80%8C%E8%AB%8B%E4%BD%A0%E2%80%A6%E6%AD%BB%E7%B5%A6%E4%BD%A0%E7%9C%8B%E3%80%8D.ogg",
    "title": "File:畫眉鳥唱「請你…死給你看」.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hua-mei-plate-900.webp",
+    "big": "hua-mei-plate-1600.webp",
+    "w": 1600,
+    "h": 1236,
+    "credit": "Kitao Masayoshi",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:MET_DP124553.jpg",
+    "title": "MET DP124553.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hua-mei-ph1-900.webp",
+    "big": "hua-mei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Sun Jiao (Interaccoonale)",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Garrulax_canorus_01.jpg",
+    "title": "Garrulax canorus 01.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hua-mei-ph2-900.webp",
+    "big": "hua-mei-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Sun Jiao (Interaccoonale)",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Garrulax_canorus_02.jpg",
+    "title": "Garrulax canorus 02.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-hou-zao-mei": {
   "img": {
@@ -1009,7 +2587,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/26462858",
    "title": "Pterorhinus chinensis（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-hou-zao-mei-plate-900.webp",
+    "big": "hei-hou-zao-mei-plate-1600.webp",
+    "w": 1590,
+    "h": 2744,
+    "credit": "J Gould and H C Richter",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:GarrulaxChinensisGould.jpg",
+    "title": "GarrulaxChinensisGould.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-hou-zao-mei-ph1-900.webp",
+    "big": "hei-hou-zao-mei-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pterorhinus_chinensis_(14057974151).jpg",
+    "title": "Pterorhinus chinensis (14057974151).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-hou-zao-mei-ph2-900.webp",
+    "big": "hei-hou-zao-mei-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Charles Lam from Hong Kong, China",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pterorhinus_chinensis_(14057972711).jpg",
+    "title": "Pterorhinus chinensis (14057972711).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "da-zui-wu-ya": {
   "img": {
@@ -1031,7 +2644,42 @@
    "license": "CC BY-SA 2.5",
    "page": "https://commons.wikimedia.org/wiki/File:Corvus_macrorhynchos_2005-07-10.ogg",
    "title": "File:Corvus macrorhynchos 2005-07-10.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "da-zui-wu-ya-plate-900.webp",
+    "big": "da-zui-wu-ya-plate-1600.webp",
+    "w": 1600,
+    "h": 1424,
+    "credit": "Thomas Hardwicke",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Corvus_macrorhynchos_Hardwicke.jpg",
+    "title": "Corvus macrorhynchos Hardwicke.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "da-zui-wu-ya-ph1-900.webp",
+    "big": "da-zui-wu-ya-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Large-billed_Crow_by_Tisha_Mukherjee_04.jpg",
+    "title": "Large-billed Crow by Tisha Mukherjee 04.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "da-zui-wu-ya-ph2-900.webp",
+    "big": "da-zui-wu-ya-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Large-billed_Crow_in_Lepcha_Jagat_October_2025_by_Tisha_Mukherjee_01.jpg",
+    "title": "Large-billed Crow in Lepcha Jagat October 2025 by Tisha Mukherjee 01.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "niu-bei-lu": {
   "img": {
@@ -1053,7 +2701,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Bubulcus_ibis_-_Western_Cattle_Egret_XC463749.mp3",
    "title": "File:Bubulcus ibis - Western Cattle Egret XC463749.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "niu-bei-lu-plate-900.webp",
+    "big": "niu-bei-lu-plate-1600.webp",
+    "w": 1272,
+    "h": 1755,
+    "credit": "Buffon, Georges Louis Leclerc; Daubenton; Daubenton, Edme-Louis; Martinet, Francois Nicolas",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Planches_enlumin%C3%A9es_d%27histoire_naturelle_(9933222756).jpg",
+    "title": "Planches enluminées d'histoire naturelle (9933222756).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "niu-bei-lu-ph1-900.webp",
+    "big": "niu-bei-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:029_Western_cattle_egret_in_the_Camargue_Photo_by_Giles_Laurent.jpg",
+    "title": "029 Western cattle egret in the Camargue Photo by Giles Laurent.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "niu-bei-lu-ph2-900.webp",
+    "big": "niu-bei-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:054_Cattle_egret_on_a_buffalo_at_Queen_Elizabeth_National_Park_Photo_by_Giles_Laurent.jpg",
+    "title": "054 Cattle egret on a buffalo at Queen Elizabeth National Park Photo by Giles Laurent.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "zhong-bai-lu": {
   "img": {
@@ -1066,7 +2749,43 @@
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Egretta_intermedia.JPG",
    "title": "Egretta intermedia.JPG"
-  }
+  },
+  "gallery": [
+   {
+    "card": "zhong-bai-lu-plate-900.webp",
+    "big": "zhong-bai-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 2284,
+    "credit": "Thomas Hardwicke",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Ardea_alba_modesta_%26_Mesophoyx_intermedia_intermedia_Hardwicke.jpg",
+    "title": "Ardea alba modesta & Mesophoyx intermedia intermedia Hardwicke.jpg",
+    "kind": "plate",
+    "note": "哈德威克（Hardwicke）图版同时绘有大白鹭（左，Ardea alba modesta）与中白鹭（右，Mesophoyx intermedia）；本种取右侧个体对照。"
+   },
+   {
+    "card": "zhong-bai-lu-ph1-900.webp",
+    "big": "zhong-bai-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "EcoScriptor",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_pouse_in_the_green.jpg",
+    "title": "A pouse in the green.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "zhong-bai-lu-ph2-900.webp",
+    "big": "zhong-bai-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "micluna",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:An_Intermediate_Egret_(Ardea_intermedia).jpg",
+    "title": "An Intermediate Egret (Ardea intermedia).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "lv-lu": {
   "img": {
@@ -1088,7 +2807,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:XC346389_-_Striated_Heron_-_Butorides_striata.mp3",
    "title": "File:XC346389 - Striated Heron - Butorides striata.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "lv-lu-plate-900.webp",
+    "big": "lv-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 1177,
+    "credit": "Nathaly 1106",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Butorides_striata_-_Garcita_azulada.jpg",
+    "title": "Butorides striata - Garcita azulada.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "lv-lu-ph1-900.webp",
+    "big": "lv-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "GerifalteDelSabana",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Striated_Heron_(Butorides_striata)_@_Kuala_Lumpur,_Malaysia_(6).jpg",
+    "title": "Striated Heron (Butorides striata) @ Kuala Lumpur, Malaysia (6).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "lv-lu-ph2-900.webp",
+    "big": "lv-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Wilfredor",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Butorides_striata_striata_in_Petr%C3%B3polis,_Rio_de_Janeiro,_Brazil_08.jpg",
+    "title": "Butorides striata striata in Petrópolis, Rio de Janeiro, Brazil 08.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-gu-ding": {
   "img": {
@@ -1110,7 +2864,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Fulica_atra_-_Eurasian_Coot_XC432890.mp3",
    "title": "File:Fulica atra - Eurasian Coot XC432890.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-gu-ding-plate-900.webp",
+    "big": "bai-gu-ding-plate-1600.webp",
+    "w": 1600,
+    "h": 2230,
+    "credit": "Kurt Lampert",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Atlas_panstwa_zwierzecego._Cz._2,_Ptaki_1905_(80638313).jpg",
+    "title": "Atlas panstwa zwierzecego. Cz. 2, Ptaki 1905 (80638313).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-gu-ding-ph1-900.webp",
+    "big": "bai-gu-ding-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "0x010C",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2017-07_R%C3%A9serve_naturelle_nationale_de_la_baie_de_Somme_-_Eurasian_coot.jpg",
+    "title": "2017-07 Réserve naturelle nationale de la baie de Somme - Eurasian coot.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-gu-ding-ph2-900.webp",
+    "big": "bai-gu-ding-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Gouwenaar",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20200507_meerkoet_meertje_Bollema_stroomdal_Geeserstroom.jpg",
+    "title": "20200507 meerkoet meertje Bollema stroomdal Geeserstroom.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "feng-tou-pi-ti": {
   "img": {
@@ -1132,7 +2921,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Great_Crested_Grebe_(Podiceps_cristatus)_(W1CDR0001488_BD4).ogg",
    "title": "File:Great Crested Grebe (Podiceps cristatus) (W1CDR0001488 BD4).ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "feng-tou-pi-ti-plate-900.webp",
+    "big": "feng-tou-pi-ti-plate-1600.webp",
+    "w": 1600,
+    "h": 2695,
+    "credit": "Graves, George",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:British_ornithology_BHL47497708.jpg",
+    "title": "British ornithology BHL47497708.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "feng-tou-pi-ti-ph1-900.webp",
+    "big": "feng-tou-pi-ti-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Alexis Lours",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Great_Crested_Grebe_2023-10-10.jpg",
+    "title": "Great Crested Grebe 2023-10-10.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "feng-tou-pi-ti-ph2-900.webp",
+    "big": "feng-tou-pi-ti-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Jan Czeczotka",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_Haubentaucher_auf_dem_Staffelsee.jpg",
+    "title": "Porträt Haubentaucher auf dem Staffelsee.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-pi-lu": {
   "img": {
@@ -1154,7 +2978,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Platalea_leucorodia_-_Eurasian_Spoonbill_XC432229.mp3",
    "title": "File:Platalea leucorodia - Eurasian Spoonbill XC432229.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-pi-lu-plate-900.webp",
+    "big": "bai-pi-lu-plate-1600.webp",
+    "w": 1600,
+    "h": 1932,
+    "credit": "Thorburn, Archibald",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_BHL43051602.jpg",
+    "title": "British birds BHL43051602.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-pi-lu-ph1-900.webp",
+    "big": "bai-pi-lu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Eli Solidum",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:An_Eurasian_spoonbill_hangs_out_in_the_waters_of_Yala_National_Park.jpg",
+    "title": "An Eurasian spoonbill hangs out in the waters of Yala National Park.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-pi-lu-ph2-900.webp",
+    "big": "bai-pi-lu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Davidvraju",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_spoonbill_bird_(2014).jpg",
+    "title": "Common spoonbill bird (2014).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "lv-chi-ya": {
   "img": {
@@ -1176,7 +3035,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Anas_crecca_-_Eurasian_Teal_XC467849.mp3",
    "title": "File:Anas crecca - Eurasian Teal XC467849.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "lv-chi-ya-plate-900.webp",
+    "big": "lv-chi-ya-plate-1600.webp",
+    "w": 1600,
+    "h": 1941,
+    "credit": "Thorburn, Archibald",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_BHL43051554.jpg",
+    "title": "British birds BHL43051554.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "lv-chi-ya-ph1-900.webp",
+    "big": "lv-chi-ya-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Prasan Shrestha",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_teal_drinking_water.jpg",
+    "title": "Common teal drinking water.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "lv-chi-ya-ph2-900.webp",
+    "big": "lv-chi-ya-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "harum.koh from Kobe city, Japan",
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Eurasian_Teal_(Anas_crecca)_(24852533435).jpg",
+    "title": "Eurasian Teal (Anas crecca) (24852533435).jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-fu-bin-yu": {
   "img": {
@@ -1198,7 +3092,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Calidris_alpina_-_Dunlin_XC545082.mp3",
    "title": "File:Calidris alpina - Dunlin XC545082.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-fu-bin-yu-plate-900.webp",
+    "big": "hei-fu-bin-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 1982,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20230046839).jpg",
+    "title": "British birds (1915) (20230046839).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-fu-bin-yu-ph1-900.webp",
+    "big": "hei-fu-bin-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20260529_dunlin_sandy_point_bird_sanctuary_PD04236.jpg",
+    "title": "20260529 dunlin sandy point bird sanctuary PD04236.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-fu-bin-yu-ph2-900.webp",
+    "big": "hei-fu-bin-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20260529_dunlin_sandy_point_bird_sanctuary_PD04239.jpg",
+    "title": "20260529 dunlin sandy point bird sanctuary PD04239.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "ji-yu": {
   "img": {
@@ -1220,7 +3149,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Actitis_hypoleucos_-_Common_Sandpiper_XC431822.mp3",
    "title": "File:Actitis hypoleucos - Common Sandpiper XC431822.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "ji-yu-plate-900.webp",
+    "big": "ji-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 1950,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(19795747563).jpg",
+    "title": "British birds (1915) (19795747563).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "ji-yu-ph1-900.webp",
+    "big": "ji-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Vengolis",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Actitis_hypoleucos_3.jpg",
+    "title": "Actitis hypoleucos 3.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "ji-yu-ph2-900.webp",
+    "big": "ji-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "מינוזיג - MinoZig",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Actitis_hypoleucos_iL_3.jpg",
+    "title": "Actitis hypoleucos iL 3.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hui-ban-heng": {
   "img": {
@@ -1242,7 +3206,42 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/144408859",
    "title": "Pluvialis squatarola（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hui-ban-heng-plate-900.webp",
+    "big": "hui-ban-heng-plate-1600.webp",
+    "w": 1600,
+    "h": 1798,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20228701668).jpg",
+    "title": "British birds (1915) (20228701668).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hui-ban-heng-ph1-900.webp",
+    "big": "hui-ban-heng-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:00A1_Grey_plover_Thottapally.jpg",
+    "title": "00A1 Grey plover Thottapally.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hui-ban-heng-ph2-900.webp",
+    "big": "hui-ban-heng-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Drsssuresh1961",
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:00A2_Grey_plover_Thottapally.jpg",
+    "title": "00A2 Grey plover Thottapally.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "bai-yao-shao-yu": {
   "img": {
@@ -1264,7 +3263,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Numenius_arquata_-_Eurasian_Curlew_XC432918.mp3",
    "title": "File:Numenius arquata - Eurasian Curlew XC432918.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "bai-yao-shao-yu-plate-900.webp",
+    "big": "bai-yao-shao-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 2272,
+    "credit": "Kurt Lampert",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Atlas_panstwa_zwierzecego._Cz._2,_Ptaki_1905_(80638276).jpg",
+    "title": "Atlas panstwa zwierzecego. Cz. 2, Ptaki 1905 (80638276).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "bai-yao-shao-yu-ph1-900.webp",
+    "big": "bai-yao-shao-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1021,
+    "credit": "Zeynel Cebeci",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Numenius_arquata_-_Eurasian_Curlew,_Mersin_2018-09-23_17.jpg",
+    "title": "Numenius arquata - Eurasian Curlew, Mersin 2018-09-23 17.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "bai-yao-shao-yu-ph2-900.webp",
+    "big": "bai-yao-shao-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Lesbardd",
+    "license": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Parlwr_DuLB96.JPG",
+    "title": "Parlwr DuLB96.JPG",
+    "kind": "photo"
+   }
+  ]
  },
  "pu-tong-lu-ci": {
   "img": {
@@ -1286,7 +3320,42 @@
    "license": "CC0",
    "page": "https://commons.wikimedia.org/wiki/File:Cormor%C3%A1n_grande_(Phalacrocorax_carbo).mp3",
    "title": "File:Cormorán grande (Phalacrocorax carbo).mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "pu-tong-lu-ci-plate-900.webp",
+    "big": "pu-tong-lu-ci-plate-1600.webp",
+    "w": 1600,
+    "h": 1860,
+    "credit": "Lady Elizabeth Gwillim (21 April 1763 – 21 December 1807)",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Great_Cormorant_Gwillim.jpg",
+    "title": "Great Cormorant Gwillim.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "pu-tong-lu-ci-ph1-900.webp",
+    "big": "pu-tong-lu-ci-ph1-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Chris06",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2026_Quai_de_la_Croix_(Concarneau)_(1).jpg",
+    "title": "2026 Quai de la Croix (Concarneau) (1).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "pu-tong-lu-ci-ph2-900.webp",
+    "big": "pu-tong-lu-ci-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Reinhold Möller Ermell",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bamberg_Regnitz_Kormoran-20260124-RM-104523.jpg",
+    "title": "Bamberg Regnitz Kormoran-20260124-RM-104523.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "fan-zui-yu": {
   "img": {
@@ -1308,7 +3377,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Pied_Avocet_(Recurvirostra_avosetta)_-_Parc_Natural_de_s%27Albufera,_Spain_2022-04-21_(05).mp3",
    "title": "File:Pied Avocet (Recurvirostra avosetta) - Parc Natural de s'Albufera, Spain 2022-04-21 (05).mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "fan-zui-yu-plate-900.webp",
+    "big": "fan-zui-yu-plate-1600.webp",
+    "w": 1600,
+    "h": 2126,
+    "credit": "",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Recurvirostra_avocetta_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ17400165.tif",
+    "title": "Recurvirostra avocetta - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ17400165.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "fan-zui-yu-ph1-900.webp",
+    "big": "fan-zui-yu-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "El Golli Mohamed",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Avocette_%C3%A9l%C3%A9gante_Thyna021.jpg",
+    "title": "Avocette élégante Thyna021.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "fan-zui-yu-ph2-900.webp",
+    "big": "fan-zui-yu-ph2-1600.webp",
+    "w": 1600,
+    "h": 1043,
+    "credit": "Tareq Uddin Ahmed",
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pied_Avocet_chittagong.jpg",
+    "title": "Pied Avocet chittagong.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hong-sun": {
   "img": {
@@ -1330,7 +3434,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Falco_tinnunculus_-_Common_Kestrel_XC463430.mp3",
    "title": "File:Falco tinnunculus - Common Kestrel XC463430.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hong-sun-plate-900.webp",
+    "big": "hong-sun-plate-1600.webp",
+    "w": 1600,
+    "h": 1971,
+    "credit": "Thorburn, Archibald, 1860-1935",
+    "license": "No restrictions",
+    "page": "https://commons.wikimedia.org/wiki/File:British_birds_(1915)_(20228674528).jpg",
+    "title": "British birds (1915) (20228674528).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hong-sun-ph1-900.webp",
+    "big": "hong-sun-ph1-1600.webp",
+    "w": 1600,
+    "h": 1428,
+    "credit": "Alexey V. Kurochkin",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_kestrel_(Falco_tinnunculus)_female_(IMGP1648r2-DNA).jpg",
+    "title": "Common kestrel (Falco tinnunculus) female (IMGP1648r2-DNA).jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hong-sun-ph2-900.webp",
+    "big": "hong-sun-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:078_Wild_Common_kestrel_in_flight_at_Pfyn-Finges_Photo_by_Giles_Laurent.jpg",
+    "title": "078 Wild Common kestrel in flight at Pfyn-Finges Photo by Giles Laurent.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "she-diao": {
   "img": {
@@ -1352,7 +3491,42 @@
    "license": "Public domain",
    "page": "https://commons.wikimedia.org/wiki/File:Crested_Serpent_Eagle_from_Dhoni.ogg",
    "title": "File:Crested Serpent Eagle from Dhoni.ogg"
-  }
+  },
+  "gallery": [
+   {
+    "card": "she-diao-plate-900.webp",
+    "big": "she-diao-plate-1600.webp",
+    "w": 1600,
+    "h": 2034,
+    "credit": "Elizabeth Gwillim",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Crestedserpenteagle_Gwillim.jpg",
+    "title": "Crestedserpenteagle Gwillim.jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "she-diao-ph1-900.webp",
+    "big": "she-diao-ph1-1600.webp",
+    "w": 1600,
+    "h": 998,
+    "credit": "Manojk",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chinnar_Wildlife_Sanctuary_IMG_9072_(44).JPG",
+    "title": "Chinnar Wildlife Sanctuary IMG 9072 (44).JPG",
+    "kind": "photo"
+   },
+   {
+    "card": "she-diao-ph2-900.webp",
+    "big": "she-diao-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crested_Serpent-Eagle_by_Tisha_Mukherjee_02.jpg",
+    "title": "Crested Serpent-Eagle by Tisha Mukherjee 02.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "feng-tou-ying": {
   "img": {
@@ -1374,7 +3548,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Dicrurus_aeneus_-_Bronzed_Drongo_XC178198.mp3",
    "title": "File:Dicrurus aeneus - Bronzed Drongo XC178198.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "feng-tou-ying-plate-900.webp",
+    "big": "feng-tou-ying-plate-1600.webp",
+    "w": 1600,
+    "h": 2172,
+    "credit": "",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Astur_trivirgatus_-_1863-1876_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ18300037.tif",
+    "title": "Astur trivirgatus - 1863-1876 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ18300037.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "feng-tou-ying-ph1-900.webp",
+    "big": "feng-tou-ying-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Shiv's fotografia",
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crested_Goshawk_facts.jpg",
+    "title": "Crested Goshawk facts.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "feng-tou-ying-ph2-900.webp",
+    "big": "feng-tou-ying-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Gulumeemee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crested_goshawk_after_bath.jpg",
+    "title": "Crested goshawk after bath.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "hei-chi-yuan": {
   "img": {
@@ -1396,7 +3605,42 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Elanus_caeruleus_caeruleus,_2023-04-01_08h01,_2_roep_te_Buffelsdrift,_a.mp3",
    "title": "File:Elanus caeruleus caeruleus, 2023-04-01 08h01, 2 roep te Buffelsdrift, a.mp3"
-  }
+  },
+  "gallery": [
+   {
+    "card": "hei-chi-yuan-plate-900.webp",
+    "big": "hei-chi-yuan-plate-1600.webp",
+    "w": 1600,
+    "h": 1008,
+    "credit": "Leach, William Elford; Nodder, Frederick Polydore.; Nodder, R. P.; Shaw, George",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:The_zoological_miscellany_(Pl._123)_(8189921547).jpg",
+    "title": "The zoological miscellany (Pl. 123) (8189921547).jpg",
+    "kind": "plate"
+   },
+   {
+    "card": "hei-chi-yuan-ph1-900.webp",
+    "big": "hei-chi-yuan-ph1-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black-winged_Kite_by_Tisha_Mukherjee_04.jpg",
+    "title": "Black-winged Kite by Tisha Mukherjee 04.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "hei-chi-yuan-ph2-900.webp",
+    "big": "hei-chi-yuan-ph2-1600.webp",
+    "w": 1600,
+    "h": 1200,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black-winged_Kite_by_Tisha_Mukherjee_06.jpg",
+    "title": "Black-winged Kite by Tisha Mukherjee 06.jpg",
+    "kind": "photo"
+   }
+  ]
  },
  "lan-fei-cui": {
   "img": {
@@ -1418,6 +3662,41 @@
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/312122589",
    "title": "Halcyon pileata（iNaturalist 野外录音）"
-  }
+  },
+  "gallery": [
+   {
+    "card": "lan-fei-cui-plate-900.webp",
+    "big": "lan-fei-cui-plate-1600.webp",
+    "w": 1600,
+    "h": 2165,
+    "credit": "François-Nicolas Martinet",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Halcyon_pileata_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_UBA01_IZ16800065.tif",
+    "title": "Halcyon pileata - 1700-1880 - Print - Iconographia Zoologica - Special Collections University of Amsterdam - UBA01 IZ16800065.tif",
+    "kind": "plate"
+   },
+   {
+    "card": "lan-fei-cui-ph1-900.webp",
+    "big": "lan-fei-cui-ph1-1600.webp",
+    "w": 1600,
+    "h": 1060,
+    "credit": "Taritganguly",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black_Capped.jpg",
+    "title": "Black Capped.jpg",
+    "kind": "photo"
+   },
+   {
+    "card": "lan-fei-cui-ph2-900.webp",
+    "big": "lan-fei-cui-ph2-1600.webp",
+    "w": 1600,
+    "h": 1067,
+    "credit": "Tisha Mukherjee",
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Black-capped_Kingfisher_by_Tisha_Mukherjee_01.jpg",
+    "title": "Black-capped Kingfisher by Tisha Mukherjee 01.jpg",
+    "kind": "photo"
+   }
+  ]
  }
 }
