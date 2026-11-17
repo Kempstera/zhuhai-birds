@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(
+  sp.zh ~ " · " ~ sp.sci ~ " | 珠海观鸟图鉴",
+  sp.tagline ~ " " ~ sp.summary[:80],
+  (root ~ 'assets/img/' ~ sp.img.big) if sp.img else '',
+  root) }}
+{% endblock %}
+
+{% block bodyclass %}dark-nav{% endblock %}
+
+{% block content %}
+
+<section class="detail-hero">
+  {% if sp.img %}
+  <img src="{{ root }}assets/img/{{ sp.img.big }}" alt="{{ sp.zh }}（{{ sp.sci }}）" fetchpriority="high" width="{{ sp.img.w }}" height="{{ sp.img.h }}">
+  {% endif %}
+  <a class="back wrap" href="{{ root }}index.html#species">{{ m.icon('back') }} 返回名录</a>
+  <div class="dh-inner">
+    <div class="wrap">
+      <p class="dh-no">NO. {{ sp.no }} · {{ group.zh }} / {{ sp.family }}</p>
+      <div class="dh-title">
+        <h1>{{ sp.zh }}</h1>
+        <span class="dh-sci">{{ sp.sci }}</span>
+      </div>
+      <div class="dh-tags">
+        <span class="hl">{{ sp.residency }}</span>
+        <span>{{ sp.common }}</span>
+        <span>{{ sp.len }}</span>
+        {% if '一级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
+        {% elif '二级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
+        {% else %}<span>{{ sp.protect }}</span>{% endif %}
+        <span>IUCN {{ sp.iucn }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap detail-body">
+  <div class="detail-grid">
+
+    <!-- 主栏 -->
+    <div>
+      <p class="lede-quote">{{ sp.tagline }}</p>
+      <p style="color:var(--ink-2);font-size:16px;line-height:1.95;margin:22px 0 0">{{ sp.summary }}</p>
+
+      <section class="detail-section">
+        <h2>辨识特征 <span class="en">Identification</span></h2>
+        <ul class="feature-list">
+          {% for f in sp.features %}
+          <li><span class="k">{{ f.k }}</span><span class="v">{{ f.v }}</span></li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>习性 <span class="en">Behaviour</span></h2>
+        <p>{{ sp.behavior }}</p>
+      </section>
+
+      <section class="detail-section" id="voice">
+        <h2>鸣声 <span class="en">Voice</span></h2>
+        {% if sp.audio %}
+        <div class="audio-card" data-src="{{ root }}assets/audio/{{ sp.audio.file }}" data-dur="{{ sp.audio.dur }}">
+          <div class="ac-top">
+            <button class="ac-btn" aria-label="播放鸣声">
+              <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/></svg>
+            </button>
+            <div class="ac-info">
+              <div class="ac-title">野外鸣声录音</div>
+              <div class="ac-sub">点击波形可跳转 · 建议佩戴耳机</div>
+            </div>
+            <div class="ac-time"><span class="t-cur">0:00</span> / {{ '%d:%02d'|format((sp.audio.dur//60)|int, (sp.audio.dur%60)|int) }}</div>
+          </div>
+          <div class="wave-wrap"><canvas aria-hidden="true"></canvas></div>
+          <div class="ac-note">
+            <b>录音</b> {{ sp.audio.credit or 'Wikimedia Commons' }} · <b>许可</b> {{ sp.audio.license or '见来源页' }}
+            {% if sp.audio.page %}· <a href="{{ sp.audio.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px">原始文件</a>{% endif %}
+          </div>
+        </div>
+        {% else %}
+        <p style="color:var(--ink-4);font-size:14px">该物种暂无可用的开放许可录音。</p>
+        {% endif %}
+        <p style="margin-top:20px">{{ sp.voice }}</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>在珠海去哪里找 <span class="en">Where to Watch</span></h2>
+        <ul class="where-list">
+          {% for w in sp.where %}<li><span class="pin"></span>{{ w }}</li>{% endfor %}
+        </ul>
+        <div class="tip-box {{ 'caution' if '一级' in sp.protect or '二级' in sp.protect else '' }}">
+          <div class="th">观察提示</div>
+          {{ sp.tip }}
+        </div>
+      </section>
+
+      {% if sims %}
+      <section class="detail-section">
+        <h2>容易混淆的相似种 <span class="en">Similar Species</span></h2>
+        <div class="similar-grid">
+          {% for s in sims %}
+          <a class="sim-card" href="{{ root }}bird/{{ s.slug }}.html">
+            {% if s.img %}<img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}" loading="lazy">{% endif %}
+            <div>
+              <div class="sc-t">{{ s.zh }}</div>
+              <div class="sc-s">{{ s.sci }}</div>
+              <div class="sc-m">{{ s.residency }} · {{ s.len }}</div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      <nav class="pager">
+        <a href="{{ root }}bird/{{ prev.slug }}.html">
+          <div class="dir">← 上一种</div>
+          <div class="nm">{{ prev.zh }}</div>
+        </a>
+        <a class="next" href="{{ root }}bird/{{ next.slug }}.html">
+          <div class="dir">下一种 →</div>
+          <div class="nm">{{ next.zh }}</div>
+        </a>
+      </nav>
+    </div>
+
+    <!-- 侧栏 -->
+    <aside>
+      <div class="spec-card">
+        <div class="sc-head">Species Profile</div>
+        <ul class="sc-list">
+          <li><span class="k">中文名</span><span class="v">{{ sp.zh }}</span></li>
+          <li><span class="k">英文名</span><span class="v">{{ sp.en }}</span></li>
+          <li><span class="k">学名</span><span class="v" style="font-style:italic;font-family:var(--latin)">{{ sp.sci }}</span></li>
+          <li><span class="k">科属</span><span class="v">{{ sp.family }}</span></li>
+          <li><span class="k">体长</span><span class="v">{{ sp.len }}</span></li>
+          <li><span class="k">体重</span><span class="v">{{ sp.mass }}</span></li>
+          <li><span class="k">居留型</span><span class="v">{{ sp.residency }}</span></li>
+          <li><span class="k">本地遇见率</span><span class="v">{{ sp.common }}</span></li>
+          <li><span class="k">IUCN</span><span class="v">{{ sp.iucn }}</span></li>
+        </ul>
+        <div class="sc-protect">
+          <span class="pill {{ sp.pclass }}">{{ sp.protect if sp.pclass != 'p3' else '「三有」保护动物' }}</span>
+        </div>
+        <div class="sc-mini">
+          <div style="margin-bottom:8px;color:var(--ink-4);font-size:11px;letter-spacing:.14em">典型生境</div>
+          <div class="hab-tags">
+            {% for h in sp.habitat %}<span>{{ h }}</span>{% endfor %}
+          </div>
+        </div>
+        {% if sp.img %}
+        <div class="sc-mini" style="border-top:1px solid var(--line-2);padding-top:14px">
+          <span style="color:var(--ink-4)">图片</span>
+          {{ sp.img.credit or 'Wikimedia Commons' }}<br>
+          <span style="color:var(--ink-4)">许可</span> {{ sp.img.license or '见来源' }}
+          {% if sp.img.page %}<br><a href="{{ sp.img.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;color:var(--ink-3)">查看原始页面</a>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+{% endblock %}

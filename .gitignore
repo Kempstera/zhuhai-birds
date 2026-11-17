@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 临时采集文件
+/_tmp/
+/var/tmp/

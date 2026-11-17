@@ -1,0 +1,69 @@
+{% import "_macros.html" as m %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+{% block head %}{% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<a class="skiplink" href="#main">跳到主要内容</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="{{ root }}index.html">
+      {{ m.icon('bird') }}
+      <span>珠海观鸟图鉴</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="{{ root }}index.html#species">物种名录</a>
+      <a href="{{ root }}index.html#groups">生态类群</a>
+      <a href="{{ root }}index.html#spots">观鸟地点</a>
+      <a href="{{ root }}guide.html">观鸟指南</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">{{ m.icon('bird') }}<span>珠海观鸟图鉴</span></div>
+        <p>一份面向华南、尤其是珠三角与珠海的常见鸟类观察手册。<br>
+        收录 33 种在本地相对容易遇见的鸟类，附辨识要点与野外鸣声。</p>
+        <p style="margin-top:12px;font-size:12px;color:var(--ink-4)">
+          图像与录音来自维基共享资源（Wikimedia Commons）与 iNaturalist，遵循各自的开放许可协议；
+          每个物种页脚注均标注原作者与许可类型。</p>
+      </div>
+      <div>
+        <h5>浏览</h5>
+        <ul>
+          <li><a href="{{ root }}index.html#species">全部物种</a></li>
+          <li><a href="{{ root }}index.html#groups">生态类群</a></li>
+          <li><a href="{{ root }}index.html#spots">观鸟地点</a></li>
+          <li><a href="{{ root }}guide.html">四季与守则</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>说明</h5>
+        <ul>
+          <li>保护级别依据《国家重点保护野生动物名录》（2021）</li>
+          <li>濒危等级依据 IUCN 红色名录</li>
+          <li>居留型以珠海—珠三角情况为准</li>
+          <li>本站为非营利的科普项目</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© {{ YEAR }} 珠海观鸟图鉴 · Field Guide to the Birds of Zhuhai</span>
+      <span>观察野生鸟类，请保持距离 · 中国境内所有野生鸟类均受法律保护</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ root }}static/app.js" defer></script>
+</body>
+</html>

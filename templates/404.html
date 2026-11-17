@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head("页面走失了 | 珠海观鸟图鉴", "找不到这个页面。", '', root) }}
+{% endblock %}
+
+{% block content %}
+<section style="padding:170px 0 120px;text-align:center">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">Error 404</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.1em">这只鸟飞走了</h1>
+    <p style="color:var(--ink-2);max-width:30em;margin:22px auto 0;line-height:1.95">
+      你要找的页面不存在，可能是链接过期，或者这个物种还没有被收录。<br>回到名录，重新找一只吧。
+    </p>
+    <div style="margin-top:36px">
+      <a class="btn" href="{{ root }}index.html">返回首页 {{ m.icon('arrow') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

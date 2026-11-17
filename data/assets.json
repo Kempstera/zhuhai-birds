@@ -1,0 +1,728 @@
+{
+ "bai-tou-bei": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/bai-tou-bei-1600.webp",
+   "card": "bai-tou-bei-900.webp",
+   "big": "bai-tou-bei-1600.webp",
+   "w": 900,
+   "h": 676,
+   "credit": "Earthshine.. at English Wikipedia",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chinese_Bubul.JPG",
+   "title": "Chinese Bubul.JPG"
+  },
+  "audio": {
+   "file": "bai-tou-bei.mp3",
+   "dur": 15.2,
+   "kb": 119,
+   "credit": "iNaturalist 用户 skystargazer",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/146180271",
+   "title": "Pycnonotus sinensis（iNaturalist 野外录音）"
+  }
+ },
+ "hong-er-bei": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hong-er-bei-1600.webp",
+   "card": "hong-er-bei-900.webp",
+   "big": "hong-er-bei-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "myjkccd",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Pycnonotus_jocosus_jocosus,_Nanning,_Guangxi,_China.jpg",
+   "title": "Pycnonotus jocosus jocosus, Nanning, Guangxi, China.jpg"
+  },
+  "audio": {
+   "file": "hong-er-bei.mp3",
+   "dur": 55.0,
+   "kb": 431,
+   "credit": "Subhashish Panigrahi",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pycnonotus_jocosus_-_Red-whiskered_Bulbul_XC538779.mp3",
+   "title": "File:Pycnonotus jocosus - Red-whiskered Bulbul XC538779.mp3"
+  }
+ },
+ "zhu-jing-ban-jiu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/zhu-jing-ban-jiu-1600.webp",
+   "card": "zhu-jing-ban-jiu-900.webp",
+   "big": "zhu-jing-ban-jiu-1600.webp",
+   "w": 900,
+   "h": 601,
+   "credit": "iNaturalist/zinogre",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Spilopelia_chinensis_Zhengzhou_20210607.jpg",
+   "title": "Spilopelia chinensis Zhengzhou 20210607.jpg"
+  },
+  "audio": {
+   "file": "zhu-jing-ban-jiu.mp3",
+   "dur": 37.4,
+   "kb": 293,
+   "credit": "Manoj Karingamadathil",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Spilopelia_chinensis_-_Spotted_Dove_XC495643.mp3",
+   "title": "File:Spilopelia chinensis - Spotted Dove XC495643.mp3"
+  }
+ },
+ "shu-ma-que": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/shu-ma-que-1600.webp",
+   "card": "shu-ma-que-900.webp",
+   "big": "shu-ma-que-1600.webp",
+   "w": 900,
+   "h": 704,
+   "credit": "Andreas Trepte",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Tree-Sparrow-2009-16-02.jpg",
+   "title": "Tree-Sparrow-2009-16-02.jpg"
+  },
+  "audio": {
+   "file": "shu-ma-que.mp3",
+   "dur": 15.6,
+   "kb": 122,
+   "credit": "Derek Paulo",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Passer_montanus_-_Eurasian_Tree_Sparrow_XC347806.mp3",
+   "title": "File:Passer montanus - Eurasian Tree Sparrow XC347806.mp3"
+  }
+ },
+ "wu-dong": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/wu-dong-1600.webp",
+   "card": "wu-dong-900.webp",
+   "big": "wu-dong-1600.webp",
+   "w": 900,
+   "h": 576,
+   "credit": "zinogre",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chinese_Blackbird,_Zhengzhou,_Henan,_China_09.jpg",
+   "title": "Chinese Blackbird, Zhengzhou, Henan, China 09.jpg"
+  },
+  "audio": {
+   "file": "wu-dong.mp3",
+   "dur": 15.2,
+   "kb": 119,
+   "credit": "iNaturalist 用户 skystargazer",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/146400103",
+   "title": "Turdus mandarinus（iNaturalist 野外录音）"
+  }
+ },
+ "chang-wei-feng-ye-ying": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/chang-wei-feng-ye-ying-1600.webp",
+   "card": "chang-wei-feng-ye-ying-900.webp",
+   "big": "chang-wei-feng-ye-ying-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Yathin S Krishnappa",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2005-tailor-bird.jpg",
+   "title": "2005-tailor-bird.jpg"
+  },
+  "audio": {
+   "file": "chang-wei-feng-ye-ying.mp3",
+   "dur": 55.0,
+   "kb": 430,
+   "credit": "Ajit Ampalakkad",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Orthotomus_sutorius_93726074.mp3",
+   "title": "File:Orthotomus sutorius 93726074.mp3"
+  }
+ },
+ "an-lu-xiu-yan-niao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/an-lu-xiu-yan-niao-1600.webp",
+   "card": "an-lu-xiu-yan-niao-900.webp",
+   "big": "an-lu-xiu-yan-niao-1600.webp",
+   "w": 640,
+   "h": 480,
+   "credit": "Charles Lam",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Resting_Zosterops_japonicus.jpg",
+   "title": "Resting Zosterops japonicus.jpg"
+  },
+  "audio": {
+   "file": "an-lu-xiu-yan-niao.mp3",
+   "dur": 14.2,
+   "kb": 111,
+   "credit": "iNaturalist 用户 rudyard",
+   "license": "CC0",
+   "page": "https://www.inaturalist.org/observations/81123856",
+   "title": "Zosterops simplex（iNaturalist 野外录音）"
+  }
+ },
+ "ba-ge": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/ba-ge-1600.webp",
+   "card": "ba-ge-900.webp",
+   "big": "ba-ge-1600.webp",
+   "w": 900,
+   "h": 675,
+   "credit": "Flickr user CharlesLam . Photo uploaded to commons by user ltshears",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Crested_Myna001.jpg",
+   "title": "Crested Myna001.jpg"
+  },
+  "audio": {
+   "file": "ba-ge.mp3",
+   "dur": 9.8,
+   "kb": 77,
+   "credit": "iNaturalist 用户 skystargazer",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/146510966",
+   "title": "Acridotheres cristatellus（iNaturalist 野外录音）"
+  }
+ },
+ "hei-ling-liang-niao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-ling-liang-niao-1600.webp",
+   "card": "hei-ling-liang-niao-900.webp",
+   "big": "hei-ling-liang-niao-1600.webp",
+   "w": 900,
+   "h": 810,
+   "credit": "J. Patrick Fischer",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_bird_in_Shenzhen.jpg",
+   "title": "A bird in Shenzhen.jpg"
+  },
+  "audio": {
+   "file": "hei-ling-liang-niao.mp3",
+   "dur": 27.1,
+   "kb": 212,
+   "credit": "Sam Hambly",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gracupica_nigricollis_call_and_song.ogg",
+   "title": "File:Gracupica nigricollis call and song.ogg"
+  }
+ },
+ "zong-bei-bo-lao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/zong-bei-bo-lao-1600.webp",
+   "card": "zong-bei-bo-lao-900.webp",
+   "big": "zong-bei-bo-lao-1600.webp",
+   "w": 900,
+   "h": 675,
+   "credit": "LiCheng Shih",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%E6%A3%95%E8%83%8C%E4%BC%AF%E5%8B%9E_(25040252703)_crop.jpg",
+   "title": "棕背伯勞 (25040252703) crop.jpg"
+  },
+  "audio": {
+   "file": "zong-bei-bo-lao.mp3",
+   "dur": 16.1,
+   "kb": 127,
+   "credit": "Sharadapte",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Long-tailed_shrike_call_recorded_in_October_2010_at_Sangli.wav",
+   "title": "File:Long-tailed shrike call recorded in October 2010 at Sangli.wav"
+  }
+ },
+ "zao-juan": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/zao-juan-1600.webp",
+   "card": "zao-juan-900.webp",
+   "big": "zao-juan-1600.webp",
+   "w": 900,
+   "h": 1297,
+   "credit": "Challiyan",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Asian_koel.jpg",
+   "title": "Asian koel.jpg"
+  },
+  "audio": {
+   "file": "zao-juan.mp3",
+   "dur": 55.0,
+   "kb": 431,
+   "credit": "Manoj Karingamadathil",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Eudynamys_scolopaceus_-_Asian_Koel_XC476378.mp3",
+   "title": "File:Eudynamys scolopaceus - Asian Koel XC476378.mp3"
+  }
+ },
+ "he-chi-ya-juan": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/he-chi-ya-juan-1600.webp",
+   "card": "he-chi-ya-juan-900.webp",
+   "big": "he-chi-ya-juan-1600.webp",
+   "w": 800,
+   "h": 561,
+   "credit": "J.M.Garg",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Greater_Coucal_I_IMG_7775.jpg",
+   "title": "Greater Coucal I IMG 7775.jpg"
+  },
+  "audio": {
+   "file": "he-chi-ya-juan.mp3",
+   "dur": 34.2,
+   "kb": 267,
+   "credit": "Manoj Karingamadathil",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Greater_Coucal_(Centropus_sinensis)_from_Ezhimala_ML155333411.wav",
+   "title": "File:Greater Coucal (Centropus sinensis) from Ezhimala ML155333411.wav"
+  }
+ },
+ "cha-wei-tai-yang-niao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/cha-wei-tai-yang-niao-1600.webp",
+   "card": "cha-wei-tai-yang-niao-900.webp",
+   "big": "cha-wei-tai-yang-niao-1600.webp",
+   "w": 900,
+   "h": 675,
+   "credit": "Flickr user CharlesLam . Photo uploaded to commons by user ltshears",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fork-tailed_Sunbird.jpg",
+   "title": "Fork-tailed Sunbird.jpg"
+  },
+  "audio": {
+   "file": "cha-wei-tai-yang-niao.mp3",
+   "dur": 20.7,
+   "kb": 162,
+   "credit": "iNaturalist 用户 johnchau",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/195926613",
+   "title": "Aethopyga christinae（iNaturalist 野外录音）"
+  }
+ },
+ "chi-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/chi-lu-1600.webp",
+   "card": "chi-lu-900.webp",
+   "big": "chi-lu-1600.webp",
+   "w": 900,
+   "h": 1327,
+   "credit": "https://www.flickr.com/photos/uncle_1389/",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ardeola_bacchus_(19169872143).jpg",
+   "title": "Ardeola bacchus (19169872143).jpg"
+  },
+  "audio": {
+   "file": "chi-lu.mp3",
+   "dur": 6.7,
+   "kb": 52,
+   "credit": "iNaturalist 用户 lava_chen",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/403563163",
+   "title": "Ardeola bacchus（iNaturalist 野外录音）"
+  }
+ },
+ "bai-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/bai-lu-1600.webp",
+   "card": "bai-lu-900.webp",
+   "big": "bai-lu-1600.webp",
+   "w": 900,
+   "h": 596,
+   "credit": "El Golli Mohamed",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Aigrette_garzette_au_lac_sud_de_Tunis_(site_RAMSAR).jpg",
+   "title": "Aigrette garzette au lac sud de Tunis (site RAMSAR).jpg"
+  },
+  "audio": {
+   "file": "bai-lu.mp3",
+   "dur": 15.0,
+   "kb": 118,
+   "credit": "Joost van Bruggen",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Egretta_garzetta_-_Little_Egret_XC432219.mp3",
+   "title": "File:Egretta garzetta - Little Egret XC432219.mp3"
+  }
+ },
+ "da-bai-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/da-bai-lu-1600.webp",
+   "card": "da-bai-lu-900.webp",
+   "big": "da-bai-lu-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Bernard DUPONT from FRANCE",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Egret_(Ardea_alba)_(25562005404).jpg",
+   "title": "Great Egret (Ardea alba) (25562005404).jpg"
+  },
+  "audio": {
+   "file": "da-bai-lu.mp3",
+   "dur": 6.2,
+   "kb": 49,
+   "credit": "Jonathon Jongsma",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ardea_alba_-_Great_Egret_XC131650.ogg",
+   "title": "File:Ardea alba - Great Egret XC131650.ogg"
+  }
+ },
+ "cang-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/cang-lu-1600.webp",
+   "card": "cang-lu-900.webp",
+   "big": "cang-lu-1600.webp",
+   "w": 900,
+   "h": 675,
+   "credit": "Bengt Nyman from Vaxholm, Sweden",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ardea_cinerea_EM1A2714_(27349354381).jpg",
+   "title": "Ardea cinerea EM1A2714 (27349354381).jpg"
+  },
+  "audio": {
+   "file": "cang-lu.mp3",
+   "dur": 11.1,
+   "kb": 88,
+   "credit": "Joost van Bruggen",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ardea_cinerea_-_Grey_Heron_XC432231.mp3",
+   "title": "File:Ardea cinerea - Grey Heron XC432231.mp3"
+  }
+ },
+ "ye-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/ye-lu-1600.webp",
+   "card": "ye-lu-900.webp",
+   "big": "ye-lu-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Jac. Janssen",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_nycticorax,_Camargue_(33620984464).jpg",
+   "title": "Nycticorax nycticorax nycticorax, Camargue (33620984464).jpg"
+  },
+  "audio": {
+   "file": "ye-lu.mp3",
+   "dur": 54.1,
+   "kb": 423,
+   "credit": "Jan Cibulka",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_-_Black-crowned_Night_Heron_XC383999.mp3",
+   "title": "File:Nycticorax nycticorax - Black-crowned Night Heron XC383999.mp3"
+  }
+ },
+ "bai-xiong-ku-e-niao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/bai-xiong-ku-e-niao-1600.webp",
+   "card": "bai-xiong-ku-e-niao-900.webp",
+   "big": "bai-xiong-ku-e-niao-1600.webp",
+   "w": 800,
+   "h": 600,
+   "credit": "J.M.Garg",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:White_breasted_Waterhen_I4-Bhopal_IMG_0515.jpg",
+   "title": "White breasted Waterhen I4-Bhopal IMG 0515.jpg"
+  },
+  "audio": {
+   "file": "bai-xiong-ku-e-niao.mp3",
+   "dur": 16.2,
+   "kb": 127,
+   "credit": "L. Shyamal",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:AmaurornisPhoenicurusCall.ogg",
+   "title": "File:AmaurornisPhoenicurusCall.ogg"
+  }
+ },
+ "hei-shui-ji": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-shui-ji-1600.webp",
+   "card": "hei-shui-ji-900.webp",
+   "big": "hei-shui-ji-1600.webp",
+   "w": 900,
+   "h": 634,
+   "credit": "Alexis Lours",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
+   "title": "Common moorhen (Gallinula chloropus) France.jpg"
+  },
+  "audio": {
+   "file": "hei-shui-ji.mp3",
+   "dur": 38.5,
+   "kb": 301,
+   "credit": "iNaturalist 用户 matthewvosper",
+   "license": "CC BY",
+   "page": "https://www.inaturalist.org/observations/133001847",
+   "title": "Gallinula chloropus（iNaturalist 野外录音）"
+  }
+ },
+ "xiao-pi-ti": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/xiao-pi-ti-1600.webp",
+   "card": "xiao-pi-ti-900.webp",
+   "big": "xiao-pi-ti-1600.webp",
+   "w": 900,
+   "h": 627,
+   "credit": "",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zwergtaucher_060319_3.jpg",
+   "title": "Zwergtaucher 060319 3.jpg"
+  },
+  "audio": {
+   "file": "xiao-pi-ti.mp3",
+   "dur": 22.2,
+   "kb": 174,
+   "credit": "iNaturalist 用户 christoph_moning",
+   "license": "CC BY",
+   "page": "https://www.inaturalist.org/observations/84833089",
+   "title": "Tachybaptus ruficollis（iNaturalist 野外录音）"
+  }
+ },
+ "hei-lian-pi-lu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-lian-pi-lu-1600.webp",
+   "card": "hei-lian-pi-lu-900.webp",
+   "big": "hei-lian-pi-lu-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "spaceaero2",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Platalea_minor_okinawa.jpg",
+   "title": "Platalea minor okinawa.jpg"
+  },
+  "audio": {
+   "file": "hei-lian-pi-lu.mp3",
+   "dur": 4.2,
+   "kb": 34,
+   "credit": "iNaturalist 用户 cloudwindow",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/385453306",
+   "title": "Platalea minor（iNaturalist 野外录音）"
+  }
+ },
+ "hei-chi-chang-jiao-yu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-chi-chang-jiao-yu-1600.webp",
+   "card": "hei-chi-chang-jiao-yu-900.webp",
+   "big": "hei-chi-chang-jiao-yu-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "JJ Harrison (https://www.jjharrison.com.au/)",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Himantopus_himantopus_-_Pak_Thale.jpg",
+   "title": "Himantopus himantopus - Pak Thale.jpg"
+  },
+  "audio": {
+   "file": "hei-chi-chang-jiao-yu.mp3",
+   "dur": 55.0,
+   "kb": 431,
+   "credit": "Joost van Bruggen",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Himantopus_himantopus_-_Black-winged_Stilt_XC431789.mp3",
+   "title": "File:Himantopus himantopus - Black-winged Stilt XC431789.mp3"
+  }
+ },
+ "huan-jing-heng": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/huan-jing-heng-1600.webp",
+   "card": "huan-jing-heng-900.webp",
+   "big": "huan-jing-heng-1600.webp",
+   "w": 900,
+   "h": 544,
+   "credit": "peterichman",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kentish_Plover_(_Charadrius_alexandrinus_)_..._Southern_Spain_(53416088471).jpg",
+   "title": "Kentish Plover ( Charadrius alexandrinus ) ... Southern Spain (53416088471).jpg"
+  },
+  "audio": {
+   "file": "huan-jing-heng.mp3",
+   "dur": 25.0,
+   "kb": 196,
+   "credit": "iNaturalist 用户 doggy0406",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/52247311",
+   "title": "Charadrius alexandrinus（iNaturalist 野外录音）"
+  }
+ },
+ "qing-jiao-yu": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/qing-jiao-yu-1600.webp",
+   "card": "qing-jiao-yu-900.webp",
+   "big": "qing-jiao-yu-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Greenshank_(Tringa_nebularia).jpg",
+   "title": "Greenshank (Tringa nebularia).jpg"
+  },
+  "audio": {
+   "file": "qing-jiao-yu.mp3",
+   "dur": 55.0,
+   "kb": 430,
+   "credit": "Pascal Christe",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tringa_nebularia_-_Common_Greenshank_XC494033.mp3",
+   "title": "File:Tringa nebularia - Common Greenshank XC494033.mp3"
+  }
+ },
+ "hei-zui-ou": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-zui-ou-1600.webp",
+   "card": "hei-zui-ou-900.webp",
+   "big": "hei-zui-ou-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "lonelyshrimp",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Saunders%27s_Gull,_Shuangtai_Estuary,_Panjin,_Liaoning_1.jpg",
+   "title": "Saunders's Gull, Shuangtai Estuary, Panjin, Liaoning 1.jpg"
+  },
+  "audio": {
+   "file": "hei-zui-ou.mp3",
+   "dur": 8.6,
+   "kb": 68,
+   "credit": "iNaturalist 用户 hamsambly",
+   "license": "CC BY-NC",
+   "page": "https://www.inaturalist.org/observations/331292538",
+   "title": "Saundersilarus saundersi（iNaturalist 野外录音）"
+  }
+ },
+ "hong-zui-ou": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hong-zui-ou-1600.webp",
+   "card": "hong-zui-ou-900.webp",
+   "big": "hong-zui-ou-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Andreas Trepte",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Lachm%C3%B6we_Chroicocephalus_ridibundus.jpg",
+   "title": "Lachmöwe Chroicocephalus ridibundus.jpg"
+  },
+  "audio": {
+   "file": "hong-zui-ou.mp3",
+   "dur": 20.4,
+   "kb": 160,
+   "credit": "Ryan Hodnett",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black-headed_Gull_(Chroicocephalus_ridibundus)_-_B%C3%A6rum,_Norway_2021-04-03.mp3",
+   "title": "File:Black-headed Gull (Chroicocephalus ridibundus) - Bærum, Norway 2021-04-03.mp3"
+  }
+ },
+ "hei-yuan": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/hei-yuan-1600.webp",
+   "card": "hei-yuan-900.webp",
+   "big": "hei-yuan-1600.webp",
+   "w": 800,
+   "h": 600,
+   "credit": "Thomas Kraft (ThKraft)",
+   "license": "CC BY-SA 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_front(ThKraft).jpg",
+   "title": "Milvus migrans front(ThKraft).jpg"
+  },
+  "audio": {
+   "file": "hei-yuan.mp3",
+   "dur": 28.4,
+   "kb": 223,
+   "credit": "Anne Ndung'u",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Milvus_migrans_-_Black_Kite_XC365863.mp3",
+   "title": "File:Milvus migrans - Black Kite XC365863.mp3"
+  }
+ },
+ "e": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/e-1600.webp",
+   "card": "e-900.webp",
+   "big": "e-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "El Golli Mohamed",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Balbuzard_pecheur_Lac_de_Tunis.jpg",
+   "title": "Balbuzard pecheur Lac de Tunis.jpg"
+  },
+  "audio": {
+   "file": "e.mp3",
+   "dur": 45.4,
+   "kb": 355,
+   "credit": "",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Osprey_(Pandion_haliaetus)_(W1CDR0001434_BD8).ogg",
+   "title": "File:Osprey (Pandion haliaetus) (W1CDR0001434 BD8).ogg"
+  }
+ },
+ "pu-tong-kuang": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/pu-tong-kuang-1600.webp",
+   "card": "pu-tong-kuang-900.webp",
+   "big": "pu-tong-kuang-1600.webp",
+   "w": 900,
+   "h": 900,
+   "credit": "NOZO",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Buteo_japonicus1.jpg",
+   "title": "Buteo japonicus1.jpg"
+  },
+  "audio": {
+   "file": "pu-tong-kuang.mp3",
+   "dur": 38.4,
+   "kb": 302,
+   "credit": "iNaturalist 用户 housecrows",
+   "license": "CC BY-NC-SA",
+   "page": "https://www.inaturalist.org/observations/19221453",
+   "title": "Buteo japonicus（iNaturalist 野外录音）"
+  }
+ },
+ "pu-tong-cui-niao": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/pu-tong-cui-niao-1600.webp",
+   "card": "pu-tong-cui-niao-900.webp",
+   "big": "pu-tong-cui-niao-1600.webp",
+   "w": 900,
+   "h": 675,
+   "credit": "Artemy Voikhansky",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Alcedo_Atthis.jpg",
+   "title": "Alcedo Atthis.jpg"
+  },
+  "audio": {
+   "file": "pu-tong-cui-niao.mp3",
+   "dur": 17.6,
+   "kb": 139,
+   "credit": "Marie-Lan Taÿ Pamart",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-_Common_Kingfisher_XC476785.mp3",
+   "title": "File:Alcedo atthis - Common Kingfisher XC476785.mp3"
+  }
+ },
+ "bai-xiong-fei-cui": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/bai-xiong-fei-cui-1600.webp",
+   "card": "bai-xiong-fei-cui-900.webp",
+   "big": "bai-xiong-fei-cui-1600.webp",
+   "w": 900,
+   "h": 642,
+   "credit": "Zeynel Cebeci",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Halcyon_smyrnensis_-_White-throated_kingfisher_02.jpg",
+   "title": "Halcyon smyrnensis - White-throated kingfisher 02.jpg"
+  },
+  "audio": {
+   "file": "bai-xiong-fei-cui.mp3",
+   "dur": 46.6,
+   "kb": 365,
+   "credit": "Shino jacob koottanad",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:White_throated_kingfisher_(Halcyon_smyrnensis)_sound.wav",
+   "title": "File:White throated kingfisher (Halcyon smyrnensis) sound.wav"
+  }
+ },
+ "ban-yu-gou": {
+  "img": {
+   "src": "/Users/apple/WorkBuddy/2026-11-17-09-47-10/assets/img/ban-yu-gou-1600.webp",
+   "card": "ban-yu-gou-900.webp",
+   "big": "ban-yu-gou-1600.webp",
+   "w": 900,
+   "h": 600,
+   "credit": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pied_kingfisher_(Ceryle_rudis_rudis)_eating_fish.jpg",
+   "title": "Pied kingfisher (Ceryle rudis rudis) eating fish.jpg"
+  },
+  "audio": {
+   "file": "ban-yu-gou.mp3",
+   "dur": 31.5,
+   "kb": 247,
+   "credit": "Anne Ndung'u",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ceryle_rudis_-_Pied_Kingfisher_XC513883.mp3",
+   "title": "File:Ceryle rudis - Pied Kingfisher XC513883.mp3"
+  }
+ }
+}

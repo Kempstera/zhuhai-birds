@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(
+  "珠海观鸟图鉴 · 33 种华南常见鸟类图文与鸣声指南",
+  "面向珠三角与珠海的常见鸟类观察手册：33 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。",
+  (root ~ 'assets/img/' ~ hero.img.card) if hero.img else '',
+  root) }}
+{% endblock %}
+
+{% block content %}
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Field Guide · Zhuhai &amp; Pearl River Delta</p>
+      <h1>珠海<br>观鸟图鉴<span class="thin">BIRDS OF ZHUHAI</span></h1>
+      <p class="lede">从淇澳岛的红树林到香山湖的荷塘，<b>珠海处在东亚—澳大利西亚候鸟迁飞区的必经之路上</b>。这份手册收录了 33 种在本地最容易遇见的鸟——它们的样子、习性，以及声音。</p>
+      <div class="hero-actions">
+        <a class="btn" href="#species">浏览物种名录 {{ m.icon('arrow') }}</a>
+        <a class="btn ghost" href="{{ root }}bird/{{ hero.slug }}.html">{{ m.icon('headphone') }} 先听一段鸟鸣</a>
+      </div>
+      <ul class="hero-stats">
+        <li><span class="n">{{ species|length }}</span><span class="t">收录物种</span></li>
+        <li><span class="n">5</span><span class="t">生态类群</span></li>
+        <li><span class="n">6</span><span class="t">观鸟地点</span></li>
+        <li><span class="n">12</span><span class="t">个月可看</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      {% if hero.img %}
+      <figure class="hero-figure">
+        <img src="{{ root }}assets/img/{{ hero.img.big }}" alt="{{ hero.zh }} {{ hero.sci }}" fetchpriority="high" width="{{ hero.img.w }}" height="{{ hero.img.h }}">
+      </figure>
+      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} · {{ hero.sci }}</div>
+      <p class="hero-caption">图片 — {{ hero.img.credit or 'Wikimedia Commons' }} / {{ hero.img.license or '见来源' }}</p>
+      {% else %}
+      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} · {{ hero.sci }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ 类群 ============ -->
+<section class="groups" id="groups">
+  <div class="wrap">
+    <div class="index-head reveal">
+      <div>
+        <p class="sec-label">Ecological Groups</p>
+        <h2 class="sec-title">先认<em>类群</em>，再认鸟</h2>
+      </div>
+      <p style="max-width:30em;color:var(--ink-3);font-size:14.5px;line-height:1.9;margin:0">
+        野外观鸟的第一步不是记住每一种鸟，而是判断它属于哪一类。五个类群，对应五种完全不同的生活方式。
+      </p>
+    </div>
+
+    <div class="group-grid">
+      {% for g in GROUPS %}
+      <a class="group-card reveal" href="#species" data-jump="{{ g.id }}">
+        {{ m.icon(g.icon) }}
+        <h3>{{ g.zh }}</h3>
+        <p class="en">{{ g.en }}</p>
+        <div class="gtags">{% for t in g.tags %}<span>{{ t }}</span>{% endfor %}</div>
+        <p class="ct"><b>{{ g.count }}</b> 种</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ 名录 ============ -->
+<section class="index" id="species">
+  <div class="wrap">
+    <div class="index-head reveal">
+      <div>
+        <p class="sec-label">Species Index</p>
+        <h2 class="sec-title">物种<em>名录</em></h2>
+        <p>按生态类群排列，共 {{ species|length }} 种。点击任意一种查看辨识要点、习性、鸣声与在珠海的具体观察地点。</p>
+      </div>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all">全部 <span class="c">{{ species|length }}</span></button>
+      {% for g in GROUPS %}
+      <button class="chip" data-f="{{ g.id }}">{{ g.short }} <span class="c">{{ g.count }}</span></button>
+      {% endfor %}
+      <button class="chip" data-f="protected">受保护</button>
+      <label class="search">
+        {{ m.icon('search') }}
+        <input type="search" id="q" placeholder="搜索名称 / 学名…" aria-label="搜索物种">
+      </label>
+    </div>
+
+    <ul class="bird-grid" id="grid">
+      {% for s in species %}
+      <li>
+        <a class="bird-card reveal" href="{{ root }}bird/{{ s.slug }}.html"
+           data-group="{{ s.group }}"
+           data-protect="{{ s.protect }}"
+           data-search="{{ s.zh }} {{ s.sci }} {{ s.en }} {{ s.family }} {{ s.habitat|join(' ') }}">
+          <div class="bc-media">
+            {% if s.img %}
+            <img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}（{{ s.sci }}）" loading="lazy" width="{{ s.img.w }}" height="{{ s.img.h }}">
+            {% endif %}
+            <span class="bc-no">NO. {{ s.no }}</span>
+            {% if '一级' in s.protect %}<span class="bc-badge p1">国家一级</span>
+            {% elif '二级' in s.protect %}<span class="bc-badge p2">国家二级</span>
+            {% endif %}
+            {% if s.audio %}<span class="bc-audio" title="有鸣声录音">{{ m.icon('play') }}</span>{% endif %}
+          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3>{{ s.zh }}</h3>
+              <span class="sci">{{ s.sci }}</span>
+            </div>
+            <div class="bc-meta">
+              <span>{{ s.residency }}</span><span class="sep"></span>
+              <span>{{ s.common }}</span><span class="sep"></span>
+              <span>{{ s.len }}</span>
+            </div>
+            <div class="bc-tags">
+              {% for h in s.habitat[:2] %}<span>{{ h }}</span>{% endfor %}
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="empty" id="empty">没有匹配的物种，换个关键词试试。</p>
+  </div>
+</section>
+
+<!-- ============ 观鸟点 ============ -->
+<section class="spots" id="spots">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="sec-label">Where to Watch</p>
+        <h2 class="sec-title">珠海，去哪里<em>看鸟</em></h2>
+      </div>
+      <p>珠海的海岸线超过 600 公里，滩涂、红树林、水田与城市公园在很小的半径内并存——这意味着一个周末就能横跨三种完全不同的鸟类群落。以下六处是最容易上手的地点。</p>
+    </div>
+
+    <div class="spot-grid">
+      {% for s in SPOTS %}
+      <article class="spot reveal">
+        <span class="no">{{ s.no }} / {{ s.area }}</span>
+        <h4>{{ s.name }}</h4>
+        <p>{{ s.desc }}</p>
+        <div class="birds">{% for b in s.birds %}<span>{{ b }}</span>{% endfor %}</div>
+        <p style="margin-top:12px;font-size:11.5px;color:var(--clay);letter-spacing:.06em">{{ s.season }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ 守则 ============ -->
+<section class="ethics">
+  <div class="wrap">
+    <p class="sec-label">Field Ethics</p>
+    <h2 class="reveal">看鸟的人，<br>先学会不打扰</h2>
+    <div class="ethics-grid">
+      {% for no, h, p in ETHICS %}
+      <div class="eth reveal">
+        <h4><i>{{ no }}</i>{{ h }}</h4>
+        <p>{{ p }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
