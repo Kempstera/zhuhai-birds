@@ -64,7 +64,8 @@
                     data-cap="{{ sp.zh }} {{ sp.sci }} · {% if g.kind == 'plate' %}科学绘图{% else %}野外摄影{% endif %} · {{ g.credit or 'Wikimedia Commons' }}{% if g.license %} / {{ g.license }}{% endif %}"
                     aria-label="放大查看：{{ sp.zh }}{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}">
               <img src="{{ root }}assets/img/{{ g.card }}" alt="{{ sp.zh }}（{{ sp.sci }}）{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}"
-                   loading="lazy" width="{{ g.w }}" height="{{ g.h }}">
+                   loading="lazy" width="{{ g.w }}" height="{{ g.h }}"
+                   style="display:block;width:100%;height:auto">
               <span class="g-zoom">{{ m.icon('zoom') }} 放大</span>
             </button>
             <figcaption>

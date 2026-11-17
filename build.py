@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """生成珠海观鸟图鉴静态站点。"""
-import json, os, shutil, datetime
+import json, os, shutil, datetime, hashlib
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
+
+
+def asset_ver(name):
+    """静态资源的短哈希，用来打破 CDN / 浏览器缓存。
+
+    Cloudflare Pages 对 *.css / *.js 设的是 max-age=14400，文件名不带版本号时，
+    部署新版本后浏览器最多还会用 4 小时的旧样式表 —— 新 HTML + 旧 CSS 会让
+    依赖样式定尺寸的图片被 width/height 属性撑变形。加 ?v= 哈希可以彻底避免。
+    """
+    p = os.path.join(ROOT, "static", name)
+    if not os.path.exists(p):
+        return "0"
+    with open(p, "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
 
 GROUPS = [
     {"id": "songbird", "zh": "林鸟与城市常客", "en": "Songbirds", "short": "林鸟",
@@ -125,7 +139,8 @@ def main():
         autoescape=select_autoescape(["html"]),
         trim_blocks=True, lstrip_blocks=True,
     )
-    env.globals.update(GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, YEAR=YEAR)
+    env.globals.update(GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, YEAR=YEAR,
+                       CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"))
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
