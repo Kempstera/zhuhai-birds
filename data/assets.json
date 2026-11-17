@@ -1212,12 +1212,12 @@
   },
   "audio": {
    "file": "hei-lian-pi-lu.mp3",
-   "dur": 4.2,
-   "kb": 34,
-   "credit": "iNaturalist 用户 cloudwindow",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/385453306",
-   "title": "Platalea minor（iNaturalist 野外录音）"
+   "dur": 10.0,
+   "kb": 80,
+   "credit": "John Wright（Xeno-canto）",
+   "license": "CC BY-NC-SA 3.0",
+   "page": "https://xeno-canto.org/134758",
+   "title": "Platalea minor（Xeno-canto XC134758）"
   },
   "gallery": [
    {
