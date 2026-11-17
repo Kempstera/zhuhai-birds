@@ -73,8 +73,7 @@ def load():
     species = json.load(open(os.path.join(ROOT, "data", "species.json")))
     assets_path = os.path.join(ROOT, "data", "assets.json")
     assets = json.load(open(assets_path)) if os.path.exists(assets_path) else {}
-    for i, sp in enumerate(species, 1):
-        sp["no"] = "%03d" % i
+    for sp in species:
         a = assets.get(sp["slug"], {})
         sp["img"] = a.get("img")
         sp["audio"] = a.get("audio")
@@ -89,10 +88,23 @@ def pclass(p):
     return "p3"
 
 
+GROUP_ORDER = {"songbird": 0, "water": 1, "shore": 2, "raptor": 3, "kingfisher": 4}
+RARITY_LABEL = {1: "极常见", 2: "常见", 3: "不常见", 4: "局部常见", 5: "罕见"}
+
+
 def main():
     species, assets = load()
     slugs = {s["slug"] for s in species}
     by_slug = {s["slug"]: s for s in species}
+
+    # 按遇见率排序：极常见 → 罕见；同等级内按类群、名称稳定排列
+    species.sort(key=lambda s: (s.get("rank", 2), GROUP_ORDER.get(s["group"], 9), s["zh"]))
+    for i, sp in enumerate(species, 1):
+        sp["no"] = "%03d" % i
+        sp["rlabel"] = RARITY_LABEL.get(sp.get("rank", 2), "常见")
+
+    from collections import Counter
+    rank_counts = Counter(s.get("rank", 2) for s in species)
 
     # 清理无效的相似种引用
     for sp in species:
@@ -134,13 +146,15 @@ def main():
     hero = next((s for s in species if s["slug"] == "bai-lu"), species[0])
     hero2 = next((s for s in species if s["slug"] == "hei-lian-pi-lu" and s["img"]), None)
     html = env.get_template("index.html").render(
-        species=species, hero=hero, hero2=hero2, nav="home", root="")
+        species=species, hero=hero, hero2=hero2, nav="home", root="",
+        rank_counts=rank_counts, total=len(species))
     open(os.path.join(DIST, "index.html"), "w").write(html)
 
     # 详情页
     for i, sp in enumerate(species):
         prev = species[(i - 1) % len(species)]
         nxt = species[(i + 1) % len(species)]
+        sp["rank"] = sp.get("rank", 2)
         sims = [by_slug[x] for x in sp["similar"]]
         html = env.get_template("detail.html").render(
             sp=sp, prev=prev, next=nxt, sims=sims, nav="species", root="../",
@@ -149,7 +163,8 @@ def main():
 
     # 指南页
     html = env.get_template("guide.html").render(
-        species=species, nav="guide", months=MONTH_ACT, root="")
+        species=species, nav="guide", months=MONTH_ACT, root="",
+        rank_counts=rank_counts, total=len(species))
     open(os.path.join(DIST, "guide.html"), "w").write(html)
 
     # 404

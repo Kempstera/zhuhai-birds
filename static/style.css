@@ -327,6 +327,41 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 }
 .bc-meta .sep{width:3px;height:3px;border-radius:50%;background:var(--ink-4);opacity:.6}
 .bc-tags{margin-top:13px;display:flex;gap:6px;flex-wrap:wrap}
+/* ---------------- 遇见率标签 ---------------- */
+.rarity{
+  display:inline-block;font-size:10.5px;line-height:1;letter-spacing:.06em;
+  padding:4px 7px;border-radius:3px;font-weight:600;white-space:nowrap;
+}
+.rarity.r1{background:var(--forest);color:var(--paper-2)}
+.rarity.r2{background:rgba(27,53,39,.13);color:var(--forest)}
+.rarity.r3{background:var(--paper-3);color:var(--ink-3);font-weight:500}
+.rarity.r4{background:rgba(162,78,36,.13);color:var(--clay)}
+.rarity.r5{background:var(--clay);color:#fff}
+
+.rarity-dh{
+  display:inline-block;font-size:11.5px;line-height:1;letter-spacing:.06em;
+  padding:5px 9px;border-radius:3px;font-weight:600;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);
+  color:rgba(255,255,255,.96);backdrop-filter:blur(6px);
+}
+.rarity-dh.r1{background:rgba(245,241,231,.92);color:var(--forest);border-color:transparent}
+.rarity-dh.r5{background:var(--clay);border-color:transparent;color:#fff}
+
+.rarity-legend{
+  display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;
+  margin:22px 0 4px;font-size:11.5px;color:var(--ink-3);letter-spacing:.05em;
+}
+.rarity-legend span{display:inline-flex;align-items:center;gap:7px}
+.rarity-legend i{width:12px;height:8px;border-radius:2px;display:block}
+.rarity-legend i.r1{background:var(--forest)}
+.rarity-legend i.r2{background:rgba(27,53,39,.30)}
+.rarity-legend i.r3{background:var(--paper-3);box-shadow:inset 0 0 0 1px var(--line)}
+.rarity-legend i.r4{background:rgba(162,78,36,.34)}
+.rarity-legend i.r5{background:var(--clay)}
+.rarity-legend b{font-family:var(--latin);font-weight:400;color:var(--ink-4);font-size:11px}
+
+@media(max-width:560px){.rarity-legend{gap:6px 14px;font-size:11px}}
+
 .bc-tags span{
   font-size:11px;letter-spacing:.05em;color:var(--ink-2);
   background:var(--paper-3);padding:3px 9px;border-radius:4px;

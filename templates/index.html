@@ -3,8 +3,8 @@
 
 {% block head %}
 {{ m.head(
-  "珠海观鸟图鉴 · 33 种华南常见鸟类图文与鸣声指南",
-  "面向珠三角与珠海的常见鸟类观察手册：33 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。",
+  "珠海观鸟图鉴 · " ~ total ~ " 种华南常见鸟类图文与鸣声指南",
+  "面向珠三角与珠海的常见鸟类观察手册：" ~ total ~ " 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。",
   (root ~ 'assets/img/' ~ hero.img.card) if hero.img else '',
   root) }}
 {% endblock %}
@@ -17,13 +17,13 @@
     <div class="hero-text">
       <p class="eyebrow">Field Guide · Zhuhai &amp; Pearl River Delta</p>
       <h1>珠海<br>观鸟图鉴<span class="thin">BIRDS OF ZHUHAI</span></h1>
-      <p class="lede">从淇澳岛的红树林到香山湖的荷塘，<b>珠海处在东亚—澳大利西亚候鸟迁飞区的必经之路上</b>。这份手册收录了 33 种在本地最容易遇见的鸟——它们的样子、习性，以及声音。</p>
+      <p class="lede">从淇澳岛的红树林到香山湖的荷塘，<b>珠海处在东亚—澳大利西亚候鸟迁飞区的必经之路上</b>。这份手册收录了 {{ total }} 种在本地有机会遇见的鸟——它们的样子、习性，以及声音。</p>
       <div class="hero-actions">
         <a class="btn" href="#species">浏览物种名录 {{ m.icon('arrow') }}</a>
         <a class="btn ghost" href="{{ root }}bird/{{ hero.slug }}.html">{{ m.icon('headphone') }} 先听一段鸟鸣</a>
       </div>
       <ul class="hero-stats">
-        <li><span class="n">{{ species|length }}</span><span class="t">收录物种</span></li>
+        <li><span class="n">{{ total }}</span><span class="t">收录物种</span></li>
         <li><span class="n">5</span><span class="t">生态类群</span></li>
         <li><span class="n">6</span><span class="t">观鸟地点</span></li>
         <li><span class="n">12</span><span class="t">个月可看</span></li>
@@ -78,12 +78,12 @@
       <div>
         <p class="sec-label">Species Index</p>
         <h2 class="sec-title">物种<em>名录</em></h2>
-        <p>按生态类群排列，共 {{ species|length }} 种。点击任意一种查看辨识要点、习性、鸣声与在珠海的具体观察地点。</p>
+        <p>按<strong style="color:var(--clay);font-weight:600">遇见概率</strong>从高到低排列，共 {{ total }} 种——从「几乎一定看得到」的极常见种，到「需要运气」的罕见种。点击任意一种查看辨识要点、习性、鸣声与在珠海的具体观察地点。</p>
       </div>
     </div>
 
     <div class="filters" id="filters">
-      <button class="chip on" data-f="all">全部 <span class="c">{{ species|length }}</span></button>
+      <button class="chip on" data-f="all">全部 <span class="c">{{ total }}</span></button>
       {% for g in GROUPS %}
       <button class="chip" data-f="{{ g.id }}">{{ g.short }} <span class="c">{{ g.count }}</span></button>
       {% endfor %}
@@ -92,6 +92,14 @@
         {{ m.icon('search') }}
         <input type="search" id="q" placeholder="搜索名称 / 学名…" aria-label="搜索物种">
       </label>
+    </div>
+
+    <div class="rarity-legend">
+      <span><i class="r1"></i>极常见 <b>{{ rank_counts.get(1,0) }}</b></span>
+      <span><i class="r2"></i>常见 <b>{{ rank_counts.get(2,0) }}</b></span>
+      <span><i class="r3"></i>不常见 <b>{{ rank_counts.get(3,0) }}</b></span>
+      <span><i class="r4"></i>局部常见 <b>{{ rank_counts.get(4,0) }}</b></span>
+      <span><i class="r5"></i>罕见 <b>{{ rank_counts.get(5,0) }}</b></span>
     </div>
 
     <ul class="bird-grid" id="grid">
@@ -117,8 +125,9 @@
               <span class="sci">{{ s.sci }}</span>
             </div>
             <div class="bc-meta">
+              <span class="rarity r{{ s.rank }}">{{ s.rlabel }}</span>
+              <span class="sep"></span>
               <span>{{ s.residency }}</span><span class="sep"></span>
-              <span>{{ s.common }}</span><span class="sep"></span>
               <span>{{ s.len }}</span>
             </div>
             <div class="bc-tags">

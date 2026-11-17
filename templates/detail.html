@@ -27,7 +27,7 @@
       </div>
       <div class="dh-tags">
         <span class="hl">{{ sp.residency }}</span>
-        <span>{{ sp.common }}</span>
+        <span class="rarity-dh r{{ sp.rank }}">{{ sp.rlabel }}</span>
         <span>{{ sp.len }}</span>
         {% if '一级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
         {% elif '二级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
