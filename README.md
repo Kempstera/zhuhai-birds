@@ -5,6 +5,12 @@
 
 纯静态站点，无框架、无外部字体依赖，构建产物可直接托管。
 
+## 线上地址
+
+- 生产环境：https://birds.signupeverywhere.cc
+- Pages 默认域名：https://zhuhai-birds.pages.dev
+- 源码仓库：https://github.com/Kempstera/zhuhai-birds
+
 ---
 
 ## 站点结构

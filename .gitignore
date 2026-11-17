@@ -7,3 +7,6 @@ venv/
 # 临时采集文件
 /_tmp/
 /var/tmp/
+
+# WorkBuddy 项目数据
+.workbuddy/
