@@ -46,6 +46,41 @@
       <p class="lede-quote">{{ sp.tagline }}</p>
       <p style="color:var(--ink-2);font-size:16px;line-height:1.95;margin:22px 0 0">{{ sp.summary }}</p>
 
+      {% if sp.gallery %}
+      <section class="detail-section" id="gallery">
+        <h2>图集 <span class="en">Plates &amp; Photographs</span></h2>
+        <p class="gallery-note">
+          {% if sp.gallery | selectattr('kind','equalto','plate') | list %}
+          一张科学绘图（博物画）用于对照形态与色块，两张野外摄影记录它在真实光线里的样子。点击任意一张可放大。
+          {% else %}
+          点击任意一张可放大。
+          {% endif %}
+        </p>
+        <div class="gallery">
+          {% for g in sp.gallery %}
+          <figure class="g-item g-{{ g.kind }}">
+            <button class="g-open" type="button"
+                    data-big="{{ root }}assets/img/{{ g.big }}"
+                    data-cap="{{ sp.zh }} {{ sp.sci }} · {% if g.kind == 'plate' %}科学绘图{% else %}野外摄影{% endif %} · {{ g.credit or 'Wikimedia Commons' }}{% if g.license %} / {{ g.license }}{% endif %}"
+                    aria-label="放大查看：{{ sp.zh }}{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}">
+              <img src="{{ root }}assets/img/{{ g.card }}" alt="{{ sp.zh }}（{{ sp.sci }}）{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}"
+                   loading="lazy" width="{{ g.w }}" height="{{ g.h }}">
+              <span class="g-zoom">{{ m.icon('zoom') }} 放大</span>
+            </button>
+            <figcaption>
+              <span class="g-kind">{{ '科学绘图 · Illustration' if g.kind == 'plate' else '野外摄影 · Photograph' }}</span>
+              {% if g.note %}<span class="g-note">{{ g.note }}</span>{% endif %}
+              <span class="g-credit">
+                <span class="g-by">{{ g.credit or 'Wikimedia Commons' }}{% if g.license %} · {{ g.license }}{% endif %}</span>
+                {% if g.page %}<a class="g-src" href="{{ g.page }}" target="_blank" rel="noopener">原始页面 ↗</a>{% endif %}
+              </span>
+            </figcaption>
+          </figure>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
       <section class="detail-section">
         <h2>辨识特征 <span class="en">Identification</span></h2>
         <ul class="feature-list">
@@ -164,6 +199,14 @@
     </aside>
 
   </div>
+</div>
+
+<div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-label="图片放大">
+  <button class="lb-close" type="button" aria-label="关闭">{{ m.icon('close') }}</button>
+  <figure class="lb-fig">
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
 </div>
 
 {% endblock %}
