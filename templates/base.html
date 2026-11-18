@@ -59,11 +59,15 @@
     </div>
     <div class="foot-bottom">
       <span>{{ T.foot.copyright|format(YEAR) }}</span>
-      <span>{{ T.foot.bottom }}</span>
+      <span class="fb-right">
+        <span>{{ T.foot.bottom }}</span>
+        <a class="foot-admin" href="/admin/" rel="nofollow" title="{{ T.foot.admin }}">{{ T.foot.admin }}</a>
+      </span>
     </div>
   </div>
 </footer>
 
 <script src="{{ root }}static/app.js?v={{ JSV }}" defer></script>
+<script src="{{ root }}static/beacon.js?v={{ BV }}" defer></script>
 </body>
 </html>

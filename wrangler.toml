@@ -1,0 +1,9 @@
+name = "zhuhai-birds"
+compatibility_date = "2026-05-01"
+pages_build_output_dir = "dist"
+
+# 访问统计用的 D1 库（只存聚合所需的字段，不存原始 IP）
+[[d1_databases]]
+binding = "DB"
+database_name = "zhuhai-birds-stats"
+database_id = "157e8886-b88f-47ad-9d05-03daea9b1df8"

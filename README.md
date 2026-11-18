@@ -23,6 +23,7 @@ index.html          首页：Hero、生态类群、物种名录（可筛选/搜�
 bird/<slug>.html    65 个物种详情页
 guide.html          观鸟指南：为什么是珠海、四季日历、装备、如何听鸟、记录与分享
 404.html            自定义错误页
+admin/index.html    站长后台（访问统计，不参与导航与 sitemap）
 en/                 英文版，目录结构与上面完全镜像
 robots.txt          搜索引擎规则
 sitemap.xml         站点地图（中英成对 + xhtml:link 互指）
@@ -31,6 +32,8 @@ sitemap.xml         站点地图（中英成对 + xhtml:link 互指）
 ## 目录说明
 
 ```
+functions/                 Cloudflare Pages Functions（采集与统计接口）
+wrangler.toml              Pages 项目配置 + D1 绑定
 data/species.json          物种内容（中文名、学名、特征、习性、鸣声描述、观察点等）
 data/species_en.json       每个物种的英文正文（tagline / summary / features / behavior / voice / tip）
 data/i18n/ui.json          界面文案（导航、按钮、小标题、页脚…），zh / en 两份
@@ -40,7 +43,7 @@ data/gallery_override.json 人工挑选清单（修正自动检索结果，指�
 data/plate_exclude.json    图版黑名单（海报、地图、报纸版面等不适合入册的扫描件）
 scripts/                   素材采集与整理脚本（见下表）
 templates/                 Jinja2 页面模板
-static/                    样式与脚本（style.css / app.js）
+static/                    样式与脚本（style.css / app.js / beacon.js / admin.js）
 assets/img/                鸟类图片 webp，每张两档尺寸（1600px / 900px）
 assets/audio/              鸟鸣录音 mp3（单声道 32kHz，约 55 秒内）
 dist/                      构建产物（部署这个目录）
@@ -137,6 +140,39 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
 | `probe_photos.py` | 抓候选照片并渲染成对照表，供人工挑选 |
 | `probe_audio.py` / `patch_audio.py` / `fix_audio.py` | 录音补齐与修补 |
 
+## 站长后台与访问统计
+
+站内自建，不依赖第三方统计服务：**没有 cookie、不存 IP、不接追踪脚本**。
+
+- 入口：<https://birds.signupeverywhere.cc/admin/>（页脚右下角那个很淡的「统计」就是它）
+- 口令在 Cloudflare D1 的 `cfg` 表里（`admin_token`），页面本身不含任何口令，只做表单
+- 每次浏览由 `static/beacon.js` 向 `/api/hit` 发一条匿名信标
+
+```
+functions/api/hit.js     收信标 → 写一行记录（爬虫/脚本 UA 直接丢，DNT 不发）
+functions/api/stats.js   读统计，需要 Bearer 口令，口令不对一律 401
+functions/_lib.js        建表语句与共用小工具（以 _ 开头，不会被注册成路由）
+```
+
+数据在 D1 表 `hit`（`ts / d / h / path / ref / country / lang / dev / br / vid`），
+`d` 与 `h` 是**北京时间**的日期与小时，聚合查询直接按 `d` 分组。
+
+- 「独立访客」= `sha256(IP + UA + 盐 + 日期)` 取前 16 位：当日唯一、跨日不可关联、不可逆推
+- 国家来自 `CF-IPCountry`，只到国家一级
+- 站长本人登录后台后，自己的浏览不再计入（`beacon.js` 检测本机口令）
+- 两年以上的记录在写入时按 2% 概率顺手清掉
+
+### 改口令
+
+```bash
+NEW=$(python3 -c "import secrets;print('wren-'+secrets.token_urlsafe(12).replace('_','')[:14])")
+node ~/.npm/_npx/*/node_modules/wrangler/bin/wrangler.js d1 execute zhuhai-birds-stats \
+  --remote --command "INSERT INTO cfg(k,v) VALUES('admin_token','$NEW') \
+  ON CONFLICT(k) DO UPDATE SET v=excluded.v"
+```
+
+改完在后台点「退出」再重新进入。注意：口令只存在 D1 里，**不要写进仓库**。
+
 ## 本地构建与预览
 
 ```bash
@@ -164,6 +200,13 @@ python3 -m http.server 8877 --directory dist
 ```bash
 npx wrangler pages deploy dist --project-name zhuhai-birds
 ```
+
+**必须在仓库根目录执行**：命令会顺带打包根目录下的 `functions/` 与 `wrangler.toml`
+里的 D1 绑定；换到别的目录跑，静态页面照样能传上去，但 `/api/hit` 和 `/api/stats`
+会变成 404，统计就静默失效了（页面本身不受影响）。部署输出里出现
+`Uploading Functions bundle` 才算带上了函数。
+
+方式一的 Git 集成同样能用，前提是构建设置把 `functions/` 目录一起带上（默认会）。
 
 ### 更新内容
 

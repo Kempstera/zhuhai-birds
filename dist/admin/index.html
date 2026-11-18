@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>站长后台 · 站点统计</title>
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#1B3527">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../static/style.css?v=818cfd95">
+</head>
+<body class="adm">
+
+<!-- ========== 口令闸门 ========== -->
+<div class="adm-gate" id="gate">
+  <form class="adm-card" id="gateform" autocomplete="on">
+    <p class="adm-k">PRIVATE</p>
+    <h1>站长入口</h1>
+    <p class="adm-sub">这里只给站长本人看：站点访问的浏览量与访客概况。口令通过后台校验，不会随页面下发。</p>
+    <label class="adm-field">
+      <span>访问口令</span>
+      <input type="password" id="pw" name="pw" autocomplete="current-password" spellcheck="false" placeholder="••••••••" required>
+    </label>
+    <button class="adm-btn" type="submit" id="gobtn">进入</button>
+    <p class="adm-msg" id="msg" role="status" aria-live="polite"></p>
+  </form>
+</div>
+
+<!-- ========== 看板 ========== -->
+<div id="dash" hidden>
+  <header class="adm-top">
+    <div class="adm-top-in">
+      <a class="adm-back" href="../index.html">← 回到图鉴</a>
+      <span class="adm-brand">珠海观鸟图鉴 · 站点统计</span>
+      <div class="adm-tools">
+        <div class="adm-seg" id="seg">
+          <button type="button" data-d="1">今天</button>
+          <button type="button" data-d="7" class="on">7 天</button>
+          <button type="button" data-d="30">30 天</button>
+          <button type="button" data-d="90">90 天</button>
+        </div>
+        <button type="button" class="adm-mini" id="refresh" title="重新拉取">刷新</button>
+        <button type="button" class="adm-mini" id="lock" title="清除本机口令">退出</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="adm-main">
+    <p class="adm-stamp" id="stamp"></p>
+
+    <section class="adm-kpis" id="kpis"></section>
+
+    <section class="adm-panel">
+      <div class="adm-ph">
+        <h2>浏览趋势</h2>
+        <p class="adm-legend"><span id="peak"></span><i class="sw-pv"></i>浏览量 <i class="sw-uv"></i>独立访客</p>
+      </div>
+      <div class="adm-chart" id="chart"></div>
+    </section>
+
+    <div class="adm-two">
+      <section class="adm-panel">
+        <div class="adm-ph"><h2>热门页面</h2><p class="adm-hint">按浏览量排序</p></div>
+        <div class="adm-rows" id="paths"></div>
+      </section>
+      <section class="adm-panel">
+        <div class="adm-ph"><h2>访问来源</h2><p class="adm-hint">外部引荐域名</p></div>
+        <div class="adm-rows" id="refs"></div>
+      </section>
+    </div>
+
+    <div class="adm-three">
+      <section class="adm-panel">
+        <div class="adm-ph"><h2>国家 / 地区</h2></div>
+        <div class="adm-rows" id="countries"></div>
+      </section>
+      <section class="adm-panel">
+        <div class="adm-ph"><h2>设备</h2></div>
+        <div class="adm-rows" id="devices"></div>
+      </section>
+      <section class="adm-panel">
+        <div class="adm-ph"><h2>语言 / 浏览器</h2></div>
+        <div class="adm-rows" id="langs"></div>
+        <div class="adm-rows adm-gap" id="browsers"></div>
+      </section>
+    </div>
+
+    <section class="adm-panel">
+      <div class="adm-ph"><h2>今日时段分布</h2><p class="adm-hint">北京时间，整点</p></div>
+      <div class="adm-hours" id="hours"></div>
+    </section>
+
+    <section class="adm-about">
+      <h2>这些数字是怎么来的</h2>
+      <ul>
+        <li>页面加载时向 <code>/api/hit</code> 发一条匿名信标，落一行记录，不写 cookie、不存 IP。</li>
+        <li>「独立访客」是 <code>sha256(IP + UA + 盐 + 日期)</code> 取前 16 位，当日唯一、跨日不可关联、不可逆推。</li>
+        <li>国家/地区取自 Cloudflare 的 <code>CF-IPCountry</code>，只精确到国家。</li>
+        <li>常见爬虫与脚本 UA 直接丢弃；浏览器开启「请勿追踪」时不计数。</li>
+        <li>数据保存在 Cloudflare D1，两年以上的记录会被自动清理。</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<script src="../static/admin.js?v=732ce5fd" defer></script>
+</body>
+</html>

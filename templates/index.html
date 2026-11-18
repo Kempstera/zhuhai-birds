@@ -177,4 +177,16 @@
   </div>
 </section>
 
+<!-- ============ 更多（姊妹站） ============ -->
+<div class="wrap">
+  <p class="more-row">
+    <a class="more" href="https://plants.signupeverywhere.cc/{{ 'en/' if lang == 'en' else '' }}"
+       target="_blank" rel="noopener">
+      <span class="k">{{ T.idx.more_k }}</span>
+      <span class="v">{{ T.idx.more_v }}</span>
+      {{ m.icon('arrow') }}
+    </a>
+  </p>
+</div>
+
 {% endblock %}

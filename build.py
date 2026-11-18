@@ -290,11 +290,12 @@ def main():
         trim_blocks=True, lstrip_blocks=True,
     )
     env.globals.update(YEAR=YEAR, CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
+                       BV=asset_ver("beacon.js"), AV=asset_ver("admin.js"),
                        ruby=ruby, nm=nm)
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird"):
+    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird", "admin"):
         os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
     for f in os.listdir(os.path.join(ROOT, "static")):
@@ -392,9 +393,14 @@ def main():
         open(os.path.join(base, "404.html"), "w").write(html)
         totals[lang] = len(views)
 
+    # ---- 站长后台（不进导航、不进 sitemap、robots 屏蔽）----
+    html = env.get_template("admin.html").render(root="../")
+    open(os.path.join(DIST, "admin", "index.html"), "w").write(html)
+
     # ---- robots / sitemap ----
     open(os.path.join(DIST, "robots.txt"), "w").write(
-        "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE)
+        "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
+        "Sitemap: %s/sitemap.xml\n" % SITE)
     pairs = [("/", "/en/"), ("/guide.html", "/en/guide.html")]
     pairs += [("/bird/%s.html" % s["slug"], "/en/bird/%s.html" % s["slug"]) for s in species]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

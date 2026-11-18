@@ -895,3 +895,166 @@ html[lang="en"] .dh-title{row-gap:2px}
 html[lang="en"] .dh-title h1{flex:0 0 100%}
 html[lang="en"] .dh-title .dh-py{padding-bottom:7px}
 html[lang="en"] .dh-title .dh-sci{padding-bottom:7px}
+
+/* ===========================================================
+   首页「更多」：指向姊妹站（珠海草木志），刻意做轻
+   =========================================================== */
+.more-row{margin:0;padding:46px 0 42px;text-align:center}
+.more{display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+  font-size:12.5px;letter-spacing:.16em;color:var(--ink-4);
+  transition:color .35s var(--ease)}
+.more .k{font-family:var(--latin);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-3)}
+.more .v{color:var(--ink-3);border-bottom:1px solid transparent;padding-bottom:2px;
+  transition:color .35s var(--ease),border-color .35s var(--ease)}
+.more:hover .v{color:var(--forest);border-bottom-color:var(--line)}
+.more svg{width:13px;height:13px;color:var(--ink-4);
+  transition:transform .35s var(--ease),color .35s var(--ease)}
+.more:hover svg{transform:translateX(4px);color:var(--forest)}
+html[lang="en"] .more{letter-spacing:.04em;font-size:13px}
+html[lang="en"] .more .k{letter-spacing:.2em}
+@media(max-width:600px){.more-row{padding:38px 0 34px}.more{gap:9px;font-size:12px}}
+
+/* ===========================================================
+   站长后台 /admin
+   =========================================================== */
+.adm [hidden]{display:none!important}   /* .adm-gate 的 display:grid 会盖掉 [hidden] */
+.adm{background:var(--paper);color:var(--ink);min-height:100vh;
+  font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.adm a{color:inherit}
+
+/* 口令闸门 */
+.adm-gate{min-height:100vh;display:grid;place-items:center;padding:32px 20px}
+.adm-card{width:100%;max-width:430px;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:var(--r-l);padding:40px 36px 32px;box-shadow:var(--sh-2)}
+.adm-k{font-family:var(--latin);font-size:10px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--clay);margin:0 0 14px}
+.adm-card h1{font-family:var(--serif);font-size:29px;font-weight:400;letter-spacing:.06em;margin:0 0 12px}
+.adm-sub{font-size:13px;line-height:1.85;color:var(--ink-3);margin:0 0 26px}
+.adm-field{display:block;margin-bottom:18px}
+.adm-field span{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--ink-4);margin-bottom:8px}
+.adm-field input{width:100%;padding:13px 15px;font-size:15px;font-family:var(--sans);
+  color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:var(--r-s);
+  letter-spacing:.12em;transition:border-color .25s,box-shadow .25s}
+.adm-field input:focus{outline:none;border-color:var(--moss);box-shadow:0 0 0 3px rgba(76,107,82,.13)}
+.adm-btn{width:100%;padding:13px;border:0;border-radius:var(--r-s);cursor:pointer;
+  background:var(--forest);color:var(--paper-2);font-size:13.5px;letter-spacing:.2em;font-family:var(--sans);
+  transition:background .3s var(--ease),opacity .3s}
+.adm-btn:hover{background:var(--forest-2)}
+.adm-btn:disabled{opacity:.55;cursor:default}
+.adm-msg{min-height:18px;margin:14px 0 0;font-size:12px;color:var(--ink-4);letter-spacing:.06em}
+.adm-msg.err{color:var(--clay)}
+
+/* 顶栏 */
+.adm-top{position:sticky;top:0;z-index:9;background:rgba(245,241,231,.94);
+  backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--line)}
+.adm-top-in{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:18px}
+.adm-back{font-size:12px;color:var(--ink-4);text-decoration:none;letter-spacing:.08em}
+.adm-back:hover{color:var(--ink)}
+.adm-brand{font-family:var(--serif);font-size:14.5px;letter-spacing:.1em;color:var(--ink-2)}
+.adm-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.adm-seg{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--paper-2)}
+.adm-seg button{border:0;background:none;padding:7px 14px;font-size:12px;color:var(--ink-3);
+  cursor:pointer;font-family:var(--sans);letter-spacing:.04em;white-space:nowrap;
+  transition:background .25s,color .25s}
+.adm-seg button:hover{color:var(--ink)}
+.adm-seg button.on{background:var(--forest);color:var(--paper-2)}
+.adm-mini{border:1px solid var(--line);background:var(--paper-2);border-radius:999px;
+  padding:7px 14px;font-size:12px;color:var(--ink-3);cursor:pointer;font-family:var(--sans);
+  white-space:nowrap;
+  transition:border-color .25s,color .25s}
+.adm-mini:hover{border-color:var(--moss);color:var(--ink)}
+
+/* 主体 */
+.adm-main{max-width:1180px;margin:0 auto;padding:26px 24px 80px}
+.adm-stamp{font-size:11.5px;color:var(--ink-4);letter-spacing:.06em;margin:0 0 20px}
+
+.adm-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.adm-kpi{background:var(--paper-2);border:1px solid var(--line-2);border-radius:var(--r-m);
+  padding:20px 20px 18px;display:flex;flex-direction:column;gap:5px}
+.adm-kpi .n{font-family:var(--latin);font-size:34px;line-height:1.05;color:var(--forest);letter-spacing:.01em}
+.adm-kpi .l{font-size:12.5px;letter-spacing:.12em;color:var(--ink-2)}
+.adm-kpi .s{font-size:10.5px;letter-spacing:.08em;color:var(--ink-4)}
+
+.adm-panel{margin-top:16px;background:var(--paper-2);border:1px solid var(--line-2);
+  border-radius:var(--r-m);padding:22px 24px 24px}
+.adm-ph{display:flex;align-items:baseline;justify-content:space-between;gap:10px 16px;
+  flex-wrap:wrap;margin-bottom:18px}
+.adm-ph h2{white-space:nowrap}
+.adm-ph h2{font-family:var(--serif);font-size:17px;font-weight:400;letter-spacing:.1em;margin:0;color:var(--ink)}
+.adm-hint,.adm-legend{font-size:11px;color:var(--ink-4);letter-spacing:.08em;margin:0}
+.adm-legend{display:flex;align-items:center;gap:7px}
+.adm-legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-left:10px}
+.adm-legend .sw-pv{background:var(--forest)}
+.adm-legend .sw-uv{background:var(--clay-2)}
+
+/* 柱图 */
+.adm-chart{min-height:150px}
+.adm-bars{display:flex;align-items:flex-end;gap:3px;height:190px;margin-bottom:22px;
+  border-bottom:1px solid var(--line);padding-bottom:0}
+.adm-day{position:relative;flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;
+  align-items:center;min-width:0}
+.adm-pair{flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center;gap:1px}
+.adm-pair i{display:block;width:44%;max-width:9px;min-height:0;
+  border-radius:2px 2px 0 0;transition:opacity .2s}
+.adm-pair i.pv{background:var(--forest);opacity:.86}
+.adm-pair i.uv{background:var(--clay-2);opacity:.9}
+.adm-day:hover .adm-pair i{opacity:1}
+.adm-day .x{position:absolute;left:0;right:0;bottom:-17px;text-align:center;
+  font-size:9px;color:var(--ink-4);line-height:1;letter-spacing:.02em;
+  white-space:nowrap;font-family:var(--latin)}
+.adm-bars.dense .x{visibility:hidden}
+
+/* 排行行 */
+.adm-rows{display:flex;flex-direction:column;gap:9px}
+.adm-gap{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line-2)}
+.adm-row{display:grid;grid-template-columns:1fr 84px 46px auto;align-items:center;gap:10px}
+.adm-row .k{font-size:12.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;letter-spacing:.02em}
+.adm-row .note{font-size:10.5px;color:var(--ink-4);letter-spacing:.04em;padding-left:6px;white-space:nowrap}
+.adm-row .bar{height:5px;background:var(--line-2);border-radius:999px;overflow:hidden}
+.adm-row .bar i{display:block;height:100%;background:var(--moss);border-radius:999px;
+  transition:width .5s var(--ease)}
+.adm-row .v{font-family:var(--latin);font-size:12.5px;color:var(--ink-3);text-align:right}
+.adm-empty{font-size:12px;color:var(--ink-4);margin:6px 0}
+
+.adm-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.adm-three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+
+/* 时段 */
+.adm-hours{display:flex;align-items:flex-end;gap:4px;height:96px}
+.adm-h{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
+.adm-h i{display:block;width:100%;background:var(--moss);opacity:.55;border-radius:2px 2px 0 0;min-height:0}
+.adm-h:hover i{opacity:.95}
+.adm-h span{font-size:9px;color:var(--ink-4);height:15px;line-height:15px;font-family:var(--latin)}
+
+.adm-about{margin-top:26px;padding:24px 26px;border:1px dashed var(--line);
+  border-radius:var(--r-m);background:transparent}
+.adm-about h2{font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:.1em;margin:0 0 12px}
+.adm-about ul{margin:0;padding-left:18px}
+.adm-about li{font-size:12px;line-height:1.95;color:var(--ink-3)}
+.adm-about code{font-family:var(--latin);background:var(--paper-3);padding:1px 5px;
+  border-radius:3px;font-size:11px;color:var(--ink-2)}
+
+@media(max-width:900px){
+  .adm-kpis{grid-template-columns:repeat(2,1fr)}
+  .adm-two,.adm-three{grid-template-columns:1fr}
+  .adm-top-in{flex-wrap:wrap;gap:10px}
+  .adm-tools{width:100%;margin-left:0;justify-content:space-between;gap:8px}
+  .adm-seg button{padding:7px 10px}
+  .adm-mini{padding:7px 10px}
+  .adm-main{padding:20px 16px 60px}
+  .adm-bars{height:150px}
+  .adm-row{grid-template-columns:1fr 56px 38px auto;gap:8px}
+}
+
+/* 页脚最右侧的站长入口：存在，但几乎看不见 */
+.fb-right{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.foot-admin{color:var(--ink-4);text-decoration:none;padding-left:16px;
+  border-left:1px solid var(--line-2);opacity:.55;transition:opacity .3s,color .3s}
+.foot-admin:hover{opacity:1;color:var(--forest)}
+
+/* 区间短时把柱子加宽，免得像一排牙签 */
+.adm-bars.few .adm-pair i{max-width:22px}
+.adm-legend #peak{color:var(--ink-4);margin-right:4px}
+
+/* 区间短时把柱子加宽，免得像一排牙签 */
