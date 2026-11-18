@@ -1122,8 +1122,10 @@ html[lang="en"] .more .k{letter-spacing:.2em}
 .bd-head{display:flex;align-items:baseline;gap:12px;margin-bottom:9px}
 .bd-head b{font-family:var(--serif);font-size:14.5px;font-weight:400;letter-spacing:.06em;color:var(--ink)}
 .bd-head time{font-size:11.5px;color:var(--ink-4);letter-spacing:.04em;font-family:var(--latin)}
-.bd-head .bd-del{margin-left:auto;opacity:0;transition:opacity .25s}
+.bd-head .bd-del{margin-left:auto;opacity:.45;transition:opacity .25s}
 .bd-item:hover .bd-del{opacity:1}
+/* 触屏没有 hover：删除必须一直看得见，并给足点击面积 */
+@media (hover:none){.bd-head .bd-del{opacity:.7;padding:8px 6px;margin:-8px -6px -8px auto}}
 .bd-text{font-size:15px;line-height:1.9;color:var(--ink-2);margin:0;white-space:pre-wrap;
   overflow-wrap:anywhere}
 .bd-empty{font-size:13.5px;color:var(--ink-4);padding:26px 0;margin:0}

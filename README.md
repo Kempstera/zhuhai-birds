@@ -33,7 +33,7 @@ sitemap.xml         站点地图（中英成对 + xhtml:link 互指）
 ## 目录说明
 
 ```
-functions/                 Cloudflare Pages Functions（采集与统计接口）
+functions/                 Cloudflare Pages Functions（访问统计 + Supabase 同域中转）
 wrangler.toml              Pages 项目配置 + D1 绑定
 data/species.json          物种内容（中文名、学名、特征、习性、鸣声描述、观察点等）
 data/species_en.json       每个物种的英文正文（tagline / summary / features / behavior / voice / tip）
@@ -185,8 +185,22 @@ Supabase 项目里，不经过任何第三方服务。
 - 页面：`templates/board.html`，前端逻辑：`static/board.js`（Supabase JS SDK v2，本地内嵌，不走 CDN）
 - 表结构、权限、触发器：`supabase/schema.sql`
 - 连接地址：`static/supabase-config.js` 里的 `url` 与 `anon`
+- 当前项目：`xivobmucjutdfoxmfjxu`（`Geoffrey's Project`，us-east-2），表 `public.bird_messages`
 
-### 三步接通
+### 为什么 url 写的是本站域名
+
+```js
+url: "https://birds.signupeverywhere.cc/api/sb"   // 不是 https://xxx.supabase.co
+```
+
+`*.supabase.co` 在中国大陆会被 TLS 层直接重置（ClientHello 发出去就 RST），游客在手机
+上根本连不上，登录和留言都会静默失败。本站域名在 Cloudflare 上、国内可访问，所以
+`functions/api/sb/[[path]].js` 把 `/api/sb/**` 原样转发到 Supabase：`apikey` 与
+`Authorization` 一起带过去，权限仍由 Postgres 的 RLS 决定，这一层不做任何鉴权、不缓存。
+
+实测：本机直连 `*.supabase.co` 100% 失败，经本站中转登录 200、发帖 201、列表可读、删除 204。
+
+### 三步接通（已完成，换项目时照做）
 
 1. 在 <https://supabase.com/dashboard> 建一个项目（区域选 Singapore 或 Tokyo，离华南近）
 2. 打开 **SQL Editor**，把 `supabase/schema.sql` 整段粘进去执行一次（幂等，可重复跑）
@@ -205,18 +219,15 @@ Supabase 项目里，不经过任何第三方服务。
 | 同一用户 10 分钟内最多 5 条（触发器里 `raise exception 'rate_limited'`） | 防手抖和刷屏，不引入额外服务 |
 | 只有 `select` 开放给匿名，`insert / delete` 仅限本人 | 留言公开可读，但改删只能动自己那条 |
 
-### 邮件确认
+### 邮箱确认：当前是关闭的
 
-Supabase 默认开启邮箱确认（Sign up 后要点邮件里的链接才能登录），前端已经处理：
-注册若拿不到 session，就提示「请到邮箱点确认链接」。
+这个项目的 *Authentication → Providers → Email → Confirm email* 是**关**的，注册完直接登录，
+也就不需要配置 SMTP（Supabase 自带的邮件服务每小时只能发几封，做公开站点不够用）。
 
-想省掉这一步（方便测试，但会招来垃圾注册）：**Authentication → Providers → Email →
-关掉 Confirm email**，再重建 `board.js` 的提示就自然用不上了，注册后直接登录。
+如果哪天打开了它：前端已经处理——注册拿不到 session 时提示「请到邮箱点确认链接」，
+同时要把 *Authentication → URL Configuration* 的 `Site URL` 填成
+`https://birds.signupeverywhere.cc`，否则邮件里的链接会指向 `localhost:3000`。
 
-### 自定义邮件里的站点名
-
-**Authentication → URL Configuration** 里的 `Site URL` 填 `https://birds.signupeverywhere.cc`，
-否则确认邮件里的链接会指向 `localhost:3000`。
 
 ## 本地构建与预览
 
