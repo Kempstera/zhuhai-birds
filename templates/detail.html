@@ -2,11 +2,9 @@
 {% import "_macros.html" as m %}
 
 {% block head %}
-{{ m.head(
-  sp.zh ~ " · " ~ sp.sci ~ " | 珠海观鸟图鉴",
-  sp.tagline ~ " " ~ sp.summary[:80],
+{{ m.head(page_title, page_desc,
   (root ~ 'assets/img/' ~ sp.img.big) if sp.img else '',
-  root) }}
+  root, canon, zh_url, en_url, hl, T.brand) }}
 {% endblock %}
 
 {% block bodyclass %}dark-nav{% endblock %}
@@ -15,23 +13,23 @@
 
 <section class="detail-hero">
   {% if sp.img %}
-  <img src="{{ root }}assets/img/{{ sp.img.big }}" alt="{{ sp.zh }}（{{ sp.sci }}）" fetchpriority="high" width="{{ sp.img.w }}" height="{{ sp.img.h }}"
+  <img src="{{ root }}assets/img/{{ sp.img.big }}" alt="{{ sp.name }} ({{ sp.sci }})" fetchpriority="high" width="{{ sp.img.w }}" height="{{ sp.img.h }}"
        {% if sp.img.pos %}style="object-position:{{ sp.img.pos }}"{% endif %}>
   {% endif %}
-  <a class="back wrap" href="{{ root }}index.html#species">{{ m.icon('back') }} 返回名录</a>
+  <a class="back wrap" href="{{ pr }}index.html#species">{{ m.icon('back') }} {{ T.d.back }}</a>
   <div class="dh-inner">
     <div class="wrap">
       <p class="dh-no">NO. {{ sp.no }} · {{ group.zh }} / {{ sp.family }}</p>
       <div class="dh-title">
-        <h1>{{ ruby(sp.zh, sp.py) }}</h1>
+        <h1>{{ nm(sp) }}</h1>
+        {% if lang == 'zh' %}{% else %}<em class="dh-py">{{ sp.zh }}{% if sp.py %} · {{ sp.py }}{% endif %}</em>{% endif %}
         <span class="dh-sci">{{ sp.sci }}</span>
       </div>
       <div class="dh-tags">
         <span class="hl">{{ sp.residency }}</span>
         <span class="rarity-dh r{{ sp.rank }}">{{ sp.rlabel }}</span>
         <span>{{ sp.len }}</span>
-        {% if '一级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
-        {% elif '二级' in sp.protect %}<span class="p1">{{ sp.protect }}</span>
+        {% if sp.pclass in ('p1', 'p2') %}<span class="p1">{{ sp.protect }}</span>
         {% else %}<span>{{ sp.protect }}</span>{% endif %}
         <span>IUCN {{ sp.iucn }}</span>
       </div>
@@ -49,12 +47,12 @@
 
       {% if sp.gallery %}
       <section class="detail-section" id="gallery">
-        <h2>图集 <span class="en">Plates &amp; Photographs</span></h2>
+        <h2>{{ T.d.gallery_h }}{% if T.d.gallery_sub %} <span class="en">{{ T.d.gallery_sub|safe }}</span>{% endif %}</h2>
         <p class="gallery-note">
           {% if sp.gallery | selectattr('kind','equalto','plate') | list %}
-          一张科学绘图（博物画）用于对照形态与色块，两张野外摄影记录它在真实光线里的样子。点击任意一张可放大。
+          {{ T.d.gallery_note1 }}
           {% else %}
-          点击任意一张可放大。
+          {{ T.d.gallery_note2 }}
           {% endif %}
         </p>
         <div class="gallery">
@@ -62,19 +60,19 @@
           <figure class="g-item g-{{ g.kind }}">
             <button class="g-open" type="button"
                     data-big="{{ root }}assets/img/{{ g.big }}"
-                    data-cap="{{ sp.zh }} {{ sp.sci }} · {% if g.kind == 'plate' %}科学绘图{% else %}野外摄影{% endif %} · {{ g.credit or 'Wikimedia Commons' }}{% if g.license %} / {{ g.license }}{% endif %}"
-                    aria-label="放大查看：{{ sp.zh }}{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}">
-              <img src="{{ root }}assets/img/{{ g.card }}" alt="{{ sp.zh }}（{{ sp.sci }}）{% if g.kind == 'plate' %} 科学绘图{% else %} 野外照片{% endif %}"
+                    data-cap="{{ sp.name }} {{ sp.sci }} · {{ T.d.plate if g.kind == 'plate' else T.d.photo }} · {{ g.credit or 'Wikimedia Commons' }}{% if g.license %} / {{ g.license }}{% endif %}"
+                    aria-label="{{ T.d.zoom_aria }}: {{ sp.name }} {{ T.d.plate if g.kind == 'plate' else T.d.photo }}">
+              <img src="{{ root }}assets/img/{{ g.card }}" alt="{{ sp.name }} ({{ sp.sci }}) {{ T.d.plate if g.kind == 'plate' else T.d.photo }}"
                    loading="lazy" width="{{ g.w }}" height="{{ g.h }}"
                    style="display:block;width:100%;height:auto">
-              <span class="g-zoom">{{ m.icon('zoom') }} 放大</span>
+              <span class="g-zoom">{{ m.icon('zoom') }} {{ T.d.zoom }}</span>
             </button>
             <figcaption>
-              <span class="g-kind">{{ '科学绘图 · Illustration' if g.kind == 'plate' else '野外摄影 · Photograph' }}</span>
+              <span class="g-kind">{{ T.d.plate_full if g.kind == 'plate' else T.d.photo_full }}</span>
               {% if g.note %}<span class="g-note">{{ g.note }}</span>{% endif %}
               <span class="g-credit">
                 <span class="g-by">{{ g.credit or 'Wikimedia Commons' }}{% if g.license %} · {{ g.license }}{% endif %}</span>
-                {% if g.page %}<a class="g-src" href="{{ g.page }}" target="_blank" rel="noopener">原始页面 ↗</a>{% endif %}
+                {% if g.page %}<a class="g-src" href="{{ g.page }}" target="_blank" rel="noopener">{{ T.d.src_page }}</a>{% endif %}
               </span>
             </figcaption>
           </figure>
@@ -84,7 +82,7 @@
       {% endif %}
 
       <section class="detail-section">
-        <h2>辨识特征 <span class="en">Identification</span></h2>
+        <h2>{{ T.d.ident_h }}{% if T.d.ident_sub %} <span class="en">{{ T.d.ident_sub|safe }}</span>{% endif %}</h2>
         <ul class="feature-list">
           {% for f in sp.features %}
           <li><span class="k">{{ f.k }}</span><span class="v">{{ f.v }}</span></li>
@@ -93,57 +91,57 @@
       </section>
 
       <section class="detail-section">
-        <h2>习性 <span class="en">Behaviour</span></h2>
+        <h2>{{ T.d.behav_h }}{% if T.d.behav_sub %} <span class="en">{{ T.d.behav_sub|safe }}</span>{% endif %}</h2>
         <p>{{ sp.behavior }}</p>
       </section>
 
       <section class="detail-section" id="voice">
-        <h2>鸣声 <span class="en">Voice</span></h2>
+        <h2>{{ T.d.voice_h }}{% if T.d.voice_sub %} <span class="en">{{ T.d.voice_sub|safe }}</span>{% endif %}</h2>
         {% if sp.audio %}
         <div class="audio-card" data-src="{{ root }}assets/audio/{{ sp.audio.file }}" data-dur="{{ sp.audio.dur }}">
           <div class="ac-top">
-            <button class="ac-btn" aria-label="播放鸣声">
+            <button class="ac-btn" aria-label="{{ T.d.play_aria }}">
               <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg>
               <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/></svg>
             </button>
             <div class="ac-info">
-              <div class="ac-title">野外鸣声录音</div>
-              <div class="ac-sub">点击波形可跳转 · 建议佩戴耳机</div>
+              <div class="ac-title">{{ T.d.audio_title }}</div>
+              <div class="ac-sub">{{ T.d.audio_sub }}</div>
             </div>
             <div class="ac-time"><span class="t-cur">0:00</span> / {{ '%d:%02d'|format((sp.audio.dur//60)|int, (sp.audio.dur%60)|int) }}</div>
           </div>
           <div class="wave-wrap"><canvas aria-hidden="true"></canvas></div>
           <div class="ac-note">
-            <b>录音</b> {{ sp.audio.credit or 'Wikimedia Commons' }} · <b>许可</b> {{ sp.audio.license or '见来源页' }}
-            {% if sp.audio.page %}· <a href="{{ sp.audio.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px">原始文件</a>{% endif %}
+            <b>{{ T.d.audio_rec }}</b> {{ sp.audio.credit or 'Wikimedia Commons' }} · <b>{{ T.d.audio_lic }}</b> {{ sp.audio.license or '—' }}
+            {% if sp.audio.page %}· <a href="{{ sp.audio.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px">{{ T.d.audio_src }}</a>{% endif %}
           </div>
         </div>
         {% else %}
-        <p style="color:var(--ink-4);font-size:14px">该物种暂无可用的开放许可录音。</p>
+        <p style="color:var(--ink-4);font-size:14px">{{ T.d.no_audio }}</p>
         {% endif %}
         <p style="margin-top:20px">{{ sp.voice }}</p>
       </section>
 
       <section class="detail-section">
-        <h2>在珠海去哪里找 <span class="en">Where to Watch</span></h2>
+        <h2>{{ T.d.where_h }}{% if T.d.where_sub %} <span class="en">{{ T.d.where_sub|safe }}</span>{% endif %}</h2>
         <ul class="where-list">
           {% for w in sp.where %}<li><span class="pin"></span>{{ w }}</li>{% endfor %}
         </ul>
-        <div class="tip-box {{ 'caution' if '一级' in sp.protect or '二级' in sp.protect else '' }}">
-          <div class="th">观察提示</div>
+        <div class="tip-box {{ 'caution' if sp.pclass in ('p1', 'p2') else '' }}">
+          <div class="th">{{ T.d.tip_h }}</div>
           {{ sp.tip }}
         </div>
       </section>
 
       {% if sims %}
       <section class="detail-section">
-        <h2>容易混淆的相似种 <span class="en">Similar Species</span></h2>
+        <h2>{{ T.d.similar_h }}{% if T.d.similar_sub %} <span class="en">{{ T.d.similar_sub|safe }}</span>{% endif %}</h2>
         <div class="similar-grid">
           {% for s in sims %}
-          <a class="sim-card" href="{{ root }}bird/{{ s.slug }}.html">
-            {% if s.img %}<img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}" loading="lazy">{% endif %}
+          <a class="sim-card" href="{{ pr }}bird/{{ s.slug }}.html">
+            {% if s.img %}<img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.name }}" loading="lazy">{% endif %}
             <div>
-              <div class="sc-t">{{ ruby(s.zh, s.py) }}</div>
+              <div class="sc-t">{{ nm(s) }}</div>
               <div class="sc-s">{{ s.sci }}</div>
               <div class="sc-m">{{ s.residency }} · {{ s.len }}</div>
             </div>
@@ -154,13 +152,13 @@
       {% endif %}
 
       <nav class="pager">
-        <a href="{{ root }}bird/{{ prev.slug }}.html">
-          <div class="dir">← 上一种</div>
-          <div class="nm">{{ ruby(prev.zh, prev.py) }}</div>
+        <a href="{{ pr }}bird/{{ prev.slug }}.html">
+          <div class="dir">{{ T.d.prev }}</div>
+          <div class="nm">{{ nm(prev) }}</div>
         </a>
-        <a class="next" href="{{ root }}bird/{{ next.slug }}.html">
-          <div class="dir">下一种 →</div>
-          <div class="nm">{{ ruby(next.zh, next.py) }}</div>
+        <a class="next" href="{{ pr }}bird/{{ next.slug }}.html">
+          <div class="dir">{{ T.d.next }}</div>
+          <div class="nm">{{ nm(next) }}</div>
         </a>
       </nav>
     </div>
@@ -168,33 +166,33 @@
     <!-- 侧栏 -->
     <aside>
       <div class="spec-card">
-        <div class="sc-head">Species Profile</div>
+        <div class="sc-head">{{ T.d.profile }}</div>
         <ul class="sc-list">
-          <li><span class="k">中文名</span><span class="v">{{ ruby(sp.zh, sp.py) }}</span></li>
-          <li><span class="k">英文名</span><span class="v">{{ sp.en }}</span></li>
-          <li><span class="k">学名</span><span class="v" style="font-style:italic;font-family:var(--latin)">{{ sp.sci }}</span></li>
-          <li><span class="k">科属</span><span class="v">{{ sp.family }}</span></li>
-          <li><span class="k">体长</span><span class="v">{{ sp.len }}</span></li>
-          <li><span class="k">体重</span><span class="v">{{ sp.mass }}</span></li>
-          <li><span class="k">居留型</span><span class="v">{{ sp.residency }}</span></li>
-          <li><span class="k">本地遇见率</span><span class="v">{{ sp.common }}</span></li>
-          <li><span class="k">IUCN</span><span class="v">{{ sp.iucn }}</span></li>
+          <li><span class="k">{{ T.d.k_cn }}</span><span class="v">{{ ruby(sp.zh, sp.py) }}</span></li>
+          <li><span class="k">{{ T.d.k_en }}</span><span class="v">{{ sp.en }}</span></li>
+          <li><span class="k">{{ T.d.k_sci }}</span><span class="v" style="font-style:italic;font-family:var(--latin)">{{ sp.sci }}</span></li>
+          <li><span class="k">{{ T.d.k_family }}</span><span class="v">{{ sp.family }}</span></li>
+          <li><span class="k">{{ T.d.k_len }}</span><span class="v">{{ sp.len }}</span></li>
+          <li><span class="k">{{ T.d.k_mass }}</span><span class="v">{{ sp.mass }}</span></li>
+          <li><span class="k">{{ T.d.k_res }}</span><span class="v">{{ sp.residency }}</span></li>
+          <li><span class="k">{{ T.d.k_freq }}</span><span class="v">{{ sp.common }}</span></li>
+          <li><span class="k">{{ T.d.k_iucn }}</span><span class="v">{{ sp.iucn }}</span></li>
         </ul>
         <div class="sc-protect">
-          <span class="pill {{ sp.pclass }}">{{ sp.protect if sp.pclass != 'p3' else '「三有」保护动物' }}</span>
+          <span class="pill {{ sp.pclass }}">{{ sp.protect if sp.pclass != 'p3' else T.d.p3 }}</span>
         </div>
         <div class="sc-mini">
-          <div style="margin-bottom:8px;color:var(--ink-4);font-size:11px;letter-spacing:.14em">典型生境</div>
+          <div style="margin-bottom:8px;color:var(--ink-4);font-size:11px;letter-spacing:.14em">{{ T.d.habitat_h }}</div>
           <div class="hab-tags">
             {% for h in sp.habitat %}<span>{{ h }}</span>{% endfor %}
           </div>
         </div>
         {% if sp.img %}
         <div class="sc-mini" style="border-top:1px solid var(--line-2);padding-top:14px">
-          <span style="color:var(--ink-4)">图片</span>
+          <span style="color:var(--ink-4)">{{ T.d.img }}</span>
           {{ sp.img.credit or 'Wikimedia Commons' }}<br>
-          <span style="color:var(--ink-4)">许可</span> {{ sp.img.license or '见来源' }}
-          {% if sp.img.page %}<br><a href="{{ sp.img.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;color:var(--ink-3)">查看原始页面</a>{% endif %}
+          <span style="color:var(--ink-4)">{{ T.d.lic }}</span> {{ sp.img.license or '—' }}
+          {% if sp.img.page %}<br><a href="{{ sp.img.page }}" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;color:var(--ink-3)">{{ T.d.view_src }}</a>{% endif %}
         </div>
         {% endif %}
       </div>
@@ -203,8 +201,8 @@
   </div>
 </div>
 
-<div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-label="图片放大">
-  <button class="lb-close" type="button" aria-label="关闭">{{ m.icon('close') }}</button>
+<div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-label="{{ T.d.lb_aria }}">
+  <button class="lb-close" type="button" aria-label="{{ T.d.close_aria }}">{{ m.icon('close') }}</button>
   <figure class="lb-fig">
     <img alt="">
     <figcaption></figcaption>

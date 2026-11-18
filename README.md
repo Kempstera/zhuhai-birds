@@ -16,19 +16,25 @@
 
 ## 站点结构
 
+中英双语，**中文为默认**；`/en/` 为英文版，右上角按钮可互相切换。
+
 ```
 index.html          首页：Hero、生态类群、物种名录（可筛选/搜索）、观鸟地点、野外守则
 bird/<slug>.html    65 个物种详情页
 guide.html          观鸟指南：为什么是珠海、四季日历、装备、如何听鸟、记录与分享
 404.html            自定义错误页
+en/                 英文版，目录结构与上面完全镜像
 robots.txt          搜索引擎规则
-sitemap.xml         站点地图
+sitemap.xml         站点地图（中英成对 + xhtml:link 互指）
 ```
 
 ## 目录说明
 
 ```
 data/species.json          物种内容（中文名、学名、特征、习性、鸣声描述、观察点等）
+data/species_en.json       每个物种的英文正文（tagline / summary / features / behavior / voice / tip）
+data/i18n/ui.json          界面文案（导航、按钮、小标题、页脚…），zh / en 两份
+data/i18n/vocab.json       枚举词表（生境、观察点、特征键、科名、居留型、保护级别、IUCN）
 data/assets.json           素材元数据（封面图 / 录音 / 图集三项的文件名、作者、许可、原始页）
 data/gallery_override.json 人工挑选清单（修正自动检索结果，指定图版或照片）
 data/plate_exclude.json    图版黑名单（海报、地图、报纸版面等不适合入册的扫描件）
@@ -98,6 +104,26 @@ build.py                   静态站点生成器
 python3 -c "import json,re;sp=json.load(open('data/species.json'));
 [print(s['zh'],len(re.findall(r'[\u4e00-\u9fff]',s['zh'])),len(s['py'].split())) for s in sp if len(re.findall(r'[\u4e00-\u9fff]',s['zh']))!=len(s['py'].split())]"
 ```
+
+### 双语机制
+
+`build.py` 对 `LANGS = ("zh", "en")` 循环两遍，中文写进 `dist/`，英文写进 `dist/en/`。
+同一个模板靠 `make_view()` 产出的视图字典渲染，所以模板里没有 `if 中文 else 英文` 的分支。
+
+- 界面文案 → `data/i18n/ui.json`（`T.nav.species`、`T.d.voice_h` 之类）
+- 词表（科名、生境、居留型、保护级别、特征键）→ `data/i18n/vocab.json`
+- 物种正文 → `data/species_en.json`；缺某条时构建会打印「待翻译」清单，并自动退回
+  「特征键英文 + 中文正文」，不会崩
+- 页面里 `<html lang>`、`hreflang`、`canonical`、sitemap 的成对 `<url>` 都由构建生成
+
+**两个 root 不要混。** 英文详情页在 `/en/bird/x.html`：
+
+| 变量 | 值 | 用途 |
+| --- | --- | --- |
+| `root` | `../../` | 指向站点根：`static/`、`assets/` |
+| `pr` | `../` | 指向**本语言**根：`index.html`、`guide.html`、`bird/` |
+
+用 `root` 写页面链接会把英文页的导航带到中文首页去——这是最容易踩的坑。
 
 ### scripts
 

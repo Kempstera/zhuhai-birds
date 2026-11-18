@@ -2,10 +2,7 @@
 {% import "_macros.html" as m %}
 
 {% block head %}
-{{ m.head(
-  "观鸟指南 · 珠海的四季、地点与守则 | 珠海观鸟图鉴",
-  "珠海的四季观鸟日历、迁徙通道说明、观鸟装备清单与野外守则。了解什么时候、去哪里、怎样不打扰地观察野生鸟类。",
-  '', root) }}
+{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand) }}
 {% endblock %}
 
 {% block content %}
@@ -13,7 +10,7 @@
 <section class="page-head">
   <div class="wrap">
     <p class="eyebrow">Field Notes · How to Watch</p>
-    <h1>观鸟指南</h1>
+    <h1>{{ T.guide.h1 }}</h1>
     <p class="lede">珠海是一座被水包围的城市：600 多公里的海岸线、连片的红树林、纵横的水田与鱼塘。每年有数以十万计的候鸟沿着这条海岸线南下北上，而它们中的大多数，会在珠海停下来吃东西。</p>
   </div>
 </section>

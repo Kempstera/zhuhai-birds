@@ -1,0 +1,1627 @@
+{
+ "an-lu-xiu-yan-niao": {
+  "behavior": "A canopy bird that moves in flocks, extremely fast, hanging upside down at flowering branches to take nectar and picking off small insects and berries. Favours kapok, banyan and rose-apple trees when in flower or fruit. The neat cup nest is woven from spider silk and fine grass and hung in a thin fork. Mostly resident here, with northern birds arriving in winter, so numbers rise noticeably in autumn.",
+  "features": [
+   {
+    "k": "Eye",
+    "v": "A ring of white, finely feathered skin around the eye, 1–2 mm wide — the signature mark, especially obvious against the light."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts olive-green; throat bright yellow; breast greyish white; belly white; flanks pale yellowish brown. Clean colours, no markings."
+   },
+   {
+    "k": "Bill",
+    "v": "Fine, pointed and black, slightly downcurved — made for reaching into flowers for nectar."
+   },
+   {
+    "k": "Flock",
+    "v": "Usually 10–30 together, keeping close order in flight and calling continuously."
+   }
+  ],
+  "summary": "Olive-green all over, with a ring of white feathers around the eye like a pair of thin white spectacles — that ring is the whole name. They move in flocks, calling constantly as they shift from tree to tree like a green wind.",
+  "tagline": "A green sprite with white embroidery around its eye",
+  "tip": "Don't be fooled by the size: dense, fine 'tzee' calls mean look up into the outer canopy, where you will normally find a party of small green birds working through the flowers. March–April, when the kapok is out, is the best time.",
+  "voice": "A thin, continuous 'tzee-tzee-tzee', high, quiet and dense like a string of small bells. As a flock moves the calls overlap — the most reliable sign that white-eyes are nearby."
+ },
+ "ba-ge": {
+  "behavior": "Mostly terrestrial, striding across lawns, fields and roadsides for insects, earthworms and fruit; also feeds around cattle and rubbish bins. Bold and thoroughly at home in dense city. A gifted mimic — caged birds learn speech and whistles, wild ones imitate other birds and mechanical sounds. Nests in wall cavities, tree holes and the gaps inside billboards.",
+  "features": [
+   {
+    "k": "Forehead",
+    "v": "A tuft of black feathers projecting forward and up from the forehead — the key difference from other mynas."
+   },
+   {
+    "k": "Colour",
+    "v": "All black with metallic green-blue gloss in sunlight; eye orange-yellow; bill ivory or pale yellow."
+   },
+   {
+    "k": "Wing patch",
+    "v": "White bases to the primaries, showing as a thin white edge when perched and as a clear white 'eight' in flight."
+   },
+   {
+    "k": "Tail",
+    "v": "White tips to the tail feathers, visible from below when perched and obvious in flight."
+   }
+  ],
+  "summary": "Entirely black, with a tuft of feathers standing up from the forehead like a small pompadour. In flight the white wing patches open into a figure of eight — the name is more literal than you would expect. It is one of the south's best talkers.",
+  "tagline": "A tuft on the forehead, and an 'eight' in flight",
+  "tip": "Versus Black-collared Starling: the Crested Myna is all black with an ivory bill; the starling has a black head and breast but a white belly and a ring of orange-yellow bare skin around the eye.",
+  "voice": "Loud and harsh, usually a mix of 'ji-ji-ji' and 'kia-kia', with pleasant whistles and imitations. A flock calling at dawn in a tree is startlingly loud."
+ },
+ "bai-gu-ding": {
+  "behavior": "A bird of open water, swimming and diving well and usually diving to escape. It feeds on aquatic plants, algae and a little animal matter. In winter it gathers on South China reservoirs and lakes in flocks of tens to a hundred or more. It needs a running start across the surface to take off, pattering along with its feet.",
+  "features": [
+   {
+    "k": "Frontal shield",
+    "v": "A white bony shield on the forehead running down to the base of the bill — the most striking feature of the species."
+   },
+   {
+    "k": "Plumage",
+    "v": "Slate-black to dark grey throughout, slightly darker on the back and paler below; plumage dense and waterproof."
+   },
+   {
+    "k": "Bill",
+    "v": "White to pale pinkish-white with a slightly darker tip, in sharp contrast with the black body."
+   },
+   {
+    "k": "Feet",
+    "v": "Legs grey-green, the toes with lateral lobes — not the full web of a duck — good for both swimming and diving."
+   }
+  ],
+  "summary": "All sooty black, with a snow-white plate set into the forehead — as if someone had knocked it there. It is not a duck but a close relative of the rails: the toes are lobed, and it walks with a roll.",
+  "tagline": "A 'black duck' with a slab of bone on its forehead",
+  "tip": "Separating it from Common Moorhen: Coot has a white shield, is black throughout and has lobed toes; Moorhen has a red shield, a white line along the flank and a red ring on the leg.",
+  "voice": "A short, loud 'kup' or 'kowk', audible at night; flocks also give low mutterings and metallic trills."
+ },
+ "bai-hou-hong-tun-bei": {
+  "behavior": "Usually in pairs or small parties in scrub, orchards and park plantings, feeding mainly on berries and insects. Quieter than the Light-vented Bulbul but strongly territorial. Resident here and present all year. The nest is a cup in a bush or low branch.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown to nape black with no white patch behind the eye (unlike Light-vented Bulbul); throat pure white and sharply contrasting."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts smoky brown; breast and belly greyish white to pale brown; undertail coverts bright orange-red."
+   },
+   {
+    "k": "Tail",
+    "v": "Fairly long, the outer feathers white-tipped, often swung slightly up and down when perched."
+   },
+   {
+    "k": "Shape",
+    "v": "Similar in build to Light-vented Bulbul but darker and more 'smoked' overall."
+   }
+  ],
+  "summary": "A cousin of the Light-vented Bulbul and just as common in the south, but with a blacker crown, a snow-white throat and orange-red undertail coverts. It usually appears in pairs in park scrub, and its voice is hoarser than its relative's.",
+  "tagline": "Black cap, white throat, orange vent — the three-colour bulbul",
+  "tip": "A three-way rule: black-and-white head with a white nape patch is Light-vented Bulbul; black crest with a red cheek is Red-whiskered Bulbul; black crown, pure white throat and orange-red vent is Sooty-headed Bulbul.",
+  "voice": "Hoarser than Light-vented Bulbul — often 'chrrr-up' or 'kwik-kwik' with a rasping edge; the song is a short, untidy run of chirps."
+ },
+ "bai-ji-ling": {
+  "behavior": "A ground bird by preference: quick walks over open hard surfaces, a pause, another walk, picking insects as it goes. Flushes low and short. A winter visitor in South China, widespread from late September to April in cities and farmland, usually alone or in small parties, roosting communally on wires or in reeds.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown black, face white, throat black (the South China subspecies leucopsis has a white throat and lores and an even whiter face), giving a crisp black-and-white division."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts grey (darker-backed in leucopsis), wings black and white, underparts white to pale grey, often with a faint grey band at the sides of the breast."
+   },
+   {
+    "k": "Tail",
+    "v": "Long, black and white with white outer feathers; pumped up and down almost constantly while perched — the most reliable identification behaviour."
+   },
+   {
+    "k": "Flight",
+    "v": "A pronounced bounding flight, calling as it goes, with obvious white underwing."
+   }
+  ],
+  "summary": "Black, white and grey, walking with the tail pumping like a metronome. In winter the White Wagtail is the easiest bird in South China to meet: car parks, riverbanks, paddy bunds, the paving outside a block of flats — it will drop in and walk about anywhere.",
+  "tagline": "The little gentleman who walks with a bob and pumps his tail",
+  "tip": "Watch the movement before the colour: a small bird walking in stops and starts on the ground, tail pumping hard, is almost certainly a wagtail.",
+  "voice": "A clear two-note 'chi-sick' or 'tzi-zi', the first short, the second rising; it calls constantly in flight and is one of the defining sounds of a winter riverbank."
+ },
+ "bai-lu": {
+  "behavior": "Often stirs the shallows with one foot to startle small fish and shrimp before stabbing at them, but will also simply stand and wait. Solitary or in small groups; nests colonially in mangrove and bamboo with pond herons and night herons. Sensitive to water quality and human disturbance, which makes it a useful indicator of wetland health.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Long, thin and black — the key difference from Great Egret (yellow bill) and Intermediate Egret (yellow with a dark tip)."
+   },
+   {
+    "k": "Legs & feet",
+    "v": "Black legs with bright yellow toes — the famous 'black legs, yellow slippers' combination, identifiable at distance."
+   },
+   {
+    "k": "Plumes",
+    "v": "In breeding condition two long white nape plumes and shaggy back and breast plumes appear, then are lost."
+   },
+   {
+    "k": "Size",
+    "v": "Medium; neck slender; flies with the neck folded into an S and the legs trailing well beyond the tail."
+   }
+  ],
+  "summary": "Snow-white, but with black legs and a pair of bright yellow slippers. In the breeding season two long white plumes trail from the nape and shaggy aigrettes hang over the breast, and it walks about as if dressed for a wedding. It is the bird you will meet at every patch of shallow water in the Delta.",
+  "tagline": "Black bill, black legs, yellow slippers — an egret that dresses with care",
+  "tip": "Three white egrets, three answers — bill and legs do it: all-black bill with yellow feet is Little Egret; yellow bill with black legs is Great Egret; yellow bill with a dark tip, black legs and yellow feet is Intermediate Egret.",
+  "voice": "Quiet most of the time. A harsh 'kark' or 'krekk' when alarmed or squabbling, short and unpleasant; lower mutterings around the colony."
+ },
+ "bai-pi-lu": {
+  "behavior": "It feeds exactly as the Black-faced Spoonbill does, sweeping the spoon-shaped bill through the water and taking fish and prawns by touch. It mixes with Black-faced Spoonbills and egrets, but in far smaller numbers. A scarce winter visitor in South China, with occasional Delta records on mudflats and at fish ponds.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Long and flattened, expanded into a spoon at the tip, blackish-grey overall but clearly yellow at the tip — the key difference from Black-faced Spoonbill."
+   },
+   {
+    "k": "Face",
+    "v": "Bare facial skin pale yellow to flesh, not black; yellow bare skin around the eye and on the throat."
+   },
+   {
+    "k": "Plumage",
+    "v": "White throughout; in breeding condition a pale yellow wash at the base of the neck and on the breast, with loose yellow plumes."
+   },
+   {
+    "k": "Legs",
+    "v": "Black and fairly long, made for wading in shallow water."
+   }
+  ],
+  "summary": "Almost identical to the Black-faced Spoonbill, with just two differences: the face is white rather than black, and the end of the bill is yellow rather than wholly black. It is not a regular, but every winter one or two turn up among the spoonbills.",
+  "tagline": "The white-faced cousin, with a yellow tip to the bill",
+  "tip": "A nationally protected species (Class II). Check a spoonbill flock bird by bird: black face and black bill means Black-faced (Class I); white face and a yellow bill tip means Eurasian (Class II).",
+  "voice": "Quiet; around the nest a low 'grr', and bill-clattering."
+ },
+ "bai-tou-bei": {
+  "behavior": "Lively, forever hopping through the canopy, nodding and flicking its tail, rarely still for long. Pairs in the breeding season, flocks of about ten otherwise, mixing with other bulbuls and white-eyes in autumn and winter. The diet is mixed: insects in spring and summer, berries and nectar in autumn and winter. The deep cup nest sits in a shrub or branch fork, and two broods a year is normal.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown to nape black; a large white patch from behind the eye to the side of the neck, the trademark 'white head'; often a small white tuft at the rear of the ear-coverts."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts olive-green washed with grey; throat white; breast and belly greyish white; flanks tinged yellow-green. Altogether subdued, like a leaf bleached by sun."
+   },
+   {
+    "k": "Bill & eye",
+    "v": "Bill black, short and pointed; eye dark brown. The sexes are effectively identical in the field."
+   },
+   {
+    "k": "Age differences",
+    "v": "Juveniles have browner crowns and an incomplete white nape patch, and look duller overall — easily mistaken for other bulbuls."
+   }
+  ],
+  "summary": "A cap of ink-black and a patch of snow behind the eye — two strokes of colour and you have the name. The Light-vented Bulbul is the commonest bird in the Pearl River Delta and the easiest to ignore: the bright, bouncing whistles you hear downstairs are almost certainly this species.",
+  "tagline": "The bird that wakes the cities of the south",
+  "tip": "Hear bright, rising, up-and-down whistles and look up 2–4 m into the canopy. Check the head: black-and-white is a Light-vented Bulbul; a tall black crest with a red cheek patch is a Red-whiskered Bulbul.",
+  "voice": "A string of bright, bouncing whistles, typically opening 'ji-chu, jili-gulu', the ending rising or trembling. Repertoires vary — one bird may sing several distinct phrases — and dawn and dusk get the full performance."
+ },
+ "bai-xiong-fei-cui": {
+  "behavior": "Its diet is broader than a Common Kingfisher's: besides fish and prawns it takes quantities of insects, lizards, frogs and even small mice, which is why it is often found in farmland, grassland and scrub far from water. It hunts from wires, dead branches and rooftops, dropping onto the ground after prey. A nationally protected species (Class II). It tunnels into earth banks and embankments to nest.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Head, neck and sides of the underparts chestnut; throat and centre of the breast pure white, making a broad white bib."
+   },
+   {
+    "k": "Back & wings",
+    "v": "Back, wings and tail brilliant blue to blue-green with a strong metallic sheen — in flight, a streak of blue light."
+   },
+   {
+    "k": "Bill",
+    "v": "Bright red, heavy and long — one of the most conspicuous features of the species."
+   },
+   {
+    "k": "Size",
+    "v": "About 28 cm long, plainly larger than Common Kingfisher, thick-set, with a relatively short tail."
+   }
+  ],
+  "summary": "Much larger than a Common Kingfisher and far more heavily coloured: head and neck chestnut, breast and belly snow-white, back and wings deep brilliant blue, and a big scarlet bill. It has little need of water, and often sits on a wire waiting for lizards and insects.",
+  "tagline": "Chestnut head, snow-white breast, a big red bill",
+  "tip": "A nationally protected species (Class II). Separating it from Common Kingfisher: much larger, a broad white breast, a red bill, and it often hunts well away from water.",
+  "voice": "A loud, harsh 'kilili—kilili', a descending series of whistles, given in flight or from a perch — an easy sound to notice in open country."
+ },
+ "bai-xiong-ku-e-niao": {
+  "behavior": "Secretive but tame, feeding on the ground along creeks and at the edge of reedbeds with its tail flicking as it walks. It swims well but flies reluctantly, preferring to push into cover when disturbed. It eats insects, small fish, seeds and young shoots. Very noisy in the breeding season, calling from the top of a reedbed or a low branch.",
+  "features": [
+   {
+    "k": "Head & breast",
+    "v": "Face, chin, throat and upper breast pure white, in strong contrast with the dark slate-grey crown and back."
+   },
+   {
+    "k": "Undertail",
+    "v": "Undertail coverts chestnut, visible as the bird walks or flicks its tail — an important identification point."
+   },
+   {
+    "k": "Bill & legs",
+    "v": "Bill yellow-green with a red patch at the base; legs yellow-green, with long toes made for walking on lily pads and weed."
+   },
+   {
+    "k": "Shape",
+    "v": "Laterally compressed — the better to slip through reeds — with a short, usually cocked tail; it walks in stops and starts, the tail jerking at every step."
+   }
+  ],
+  "summary": "White face, white breast, dark grey body, a flash of chestnut under the tail and long yellow-green legs. At dawn or after dark it bellows 'ku-e, ku-e' out of the reeds, as if complaining about something — and that is where the name came from.",
+  "tagline": "Named for its call — 'ku-e, ku-e'",
+  "tip": "It wanders about the open bank with no cover at all — the tamest of the rails. A medium-sized bird with a white breast, dark grey body and yellow-green legs pacing the waterside is this species.",
+  "voice": "A loud, repeated 'kwa—kwa—kwa' or 'ku-e, ku-e', even in rhythm and dry in tone, sometimes dozens of times in succession; loudest at dawn and at night. Also a low grumbling note."
+ },
+ "bai-yao-shao-yu": {
+  "behavior": "It drives that long bill deep into the mud to reach crabs and worms well below the surface, the head almost buried as it feeds. Very alert, and it takes flight at a hundred metres. A winter visitor in South China in small numbers, usually alone or three or five birds among other waders. Global numbers continue to fall through the reclamation of tidal flats.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Extremely long and clearly downcurved, up to 13–15 cm and longer in the female than the male — one of the longest bills among the waders."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts grey-brown and densely streaked, underparts white, fine streaks on the sides of the neck and breast; plain in tone, identified by size and bill shape."
+   },
+   {
+    "k": "Rump",
+    "v": "Rump and uppertail coverts white, in flight a strong contrast with the dark back — the origin of the name."
+   },
+   {
+    "k": "Size",
+    "v": "A large wader, tall and long-legged, standing very upright."
+   }
+  ],
+  "summary": "Its bill is twice the length of its head and curves down in an elegant arc, sometimes 15 cm long. Standing on a mudflat, that long spoon is almost as conspicuous as the bird itself. The global population is falling, and the species is now Near Threatened.",
+  "tagline": "The 'sickle shank' whose bill is beyond all proportion",
+  "tip": "A nationally protected species (Class II). Long bill plus white rump settles it at long range — there is no need to approach.",
+  "voice": "A loud, rising 'cur-lee' or 'coor-li', round in tone and instantly recognisable on a mudflat."
+ },
+ "ban-wen-niao": {
+  "behavior": "A seed-eater first: grass seed and grain, with a little insect food. Highly gregarious in parties of ten to several dozen, with a bounding flight and constant calling. The nest is a large ball woven from grass in a bush or tree. Resident here, commonest at the edges of paddies and grassland.",
+  "features": [
+   {
+    "k": "Underparts",
+    "v": "Throat chestnut; breast and belly white with dark edges to each feather, giving crisp scaling — the most reliable mark."
+   },
+   {
+    "k": "Upperparts",
+    "v": "Head, neck and back chestnut-brown with paler fringes, finely scaled overall."
+   },
+   {
+    "k": "Bill",
+    "v": "Thick, conical and grey-blue, built for cracking grass seed and grain."
+   },
+   {
+    "k": "Tail",
+    "v": "Short and wedge-shaped, the central feathers longer and pointed."
+   }
+  ],
+  "summary": "Dark scale-like markings cover the breast and belly like a suit of armour. Scaly-breasted Munias move in parties of a dozen, rising and falling over seeding grass, then drop in head-first so that only a row of small heads shows.",
+  "tagline": "The little bird with fish scales on its belly",
+  "tip": "Versus White-rumped Munia: Scaly-breasted has the scaly underparts and a grey-blue bill; White-rumped is plain brown with a white rump and a heavier grey-black bill. The two often flock together.",
+  "voice": "A soft 'kitty-kitty' or 'peet-peet', quiet individually but noticeable when the flock calls together, and continuous in flight."
+ },
+ "ban-yu-gou": {
+  "behavior": "Its feeding method is the most distinctive: it hovers three to ten metres above the water, head down, searching, then folds its wings and drops vertically, closing the eye behind the nictitating membrane an instant before entry. Usually in pairs or small parties, perching on waterside wires and dead branches. South China holds stable populations on creeks, reservoirs and fish ponds.",
+  "features": [
+   {
+    "k": "Plumage",
+    "v": "Black and white throughout: upperparts boldly pied, white spots on the wing coverts, tail white with a black central band."
+   },
+   {
+    "k": "Head",
+    "v": "A conspicuous black crest on the crown, a white supercilium, a black patch at the lores — the effect of a hat and drawn-on eyebrows."
+   },
+   {
+    "k": "Breast band",
+    "v": "One or two black bands across the breast — two in the male, one often incomplete in the female — the basis for sexing the bird."
+   },
+   {
+    "k": "Bill",
+    "v": "Black, long and pointed; the female's lower mandible usually shows some red."
+   }
+  ],
+  "summary": "The odd one out in the kingfisher family: black and white, without a trace of blue or green, and it hovers over the water like a helicopter before dropping vertically in. No other kingfisher does this.",
+  "tagline": "Black and white, spotted, and the only kingfisher that hovers",
+  "tip": "A small black and white bird stopped dead in the air is a Pied Kingfisher hovering — the most immediate way to tell it from a Common Kingfisher.",
+  "voice": "A sharp 'kwik—kwik' or 'chirrick', high and fast, given frequently in flight."
+ },
+ "bei-hong-wei-qu": {
+  "behavior": "A classic sallying feeder: watches from a low perch, drops onto insects, returns to the same spot. Fairly tame and approachable in parks. A winter visitor here from October to April in city parks, forest edges and villages; usually alone, territorial and quick to chase its own kind.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "Crown to nape silvery grey; face, throat and back black; breast and belly orange-red; a bold white wing patch; tail orange-red."
+   },
+   {
+    "k": "Female",
+    "v": "Grey-brown above, pale brown below, with the same white wing patch and an orange-red tail — tail colour is the key to the female."
+   },
+   {
+    "k": "Shape",
+    "v": "Plump, often perched leaning forward, tail flicked up and down constantly and occasionally spread."
+   },
+   {
+    "k": "Behaviour",
+    "v": "Typically flies from a low perch down to the ground for insects and returns to the same perch, on a predictable route."
+   }
+  ],
+  "summary": "The male is carefully turned out: silver crown, black face, orange-red belly, plus a white patch on the wing. It sits low or on the ground, flicking its tail — a flash of orange-red and you know what it is.",
+  "tagline": "An orange-red tail that vanishes into the bushes",
+  "tip": "It usually returns to the same twig. Find the twig, wait a minute or two, and you will almost certainly see a sally to the ground.",
+  "voice": "A short 'tick-tick' or 'hweet', slightly husky; a rattling 'churr' when alarmed."
+ },
+ "cang-lu": {
+  "behavior": "A classic sit-and-wait predator, often standing on one leg in shallow water with the neck drawn in and quite motionless, then striking with the head shooting forward like a spring. Widespread in winter on South China estuaries, fish ponds and reservoirs, and regularly on city rivers. It flies with the neck folded and the legs trailing far behind, wingbeats slow and powerful. Roosts communally in tall trees.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown white, a broad black stripe behind the eye running to the nape and ending in a fine black crest — the 'braid'."
+   },
+   {
+    "k": "Neck",
+    "v": "Neck white with several rows of black streaks down the centre of the foreneck, like a finely striped scarf."
+   },
+   {
+    "k": "Plumage",
+    "v": "Back and wings blue-grey, flight feathers black, breast grey-white, belly white; cool grey overall and thoroughly composed."
+   },
+   {
+    "k": "Bill",
+    "v": "Yellow, heavy as a dagger, more than 10 cm long."
+   }
+  ],
+  "summary": "A big grey bird with black streaks down the front of the neck and a single fine black braid trailing from the back of the head. It is the most patient bird of a South China winter: it will stand in shallow water for an hour for one fish to come within reach.",
+  "tagline": "An old gentleman who fishes — and can stand an hour without moving",
+  "tip": "Separating it from Chinese Pond Heron: Grey Heron is a large grey-and-white bird with a visibly longer neck; pond heron is brown and much smaller. The two often share the same stretch of water.",
+  "voice": "A harsh, scraping 'fraank' on take-off, raucous and loud — the call you will hear most often. Various grunts and squawks around the breeding colony."
+ },
+ "cha-wei-tai-yang-niao": {
+  "behavior": "Hovers at flowers to drink, and takes small insects among the blooms for protein. Lively, alone or in pairs, strongly territorial, the male chasing off other sunbirds. It favours tubular flowers — kapok, coral tree, hibiscus, lantana. It builds a pear-shaped hanging nest woven from spider silk and plant fibre, suspended beneath leaves.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "Crown and upper back metallic emerald, throat and upper breast scarlet, lower breast orange-yellow, belly yellow-green; the two central tail feathers extremely fine and long, forked at the tip."
+   },
+   {
+    "k": "Female",
+    "v": "Upperparts olive-green, underparts yellow-green, no red throat patch, tail shorter and unforked — altogether much plainer."
+   },
+   {
+    "k": "Bill",
+    "v": "Fine, long and distinctly downcurved, nearly as long as the head — a purpose-built nectar tool."
+   },
+   {
+    "k": "Tongue",
+    "v": "Tubular and forked at the tip, drawing nectar up by capillary action — a textbook case of convergent evolution with the hummingbirds."
+   }
+  ],
+  "summary": "China has no hummingbirds, but it does have sunbirds — equally tiny, equally given to hovering at flowers, equally metallic. The male Fork-tailed Sunbird is barely 8 cm long, with an emerald crown, a scarlet throat and two long central tail feathers that splay like scissors.",
+  "tagline": "South China's smallest 'hummingbird', tail like a pair of scissors",
+  "tip": "February to April, when kapok and coral trees are in flower, is the best time. If a 'dot' is hovering in front of a bloom, don't assume a bee — look for the metallic green and the red throat.",
+  "voice": "A high, faint 'tsit—tsit—tsit' or 'see-see', easily drowned by background noise; the song is a rapid series of metallic high notes."
+ },
+ "chang-wei-feng-ye-ying": {
+  "behavior": "Extremely active, working through the lower and middle layers of scrub and rarely perching in the open, so hearing it is the normal state and seeing it the exception. Feeds on small insects and spiders. To nest, it stitches leaf edges together with spider silk and plant fibre threaded through a line of punched holes, then lines the pouch with fine grass — a genuinely rare behaviour among birds.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown to nape rufous, sharply divided from the olive-green upperparts; supercilium faint."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts olive-green; throat white; breast and belly greyish white; flanks pale yellow; small and compact."
+   },
+   {
+    "k": "Bill & tail",
+    "v": "Bill fine, long and slightly downcurved, for picking insects out of foliage; tail fairly long, often cocked high and wagged."
+   },
+   {
+    "k": "Legs",
+    "v": "Fleshy pink, thin and delicate, giving a light-footed look as it hops."
+   }
+  ],
+  "summary": "Barely a dozen centimetres long, and it does needlework: it stitches two large leaves together with plant fibre to make a pouch slung from a branch. The name comes from that trade.",
+  "tagline": "The tiny bird that sews",
+  "tip": "Follow the voice, then watch dense shrubs at 1–2 m for it to show: look for the cocked tail and the rufous crown. It almost never flies into the open, so don't search the sky.",
+  "voice": "Startlingly loud, monotonous and persistent: 'te-chee, te-chee, te-chee', one high note and one low, repeated dozens of times at a volume quite out of proportion to the bird. It is the sound most often mistaken for a much larger bird in a Delta garden."
+ },
+ "chi-lu": {
+  "behavior": "A classic ambush feeder: motionless at the edge of shallow water with the neck folded into an S, then a sudden stab at fish, shrimp, frogs or aquatic insects. Usually alone or in small parties; nests colonially in bamboo, mangrove or trees, often alongside other herons. Mostly a summer visitor here, though some stay all year.",
+  "features": [
+   {
+    "k": "Breeding plumage",
+    "v": "Head, neck and breast chestnut, back blackish blue, wings and tail white — so vivid it looks like another species."
+   },
+   {
+    "k": "Non-breeding plumage",
+    "v": "Entirely brown, heavily streaked dark on head, neck and breast; it looks like the mud it stands on."
+   },
+   {
+    "k": "Wings",
+    "v": "In every season the coverts and flight feathers are pure white and contrast hard with the brown body in flight — the master key to the species."
+   },
+   {
+    "k": "Shape",
+    "v": "Stocky, with a short neck (far shorter than a Little Egret), a yellow bill with a dark tip, and orange-yellow to yellow-green legs."
+   }
+  ],
+  "summary": "Standing at the edge of a wet field it is an unremarkable brown lump, capable of staring at the water without moving for ten minutes. The moment it takes off, a whole pair of snow-white wings snaps open — that contrast is one of the classic sights of the Delta's paddies.",
+  "tagline": "A camouflaged paddy hunter that only shows its white wings in flight",
+  "tip": "A brown, stubby heron staring into space is not yet identified — wait for it to fly. Pure white wings means Chinese Pond Heron; brown wings means a bittern.",
+  "voice": "Usually silent; a harsh 'kraak' or 'gwaak' when flushed, short and unmusical. Low croaking around the colony in the breeding season."
+ },
+ "chun-se-shan-jiao-ying": {
+  "behavior": "Spends its whole life in grass and low vegetation and rarely flies into the open. Feeds on insects and spiders; in the breeding season it stitches grass blades into an oval nest slung between stems. Common in South China along paddy bunds, wetland margins and roadside waste — one of the few species that has increased as the city has spread.",
+  "features": [
+   {
+    "k": "Plumage",
+    "v": "Upperparts grey-brown with a faint supercilium; underparts pale yellowish white; overall plain, almost unmarked."
+   },
+   {
+    "k": "Tail",
+    "v": "Long, broad and graduated, darker at the tip, often cocked high or swung from side to side."
+   },
+   {
+    "k": "Bill",
+    "v": "Fine and pointed; black in the breeding season, fleshy pink outside it — a useful clue to the time of year."
+   },
+   {
+    "k": "Shape",
+    "v": "Slight, with weak legs and feet, clambering between grass stems like a miniature long-tailed monkey."
+   }
+  ],
+  "summary": "A small grey-brown bird with a long tail trailing behind it, forever threading through the middle of a grass clump. Its call is a miniature drill — flat, dense and able to go on for a very long time. It is the commonest background sound of waste ground in the Pearl River Delta.",
+  "tagline": "The electric drill in the grass",
+  "tip": "Hear the drill and don't look up — look down at the grass below a metre. It often shows its head at the tip of a stem for a few seconds before dropping back in.",
+  "voice": "A continuous 'tsip-tsip-tsip…' or 'zee-zee-zee', mechanical in rhythm and steady in pitch, running to dozens of notes like a drill or a cricket. Breeding males make short song flights from the tops of grass stems."
+ },
+ "da-bai-lu": {
+  "behavior": "Usually alone at the edge of deeper water, standing still and then stabbing at fish, frogs and crustaceans. Its movements are very slow — it can hold a single pose for minutes. Widespread in winter on coastal mudflats, fish ponds and reservoirs, roosting communally in trees at night. Compared with Little Egret it prefers open water with fewer people.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Black in breeding condition, bright yellow outside it — that is, right through the South China winter. Long and pointed, far heavier than a Little Egret's."
+   },
+   {
+    "k": "Gape",
+    "v": "The gape line runs back well past the rear edge of the eye — the most reliable way to separate it from Intermediate Egret."
+   },
+   {
+    "k": "Legs",
+    "v": "Legs and feet both black; unlike Little Egret it has no yellow feet."
+   },
+   {
+    "k": "Size",
+    "v": "80–100 cm long, wingspan up to 1.5 m; neck very long, folded into a pronounced S in flight."
+   }
+  ],
+  "summary": "A full size larger than Little Egret and close to a metre tall, with a bright yellow bill, black legs and an absurdly long neck. In winter the Delta's mudflats are full of them, standing in the water like white porcelain.",
+  "tagline": "The big one among the white egrets — a yellow bill does the talking",
+  "tip": "How do you judge a distant white dot? By proportion — a Great Egret's neck looks out of all proportion and it stands very upright; Little Egret is smaller, more compact, and shows yellow feet.",
+  "voice": "A low, hoarse 'kraa' or 'graa', deeper and heavier than Little Egret's; often repeated several times when flushed."
+ },
+ "da-zui-wu-ya": {
+  "behavior": "Omnivorous and very intelligent, taking carrion, fruit, insects, eggs and human refuse, and caching food. Usually in pairs or family groups, strongly territorial. Resident here, from city high-rises to forest edges on the hills, concentrated around landfill sites and fishing harbours.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Extremely stout, the upper mandible clearly hooked at the tip and more than half the length of the head — the source of the name."
+   },
+   {
+    "k": "Head",
+    "v": "Forehead bulging and crown domed, clearly different from the flatter-headed carrion crow."
+   },
+   {
+    "k": "Plumage",
+    "v": "All black with blue-purple or green-blue gloss; feather bases grey, visible if the plumage is parted."
+   },
+   {
+    "k": "Tail",
+    "v": "Wedge-shaped and medium in length, giving a rounded tail outline in flight."
+   }
+  ],
+  "summary": "All black, with a bill so thick it looks exaggerated and a domed crown like a hat. The Large-billed Crow is surprisingly clever: it recognises faces, uses traffic to crack nuts, and organises the division of spoils at a refuse station.",
+  "tagline": "The crow with the outsized bill",
+  "tip": "Versus Black Kite: a crow flaps continuously and has a wedge-shaped tail; a kite soars and has a shallow fork. Flight action is the surest guide.",
+  "voice": "A deep, hoarse 'kaa-kaa-kaa', heavier and slower than the carrion crow's, with grunts and metallic whistles mixed in."
+ },
+ "e": {
+  "behavior": "It circles or hovers above the water, locks on, folds its wings and plunges, throwing up a burst of spray and then beating hard to get airborne again. It often eats on a dead tree or a power pole at a reservoir or on the coast. A winter visitor in South China, with regular wintering records at Zhuhai's reservoirs and along the coast. Its range is almost worldwide — one of the few raptors present on nearly every continent.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown white and finely streaked, a broad dark brown mask through the eye, nape dark brown."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts dark brown, underparts white, usually with brown streaking or a band across the breast — more marked in the female."
+   },
+   {
+    "k": "Underwing",
+    "v": "In flight the underwing is white with a conspicuous black patch at the carpal joint, and black tips."
+   },
+   {
+    "k": "Feet",
+    "v": "The underside of the toes is covered in spiny scales and the outer toe is reversible, giving a two-forward, two-back grip designed for holding fish."
+   }
+  ],
+  "summary": "It does one thing all its life: catch fish. It plunges into the water, locks its talons into the prey and powers back into the air, the fish always held head-first to cut drag. The undersides of the toes carry fine spines that grip a slippery fish — evolution has fitted it out with a complete set of fishing tools.",
+  "tagline": "The world's fish hawk — a fisher with non-slip soles",
+  "tip": "A raptor hovering over water is almost certainly an Osprey — very few others do it. Check the black patch at the bend of the underwing.",
+  "voice": "A series of sharp whistles, 'chewk—chewk—chewk', usually near the nest or when alarmed."
+ },
+ "fan-zui-yu": {
+  "behavior": "Its feeding method is remarkable: the upturned bill tip is dipped into shallow water and swept from side to side, small crustaceans and insect larvae found by touch and snapped up — the upturn evolved precisely for this sweeping technique. Usually in flocks, and it mixes with other waders. A winter visitor in South China, in smaller numbers than Black-winged Stilt.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Fine, long and conspicuously upturned, black — the most iconic feature of the species."
+   },
+   {
+    "k": "Plumage",
+    "v": "White throughout, with black from the crown to the nape and on the shoulders and wing coverts, making bold blocks of black and white."
+   },
+   {
+    "k": "Legs",
+    "v": "Fine and long, blue-grey, about half the bird's height."
+   },
+   {
+    "k": "Size",
+    "v": "Slender, fairly long-necked and very upright — elegant in the manner of a stilt."
+   }
+  ],
+  "summary": "Black and white, with fine long legs, and most curious of all a bill that curves upward — like a pair of forceps that has been bent. It feeds by laying the tip of that bill on the surface and sweeping it from side to side as it walks; the action is quite unlike anything else.",
+  "tagline": "An upturned bill that sweeps the water from side to side",
+  "tip": "You need look at nothing but the bill: upturned means Pied Avocet, dead straight means another wader.",
+  "voice": "A clear 'kluit' or 'kliu', often repeated, more frequently in flight."
+ },
+ "feng-tou-pi-ti": {
+  "behavior": "Dives well for fish. In the breeding season it performs an elaborate water courtship: the pair rise breast to breast, shake their heads and present weed to one another. In South China a winter visitor to reservoirs, lakes and bays, usually alone or in pairs and rarely in flocks.",
+  "features": [
+   {
+    "k": "Breeding plumage",
+    "v": "Crown black with black tufts at the sides (the 'crest'), the cheeks and sides of the neck framed by a chestnut ruff — magnificent."
+   },
+   {
+    "k": "Non-breeding plumage",
+    "v": "Crown black, neck and underparts white, upperparts grey-brown; neck slender and the bird cleanly black and white."
+   },
+   {
+    "k": "Neck & bill",
+    "v": "Neck long and fine; bill long, slender, pinkish-flesh with a slightly darker tip, in a straight line with the head."
+   },
+   {
+    "k": "Shape",
+    "v": "Fairly large and long, sitting high in the water, often stretching the neck upright to look around."
+   }
+  ],
+  "summary": "In breeding dress the Great Crested Grebe wears a magnificent chestnut ruff and two black crests, and courts with a face-to-face head-shaking dance. What we see in South China is mostly the winter bird: white neck, black crown, slender neck — like a small swan.",
+  "tagline": "The grebe that performs water ballet",
+  "tip": "Separating it from Little Grebe: Great Crested is much larger, with a long neck and a long pinkish bill; Little Grebe is round, tailless and short-billed.",
+  "voice": "Hoarse 'kraa' notes and low muttering in the breeding season; mostly silent in winter, with an occasional short 'kek'."
+ },
+ "feng-tou-ying": {
+  "behavior": "A forest raptor, ambushing birds, squirrels and lizards in the canopy. It nests in trees in city parks, and several of the Delta's larger parks hold resident populations. A resident in South China. Secretive, and usually found by voice first.",
+  "features": [
+   {
+    "k": "Crest",
+    "v": "A short crest at the nape, usually inconspicuous, raised slightly when excited or alert."
+   },
+   {
+    "k": "Underparts",
+    "v": "Throat white with a dark central stripe; breast and belly white and densely barred with heavy brown — a very typical hawk's chest pattern."
+   },
+   {
+    "k": "Upperparts",
+    "v": "Crown and back dark brown, scapulars slightly paler; tail fairly long, with four or five bold dark bars."
+   },
+   {
+    "k": "Flight",
+    "v": "Typical Accipiter: wings short and rounded, flapping alternating with gliding, the tail often spread."
+   }
+  ],
+  "summary": "It does not care for soaring. It hides in the canopy and takes birds with a sudden short sprint. There is a small crest at the back of the head — usually laid so flat you cannot see it — and the breast carries a series of heavy bars.",
+  "tagline": "A short-winged raptor hidden in the city's trees",
+  "tip": "A nationally protected species (Class II). A hawk that bursts out of the canopy and streaks between the trees of a city park is more likely this species than anything soaring overhead.",
+  "voice": "A loud 'kew-kew-kew' or 'hi-hi-hi', rising in pitch, frequent in the breeding season."
+ },
+ "he-chi-ya-juan": {
+  "behavior": "Extremely secretive, usually flying low or clambering through scrub, reedbeds and tall grass, rarely making a long flight; it glides with the wings drooped. It takes insects, lizards, frogs, mice and the eggs and nestlings of other birds. Unlike the Asian Koel it builds its own nest — a domed ball — and is no brood parasite. On fine mornings it often suns itself in the open with its wings spread. Habitat loss and a long history of hunting have brought numbers down markedly.",
+  "features": [
+   {
+    "k": "Colour",
+    "v": "Head, neck, breast, belly and tail black with a violet-blue gloss; the wings deep chestnut — an extraordinarily strong contrast."
+   },
+   {
+    "k": "Eye",
+    "v": "Iris brilliant red, startling against the black head."
+   },
+   {
+    "k": "Bill & claws",
+    "v": "Bill black, heavy and slightly downcurved; feet strong, with the fourth toe reversible (zygodactyl), made for clambering in thickets."
+   },
+   {
+    "k": "Tail",
+    "v": "Long and broad, black with a green gloss, usually trailing behind and fanned in flight."
+   }
+  ],
+  "summary": "Glossy blue-black all over, but with a pair of deep chestnut wings and eyes like two rubies. Older Cantonese speakers call it 'mou gai', the feather chicken; it was once hunted heavily and is now a nationally protected species (Class II). It is one of the most secretive large birds of the southern scrub.",
+  "tagline": "Black body, red wings, red eyes — the 'feather chicken'",
+  "tip": "A nationally protected species (Class II); capture and sale are prohibited. Keep at least 20 metres away, and do not use playback — it disturbs breeding birds badly.",
+  "voice": "A series of low 'boop—boop—boop—boop' notes, hollow as if blown across the mouth of a jar, evenly paced, sometimes in duet. The most reliable evidence that the bird is present."
+ },
+ "hei-chi-chang-jiao-yu": {
+  "behavior": "Often wades slowly in shallow water, pecking rapidly at the surface or the mud as it goes. Sociable, gathering in winter in parties of dozens and mixing with Kentish Plovers and greenshanks. It defends the nest vigorously, luring predators away with a broken-wing display. In South China mostly a winter visitor and passage migrant.",
+  "features": [
+   {
+    "k": "Legs",
+    "v": "Extremely long, pink to red, about half the bird's height — the origin of the name."
+   },
+   {
+    "k": "Colour",
+    "v": "Upperparts black (with a metallic gloss on the male's back), underparts white; the extent of black on the nape and crown varies with individual and sex."
+   },
+   {
+    "k": "Bill",
+    "v": "Black, fine and straight as a needle, made for picking small invertebrates out of shallow water."
+   },
+   {
+    "k": "Flight",
+    "v": "In flight the legs trail far behind like two ribbons; the underwing is boldly black and white."
+   }
+  ],
+  "summary": "A body in sharp black and white, on legs of an absurd pink length — the Black-winged Stilt walks like a model on stilts. It is the most elegant figure on the mudflat, and one of the easiest waders to identify.",
+  "tagline": "A bird on a pair of pink stilts",
+  "tip": "From a distance it looks like a row of black and white dots on pink sticks — once you see the legs there is little doubt. In winter flocks, check for smaller, shorter-legged species mixed in.",
+  "voice": "A loud, sharp 'kik—kik—kik' or 'kee-ack', often repeated on take-off or when alarmed — one of the most audible sounds on a mudflat."
+ },
+ "hei-chi-yuan": {
+  "behavior": "It glides low or hovers over open farmland and grassy slopes, hunting rodents, lizards and large insects. Unlike a Kestrel it hovers lower, closer to the ground. A resident in South China, and in recent years it has been spreading across Delta farmland and open ground in the new districts.",
+  "features": [
+   {
+    "k": "Colour",
+    "v": "Upperparts pale grey, underparts pure white, large black patches on the shoulders (upperwing coverts), black wingtips — an extreme contrast."
+   },
+   {
+    "k": "Eye",
+    "v": "Iris brilliant red in adults, startling on the pale head — hence 'red-eyed white hawk'."
+   },
+   {
+    "k": "Flight",
+    "v": "Wings broad, often hovering low, the action light; in flight the underwing is mostly white with black tips."
+   },
+   {
+    "k": "Shape",
+    "v": "Small, big-headed and long-tailed, sitting very upright."
+   }
+  ],
+  "summary": "It does not look like a hawk: pale grey and white, blood-red eyes, a black patch on each shoulder, and in flight it resembles an overgrown white dove — until it hovers and drops vertically.",
+  "tagline": "A 'white hawk' with red eyes and black shoulders",
+  "tip": "A nationally protected species (Class II). A small pale grey raptor with red eyes and black shoulders skimming low over grass is this species.",
+  "voice": "A sharp 'kree-uk' or 'pee-uu', short and whistled, usually given in the air."
+ },
+ "hei-fu-bin-yu": {
+  "behavior": "A typical flocking wader of the flats, moving with the tide: it gathers on high ground as the water rises and spreads across the mud as it falls. Probes repeatedly in the sediment for small snails, worms and crustaceans. A winter visitor here and one of the most numerous waders in the region.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Black, fairly long and clearly downcurved, the tip soft and flexible with dense touch receptors — built for probing mud."
+   },
+   {
+    "k": "Plumage",
+    "v": "In non-breeding plumage grey-brown above and white below with fine streaking on the breast sides and flanks; in breeding plumage a large black belly patch appears — the 'dun' of the name."
+   },
+   {
+    "k": "Legs",
+    "v": "Black and short, made for running on mud."
+   },
+   {
+    "k": "Flock",
+    "v": "Extremely gregarious, often hundreds packed together, turning in unison in flight so the flock flashes light and dark."
+   }
+  ],
+  "summary": "On a Pearl River Delta flat in winter, hundreds of small waders move like a grey cloud — and most of them are Dunlins. They sprint low, turn as one, and look choreographed.",
+  "tagline": "The most numerous small sandpiper on the flats",
+  "tip": "Judge by the flock: tens of birds may be another sandpiper; a grey cloud of hundreds is almost certainly Dunlin. At close range look for the clearly downcurved bill and the fine streaking on the breast sides.",
+  "voice": "A rough 'treep' or 'kree' in flight, overlapping across a flock."
+ },
+ "hei-hou-zao-mei": {
+  "behavior": "Secretive but fond of calling, moving in parties of three to eight through bamboo and scrub, turning over litter for insects and fruit. More dependent than Chinese Hwamei on dense bamboo and evergreen thicket. A resident in South China, mostly at forest edge and in gullies.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown and nape grey, cheeks and ear-coverts white, throat black — the 'black throat, white face' contrast."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts brown, underparts pale brown, undertail coverts chestnut; soft-toned overall."
+   },
+   {
+    "k": "Bill",
+    "v": "Black, stout and slightly downcurved."
+   },
+   {
+    "k": "Shape",
+    "v": "Heavier than Chinese Hwamei, with a long tail; usually moves through thickets in small parties."
+   }
+  ],
+  "summary": "Black throat, white cheeks, grey crown, brown body — the colours arranged like a mask. What it is famous for is not its looks but a loud series of notes that sounds like a group of people roaring with laughter.",
+  "tagline": "The southern laughingthrush that actually laughs",
+  "tip": "Listen for the laughter first, then wait for the party to cross the thicket one bird at a time. They keep to fairly regular routes, so standing quietly beside a path works well.",
+  "voice": "Highly distinctive: a loud run of 'wi-ki-ki-ki' or 'ho-ho-ho', accelerating and rising in pitch, like a group of people laughing in the distance — the most effective clue to its presence."
+ },
+ "hei-juan-wei": {
+  "behavior": "A classic sit-and-wait aerial hunter: perches high, launches fast at passing insects and returns to the same perch. Extremely aggressive, attacking raptors, crows and even people that come into its territory. A summer visitor here from April to September in farmland, villages and open woodland. The nest is a shallow cup in a fork.",
+  "features": [
+   {
+    "k": "Colour",
+    "v": "All black with blue-green metallic gloss in sunlight; bill and legs black."
+   },
+   {
+    "k": "Tail",
+    "v": "Long and deeply forked, with the outermost feathers curled up at the tips — the source of the name."
+   },
+   {
+    "k": "Eye",
+    "v": "Iris dark brown to dark red, hard to see in the black head."
+   },
+   {
+    "k": "Shape",
+    "v": "Slender and upright, typically watching from a high wire or dead branch."
+   }
+  ],
+  "summary": "Black with a blue sheen, the tail ending in open scissors with the outer feathers curled up. It sits on wires and launches at anything that flies past — including raptors, which it will chase off.",
+  "tagline": "The black bird on the wire that fights in mid-air",
+  "tip": "A black bird that launches from a wire into mid-air, intercepts, and returns to the same wire is a drongo. Check whether the tail is forked with upturned tips.",
+  "voice": "Varied, including mimicry of other birds and mechanical sounds; the usual calls are a rough 'cheer-cheer' and metallic whistles, with a loud 'kli-kli-kli' alarm."
+ },
+ "hei-lian-pi-lu": {
+  "behavior": "It gathers on mudflats exposed by the falling tide and in the shallow water of gei wai fish ponds, often with Eurasian Spoonbills and egrets. Its feeding method is its own: the spoon-shaped bill is lowered into the water and swept from side to side until fish or prawns are sensed, then snapped shut. It is wary and will flush at several hundred metres, so watching means keeping your distance and keeping quiet. The world population depends on very few wintering sites, and the Qi'ao–Dangan island area and the Hengqin coast are key among them.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Long and flattened, narrowed in the middle and expanded into a spoon at the tip, black; swept from side to side in the water and used to find food by touch."
+   },
+   {
+    "k": "Face",
+    "v": "Bare skin around the eye, on the forehead and at the base of the bill is black, giving the signature black face; in breeding condition yellow plumes grow on the crown and nape."
+   },
+   {
+    "k": "Plumage",
+    "v": "White throughout, with a pale yellow wash on the foreneck and breast in breeding condition; tips of the flight feathers black, so the wing shows a black edge in flight."
+   },
+   {
+    "k": "Legs",
+    "v": "Black and fairly long, made for wading in shallow water."
+   }
+  ],
+  "summary": "A long, flat black bill that widens into a spoon at the tip, and a black face to go with it. The Black-faced Spoonbill is one of the world's most endangered waders; the wild population once fell below 300 birds. After more than twenty years of protection it has recovered to around six thousand, and the Zhuhai mudflats are among its most important wintering grounds.",
+  "tagline": "Only a few thousand in the world, and Zhuhai is their winter home",
+  "tip": "A nationally protected species (Class I). Observe only from the areas the reserve allows, with a telescope, at a distance. Never approach and never fly a drone — a single flush can cost a bird a day's energy budget.",
+  "voice": "Extremely quiet. Around the nest it gives a low 'grr' or 'tok', but day to day it barely calls and communicates mostly by sight. The recording below was made on a mudflat in Saga, Japan; the calls are faint and mixed with distant waders, so turn the volume up and use headphones."
+ },
+ "hei-ling-liang-niao": {
+  "behavior": "A ground feeder, striding across lawns in parties and taking insects, earthworms and grass seed, and following lawnmowers for what they turn up. Likes to sing from wires and street lights. Nests in tree holes or building crevices; aggressive, and will attack other birds near the nest. The urban population here has expanded markedly in the last twenty years.",
+  "features": [
+   {
+    "k": "Head & breast",
+    "v": "Crown, chin, throat and upper breast form one black block — the 'collar' — in strong contrast with the white belly."
+   },
+   {
+    "k": "Eye-ring",
+    "v": "A wide, conspicuous ring of orange-yellow bare skin around the eye; the easiest single feature to recognise."
+   },
+   {
+    "k": "Wings",
+    "v": "Black, with white bases to the primaries showing as large white patches in flight; back dark brown."
+   },
+   {
+    "k": "Bill & legs",
+    "v": "Bill black, stout and slightly downcurved; legs yellow and strong, made for walking and turning over turf."
+   }
+  ],
+  "summary": "Black head and breast, snow-white belly, and a black collar between them; add a ring of orange-yellow bare skin around the eye, like careful make-up. The Black-collared Starling is the biggest songbird on a southern lawn, and it walks with its chest out.",
+  "tagline": "A black collar, yellow eye-shadow, and a fondness for lawns",
+  "tip": "A big bird striding across a lawn with a black head and breast, white belly and yellow eye-ring is this species. It often mixes with Crested Mynas — don't confuse them.",
+  "voice": "Loud and metallic, usually a repeated 'kia-kia-kia', or drawn-out whistles and trills; it also mimics other birds. A flock calling together is very noisy."
+ },
+ "hei-shui-ji": {
+  "behavior": "Nods its head back and forth while swimming, a typical rail habit. Dives, but not for long, and will push into vegetation or under water when pressed. Eats aquatic plants, seeds, insects and small fish. Aggressive: in the breeding season it chases its own kind hard and fights with its feet. One of the commonest waterbirds in city park lakes.",
+  "features": [
+   {
+    "k": "Frontal shield",
+    "v": "A bright red, slightly heart-shaped patch of bare skin from the forehead to the base of the bill."
+   },
+   {
+    "k": "Bill",
+    "v": "Yellow at the tip, red in the middle, continuous with the shield."
+   },
+   {
+    "k": "Plumage",
+    "v": "Head and neck deep black, back dark olive-brown, breast and belly dark slate blue, with a bold white line along each flank."
+   },
+   {
+    "k": "Legs",
+    "v": "Yellow-green with a bright red ring above the joint (the 'garter') and long toes without webbing."
+   }
+  ],
+  "summary": "A small black waterbird wearing a bright red plate on its forehead and a red garter around each leg. It swims between lotus leaves with its head pumping back and forth like a metronome — the classic Moorhen motion.",
+  "tagline": "Red shield, red garter, and a head that nods as it swims",
+  "tip": "Versus Eurasian Coot: the Moorhen has a red shield, a white flank line and red leg rings; the Coot has a white shield, an all-black body and lobed toes. Both turn up in city parks here.",
+  "voice": "Varied: a short 'kruk' or 'kurruk', and a rolling series 'kurr-uk-kurr-uk'. A sharp 'kik' when startled."
+ },
+ "hei-yuan": {
+  "behavior": "A thorough opportunist: it takes fish, rodents and birds, and feeds heavily on carrion and human refuse, gathering around city landfill sites and fishing harbours. It uses thermals to stay aloft for long periods on a light, drifting flight action. South China holds both residents and birds that move south in winter. It nests on cliffs, on high-voltage pylons and in large trees.",
+  "features": [
+   {
+    "k": "Tail",
+    "v": "Shallowly forked — not the deep fork of a swallow — and constantly twisted in flight to adjust direction. The most characteristic piece of the bird's behaviour."
+   },
+   {
+    "k": "Underwing",
+    "v": "A large white patch at the base of the primaries beneath each wing forms two unmistakable 'light bulbs', visible at long range."
+   },
+   {
+    "k": "Colour",
+    "v": "Dark brown throughout, paler on the head, with considerable individual variation; bill black, cere yellow."
+   },
+   {
+    "k": "Flight",
+    "v": "Soars with the wings in a shallow V and the primaries spread into obvious 'fingers'."
+   }
+  ],
+  "summary": "Look up anywhere in Zhuhai and the raptor you see is probably this one: dark brown body, pale forked tail, two big white patches under the wings. It rides the air for twenty minutes without a single wingbeat, turning like a sheet of paper in the sky.",
+  "tagline": "The 'eagle' you are most likely to see over Zhuhai",
+  "tip": "'Forked tail, two white patches beneath, shallow V wings' — that is the Black Kite hat-trick. A fan-shaped tail and no white underwing patches points to Eastern Buzzard or another hawk.",
+  "voice": "A horse-like whinny, 'pee-ee-ee' or 'hi-yah', tremulous, loud and far-carrying."
+ },
+ "hei-zui-ou": {
+  "behavior": "It feeds on mudflats and in shallow estuary water, by snatching from the surface, pecking in the shallows and picking along the tide line. It often mixes with other gulls and waders. Demanding about habitat, it depends heavily on coastal mudflats and fish ponds, so reclamation and disturbance are the main threats. There are regular wintering records on the Zhuhai coast; observe at low tide, from a distance, at the edge of the mudflat.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Black, short and stout for a gull — the origin of the name."
+   },
+   {
+    "k": "Head",
+    "v": "Entirely black in breeding condition; in non-breeding dress, which is what we see in a South China winter, the head is white with a distinct black crescent behind the ear."
+   },
+   {
+    "k": "Plumage",
+    "v": "Back and wings pale grey, underparts white, wingtips black; in flight the underwing is pale grey with obvious black tips."
+   },
+   {
+    "k": "Legs",
+    "v": "Red to orange-red, in sharp contrast with the black bill."
+   }
+  ],
+  "summary": "One of the few gulls centred on China: it breeds in the Bohai Bay and winters on the south-east coast, and the world population is only about ten thousand birds. A short black bill, a dark smudge behind the ear in winter, red legs — meeting one on a Zhuhai mudflat is worth writing down.",
+  "tagline": "China's own rare little gull — fewer than twenty thousand left",
+  "tip": "A nationally protected species (Class I). Separating it from Black-headed Gull: Saunders's has a black bill, is smaller and has redder legs; Black-headed has a bright red bill and legs, is larger, and its winter ear-spot is more diffuse.",
+  "voice": "A thin, high 'kee-ak' or 'kweek', higher and more hurried than Black-headed Gull."
+ },
+ "hong-er-bei": {
+  "behavior": "Lively and restless, often standing upright on a branch looking about with the tail dipping. Keeps to small parties and often mixes with Light-vented Bulbuls. Eats fruit, nectar and insects, with a particular weakness for banyan figs and berries. The cup nest is usually 1–3 m up in a bush or foliage. More wary than the Light-vented Bulbul: as you approach it gives a short alarm first.",
+  "features": [
+   {
+    "k": "Crest",
+    "v": "A long, pointed black crest that snaps upright into a small spire when the bird is excited — its most conspicuous feature."
+   },
+   {
+    "k": "Cheek",
+    "v": "A vivid red patch below and behind the eye, the source of the name; its depth varies with age and mood."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts dark brown; throat white; a broken black band around the sides of the breast forming a collar; belly white; undertail coverts bright red."
+   },
+   {
+    "k": "Tail",
+    "v": "Long, with white tips to the outer feathers, obvious as white corners when the tail is spread in flight."
+   }
+  ],
+  "summary": "A tall black crest, a slash of scarlet on the cheek, and undertail coverts touched with vermilion. The Red-whiskered Bulbul is one of the most recognisable birds in a southern park, and the earliest alarm clock: it starts warming up from a high branch before the sky is light.",
+  "tagline": "A dandy in a black top hat with a dab of rouge",
+  "tip": "Look at the hat: a tall pointed crest means Red-whiskered; a flat crown means Light-vented. They often share a tree, so use the voice to tell them apart.",
+  "voice": "A clear, varied 'chu-chu, chu, chu' — rounder and bouncier than Light-vented Bulbul. The alarm is a dry, urgent chatter that tells you at once you have been noticed."
+ },
+ "hong-sun": {
+  "behavior": "A skilled hoverer, but it also perches on poles, streetlights and the edges of tall buildings to wait. It feeds mainly on rodents and large insects, and takes small birds and lizards. South China has both residents and winter visitors; it is seen over city high-rises as well as farmland. It nests in gaps in buildings and in tree holes, and builds no nest of its own.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "Crown and tail blue-grey, back chestnut with black spots, a broad black band near the tip of the tail."
+   },
+   {
+    "k": "Female",
+    "v": "Brown throughout, the back densely barred dark, the tail with several bars — altogether plainer than the male."
+   },
+   {
+    "k": "Face",
+    "v": "The dark moustachial stripe typical of falcons, running down from the eye, with conspicuous yellow bare skin around it."
+   },
+   {
+    "k": "Flight",
+    "v": "Wings pointed and long with rapid beats; when hovering the wings vibrate at high frequency while the tail is fanned for balance."
+   }
+  ],
+  "summary": "It has a trick most raptors cannot manage: hovering into the wind with its head held perfectly still, staring at the ground for mice, then dropping vertically. That is the classic picture of a Kestrel.",
+  "tagline": "The small raptor that can stop in mid-air",
+  "tip": "A nationally protected species (Class II). A small raptor hanging motionless in the air is almost certainly a Kestrel — the trick is its trademark.",
+  "voice": "A sharp, rapid 'kii-kii-kii' or 'kee-kee-kee', a high chattering series, usually near the nest or when alarmed."
+ },
+ "hong-zui-ou": {
+  "behavior": "Highly gregarious, gathering in winter in harbours and estuaries in flocks of tens to hundreds, often following fishing boats and tide lines. Eats small fish, shrimp, insects and food offered by people. Adaptable enough to use city waterways, and quick in the air, turning sharply and plunging into the water.",
+  "features": [
+   {
+    "k": "Bill & legs",
+    "v": "Bill and legs both bright red (duller in winter) — the most direct feature of the species."
+   },
+   {
+    "k": "Head",
+    "v": "In summer the whole head is dark chocolate-brown (not black); in winter the head is white with a grey-black ear-spot behind the eye."
+   },
+   {
+    "k": "Plumage",
+    "v": "Back and wings pale grey with a bold white wedge along the leading edge (a white flash in flight) and black wingtips."
+   },
+   {
+    "k": "Size",
+    "v": "Medium, larger than Saunders's Gull, with a longer finer bill and a buoyant flight."
+   }
+  ],
+  "summary": "Every November they arrive in flocks from the north and settle on the water off Lovers' Road. Red bill, red legs, white body, and in winter a faint dark smudge behind the eye. They are the most conspicuous birds of a Zhuhai winter, and the first gull many people ever look at properly.",
+  "tagline": "The red-billed, red-legged gull that winters in Zhuhai",
+  "tip": "Please don't feed them bread or processed food: it causes malnutrition and dependency. Keep your distance and let them forage.",
+  "voice": "A noisy 'kree-ar' or 'kwarr', overlapping across a flock — the defining sound of a winter seafront."
+ },
+ "hua-mei": {
+  "behavior": "A bird of the understorey, turning over fallen leaves for insects, earthworms and fruit; secretive in habit but giving its position away by voice. Wary, and when disturbed it slips low into dense cover. A resident in South China, in hill forest, bamboo and gully thickets. Wild numbers have declined markedly through decades of trapping for the cage-bird trade.",
+  "features": [
+   {
+    "k": "Eyebrow",
+    "v": "White around the eye, extending back into a fine white supercilium that droops slightly at the rear — the most characteristic feature of the species."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts brown, crown and back with dark streaks, underparts yellowish-brown with faint streaks across breast and belly."
+   },
+   {
+    "k": "Bill",
+    "v": "Yellowish-brown, slightly downcurved, stout and strong — made for turning over leaf litter."
+   },
+   {
+    "k": "Shape",
+    "v": "Medium-sized and roundish, tail fairly long, usually progressing over the ground in hops."
+   }
+  ],
+  "summary": "A white ring around the eye trails back into a long eyebrow stripe, as if it had been painted on — hence the name, 'painted eyebrow'. Its song is reckoned among the finest of any Chinese bird, and for that very reason it was once trapped in huge numbers; it is now a nationally protected species (Class II).",
+  "tagline": "China's most famous cage bird — and now a protected species",
+  "tip": "A nationally protected species (Class II); capture and trade are prohibited. Please do not use playback to draw birds in — disturbance during the breeding season directly reduces their success.",
+  "voice": "An extraordinarily varied song, wide in range and often described as coloratura — clear whistles, trills and mimicry interwoven at a free rhythm. One of the most recognisable dawn songs in South China's hills."
+ },
+ "huan-jing-heng": {
+  "behavior": "A classic beach runner, spotting insects and crustaceans by sight and picking them up at speed. It nests in a shallow scrape on sand, the eggs almost indistinguishable from the shingle. Human disturbance and beach development are its greatest threats. South China's coast holds both wintering and breeding birds.",
+  "features": [
+   {
+    "k": "Breast",
+    "v": "A black patch on each side of the breast in males, brown in females and in non-breeding birds, forming an incomplete 'ring' across the chest — hence the name."
+   },
+   {
+    "k": "Head",
+    "v": "Forehead white, black eyestripe in males, crown chestnut-brown; the facial pattern is clean and clear."
+   },
+   {
+    "k": "Colour",
+    "v": "Upperparts sand-brown, underparts white, matching the beach almost exactly — superb camouflage."
+   },
+   {
+    "k": "Legs",
+    "v": "Grey-black and slender, with no hind toe (typical of most plovers), built for running on sand."
+   }
+  ],
+  "summary": "Barely more than a dozen centimetres, and its sand-brown back lets it dissolve into the beach. It runs very fast, stops, pecks once, runs again — that run–stop–run rhythm is the most characteristic mannerism of the plovers.",
+  "tagline": "The little thing that runs about the beach and never stops",
+  "tip": "Don't only look at the big birds on a beach — watch for the small figure running and stopping at your feet. In the breeding season (April to June) please keep off the sand: one trodden egg costs a whole clutch.",
+  "voice": "A clear 'pit—pit' or 'prr-it', short and metallic, given frequently in flight."
+ },
+ "huang-mei-liu-ying": {
+  "behavior": "Extremely active in the upper and middle canopy, snatching prey on the move and rarely settling. Often alone, or joining mixed flocks of white-eyes and tits. Feeds on small insects and spiders. Arrives in numbers from September and winters throughout, present in almost every patch of broadleaf trees in a city park.",
+  "features": [
+   {
+    "k": "Supercilium",
+    "v": "A bold yellow-white supercilium running from the bill to behind the ear-coverts — the source of the name."
+   },
+   {
+    "k": "Wing patch",
+    "v": "Two clear pale-yellow wingbars, conspicuous perched or in flight, and the key difference from other leaf warblers."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts olive-green, underparts greyish white with a faint yellow wash on the throat; small, light and short-tailed."
+   },
+   {
+    "k": "Bill",
+    "v": "Fine and pointed, dark above and orange-yellow below — built for picking small insects out of foliage."
+   }
+  ],
+  "summary": "Nine centimetres long and never still. The Yellow-browed Warbler is one of the most numerous winter visitors in South China — that thin, rising 'tseeweet' you hear is almost certainly this one.",
+  "tagline": "The busiest little green bird in the canopy",
+  "tip": "Listen for the rising whistle first, then look 3–6 m up into the foliage. Small and fast: confirm it on the two wingbars and the yellow brow.",
+  "voice": "A thin, rising 'tseeweet', often in two- or three-note variants, fine and metallic. The breeding song is a short trill, occasionally heard here in winter."
+ },
+ "hui-ban-heng": {
+  "behavior": "Feeds in the classic run–stop–peck rhythm and often mixes with other waders. In winter its grey and white plumage matches the mudflat so closely that you usually notice it only when it moves. A winter visitor in South China, on coastal mudflats and estuary sandbars.",
+  "features": [
+   {
+    "k": "Axillaries",
+    "v": "In flight the axillaries — under the wing, close to the body — are conspicuously black. The most distinctive and most reliable feature of the species."
+   },
+   {
+    "k": "Plumage",
+    "v": "In non-breeding dress the upperparts are grey-brown finely spangled with white and the underparts white, with pale grey-brown mottling at the sides of the breast; in breeding dress it is boldly black and white, with a black face and breast."
+   },
+   {
+    "k": "Bill",
+    "v": "Stout and relatively short, black, suited to pecking at the surface of a mudflat."
+   },
+   {
+    "k": "Size",
+    "v": "Much larger than Kentish Plover, heavily built, with a relatively large head."
+   }
+  ],
+  "summary": "In winter it is plain grey and white and easy to overlook on a mudflat. But the moment it takes off, that tuft of black under the wing is revealed — the Grey Plover's signature, and nobody else's.",
+  "tagline": "The big plover that shows black armpits in flight",
+  "tip": "See a grey-white, thickset plover out on the mud? Wait for it to fly — one glimpse of black under the wing settles it.",
+  "voice": "A clear three-note whistle, 'pee-u-wee', the middle note slightly lower, often given in the air or on take-off."
+ },
+ "ji-yu": {
+  "behavior": "Usually alone or in pairs, distributed linearly along the waterline, rarely gathering in the big flocks of other waders. It walks in stops and starts, pecking at waterside insects and small invertebrates. When flushed it flies low over the surface with stiff, downward-pressed wingbeats. A winter visitor in South China, commonest along rivers and reservoir edges.",
+  "features": [
+   {
+    "k": "Wing bend",
+    "v": "A distinct white wedge at the shoulder, running forward as a white 'shoulder strap' — visible even when perched."
+   },
+   {
+    "k": "Breast",
+    "v": "Grey-brown patches at the sides of the breast running up the sides of the neck, meeting the white belly along an irregular line."
+   },
+   {
+    "k": "Bill",
+    "v": "Medium length, dead straight, pale at the base and dark at the tip."
+   },
+   {
+    "k": "Behaviour",
+    "v": "Bobs its tail continuously when perched, with a quick flick of the wings that is then folded away — almost impossible to misidentify."
+   }
+  ],
+  "summary": "It does not gather on the big mudflats. It works alone along a riverbank or reservoir edge at a trot — a few steps and a stop, tail pumping up and down, wings flicked out and folded again. That routine is the Common Sandpiper's signature.",
+  "tagline": "The sandpiper that trots along the waterline, tail bobbing",
+  "tip": "Hear that sharp 'swee-wee-wee'? Follow the waterline to the lone bird trotting along with its tail pumping — that is the Common Sandpiper.",
+  "voice": "A very loud three-note whistle, 'swee-wee-wee', the first note high and the last two slightly lower, given almost invariably on take-off — the main way to find the bird."
+ },
+ "jia-yan": {
+  "behavior": "Feeds on flying insects almost continuously, perching only to nest and rest. Builds a half-cup of mud pellets mixed with grass stems under eaves and beams, lined with feathers. A summer visitor in South China, arriving in March and leaving in October, with a few birds overwintering locally. Roosts communally in reedbeds or on wires.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Forehead and throat chestnut; upperparts steel-blue with a metallic sheen; lores black."
+   },
+   {
+    "k": "Underparts",
+    "v": "A black breast band over a white to pale orange belly — the decisive difference from other swallows."
+   },
+   {
+    "k": "Tail",
+    "v": "Deeply forked, the outer feathers drawn into long streamers with white spots at the tips; males average longer streamers than females."
+   },
+   {
+    "k": "Flight",
+    "v": "Fast and agile, skimming low over ground or water, banking sharply with the wingtips almost closed."
+   }
+  ],
+  "summary": "Steel-blue back, chestnut throat, deeply forked tail — in flight it looks like a pair of scissors. Barn Swallows live almost entirely alongside people: their mud cups go under eaves, on beams and inside bridge arches, and generation after generation comes back to the same spot.",
+  "tagline": "The bird that builds its nest under your eaves",
+  "tip": "Telling swallows apart: Barn Swallow has a black breast band and a deep fork. Red-rumped Swallow has an orange-red rump and a shallower fork. A mud nest under an eave is almost always this species.",
+  "voice": "A hurried twittering song ending in a loud 'swee'; a sharp 'vit-vit' alarm when disturbed."
+ },
+ "lan-fei-cui": {
+  "behavior": "It perches on low branches and wires at the waterside and drops onto fish, prawns, crabs and insects. It also hunts at forest edge well away from water. A summer visitor in South China, present from April to October in mangroves, creeks and fish ponds. It tunnels into earth banks and embankments to nest.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown black, forming an obvious black cap; a broad white collar round the nape and the sides of the neck."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts deep violet-blue with a conspicuous white patch on the wing, visible in flight; underparts pale buff to white."
+   },
+   {
+    "k": "Bill",
+    "v": "Bright red, heavy and long, much as in White-throated Kingfisher."
+   },
+   {
+    "k": "vs White-throated",
+    "v": "Black-capped has a black crown, a white collar and buff underparts; White-throated has a chestnut head and neck and a broad pure white breast."
+   }
+  ],
+  "summary": "Darker than the White-throated: a black cap on the head, a white collar at the neck, a deep violet-blue body and a big red bill. When it crosses open water that violet-blue goes past almost vertically.",
+  "tagline": "Black cap, white collar, violet-blue body — the big kingfisher",
+  "tip": "A nationally protected species (Class II). The quickest difference from White-throated is the headgear: Black-capped has a black cap and a white scarf, White-throated a chestnut head and neck.",
+  "voice": "A loud, harsh series, 'ki-ki-ki-ki', falling in pitch, given in flight or from a perch."
+ },
+ "lv-chi-ya": {
+  "behavior": "The commonest wintering duck in South China, feeding on the water in flocks of tens to hundreds, taking aquatic seeds and algae and flying out to rice fields and shallows at dusk. It needs no run-up: it springs straight off the surface, and fast.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "Head chestnut-brown with a broad dark green mask running back from the eye; body grey and finely vermiculated, with a bold horizontal white line along the flank."
+   },
+   {
+    "k": "Flanks",
+    "v": "A bright yellow triangular patch on each side at the base of the tail — the quickest way to identify a drake."
+   },
+   {
+    "k": "Female",
+    "v": "Brown and mottled all over, a small orange-red patch at the base of the bill, and a green speculum on the wing — 'green-winged' refers to the speculum both sexes share."
+   },
+   {
+    "k": "Shape",
+    "v": "Small and compact, neck short, tail slightly cocked when afloat."
+   }
+  ],
+  "summary": "Half the size of a domestic duck, and it leaves the water almost vertically. The drake wears a dark green mask from eye to nape, a horizontal white line along the flank and a bright yellow triangle at the tail — a remarkably neat piece of design.",
+  "tagline": "The commonest small wild duck in South China",
+  "tip": "A party of small ducks that seems to be catapulted off the water is almost certainly this species. Look for the yellow triangle beside the tail and the green mask on the drake.",
+  "voice": "The drake gives a clear whistled 'krik', the duck a low quack; calls run continuously through a flying flock."
+ },
+ "lv-lu": {
+  "behavior": "An ambush predator, motionless for long stretches, then extending the neck to take small fish, prawns and frogs. It sometimes drops insects or feathers on the water as bait — one of the few birds known to use tools. A resident in South China, in mangroves, streams and sheltered watersides.",
+  "features": [
+   {
+    "k": "Crown",
+    "v": "Crown blackish-green with fine green plumes at the nape, usually laid flat against the back of the head."
+   },
+   {
+    "k": "Plumage",
+    "v": "Back grey-green, sides of neck and breast grey, underparts grey-white with bold streaks, wings grey-green."
+   },
+   {
+    "k": "Legs",
+    "v": "Orange-yellow to yellow-green, short for the bird's size — a contrast with the black legs of the white egrets."
+   },
+   {
+    "k": "Shape",
+    "v": "Thick-set and short-necked, usually hunched, standing low at the water's edge or on mangrove roots."
+   }
+  ],
+  "summary": "Small, short-necked, grey-green backed, orange-yellow legs. It loves to squat on a waterside root or stone, bunched up and utterly still, watching the water — from a distance it looks like a mossy rock, until it suddenly shoots forward.",
+  "tagline": "The little old man on the tree roots, absolutely motionless",
+  "tip": "Walk slowly along the water and watch the roots, stones and low branches for a 'grey lump'. It has endless patience and will only burst out when you are almost on top of it.",
+  "voice": "A loud 'kyow' or 'skeeow' when flushed, short and sharp, usually heard at the instant of take-off."
+ },
+ "niu-bei-lu": {
+  "behavior": "A classic follower: it walks behind cattle, horses and tractors taking insects and frogs they disturb, and also feeds on mown grass and in burnt fields. It nests colonially with other egrets. South China holds both wintering birds and residents; most often seen in farmland and on grassland.",
+  "features": [
+   {
+    "k": "Breeding plumage",
+    "v": "Orange-buff plumes over crown, neck and breast, with matching orange-buff aigrettes down the centre of the back; warm-toned and very conspicuous."
+   },
+   {
+    "k": "Non-breeding plumage",
+    "v": "All white, bill yellow and short, neck short and thick, body thickset — plainly different from the slender Little Egret."
+   },
+   {
+    "k": "Neck",
+    "v": "Markedly short and thick, much shorter than in other egrets, and often pulled in so that the bird looks neckless as it stands on grass."
+   },
+   {
+    "k": "Bill",
+    "v": "Yellow, short and pointed, made for pecking insects off the ground."
+   }
+  ],
+  "summary": "It does not belong to the water but to the grass — following cattle, following tractors, picking off the insects they flush. In breeding condition the head, neck and breast flush orange-buff, as if caught in low sunlight.",
+  "tagline": "The short-necked white egret that follows the buffalo for insects",
+  "tip": "A white egret on grass with a short neck, a yellow bill and a plump body is this species. The orange-buff plumes of the breeding season make it unmistakable.",
+  "voice": "Usually silent; when alarmed, or at the colony, a short harsh 'rick-rack', dry and unmusical."
+ },
+ "pu-tong-cui-niao": {
+  "behavior": "A classic ambush fisher: it perches one or two metres above the water on a low branch, rock or railing, watches for a long time, then plunges in and returns to the same spot to beat the fish against the perch before swallowing it. Strongly territorial and aggressive towards other kingfishers. It tunnels into earth banks and riverbanks to nest, the tunnel sometimes a metre long.",
+  "features": [
+   {
+    "k": "Upperparts",
+    "v": "Crown, back and wings brilliant blue-green with a metallic sheen; a bright blue stripe runs down the centre of the back."
+   },
+   {
+    "k": "Underparts",
+    "v": "Breast and belly orange-red, throat white, ear-coverts orange-red, a small white patch on the chin."
+   },
+   {
+    "k": "Bill",
+    "v": "Black, long and dagger-sharp; the female's lower mandible is orange-red at the base — 'lipstick' — while the male's is all black."
+   },
+   {
+    "k": "Shape",
+    "v": "Short and compact, big head, short tail, very short legs — often bunched into a 'blue ball'."
+   }
+  ],
+  "summary": "Cobalt blue and burnt orange, two colours collided, small as a flying jewel. It sits on a low twig staring at the water, then stabs into it and comes back to the same perch with a fish — the whole thing takes under two seconds.",
+  "tagline": "A blue bolt that flies just above the water",
+  "tip": "Hear that thin high 'chee'? Follow the water to the low branches. It returns to the same perch again and again, so five or ten minutes of patience usually buys you one plunge.",
+  "voice": "A sharp, short 'chee' or 'cheee', high and thin, often given two or three times in flight — an important clue to the bird's presence."
+ },
+ "pu-tong-kuang": {
+  "behavior": "A classic sit-and-wait raptor, perching for long periods on power poles, dead trees and high field bunds, waiting for rodents, frogs, lizards and large insects. Widely distributed in winter over South China farmland, grassy slopes and woodland edge, with stable numbers. It sometimes hovers briefly while scanning the ground.",
+  "features": [
+   {
+    "k": "Colour",
+    "v": "Upperparts dark brown, underparts white to pale brown, usually with a dark brown band across the belly — an important feature of the species."
+   },
+   {
+    "k": "Tail",
+    "v": "Brown with several dark bars and a broad black subterminal band."
+   },
+   {
+    "k": "Flight",
+    "v": "Soars with the wings held flat or slightly drooped, the wingtip 'fingers' less pronounced than a Black Kite's; often makes a short glide before landing."
+   },
+   {
+    "k": "Head",
+    "v": "Brown with a faint pale supercilium, black bill, yellow cere."
+   }
+  ],
+  "summary": "'Common' is a misleading word: the bird is not ordinary at all, its plumage is simply too variable to sum up. In winter a big brown hawk gliding low over Delta farmland, or squatting on a wire for half a day without moving, is usually this species.",
+  "tagline": "The commonest brown raptor of winter — plain name, uncommon eye",
+  "tip": "A big brown bird on a field-side pole in winter is eight times out of ten this species. Check for the belly band and the barred tail — those two settle the identification.",
+  "voice": "A drawn-out 'pee-yah' or 'kyow', a wailing note like a cat; infrequent in winter."
+ },
+ "pu-tong-lu-ci": {
+  "behavior": "An outstanding diver, able to descend several metres and stay under for more than a minute while chasing fish. Because the plumage carries little oil and so gives little buoyancy — an advantage when diving — it must dry its wings after feeding. It often roosts in parties on dead waterside trees, rocks or power poles. A winter visitor in South China, common in bays and reservoirs.",
+  "features": [
+   {
+    "k": "Plumage",
+    "v": "Blackish-brown with a blue-green gloss; in breeding condition white filoplumes on the head and neck and a white patch on the flank."
+   },
+   {
+    "k": "Face",
+    "v": "Bare facial skin yellowish-white and gular pouch yellow, giving an unmistakable 'yellow face'."
+   },
+   {
+    "k": "Eye",
+    "v": "Iris emerald green, conspicuous against the black head."
+   },
+   {
+    "k": "Bill",
+    "v": "Grey-black, long and laterally compressed, with a pronounced downward hook at the tip for holding slippery fish."
+   }
+  ],
+  "summary": "Glossy black all over, a hooked bill, and eyes of emerald green. Its feathers are not waterproof, so after every dive it has to stand on a rock and hold its wings out to dry for a long while — a pose like embracing the sun.",
+  "tagline": "The fisherman that has to dry its wings after every dive",
+  "tip": "A big black bird standing motionless on a rock with its wings held open is a cormorant drying its feathers. The pose is not decoration — it is a necessity.",
+  "voice": "Silent most of the time; low grunts and snoring notes around the colony, rarely heard on the wintering grounds."
+ },
+ "qing-jiao-yu": {
+  "behavior": "Usually alone or in small groups in shallow water and at fish ponds, leaning forward as it walks and probing constantly in the water or mud. Takes small fish, prawns and aquatic insects. Wary, and flushes at once with a loud call. Widely distributed in winter on the South China coast and inland wetlands; one of the commonest waders in the Delta.",
+  "features": [
+   {
+    "k": "Legs",
+    "v": "Green to yellow-green — 'greenshank' — and an important identification feature."
+   },
+   {
+    "k": "Bill",
+    "v": "Fairly long, grey-green at the base and slightly upturned; the degree of upturn is the key to separating it from species such as Marsh Sandpiper."
+   },
+   {
+    "k": "Plumage",
+    "v": "In non-breeding dress the upperparts are grey-brown with pale feather edges giving a scaly look, the underparts white, and fine streaks on the sides of the neck and breast."
+   },
+   {
+    "k": "Flight",
+    "v": "Shows a white wedge on the rump and uppertail coverts, pale underwings, and feet projecting beyond the tail."
+   }
+  ],
+  "summary": "A medium-sized wader, grey-brown above and white below, distinguished above all by a pair of green legs and a bill that tilts slightly upward. It paces back and forth in the shallows alone, sweeping the bill from side to side like a metal detector.",
+  "tagline": "Green legs and a slightly upturned bill",
+  "tip": "Look at the legs, then the bill: green legs plus an upturned bill means Common Greenshank. If the legs are yellow-green but the bill is straight and the bird smaller, think Marsh Sandpiper or Wood Sandpiper.",
+  "voice": "A very loud three-note 'tyu—tyu—tyu', the first note slightly higher, clear as a whistle and instantly recognisable on a mudflat."
+ },
+ "she-diao": {
+  "behavior": "It feeds mainly on snakes, venomous species among them, and also takes lizards, frogs and small mammals. It often circles over forest edge, or waits for long periods on a dead branch high in a tree. It uses thermals to circle and call, and is one of the commonest raptors of South China's hills. A resident.",
+  "features": [
+   {
+    "k": "Crest",
+    "v": "A black crest on the crown with white tips, fanned when excited — apart from the name, the most conspicuous feature of the bird."
+   },
+   {
+    "k": "Underwing",
+    "v": "In flight the underwing is dark brown with a broad black subterminal band and dense white spotting, the tips black — a powerful contrast."
+   },
+   {
+    "k": "Plumage",
+    "v": "Upperparts dark brown, underparts pale brown finely barred, tail with a broad black subterminal band and a white tip."
+   },
+   {
+    "k": "Eye",
+    "v": "Iris bright yellow, bare skin around the eye yellow, the stare formidable."
+   }
+  ],
+  "summary": "A black and white crest on the crown, and in flight a broad black band and dense white spotting beneath the wing — like a blackboard covered in writing. It really does eat snakes, venomous ones included.",
+  "tagline": "A hawk that lives on snakes, with a blackboard under each wing",
+  "tip": "A nationally protected species (Class II). Listen for that trembling whistle overhead, then look up for the circling hawk and check the underwing for the black band and the white spots.",
+  "voice": "A very loud whistle, 'kiiu—kiiu' or 'peee-uu', tremulous, often repeated while circling — the main way to find the bird."
+ },
+ "shu-ma-que": {
+  "behavior": "Intensely sociable, feeding on the ground in hopping flocks of a dozen to a hundred and taking grain, grass seed, insects and human food scraps. Very alert: one bird flushes and the flock follows. Nests in wall cavities, roof tiles, air-conditioner holes and lamp housings, and will take over other birds' nest boxes. Dust-bathes enthusiastically on dry ground.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Chestnut crown, white cheeks, and a clear black ear-patch — that patch separates it from the House Sparrow."
+   },
+   {
+    "k": "Throat",
+    "v": "Black from throat to upper breast like a small bib, in sharp contrast with the white cheeks."
+   },
+   {
+    "k": "Plumage",
+    "v": "Chestnut-brown back heavily streaked black; two white wingbars; buffy rump; dark brown tail."
+   },
+   {
+    "k": "Sexes",
+    "v": "Male and female look alike (unlike House Sparrow), so they are hard to tell apart in the field."
+   }
+  ],
+  "summary": "The sparrow is too common to look at closely, which is why almost nobody does. Get near one and the design shows: a chestnut crown, snow-white cheeks and a small black bib. It is the most numerous bird in the cities of the Pearl River Delta, and the one that has worked out how to live with us.",
+  "tagline": "The most overlooked — and most ubiquitous — of neighbours",
+  "tip": "It is a protected species in China: catching or trading wild sparrows is illegal. Ordinary as it looks, it is load-bearing in the urban food web — the staple prey of hawks and shrikes.",
+  "voice": "A thin, insistent 'cheep' — the baseline background noise of any southern Chinese city. The breeding song is slightly more structured but still a string of single notes."
+ },
+ "si-guang-liang-niao": {
+  "behavior": "A highly gregarious, tree-loving starling, gathering in winter in flocks of tens to over a hundred to feed on berries, and dropping to the ground for fallen fruit and insects. A winter visitor here from October to March in farmland, orchards and city parks. Roosts communally in street trees or bamboo.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "Head and neck pale grey-white with a silky sheen; upperparts grey; wings black with white patches; tail black."
+   },
+   {
+    "k": "Female",
+    "v": "Overall grey-brown, the head not pale, plumage plain — easily separated from the male."
+   },
+   {
+    "k": "Bill & legs",
+    "v": "Bill coral red with a darker tip; legs orange-red and bright."
+   },
+   {
+    "k": "Around the eye",
+    "v": "Bare orange-yellow skin around the eye, often read as an eye-ring, conspicuous against the pale head."
+   }
+  ],
+  "summary": "The male's head looks dusted with silk: pale grey-white with a satin sheen, set off by a coral-red bill. The Red-billed Starling is endemic to China; in winter a flock will descend on a fruiting tree and strip it bare.",
+  "tagline": "White head, grey body, red bill and red legs — a starling of the south",
+  "tip": "Against Crested Myna and Black-collared Starling: the Red-billed Starling is the palest of the three, with a grey-white head and neck and a red bill.",
+  "voice": "Noisy: a harsh single 'jriii' or 'chreee', very loud when the whole flock calls, with softer whistles mixed in."
+ },
+ "wu-dong": {
+  "behavior": "Usually turning over lawns and leaf litter for earthworms and insects, and eating berries. Strongly territorial when breeding, chasing birds larger than itself and even cats. The deep cup nest is reinforced with mud inside and hidden in a fork, on a wall or in a trellis. The city population is resident all year — one of the few songbirds that gives a concert in every season.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "All black, orange-yellow bill, a ring of golden skin around the eye, dark brown legs. In sunlight the black takes on a fine blue-grey sheen."
+   },
+   {
+    "k": "Female",
+    "v": "Dark brown above, paler and finely streaked on the throat, bill duller and often brownish."
+   },
+   {
+    "k": "Juvenile",
+    "v": "Brown with heavy spotting on the breast, very unlike the adult and often taken for another species."
+   },
+   {
+    "k": "Shape",
+    "v": "Round and sturdy, fairly long-tailed; hops on the ground and stands upright when it stops."
+   }
+  ],
+  "summary": "At first glance a black bird; look again and there is a golden eye-ring and an orange-yellow bill. The Chinese Blackbird is the tenor of southern cities: on a March morning it stands on a rooftop or a treetop and sings the whole street quiet.",
+  "tagline": "A black suit, and the best voice in town",
+  "tip": "A solo with real melody, complete phrases and a little improvisation is almost certainly a blackbird. The bird singing loudly at night in the city is usually this species too, confused by street lighting.",
+  "voice": "A fluent, long, highly musical song, often ending with mimicry of other birds or even phone ringtones, delivered solo from a high perch at dawn and dusk. The call is a sharp 'chook-chook-chook' or a thin 'tseee', repeated when alarmed."
+ },
+ "xiao-bai-yao-yu-yan": {
+  "behavior": "Almost never lands: it feeds, mates and even sleeps on the wing. Very fast, often circling buildings in groups of dozens. Nests in bridge arches, under high eaves and in rock crevices, using saliva mixed with feathers. A summer visitor here, common over the city from March to October.",
+  "features": [
+   {
+    "k": "Colour",
+    "v": "Sooty black-brown all over, slightly paler at the throat, with a clear white band across the rump — the most visible feature in flight."
+   },
+   {
+    "k": "Wings",
+    "v": "Long, narrow and scythe-shaped, held fully open like a bow — quite unlike the pointed wings of a swallow."
+   },
+   {
+    "k": "Tail",
+    "v": "Short and shallowly forked, appearing square when spread."
+   },
+   {
+    "k": "Shape",
+    "v": "Torpedo-shaped, small-headed and short-billed; the wings are more than twice the body length, built for speed."
+   }
+  ],
+  "summary": "Swifts have such short legs that they can barely take off from the ground — so they spend almost their whole lives airborne. At dusk they scream between the tower blocks: a fixed item on the southern summer evening.",
+  "tagline": "The flying fish that almost never lands",
+  "tip": "Versus Barn Swallow: swifts have longer, more curved wings, an all-dark body, a white rump, fly higher and faster, and almost never perch on wires.",
+  "voice": "A shrill 'sreee' or 'skreee', repeated and overlapping across a flock, high-pitched and penetrating."
+ },
+ "xiao-pi-ti": {
+  "behavior": "Aquatic all its life and rarely out of the water. It dives for small fish, prawns and aquatic insects, each dive lasting 10–30 seconds. When alarmed it often sinks until only the head shows, or simply dives away. It nests on a floating platform in emergent vegetation that rises and falls with the water, and adults routinely carry chicks on their backs.",
+  "features": [
+   {
+    "k": "Breeding plumage",
+    "v": "Head, neck and upper breast chestnut, a bright pale-yellow patch at the gape, yellow eye — warm-toned throughout."
+   },
+   {
+    "k": "Non-breeding plumage",
+    "v": "Upperparts dark brown, underparts pale buff, sides of the neck whitish; plain, but the round body and tailless outline are unchanged."
+   },
+   {
+    "k": "Shape",
+    "v": "Small and round, tail so short it is almost invisible, neck short, bill fine and pointed."
+   },
+   {
+    "k": "Feet",
+    "v": "Legs set very far back, toes lobed — good for diving, hopeless for walking, so it hardly ever comes ashore."
+   }
+  ],
+  "summary": "Round, short-tailed, floating like a fluffy little gourd. In breeding condition the cheeks and neck turn deep chestnut with a dab of yellow at the gape — that is its best look. When danger comes it says 'pff' and dives, surfacing several metres away.",
+  "tagline": "A little gourd on the water — dive, and it is simply gone",
+  "tip": "See a small brown ball with no tail on the water? Before you start looking for a duck, watch whether it dives. If it stays under for tens of seconds and comes up well away, it is a Little Grebe.",
+  "voice": "In the breeding season a fast, tremulous trill, 'bibibi—bibibi', like a small ball bouncing on a table; also a single whistled 'bee'. A reliable clue that the bird is present."
+ },
+ "ye-lu": {
+  "behavior": "Active from dusk through the night. By day it roosts in flocks in trees, often nesting alongside Little Egrets and pond herons. It takes fish, prawns, frogs and aquatic insects, and will also take the chicks of other birds. Extremely common along city rivers and around park lakes, and highly tolerant of man-made surroundings. In flight the neck is drawn in and the feet barely project, giving a compact, thickset silhouette.",
+  "features": [
+   {
+    "k": "Crown & back",
+    "v": "Crown, nape and back black with a green-blue gloss; two or three long thin white plumes trail from the nape."
+   },
+   {
+    "k": "Wings",
+    "v": "Wings and rump grey, cleanly divided from the black back — perched, it looks as though it has thrown a grey shawl over its shoulders."
+   },
+   {
+    "k": "Underparts",
+    "v": "Chin, throat, breast and belly white to pale grey, sharply contrasting."
+   },
+   {
+    "k": "Eye & bill",
+    "v": "Iris brilliant red in adults, bill black and heavy; legs yellow-green."
+   }
+  ],
+  "summary": "By day it tucks its head into its shoulders and squats in a tree like a grey-black ball, easy to overlook. At dusk those red eyes light up and it finally goes to work — the night heron, as the name says, is the heron on night duty.",
+  "tagline": "Red eyes and white braids — the heron that works the night shift",
+  "tip": "Wait by a park lake at dusk: as the light goes, a few 'grey balls' lift out of the trees, each croaking once as it rises — that is the night shift heading out.",
+  "voice": "On night flights often a hoarse 'quark' or 'wok', short and frog-like — the easiest sound to place after dark. Noisy at the colony, with a range of mutterings."
+ },
+ "zao-juan": {
+  "behavior": "A brood parasite: the female lays in the nests of Black-collared Starlings, Crested Mynas and crows, which raise the chick. Feeds mainly on fruit, especially figs, often in flocks in a fruiting tree. Secretive, staying high in the canopy and singing with the bill open and the head thrown back.",
+  "features": [
+   {
+    "k": "Male",
+    "v": "All black with blue-green metallic gloss in sunlight; eye bright red; bill pale greenish grey; long tail."
+   },
+   {
+    "k": "Female",
+    "v": "Brown above, densely spotted and barred white; white below with bold dark barring — so different from the male that it is often taken for another species."
+   },
+   {
+    "k": "Size",
+    "v": "Crow-sized, with a long broad tail; in flight the outline is that of a small crow."
+   },
+   {
+    "k": "Bill & eye",
+    "v": "Bill stout and slightly downcurved; the male's red eye is conspicuous in shade."
+   }
+  ],
+  "summary": "You may never have seen it, but you have certainly heard it. From March to August, at five in the morning across the Delta, a two-note whistle rising and quickening — that is the Koel declaring summer. It hides in dense canopy and almost never shows itself.",
+  "tagline": "The bird that starts the southern summer",
+  "tip": "The rising two-note whistle is the identification. To see one, follow the sound up into a tall canopy and look for a black silhouette; the male's red eye catches the light against the sky.",
+  "voice": "A two-note 'ko-el', the first short and low, the second higher and longer, repeated dozens of times and accelerating — pitch and pace rising until it sounds frantic. Loudest at dawn and dusk, and often at night under street lights, which makes it a well-known cause of lost sleep in Zhuhai."
+ },
+ "zhong-bai-lu": {
+  "behavior": "Stands or walks slowly at the edge of shallow water, fish ponds and flats, taking fish, shrimp, frogs and aquatic insects. Usually alone or in small groups, mixing with Little and Great Egrets in winter. A winter visitor here from October to April at all kinds of wetland.",
+  "features": [
+   {
+    "k": "Bill",
+    "v": "Yellow, black in the breeding season, often with a dark tip; medium length — shorter than Great Egret's, longer and finer than Little's."
+   },
+   {
+    "k": "Gape",
+    "v": "The gape line ends below the eye or just past its rear edge and does not extend conspicuously beyond the eye — the most reliable separation from Great Egret."
+   },
+   {
+    "k": "Legs & feet",
+    "v": "Legs black; feet yellow to black — between Little Egret (yellow feet) and Great Egret (all black)."
+   },
+   {
+    "k": "Size",
+    "v": "About 65 cm long; neck long but less extreme than Great Egret's; stands fairly upright."
+   }
+  ],
+  "summary": "Between Little and Great Egret in size, with a yellow bill, black legs and yellow feet — nothing extreme, which is exactly why it is hard. One rule: if the gape stops short of the eye it is Intermediate; if it passes the eye it is Great.",
+  "tagline": "The hardest of the three white egrets",
+  "tip": "Three egrets, fast: all-black bill with yellow feet is Little; a yellow bill with the gape stopping short of the eye is Intermediate; a yellow bill, gape past the eye and black legs is Great.",
+  "voice": "A hoarse 'kraak', similar to Little Egret but slightly lower, given repeatedly when flushed."
+ },
+ "zhu-jing-ban-jiu": {
+  "behavior": "Feeds mostly by walking on the ground, taking grass seed, fallen fruit and human food debris; flushes almost vertically when startled. Usually in pairs or small parties, tolerant and thoroughly adapted to dense city. The nest is perfunctory — a platform of a few twigs — and it will lay on air-conditioner units, windowsills and flower pots, which is why it so often ends up living in the same building as we do.",
+  "features": [
+   {
+    "k": "Neck",
+    "v": "A broad black patch from the sides of the neck to the nape, densely spotted white — the single most reliable mark."
+   },
+   {
+    "k": "Colour",
+    "v": "Head grey-brown; back and wings pinkish brown with pale fringes giving a scaly look; underparts pale pink-buff; long tail with large white tips to the outer feathers."
+   },
+   {
+    "k": "Shape",
+    "v": "Plump, small-headed and long-tailed; bill slender and short with a soft base; legs purplish red."
+   },
+   {
+    "k": "Flight",
+    "v": "Loud wing-claps on take-off and landing, a bounding flight, and conspicuous white tail tips when the tail is fanned."
+   }
+  ],
+  "summary": "Often mistaken for a pigeon, but the black collar scattered with white dots settles it at once. The Spotted Dove walks with a nodding head and clatters loudly into flight — the most everyday sound of any housing estate in the Pearl River Delta.",
+  "tagline": "A 'wild pigeon' wearing a collar of pearls",
+  "tip": "Don't call it a pigeon too quickly: feral pigeons are stockier and have unspotted necks. A pearl collar means Spotted Dove.",
+  "voice": "A three-note 'coo-coo-coo', the last note drawn out and falling, repeated for long stretches — one of the most soporific sounds of a southern afternoon. Courting males add a low rolling growl while bowing and spreading the tail."
+ },
+ "zong-bei-bo-lao": {
+  "behavior": "A classic sit-and-wait hunter: perches on a high dead twig, wire or reed tip, drops fast onto prey and returns to the same place to eat it. Strongly territorial when breeding, chasing birds much larger than itself. Caches food by impaling prey on thorns or barbed wire. Lives in open scrub and farmland and is the commonest shrike at low altitude.",
+  "features": [
+   {
+    "k": "Head",
+    "v": "Crown grey to black with a broad black band through the eye; that glare is the classic shrike look."
+   },
+   {
+    "k": "Plumage",
+    "v": "Back and scapulars rufous (varying between subspecies); wings black with white patches; throat white; breast and belly pale buff, flanks washed orange."
+   },
+   {
+    "k": "Bill",
+    "v": "Black and stout, with a clear hook and tooth at the tip of the upper mandible, used to sever a victim's neck."
+   },
+   {
+    "k": "Tail",
+    "v": "Very long — nearly half the total length — and frequently swung side to side or in circles, a useful mark when perched."
+   }
+  ],
+  "summary": "Twenty-odd centimetres long with the heart of a raptor: black mask, hooked bill, hard stare. The Long-tailed Shrike takes insects, lizards, mice and even small birds, and impales what it cannot finish on thorns to dry — its most famous habit.",
+  "tagline": "An eagle's eye on a sparrow's body — the little butcher",
+  "tip": "A long-tailed bird with a black mask on a paddy-bund wire or a dead twig is almost certainly this species. If you find insects or small lizards hanging on thorns, you have found its larder.",
+  "voice": "Harsh and grating, like a rusty hinge: 'zha-zha-zha' or 'ge-ge', dry in tone. It also mimics other birds — sometimes better than the original — which is how it draws small birds close enough to catch."
+ },
+ "zong-shan-wei-ying": {
+  "behavior": "Lives in tall grass, paddies and marsh edges, skulking low in the vegetation. In the breeding season the male sings on a bounding display flight to claim territory. Eats insects and grass seed. Present all year here, but sings hardest in spring and autumn.",
+  "features": [
+   {
+    "k": "Plumage",
+    "v": "Brown above with heavy black streaking on the back; pale supercilium; underparts pale buff with a whiter throat."
+   },
+   {
+    "k": "Tail",
+    "v": "Short and broad with clear white tips, fanned like a little fan — hence the name."
+   },
+   {
+    "k": "Head",
+    "v": "Crown brown and finely streaked; bill short and thick, blunter than Plain Prinia's."
+   },
+   {
+    "k": "Flight",
+    "v": "The display flight is a pronounced series of bounds, each rise accompanied by a call — the easiest way to confirm the species in the field."
+   }
+  ],
+  "summary": "It has an unmistakable flight: bouncing through the air in steps, calling once per bounce, so the trajectory reads as a dotted line. Land, and it disappears into the grass for good.",
+  "tagline": "Calls 'zit' with every bounce, like a wound-up toy",
+  "tip": "A small bird moving through the air in bounces, one call per bounce, can be identified on the spot — none of the other common warblers here fly like that.",
+  "voice": "A single 'zit' or 'zitting', short and nasal, given every second or two in flight with metronomic regularity — like a sewing machine, or something being wound up."
+ }
+}

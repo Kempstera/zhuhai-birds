@@ -100,6 +100,66 @@ ETHICS = [
     ("06", "带走垃圾，包括看不见的", "鱼线、塑料袋、废弃口罩对水鸟是致命的。滩涂上的垃圾请顺手带走，这比任何口号都实际。"),
 ]
 
+GROUPS_EN = [
+    {"id": "songbird", "zh": "Songbirds & City Birds", "en": "", "short": "Songbirds",
+     "intro": "Most of the voices that wake a southern city belong to this group. Small, loud, and entirely at home in the greenery we plant.",
+     "tags": ["Park", "Forest edge", "Village"]},
+    {"id": "water", "zh": "Wetlands & Waterways", "en": "", "short": "Wetland",
+     "intro": "Herons, rails, grebes — their toes, their bills and their patience are all built for one thing: the next fish in shallow water.",
+     "tags": ["Creek", "Fish pond", "Wetland"]},
+    {"id": "shore", "zh": "Coast & Tidal Flats", "en": "", "short": "Shore",
+     "intro": "When the tide falls, the flats become a restaurant. Migrants shuttle along this coast twice a year, and Zhuhai is directly on the route.",
+     "tags": ["Tidal flat", "Beach", "Estuary"]},
+    {"id": "raptor", "zh": "Hunters of the Sky", "en": "", "short": "Raptors",
+     "intro": "It always pays to look up. Zhuhai's air carries thermals, and thermals carry circling hawks.",
+     "tags": ["Coast", "Reservoir", "Ridge"]},
+    {"id": "kingfisher", "zh": "The Kingfishers", "en": "", "short": "Kingfisher",
+     "intro": "Blue, green, red, white — colours too saturated to look real. They cut water and light apart at diving speed.",
+     "tags": ["Stream", "Pond", "Mangrove"]},
+]
+
+SPOTS_EN = [
+    {"no": "01", "name": "Qi'ao–Dangan Island Nature Reserve", "area": "Qi'ao Island",
+     "desc": "One of the few large, continuous mangrove wetlands in southern China, and Zhuhai's most important wintering ground. At low tide the flats fill with herons, plovers and sandpipers; Black-faced Spoonbills winter here reliably. The core zone needs a booking — the outer gei wai and seawalls are open for watching.",
+     "birds": ["黑脸琵鹭", "池鹭", "苍鹭", "褐翅鸦鹃", "青脚鹬"],
+     "season": "Best: November – March"},
+    {"no": "02", "name": "Hengqin Mangzhou Wetland Park", "area": "Hengqin",
+     "desc": "A hybrid wetland of reedbeds, mangroves and fish ponds, with boardwalks reaching out over the water — the most comfortable place in the city to watch waterbirds at close range. Light is best at dawn and dusk.",
+     "birds": ["白鹭", "夜鹭", "白胸苦恶鸟", "黑翅长脚鹬", "小鸊鷉"],
+     "season": "All year; most waterbirds in autumn and winter"},
+    {"no": "03", "name": "Jinwan Beaches & Tidal Flats", "area": "Jinwan",
+     "desc": "Some of the best-preserved open sand and mudflat on the western shore of the Pearl River Delta. At low tide kilometres of flat are exposed — prime ground for waders and gulls. Bring a scope, and check the tide table first.",
+     "birds": ["环颈鸻", "黑嘴鸥", "红嘴鸥", "青脚鹬", "黑翅长脚鹬"],
+     "season": "Best: October – April"},
+    {"no": "04", "name": "Xiangshan Lake Park", "area": "Xiangzhou",
+     "desc": "A general-purpose city park with a lake, wetlands and belts of trees. Ideal for beginners: no travelling required, a dozen species in an hour, and Moorhens and Little Grebes almost guaranteed.",
+     "birds": ["小鸊鷉", "黑水鸡", "白鹭", "白头鹎", "红耳鹎", "乌鸫"],
+     "season": "All year"},
+    {"no": "05", "name": "Yeli Island & Xianglu Bay", "area": "Xiangzhou",
+     "desc": "A coastal path linking open sea to the hillside; at low tide the rocks and the sand both hold surprises. In winter Black-headed Gulls gather offshore and Black Kites often circle overhead.",
+     "birds": ["红嘴鸥", "黑鸢", "白头鹎", "叉尾太阳鸟", "暗绿绣眼鸟"],
+     "season": "All year; best seabirds in winter"},
+    {"no": "06", "name": "Doumen Rice Fields & Creeks", "area": "Doumen",
+     "desc": "Classic Lingnan agricultural wetland. Bunds, channels and fish ponds form a dense water network — hunting ground for pond herons, kingfishers and shrikes, and the best place to watch people and birds sharing the same landscape.",
+     "birds": ["池鹭", "斑鱼狗", "白胸翡翠", "棕背伯劳", "八哥"],
+     "season": "All year; busiest around spring ploughing and the autumn harvest"},
+]
+
+ETHICS_EN = [
+    ("01", "Watch from a distance",
+     "Use binoculars or a long lens. Don't approach, flush or chase. Keep even more distance in the breeding season and in winter (Nov–Mar): one flush can cost a bird a day's energy."),
+    ("02", "Never use playback",
+     "Playing a recording pulls a bird off its territory, its nest or its feeding grounds, and repeated use measurably lowers breeding success. Watching natural behaviour matters more than getting the standard shot."),
+    ("03", "Don't feed, don't release",
+     "Bread damages waterbirds' digestion, and releasing non-native species — red-eared sliders, domestic ducks — damages the local ecology. Let them find their own food."),
+    ("04", "Stay off the flats, out of core zones",
+     "A small depression in the sand may be a clutch of eggs. Keep out of core and buffer zones; flying a drone over a roost is an offence."),
+    ("05", "Record, don't collect",
+     "A photograph, a date, a place, an upload to a citizen-science platform, is worth more than a feather. All wild birds are protected by law in China."),
+    ("06", "Take your litter, including the litter you can't see",
+     "Fishing line, plastic bags and discarded masks are lethal to waterbirds. Carry out what you find on the flats — it does more than any slogan."),
+]
+
 MONTH_ACT = [
     ("1", 3), ("2", 3), ("3", 2), ("4", 1), ("5", 1), ("6", 0),
     ("7", 0), ("8", 1), ("9", 2), ("10", 3), ("11", 3), ("12", 3),
@@ -133,11 +193,79 @@ def pclass(p):
 GROUP_ORDER = {"songbird": 0, "water": 1, "shore": 2, "raptor": 3, "kingfisher": 4}
 RARITY_LABEL = {1: "极常见", 2: "常见", 3: "不常见", 4: "局部常见", 5: "罕见"}
 
+I18N_DIR = os.path.join(ROOT, "data", "i18n")
+SITE = "https://birds.signupeverywhere.cc"
+LANGS = ("zh", "en")
+
+
+def load_i18n():
+    ui = json.load(open(os.path.join(I18N_DIR, "ui.json")))
+    vocab = json.load(open(os.path.join(I18N_DIR, "vocab.json")))
+    p = os.path.join(ROOT, "data", "species_en.json")
+    sen = json.load(open(p)) if os.path.exists(p) else {}
+    return ui, vocab, sen
+
+
+def clean_credit(s):
+    """署名里少数几条中文前缀，英文版统一成英文。"""
+    return (s or "").replace("iNaturalist 用户 ", "iNaturalist user ")
+
+
+def make_view(sp, lang, sen, vocab):
+    """把一条物种数据整理成某个语言下可直接渲染的视图。"""
+    v = dict(sp)
+    v["is_en"] = lang == "en"
+    if lang == "zh":
+        v["name"] = sp["zh"]
+        return v
+
+    t = sen.get(sp["slug"]) or {}
+    E = vocab["enum"]
+    v["name"] = sp["en"]
+    v["family"] = vocab["family"].get(sp["family"], sp["family"])
+    for k in ("residency", "common", "protect"):
+        v[k] = E[k].get(sp[k], sp[k])
+    v["iucn"] = E["iucn"].get(sp["iucn"], sp["iucn"])
+    v["rlabel"] = E["rarity"].get(str(sp.get("rank", 2)), "Common")
+    v["habitat"] = [vocab["habitat"].get(h, h) for h in sp["habitat"]]
+    v["where"] = [vocab["where"].get(w, w) for w in sp["where"]]
+
+    fz = t.get("features") or []
+    if len(fz) == len(sp["features"]):
+        v["features"] = fz
+    else:  # 还没翻译的物种，先退到「特征键英文 + 中文正文」
+        v["features"] = [{"k": vocab["feature_k"].get(f["k"], f["k"]), "v": f["v"]}
+                         for f in sp["features"]]
+    for k in ("tagline", "summary", "behavior", "voice", "tip"):
+        if t.get(k):
+            v[k] = t[k]
+
+    gal = []
+    for g in sp.get("gallery") or []:
+        gg = dict(g)
+        if gg.get("note"):
+            gg["note"] = vocab["gallery_note"].get(gg["note"], gg["note"])
+        if gg.get("credit"):
+            gg["credit"] = clean_credit(gg["credit"])
+        gal.append(gg)
+    v["gallery"] = gal
+    if v.get("audio"):
+        au = dict(v["audio"])
+        au["credit"] = clean_credit(au.get("credit"))
+        v["audio"] = au
+    return v
+
+
+def nm(x):
+    """名字渲染：中文走逐字注音（ruby），英文直接输出。"""
+    if x.get("is_en"):
+        return Markup(escape(x["name"]))
+    return ruby(x.get("zh") or x["name"], x.get("py", ""))
+
 
 def main():
     species, assets = load()
     slugs = {s["slug"] for s in species}
-    by_slug = {s["slug"]: s for s in species}
 
     # 按遇见率排序：极常见 → 罕见；同等级内按类群、名称稳定排列
     species.sort(key=lambda s: (s.get("rank", 2), GROUP_ORDER.get(s["group"], 9), s["zh"]))
@@ -148,35 +276,27 @@ def main():
     from collections import Counter
     rank_counts = Counter(s.get("rank", 2) for s in species)
 
-    # 清理无效的相似种引用
     for sp in species:
         sp["similar"] = [x for x in sp.get("similar", []) if x in slugs]
         sp["pclass"] = pclass(sp["protect"])
 
-    counts = {g["id"]: 0 for g in GROUPS}
-    for sp in species:
-        counts[sp["group"]] = counts.get(sp["group"], 0) + 1
-    for g in GROUPS:
-        g["count"] = counts.get(g["id"], 0)
+    ui, vocab, sen = load_i18n()
+    zh2en = {s["zh"]: s["en"] for s in species}
+    PY = {s["zh"]: s.get("py", "") for s in species}
 
     env = Environment(
         loader=FileSystemLoader(os.path.join(ROOT, "templates")),
         autoescape=select_autoescape(["html"]),
         trim_blocks=True, lstrip_blocks=True,
     )
-    env.globals.update(GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, YEAR=YEAR,
-                       CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
-                       ruby=ruby,
-                       PY={x["zh"]: x.get("py", "") for x in species})
+    env.globals.update(YEAR=YEAR, CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
+                       ruby=ruby, nm=nm)
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    os.makedirs(os.path.join(DIST, "bird"), exist_ok=True)
-    os.makedirs(os.path.join(DIST, "assets", "img"), exist_ok=True)
-    os.makedirs(os.path.join(DIST, "assets", "audio"), exist_ok=True)
-    os.makedirs(os.path.join(DIST, "static"), exist_ok=True)
+    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird"):
+        os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
-    # 静态资源
     for f in os.listdir(os.path.join(ROOT, "static")):
         shutil.copy2(os.path.join(ROOT, "static", f), os.path.join(DIST, "static", f))
     for sub in ("img", "audio"):
@@ -187,52 +307,117 @@ def main():
                     continue
                 shutil.copy2(os.path.join(src, f), os.path.join(DIST, "assets", sub, f))
 
-    # 首页
-    hero = next((s for s in species if s["slug"] == "bai-lu"), species[0])
-    hero2 = next((s for s in species if s["slug"] == "hei-lian-pi-lu" and s["img"]), None)
-    html = env.get_template("index.html").render(
-        species=species, hero=hero, hero2=hero2, nav="home", root="",
-        rank_counts=rank_counts, total=len(species))
-    open(os.path.join(DIST, "index.html"), "w").write(html)
+    totals = {}
+    for lang in LANGS:
+        en = lang == "en"
+        sub = "en" if en else ""
+        base = os.path.join(DIST, sub) if sub else DIST
+        root_i = "../" if en else ""          # 首页所在层级
+        root_d = "../../" if en else "../"    # 详情页所在层级
+        T = ui[lang]
+        hl = "en" if en else "zh-CN"
+        groups = GROUPS_EN if en else GROUPS
+        spots_src = SPOTS_EN if en else SPOTS
+        ethics = ETHICS_EN if en else ETHICS
+        views = [make_view(s, lang, sen, vocab) for s in species]
+        by = {v["slug"]: v for v in views}
 
-    # 详情页
-    for i, sp in enumerate(species):
-        prev = species[(i - 1) % len(species)]
-        nxt = species[(i + 1) % len(species)]
-        sp["rank"] = sp.get("rank", 2)
-        sims = [by_slug[x] for x in sp["similar"]]
-        html = env.get_template("detail.html").render(
-            sp=sp, prev=prev, next=nxt, sims=sims, nav="species", root="../",
-            total=len(species),
-            group=next(g for g in GROUPS if g["id"] == sp["group"]))
-        open(os.path.join(DIST, "bird", sp["slug"] + ".html"), "w").write(html)
+        counts = {g["id"]: 0 for g in groups}
+        for v in views:
+            counts[v["group"]] = counts.get(v["group"], 0) + 1
+        for g in groups:
+            g["count"] = counts.get(g["id"], 0)
 
-    # 指南页
-    html = env.get_template("guide.html").render(
-        species=species, nav="guide", months=MONTH_ACT, root="",
-        rank_counts=rank_counts, total=len(species))
-    open(os.path.join(DIST, "guide.html"), "w").write(html)
+        spots = []
+        for s in spots_src:
+            items = []
+            for b in s["birds"]:
+                if en:
+                    items.append({"name": zh2en.get(b, b), "is_en": True})
+                else:
+                    items.append({"name": b, "zh": b, "py": PY.get(b, ""), "is_en": False})
+            spots.append(dict(s, bird_items=items))
 
-    # 404
-    html = env.get_template("404.html").render(nav="", root="")
-    open(os.path.join(DIST, "404.html"), "w").write(html)
+        common = dict(T=T, hl=hl, lang=lang, total=len(views),
+                      GROUPS=groups, SPOTS=spots, ETHICS=ethics,
+                      rank_counts=rank_counts)
 
-    # robots / sitemap
+        # ---- 首页 ----
+        hero = by.get("bai-lu", views[0])
+        html = env.get_template("index.html").render(
+            **common, root=root_i, pr="", hero=hero, nav="home", species=views,
+            page_title=T["idx"]["title"] % len(views),
+            page_desc=T["idx"]["desc"] % len(views),
+            canon=SITE + ("/en/" if en else "/"),
+            zh_url=SITE + "/", en_url=SITE + "/en/",
+            alt_url=("../index.html" if en else "en/index.html"))
+        open(os.path.join(base, "index.html"), "w").write(html)
+
+        # ---- 详情页 ----
+        for i, v in enumerate(views):
+            prev = views[(i - 1) % len(views)]
+            nxt = views[(i + 1) % len(views)]
+            sims = [by[x] for x in v["similar"]]
+            zh_path = "/bird/%s.html" % v["slug"]
+            en_path = "/en/bird/%s.html" % v["slug"]
+            path = en_path if en else zh_path
+            title = (T["d"]["title"] % (v["name"], v["sci"]))
+            desc = (T["d"]["desc"] % (v["name"], v["sci"], v["tagline"]))
+            html = env.get_template("detail.html").render(
+                **common, sp=v, prev=prev, next=nxt, sims=sims, nav="species",
+                root=root_d, pr="../",
+                group=next(g for g in groups if g["id"] == v["group"]),
+                page_title=title, page_desc=desc,
+                canon=SITE + path,
+                zh_url=SITE + zh_path,
+                en_url=SITE + en_path,
+                alt_url=("../../bird/%s.html" % v["slug"]) if en
+                        else ("../en/bird/%s.html" % v["slug"]))
+            open(os.path.join(base, "bird", v["slug"] + ".html"), "w").write(html)
+
+        # ---- 指南页 ----
+        gpath = "/en/guide.html" if en else "/guide.html"
+        html = env.get_template("guide_en.html" if en else "guide.html").render(
+            **common, root=root_i, pr="", nav="guide",
+            page_title=T["guide"]["title"], page_desc=T["guide"]["desc"],
+            canon=SITE + gpath, zh_url=SITE + "/guide.html",
+            en_url=SITE + "/en/guide.html",
+            alt_url=("../guide.html" if en else "en/guide.html"))
+        open(os.path.join(base, "guide.html"), "w").write(html)
+
+        # ---- 404 ----
+        html = env.get_template("404.html").render(
+            **common, root=root_i, nav="", page_title=T["e"]["title"], page_desc=T["e"]["desc"],
+            pr="", canon="", zh_url="", en_url="", alt_url=("../index.html" if en else "en/index.html"))
+        open(os.path.join(base, "404.html"), "w").write(html)
+        totals[lang] = len(views)
+
+    # ---- robots / sitemap ----
     open(os.path.join(DIST, "robots.txt"), "w").write(
-        "User-agent: *\nAllow: /\nSitemap: https://birds.signupeverywhere.cc/sitemap.xml\n")
-    urls = ["https://birds.signupeverywhere.cc/",
-            "https://birds.signupeverywhere.cc/guide.html"]
-    urls += ["https://birds.signupeverywhere.cc/bird/%s.html" % s["slug"] for s in species]
+        "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE)
+    pairs = [("/", "/en/"), ("/guide.html", "/en/guide.html")]
+    pairs += [("/bird/%s.html" % s["slug"], "/en/bird/%s.html" % s["slug"]) for s in species]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        sm.append("  <url><loc>%s</loc><changefreq>monthly</changefreq></url>" % u)
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+          '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for zh_p, en_p in pairs:
+        for p, other in ((zh_p, en_p), (en_p, zh_p)):
+            sm.append("  <url>")
+            sm.append("    <loc>%s%s</loc>" % (SITE, p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="zh-CN" href="%s%s"/>' % (SITE, zh_p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="en" href="%s%s"/>' % (SITE, en_p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, zh_p))
+            sm.append("    <changefreq>monthly</changefreq>")
+            sm.append("  </url>")
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w").write("\n".join(sm))
 
     n_img = sum(1 for s in species if s["img"])
     n_aud = sum(1 for s in species if s["audio"])
-    print("生成完成：%d 个物种，%d 图片，%d 音频" % (len(species), n_img, n_aud))
+    print("生成完成：%d 个物种 × %d 种语言，%d 图片，%d 音频" % (len(species), len(LANGS), n_img, n_aud))
+    missing = [s["zh"] for s in species if s["slug"] not in sen]
+    if missing:
+        print("待翻译（%d）：%s" % (len(missing), "、".join(missing)))
     if n_img < len(species):
         print("缺图：", [s["zh"] for s in species if not s["img"]])
     if n_aud < len(species):

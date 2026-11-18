@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand) }}
+{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Field Notes · How to Watch</p>
+    <h1>{{ T.guide.h1 }}</h1>
+    <p class="lede">Zhuhai is a city surrounded by water: more than 600 km of coastline, continuous mangrove, and a lattice of paddies, channels and fish ponds. Every year hundreds of thousands of migratory birds move south and north along this coast — and most of them stop in Zhuhai to eat.</p>
+  </div>
+</section>
+
+<div class="wrap guide-wrap" style="padding-bottom:60px">
+  <div class="prose" id="prose">
+
+    <h2>Why Zhuhai</h2>
+    <p>Zhuhai sits in the middle of the <strong>East Asian–Australasian Flyway</strong>, the route that runs from the Siberian tundra down to Australia and New Zealand — one of the busiest and most threatened migration corridors in the world. For waders flying from the Arctic Circle to the southern hemisphere, the tidal flats of the Pearl River Delta are a service station they cannot skip: here they nearly double their body weight before carrying on for thousands of kilometres.</p>
+    <p>Zhuhai is also unusually green for a Chinese city, with hills that run straight down into the coast, so resident birds are both varied and numerous. More than 300 species have been recorded here, including nationally protected ones such as the <strong>Black-faced Spoonbill, Saunders's Gull, Greater Coucal and White-throated Kingfisher</strong>. For a beginner that means you don't have to travel far: the park downstairs is already a living field guide.</p>
+
+    <h2>The year at a glance</h2>
+    <p>What you see is largely a function of when you go. The same flat in February and in July might as well be two different worlds.</p>
+
+    <div class="calendar">
+      {% set heights = [96, 92, 80, 66, 50, 28, 22, 40, 62, 82, 92, 98] %}
+      {% for mm in range(1, 13) %}
+      <div class="cal-cell">
+        <div class="m">{{ mm }}</div>
+        <div class="bar"><i style="height:{{ heights[loop.index0] }}%"></i></div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="cal-legend">Bar height shows how rich the waterbird community is in that month. Winter (Dec–Feb) is the annual peak; high summer (Jun–Aug) is the trough.</p>
+
+    <h3>Spring · March–May | Breeding plumage and the northbound push</h3>
+    <p>The prettiest season. Herons grow their plumes, waders moult into bright breeding dress, and most birds sing hardest now. Late March to mid-April is the passage peak, when the flats hold birds that stay only a few days. The catch: changeable weather, and many winter visitors have already gone.</p>
+
+    <h3>Summer · June–August | The residents take over</h3>
+    <p>Fewest waterbirds, noisiest woodland. Asian Koels call day and night, Greater Coucals mutter in the scrub, and White-breasted Waterhens shout from the reeds. Go between 5:30 and 8 a.m. — after noon there is mostly cicada. Bring water and insect repellent.</p>
+
+    <h3>Autumn · September–November | The southbound wave</h3>
+    <p>Wader passage peaks from late August to mid-October. Most birds are in dull non-breeding plumage, which makes identification hardest — and the numbers are enormous. Raptor migration happens at the same time: on a clear morning with thermals, look up and you may find a kettle of hawks.</p>
+
+    <h3>Winter · December–February | The waterbird feast</h3>
+    <p>The best season of the year. Black-faced Spoonbills, Saunders's Gulls, Black-headed Gulls, Grey Herons and Great Egrets gather on the flats and fish ponds in annual peak numbers. The good sites are crowded with birds; an 8× binocular is enough to be very satisfied. The catch: some birds stay far out and need a scope.</p>
+
+    <h2>What you need to start</h2>
+    <ul>
+      <li><strong>A pair of binoculars</strong>: 8×42 is the most versatile specification — 8× magnification, 42 mm objective, a workable balance of brightness and weight. On a budget, an entry-level pair from a Chinese brand is plenty.</li>
+      <li><strong>A field guide or an app</strong>: the standard paper reference for the region is <em>Birds of East Asia</em>; on a phone, identification apps help, but always check the features against the book rather than trusting the AI.</li>
+      <li><strong>A tide table</strong>: for waterbirds on the flats, the tide decides everything. The best window is usually <strong>one to two hours after low tide</strong>, when birds concentrate along the waterline to feed.</li>
+      <li><strong>Clothes that don't stand out</strong>: avoid white and bright colours; grey, green and khaki are safest. Skip the fragrance — a bird's sense of smell is better than legend suggests.</li>
+      <li><strong>A notebook</strong>: date, time, place, weather, tide and counts. In three months those boring numbers will be worth more than your photographs.</li>
+    </ul>
+
+    <h2>Learning to listen</h2>
+    <p>More than eighty per cent of the birds you meet, you hear before you see. Training your ears pays off faster than training your eyes: first learn to separate rhythm from pitch, then attach those patterns to species.</p>
+    <p>Every species page on this site carries a field recording. The exercise is: <strong>look at the waveform and its duration, listen once with your eyes shut, read the description, then listen again</strong>. When a sound in the field immediately produces a thought like "two rising notes, accelerating", you have started.</p>
+    <p>But remember: <strong>never take playback into the field</strong>. Playback pulls a bird away from feeding, from its nest or from its territory, and repeated use measurably lowers breeding success. Recordings are a study tool, not a lure.</p>
+
+    <h2>Record, then share</h2>
+    <p>The most valuable thing birding produces is data. Note species, numbers, time and place, and upload them to a citizen-science platform such as eBird or the China Bird Report. Scattered observations add up to the evidence behind conservation decisions — much of the case for protecting the Pearl River Delta's wetlands was built out of decades of bird records.</p>
+    <p>If you find something rare, don't publish the exact coordinates straight away. A raptor nest, or a reliable roost of a scarce waterbird, tends to attract a crowd once it is publicised. <strong>Restraint in sharing is the hardest discipline a birder learns.</strong></p>
+
+    <h2>Finally: three lines not to cross</h2>
+    <ul>
+      <li><strong>Don't disturb</strong> — distance comes before photographs.</li>
+      <li><strong>Don't feed, release or capture</strong> — every wild bird in China is protected by the Wildlife Protection Law.</li>
+      <li><strong>Don't enter core zones of reserves</strong> — that isn't a restriction, it's their last refuge.</li>
+    </ul>
+    <p style="margin-top:36px;color:var(--ink-4);font-size:13.5px">
+      This page is a general introduction. Protection status follows China's <em>List of National Key Protected Wild Animals</em> (2021 edition); residency and encounter rates reflect general experience in the Pearl River Delta and vary with year, weather and site.
+    </p>
+
+  </div>
+  <aside class="toc" id="toc" aria-label="On this page"></aside>
+</div>
+
+{% endblock %}
