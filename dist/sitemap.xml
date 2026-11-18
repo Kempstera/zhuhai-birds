@@ -30,6 +30,20 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://birds.signupeverywhere.cc/board/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/board/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/board/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birds.signupeverywhere.cc/en/board/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/board/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/board/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://birds.signupeverywhere.cc/bird/jia-yan.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/jia-yan.html"/>
