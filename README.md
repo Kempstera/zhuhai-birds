@@ -69,6 +69,36 @@ build.py                   静态站点生成器
 少数物种（池鹭、黑脸琵鹭、黑领椋鸟）没有开放授权的本种历史图版，
 改用同属近缘种绘图，并在 `note` 字段里写明「同属对照」以免误认。
 
+### 两套裁切（容易搞错的地方）
+
+首页卡片和详情页大图是**两种完全不同的画面比例**，因此各有一个裁切字段：
+
+| 字段 | 作用位置 | 画面比例 | 默认值 |
+| --- | --- | --- | --- |
+| `img.cardpos` | 首页物种名录卡片 `.bc-media` | 4 / 2.9 ≈ 1.38 : 1 | 浏览器默认（居中 50%） |
+| `img.pos` | 详情页顶部大图 `.detail-hero` | 2.29 : 1（视口矮时会到 3.37 : 1） | `center 18%` |
+
+两者都写 CSS 的 `object-position`，形如 `"center 10%"`。
+**百分比越小取景越靠上**——鸟头贴顶或出框时要把数值调小。
+只为个别物种加覆盖值，不要全局改动，否则会连带改掉本来正常的构图。
+
+### 汉语拼音
+
+`data/species.json` 每个物种的 `py` 字段存带声调拼音（音节用空格分隔）。
+`build.py` 的 `ruby()` 会把它逐音节对齐到每个汉字头顶：
+
+```html
+<ruby class="rb">白<rt>bái</rt></ruby><ruby class="rb">头<rt>tóu</rt></ruby>…
+```
+
+前提是**汉字数 == 音节数**（65 个名称目前全部满足）；对不上时函数会自动退回
+「汉字 + 并排拼音」的老写法，不会错位。新增物种后可用这段自查：
+
+```bash
+python3 -c "import json,re;sp=json.load(open('data/species.json'));
+[print(s['zh'],len(re.findall(r'[\u4e00-\u9fff]',s['zh'])),len(s['py'].split())) for s in sp if len(re.findall(r'[\u4e00-\u9fff]',s['zh']))!=len(s['py'].split())]"
+```
+
 ### scripts
 
 | 脚本 | 作用 |
