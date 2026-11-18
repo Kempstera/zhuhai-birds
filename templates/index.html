@@ -60,7 +60,6 @@
     <div class="group-grid">
       {% for g in GROUPS %}
       <a class="group-card reveal" href="#species" data-jump="{{ g.id }}">
-        {{ m.icon(g.icon) }}
         <h3>{{ g.zh }}</h3>
         <p class="en">{{ g.en }}</p>
         <div class="gtags">{% for t in g.tags %}<span>{{ t }}</span>{% endfor %}</div>
@@ -87,7 +86,6 @@
       {% for g in GROUPS %}
       <button class="chip" data-f="{{ g.id }}">{{ g.short }} <span class="c">{{ g.count }}</span></button>
       {% endfor %}
-      <button class="chip" data-f="protected">受保护</button>
       <label class="search">
         {{ m.icon('search') }}
         <input type="search" id="q" placeholder="搜索名称 / 学名…" aria-label="搜索物种">

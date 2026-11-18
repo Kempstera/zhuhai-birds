@@ -233,9 +233,7 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 }
 .group-card:hover{transform:translateY(-4px);box-shadow:var(--sh-2);border-color:var(--line);background:#fff}
 .group-card:hover::after{transform:scaleX(1)}
-.group-card svg{width:38px;height:38px;color:var(--forest-2);margin-bottom:20px;transition:transform .45s var(--ease),color .45s}
-.group-card:hover svg{transform:translateY(-1px) scale(1.04);color:var(--clay)}
-.group-card h3{font-size:18px;letter-spacing:.06em;margin-bottom:4px}
+.group-card h3{font-size:19px;letter-spacing:.06em;margin-bottom:5px}
 .group-card .en{font-family:var(--latin);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4)}
 
 .group-card .gtags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}

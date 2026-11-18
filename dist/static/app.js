@@ -41,16 +41,11 @@
     var curFilter = "all";
     var q = "";
 
-    var isProtected = function (p) {
-      return p.indexOf("一级") > -1 || p.indexOf("二级") > -1;
-    };
-
     var apply = function () {
       var shown = 0;
       items.forEach(function (card) {
         var ok;
         if (curFilter === "all") ok = true;
-        else if (curFilter === "protected") ok = isProtected(card.dataset.protect || "");
         else ok = card.dataset.group === curFilter;
 
         if (ok && q) ok = (card.dataset.search || "").toLowerCase().indexOf(q) > -1;
