@@ -446,7 +446,7 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
    详情页
    =========================================================== */
 .detail-hero{position:relative;height:min(62vh,560px);min-height:380px;overflow:hidden;background:var(--forest)}
-.detail-hero img{width:100%;height:100%;object-fit:cover;object-position:center 42%;animation:heroIn 1.4s var(--ease) both}
+.detail-hero img{width:100%;height:100%;object-fit:cover;object-position:center 18%;animation:heroIn 1.4s var(--ease) both}
 @keyframes heroIn{from{transform:scale(1.06);opacity:.5}to{transform:scale(1);opacity:1}}
 
 .detail-hero::before{
@@ -799,6 +799,34 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
   .js .reveal{opacity:1;transform:none;transition:none}
   .detail-hero img{animation:none}
 }
+
+
+/* ---------- 汉语拼音 ---------- */
+.py{
+  font-family:var(--latin);font-style:normal;
+  font-size:11.5px;line-height:1.3;color:var(--ink-4);
+  letter-spacing:.015em;white-space:nowrap;
+}
+/* 首页卡片：中文名与拼音一组，学名跟在后面 */
+.bc-zh{display:inline-flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.bc-zh h3{font-size:19px;letter-spacing:.08em}
+.bc-zh .py{font-size:12px;transform:translateY(-1px)}
+/* 首页 hero 标签 */
+.hero-tag .py{color:rgba(245,241,231,.7);font-size:.92em;margin:0 .12em}
+/* 详情页标题下方 */
+.dh-py{
+  font-family:var(--latin);font-style:normal;
+  font-size:clamp(13px,1.7vw,17px);color:rgba(255,255,255,.74);
+  letter-spacing:.14em;padding-bottom:10px;
+}
+/* 相似种 */
+.sim-card .sc-t .py{display:block;font-size:10.5px;color:var(--ink-4);margin-top:2px;letter-spacing:.06em}
+/* 侧栏资料 */
+.sc-list .v .py{margin-left:8px;font-size:11px;color:var(--ink-4)}
+/* 上下篇 */
+.pager .nm .py{display:block;font-size:11px;color:var(--ink-4);margin-top:3px;letter-spacing:.04em}
+/* 观鸟地点的鸟种 */
+.spot .birds .py{font-size:9.5px;color:var(--ink-4);margin-left:4px;letter-spacing:.02em}
 
 /* ---------------- 杂项 ---------------- */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

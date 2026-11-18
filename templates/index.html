@@ -35,10 +35,10 @@
       <figure class="hero-figure">
         <img src="{{ root }}assets/img/{{ hero.img.big }}" alt="{{ hero.zh }} {{ hero.sci }}" fetchpriority="high" width="{{ hero.img.w }}" height="{{ hero.img.h }}">
       </figure>
-      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} · {{ hero.sci }}</div>
+      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} <em class="py">{{ hero.py }}</em> · {{ hero.sci }}</div>
       <p class="hero-caption">图片 — {{ hero.img.credit or 'Wikimedia Commons' }} / {{ hero.img.license or '见来源' }}</p>
       {% else %}
-      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} · {{ hero.sci }}</div>
+      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} <em class="py">{{ hero.py }}</em> · {{ hero.sci }}</div>
       {% endif %}
     </div>
   </div>
@@ -121,7 +121,7 @@
           </div>
           <div class="bc-body">
             <div class="bc-name">
-              <h3>{{ s.zh }}</h3>
+              <span class="bc-zh"><h3>{{ s.zh }}</h3><em class="py">{{ s.py }}</em></span>
               <span class="sci">{{ s.sci }}</span>
             </div>
             <div class="bc-meta">
@@ -159,7 +159,7 @@
         <span class="no">{{ s.no }} / {{ s.area }}</span>
         <h4>{{ s.name }}</h4>
         <p>{{ s.desc }}</p>
-        <div class="birds">{% for b in s.birds %}<span>{{ b }}</span>{% endfor %}</div>
+        <div class="birds">{% for b in s.birds %}<span>{{ b }}<em class="py">{{ PY.get(b, '') }}</em></span>{% endfor %}</div>
         <p style="margin-top:12px;font-size:11.5px;color:var(--clay);letter-spacing:.06em">{{ s.season }}</p>
       </article>
       {% endfor %}

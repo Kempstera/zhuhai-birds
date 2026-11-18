@@ -140,7 +140,8 @@ def main():
         trim_blocks=True, lstrip_blocks=True,
     )
     env.globals.update(GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, YEAR=YEAR,
-                       CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"))
+                       CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
+                       PY={x["zh"]: x.get("py", "") for x in species})
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)

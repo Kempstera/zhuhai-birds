@@ -65,7 +65,8 @@
    "hong-er-bei",
    "an-lu-xiu-yan-niao"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "bái tóu bēi"
  },
  {
   "slug": "hong-er-bei",
@@ -133,7 +134,8 @@
    "bai-tou-bei",
    "cha-wei-tai-yang-niao"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "hóng ěr bēi"
  },
  {
   "slug": "zhu-jing-ban-jiu",
@@ -200,7 +202,8 @@
   "similar": [
    "shu-ma-que"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "zhū jǐng bān jiū"
  },
  {
   "slug": "shu-ma-que",
@@ -268,7 +271,8 @@
    "zhu-jing-ban-jiu",
    "hei-ling-liang-niao"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "shù má què"
  },
  {
   "slug": "wu-dong",
@@ -336,7 +340,8 @@
    "ba-ge",
    "hei-ling-liang-niao"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "wū dōng"
  },
  {
   "slug": "chang-wei-feng-ye-ying",
@@ -404,7 +409,8 @@
    "an-lu-xiu-yan-niao",
    "huang-fu-shan-jiao-ying"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "cháng wěi féng yè yīng"
  },
  {
   "slug": "an-lu-xiu-yan-niao",
@@ -472,7 +478,8 @@
    "chang-wei-feng-ye-ying",
    "cha-wei-tai-yang-niao"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "àn lǜ xiù yǎn niǎo"
  },
  {
   "slug": "ba-ge",
@@ -540,7 +547,8 @@
    "hei-ling-liang-niao",
    "wu-dong"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "bā gē"
  },
  {
   "slug": "hei-ling-liang-niao",
@@ -608,7 +616,8 @@
    "ba-ge",
    "wu-dong"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "hēi lǐng liáng niǎo"
  },
  {
   "slug": "zong-bei-bo-lao",
@@ -675,7 +684,8 @@
   "similar": [
    "hei-yuan"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "zōng bèi bó láo"
  },
  {
   "slug": "zao-juan",
@@ -738,7 +748,8 @@
    "he-chi-ya-juan",
    "ba-ge"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "zào juān"
  },
  {
   "slug": "he-chi-ya-juan",
@@ -806,7 +817,8 @@
    "zao-juan",
    "bai-xiong-ku-e-niao"
   ],
-  "rank": 3
+  "rank": 3,
+  "py": "hè chì yā juān"
  },
  {
   "slug": "cha-wei-tai-yang-niao",
@@ -874,7 +886,8 @@
    "an-lu-xiu-yan-niao",
    "hong-er-bei"
   ],
-  "rank": 3
+  "rank": 3,
+  "py": "chā wěi tài yáng niǎo"
  },
  {
   "slug": "chi-lu",
@@ -942,7 +955,8 @@
    "ye-lu",
    "bai-lu"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "chí lù"
  },
  {
   "slug": "bai-lu",
@@ -1010,7 +1024,8 @@
    "da-bai-lu",
    "chi-lu"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "bái lù"
  },
  {
   "slug": "da-bai-lu",
@@ -1073,7 +1088,8 @@
    "bai-lu",
    "cang-lu"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "dà bái lù"
  },
  {
   "slug": "cang-lu",
@@ -1135,7 +1151,8 @@
    "da-bai-lu",
    "chi-lu"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "cāng lù"
  },
  {
   "slug": "ye-lu",
@@ -1203,7 +1220,8 @@
    "chi-lu",
    "bai-lu"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "yè lù"
  },
  {
   "slug": "bai-xiong-ku-e-niao",
@@ -1271,7 +1289,8 @@
    "hei-shui-ji",
    "he-chi-ya-juan"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "bái xiōng kǔ è niǎo"
  },
  {
   "slug": "hei-shui-ji",
@@ -1339,7 +1358,8 @@
    "xiao-pi-ti",
    "bai-xiong-ku-e-niao"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "hēi shuǐ jī"
  },
  {
   "slug": "xiao-pi-ti",
@@ -1406,7 +1426,8 @@
   "similar": [
    "hei-shui-ji"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "xiǎo pì tī"
  },
  {
   "slug": "hei-lian-pi-lu",
@@ -1467,7 +1488,8 @@
    "bai-lu",
    "bai-pi-lu"
   ],
-  "rank": 4
+  "rank": 4,
+  "py": "hēi liǎn pí lù"
  },
  {
   "slug": "hei-chi-chang-jiao-yu",
@@ -1531,7 +1553,8 @@
    "qing-jiao-yu",
    "huan-jing-heng"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "hēi chì cháng jiǎo yù"
  },
  {
   "slug": "huan-jing-heng",
@@ -1599,7 +1622,8 @@
    "hei-chi-chang-jiao-yu",
    "qing-jiao-yu"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "huán jǐng héng"
  },
  {
   "slug": "qing-jiao-yu",
@@ -1663,7 +1687,8 @@
    "hei-chi-chang-jiao-yu",
    "huan-jing-heng"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "qīng jiǎo yù"
  },
  {
   "slug": "hei-zui-ou",
@@ -1724,7 +1749,8 @@
    "hong-zui-ou",
    "hei-chi-chang-jiao-yu"
   ],
-  "rank": 4
+  "rank": 4,
+  "py": "hēi zuǐ ōu"
  },
  {
   "slug": "hong-zui-ou",
@@ -1784,7 +1810,8 @@
   "similar": [
    "hei-zui-ou"
   ],
-  "rank": 1
+  "rank": 1,
+  "py": "hóng zuǐ ōu"
  },
  {
   "slug": "hei-yuan",
@@ -1852,7 +1879,8 @@
    "pu-tong-kuang",
    "e"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "hēi yuān"
  },
  {
   "slug": "e",
@@ -1915,7 +1943,8 @@
    "hei-yuan",
    "pu-tong-kuang"
   ],
-  "rank": 3
+  "rank": 3,
+  "py": "è"
  },
  {
   "slug": "pu-tong-kuang",
@@ -1977,7 +2006,8 @@
    "hei-yuan",
    "e"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "pǔ tōng kuáng"
  },
  {
   "slug": "pu-tong-cui-niao",
@@ -2045,7 +2075,8 @@
    "bai-xiong-fei-cui",
    "ban-yu-gou"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "pǔ tōng cuì niǎo"
  },
  {
   "slug": "bai-xiong-fei-cui",
@@ -2113,7 +2144,8 @@
    "pu-tong-cui-niao",
    "ban-yu-gou"
   ],
-  "rank": 2
+  "rank": 2,
+  "py": "bái xiōng fěi cuì"
  },
  {
   "slug": "ban-yu-gou",
@@ -2181,7 +2213,8 @@
    "pu-tong-cui-niao",
    "bai-xiong-fei-cui"
   ],
-  "rank": 3
+  "rank": 3,
+  "py": "bān yú gǒu"
  },
  {
   "slug": "bai-ji-ling",
@@ -2244,7 +2277,8 @@
   "tip": "看动作比看颜色快：只要一只小鸟在地上走走停停、尾巴上下猛摆，几乎就是它。",
   "similar": [
    "shu-ma-que"
-  ]
+  ],
+  "py": "bái jí líng"
  },
  {
   "slug": "huang-mei-liu-ying",
@@ -2308,7 +2342,8 @@
   "similar": [
    "an-lu-xiu-yan-niao",
    "chang-wei-feng-ye-ying"
-  ]
+  ],
+  "py": "huáng méi liǔ yīng"
  },
  {
   "slug": "bei-hong-wei-qu",
@@ -2371,7 +2406,8 @@
   "similar": [
    "wu-dong",
    "hei-hou-shi-ji"
-  ]
+  ],
+  "py": "běi hóng wěi qú"
  },
  {
   "slug": "chun-se-shan-jiao-ying",
@@ -2439,7 +2475,8 @@
   "similar": [
    "zong-shan-wei-ying",
    "chang-wei-feng-ye-ying"
-  ]
+  ],
+  "py": "chún sè shān jiāo yīng"
  },
  {
   "slug": "zong-shan-wei-ying",
@@ -2506,7 +2543,8 @@
   "tip": "看到一只小鸟在空中「一跳一叫」地移动，基本可以直接定种——其他常见莺类不会这样飞。",
   "similar": [
    "chun-se-shan-jiao-ying"
-  ]
+  ],
+  "py": "zōng shàn wěi yīng"
  },
  {
   "slug": "jia-yan",
@@ -2569,7 +2607,8 @@
   "tip": "燕类区分：家燕有黑色胸带 + 深叉尾；金腰燕腰是橙红色、尾叉较浅。看到屋檐下的泥巢，多半是家燕。",
   "similar": [
    "xiao-bai-yao-yu-yan"
-  ]
+  ],
+  "py": "jiā yàn"
  },
  {
   "slug": "xiao-bai-yao-yu-yan",
@@ -2632,7 +2671,8 @@
   "tip": "和家燕的区别：雨燕翅膀更长更弯、通体黑、腰有白斑、飞得更高更快，而且几乎不落到电线上。",
   "similar": [
    "jia-yan"
-  ]
+  ],
+  "py": "xiǎo bái yāo yǔ yàn"
  },
  {
   "slug": "si-guang-liang-niao",
@@ -2694,7 +2734,8 @@
   "similar": [
    "ba-ge",
    "hei-ling-liang-niao"
-  ]
+  ],
+  "py": "sī guāng liáng niǎo"
  },
  {
   "slug": "hei-juan-wei",
@@ -2756,7 +2797,8 @@
   "similar": [
    "da-zui-wu-ya",
    "ba-ge"
-  ]
+  ],
+  "py": "hēi juǎn wěi"
  },
  {
   "slug": "ban-wen-niao",
@@ -2823,7 +2865,8 @@
   "tip": "与白腰文鸟的区别：斑文鸟胸腹有鳞斑、喙灰蓝；白腰文鸟通体棕褐、腰白、喙灰黑且更粗。两者常混群。",
   "similar": [
    "shu-ma-que"
-  ]
+  ],
+  "py": "bān wén niǎo"
  },
  {
   "slug": "bai-hou-hong-tun-bei",
@@ -2891,7 +2934,8 @@
   "similar": [
    "bai-tou-bei",
    "hong-er-bei"
-  ]
+  ],
+  "py": "bái hóu hóng tún bēi"
  },
  {
   "slug": "hua-mei",
@@ -2958,7 +3002,8 @@
   "tip": "国家二级保护动物，禁止捕捉与交易。野外观察请勿播放录音引诱，繁殖期干扰会直接影响其成功率。",
   "similar": [
    "hei-hou-zao-mei"
-  ]
+  ],
+  "py": "huà méi"
  },
  {
   "slug": "hei-hou-zao-mei",
@@ -3025,7 +3070,8 @@
   "tip": "先听「笑声」，再等群体从灌丛中依次穿过。它们的行进路线相对固定，可在小径旁静候。",
   "similar": [
    "hua-mei"
-  ]
+  ],
+  "py": "hēi hóu zào méi"
  },
  {
   "slug": "da-zui-wu-ya",
@@ -3093,7 +3139,8 @@
   "similar": [
    "hei-juan-wei",
    "hei-yuan"
-  ]
+  ],
+  "py": "dà zuǐ wū yā"
  },
  {
   "slug": "niu-bei-lu",
@@ -3161,7 +3208,8 @@
   "similar": [
    "bai-lu",
    "zhong-bai-lu"
-  ]
+  ],
+  "py": "niú bèi lù"
  },
  {
   "slug": "zhong-bai-lu",
@@ -3224,7 +3272,8 @@
   "similar": [
    "bai-lu",
    "da-bai-lu"
-  ]
+  ],
+  "py": "zhōng bái lù"
  },
  {
   "slug": "lv-lu",
@@ -3292,7 +3341,8 @@
   "similar": [
    "chi-lu",
    "ye-lu"
-  ]
+  ],
+  "py": "lǜ lù"
  },
  {
   "slug": "bai-gu-ding",
@@ -3352,7 +3402,8 @@
   "tip": "与黑水鸡的区别：白骨顶额甲是白的、通体黑、趾有瓣蹼；黑水鸡额甲是红的、体侧有白线、腿有红环。",
   "similar": [
    "hei-shui-ji"
-  ]
+  ],
+  "py": "bái gǔ dǐng"
  },
  {
   "slug": "feng-tou-pi-ti",
@@ -3412,7 +3463,8 @@
   "tip": "与小鸊鷉的区别：凤头鸊鷉体型大得多、颈长、喙粉肉色且细长；小鸊鷉圆胖、无尾、喙短。",
   "similar": [
    "xiao-pi-ti"
-  ]
+  ],
+  "py": "fèng tóu pì tī"
  },
  {
   "slug": "bai-pi-lu",
@@ -3471,7 +3523,8 @@
   "tip": "国家二级保护动物。在琵鹭群里逐只检查：脸黑喙黑=黑脸琵鹭（一级）；脸白喙端黄=白琵鹭（二级）。",
   "similar": [
    "hei-lian-pi-lu"
-  ]
+  ],
+  "py": "bái pí lù"
  },
  {
   "slug": "lv-chi-ya",
@@ -3531,7 +3584,8 @@
   "tip": "看到一群小鸭子从水面「弹射」起飞，几乎就是绿翅鸭。注意雄鸟尾侧的黄三角和绿色眼罩。",
   "similar": [
    "xiao-pi-ti"
-  ]
+  ],
+  "py": "lǜ chì yā"
  },
  {
   "slug": "hei-fu-bin-yu",
@@ -3594,7 +3648,8 @@
   "similar": [
    "qing-jiao-yu",
    "ji-yu"
-  ]
+  ],
+  "py": "hēi fù bīn yù"
  },
  {
   "slug": "ji-yu",
@@ -3658,7 +3713,8 @@
   "similar": [
    "qing-jiao-yu",
    "hei-fu-bin-yu"
-  ]
+  ],
+  "py": "jī yù"
  },
  {
   "slug": "hui-ban-heng",
@@ -3721,7 +3777,8 @@
   "similar": [
    "huan-jing-heng",
    "hei-fu-bin-yu"
-  ]
+  ],
+  "py": "huī bān héng"
  },
  {
   "slug": "bai-yao-shao-yu",
@@ -3783,7 +3840,8 @@
   "similar": [
    "qing-jiao-yu",
    "hei-chi-chang-jiao-yu"
-  ]
+  ],
+  "py": "bái yāo sháo yù"
  },
  {
   "slug": "pu-tong-lu-ci",
@@ -3844,7 +3902,8 @@
   "tip": "看到水边石头上「张开翅膀一动不动」的黑色大鸟，就是鸬鹚在晒羽。这个姿势不是装饰，是生存必需。",
   "similar": [
    "e"
-  ]
+  ],
+  "py": "pǔ tōng lú cí"
  },
  {
   "slug": "fan-zui-yu",
@@ -3906,7 +3965,8 @@
   "tip": "识别不需要看别的，只看喙的方向：向上翘的是反嘴鹬，笔直的是其他鹬类。",
   "similar": [
    "hei-chi-chang-jiao-yu"
-  ]
+  ],
+  "py": "fǎn zuǐ yù"
  },
  {
   "slug": "hong-sun",
@@ -3974,7 +4034,8 @@
   "similar": [
    "hei-yuan",
    "hei-chi-yuan"
-  ]
+  ],
+  "py": "hóng sǔn"
  },
  {
   "slug": "she-diao",
@@ -4042,7 +4103,8 @@
   "similar": [
    "feng-tou-ying",
    "hei-yuan"
-  ]
+  ],
+  "py": "shé diāo"
  },
  {
   "slug": "feng-tou-ying",
@@ -4110,7 +4172,8 @@
   "similar": [
    "she-diao",
    "pu-tong-kuang"
-  ]
+  ],
+  "py": "fèng tóu yīng"
  },
  {
   "slug": "hei-chi-yuan",
@@ -4178,7 +4241,8 @@
   "similar": [
    "hong-sun",
    "hei-yuan"
-  ]
+  ],
+  "py": "hēi chì yuān"
  },
  {
   "slug": "lan-fei-cui",
@@ -4241,6 +4305,7 @@
   "similar": [
    "bai-xiong-fei-cui",
    "pu-tong-cui-niao"
-  ]
+  ],
+  "py": "lán fěi cuì"
  }
 ]
