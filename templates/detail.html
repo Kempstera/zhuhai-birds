@@ -23,8 +23,7 @@
     <div class="wrap">
       <p class="dh-no">NO. {{ sp.no }} · {{ group.zh }} / {{ sp.family }}</p>
       <div class="dh-title">
-        <h1>{{ sp.zh }}</h1>
-        <em class="dh-py">{{ sp.py }}</em>
+        <h1>{{ ruby(sp.zh, sp.py) }}</h1>
         <span class="dh-sci">{{ sp.sci }}</span>
       </div>
       <div class="dh-tags">
@@ -144,7 +143,7 @@
           <a class="sim-card" href="{{ root }}bird/{{ s.slug }}.html">
             {% if s.img %}<img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}" loading="lazy">{% endif %}
             <div>
-              <div class="sc-t">{{ s.zh }}<em class="py">{{ s.py }}</em></div>
+              <div class="sc-t">{{ ruby(s.zh, s.py) }}</div>
               <div class="sc-s">{{ s.sci }}</div>
               <div class="sc-m">{{ s.residency }} · {{ s.len }}</div>
             </div>
@@ -157,11 +156,11 @@
       <nav class="pager">
         <a href="{{ root }}bird/{{ prev.slug }}.html">
           <div class="dir">← 上一种</div>
-          <div class="nm">{{ prev.zh }}<em class="py">{{ prev.py }}</em></div>
+          <div class="nm">{{ ruby(prev.zh, prev.py) }}</div>
         </a>
         <a class="next" href="{{ root }}bird/{{ next.slug }}.html">
           <div class="dir">下一种 →</div>
-          <div class="nm">{{ next.zh }}<em class="py">{{ next.py }}</em></div>
+          <div class="nm">{{ ruby(next.zh, next.py) }}</div>
         </a>
       </nav>
     </div>
@@ -171,7 +170,7 @@
       <div class="spec-card">
         <div class="sc-head">Species Profile</div>
         <ul class="sc-list">
-          <li><span class="k">中文名</span><span class="v">{{ sp.zh }}<em class="py">{{ sp.py }}</em></span></li>
+          <li><span class="k">中文名</span><span class="v">{{ ruby(sp.zh, sp.py) }}</span></li>
           <li><span class="k">英文名</span><span class="v">{{ sp.en }}</span></li>
           <li><span class="k">学名</span><span class="v" style="font-style:italic;font-family:var(--latin)">{{ sp.sci }}</span></li>
           <li><span class="k">科属</span><span class="v">{{ sp.family }}</span></li>

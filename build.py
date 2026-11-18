@@ -1,11 +1,41 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """生成珠海观鸟图鉴静态站点。"""
-import json, os, shutil, datetime, hashlib
+import json, os, re, shutil, datetime, hashlib
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup, escape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
+
+CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
+
+
+def ruby(zh, py=""):
+    """把拼音逐音节标到对应汉字的头顶（HTML ruby 注音）。
+
+    例：ruby("白头鹎", "bái tóu bēi")
+        → <ruby class="rb">白<rt>bái</rt></ruby><ruby ...>头<rt>tóu</rt></ruby>...
+
+    65 个中文名的汉字数与拼音音节数刚好一一对应；如果将来新增的名字对不上
+    （比如带儿化音、或多字音节），就退回「汉字 + 并排拼音」的老写法，避免错位。
+    """
+    zh = zh or ""
+    py = (py or "").strip()
+    syl = py.split()
+    chars = list(zh)
+    if not py:
+        return Markup(escape(zh))
+    if not syl or sum(1 for c in chars if CJK_RE.match(c)) != len(syl):
+        return Markup("%s<em class=\"py\">%s</em>" % (escape(zh), escape(py)))
+    out, i = [], 0
+    for c in chars:
+        if CJK_RE.match(c):
+            out.append('<ruby class="rb">%s<rt>%s</rt></ruby>' % (escape(c), escape(syl[i])))
+            i += 1
+        else:
+            out.append(str(escape(c)))
+    return Markup("".join(out))
 
 
 def asset_ver(name):
@@ -141,6 +171,7 @@ def main():
     )
     env.globals.update(GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, YEAR=YEAR,
                        CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
+                       ruby=ruby,
                        PY={x["zh"]: x.get("py", "") for x in species})
 
     if os.path.isdir(DIST):

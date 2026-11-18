@@ -581,7 +581,8 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Asian_koel.jpg",
    "title": "Asian koel.jpg",
-   "pos": "center 4%"
+   "pos": "center 4%",
+   "cardpos": "center 10%"
   },
   "audio": {
    "file": "zao-juan.mp3",
@@ -752,7 +753,8 @@
    "credit": "https://www.flickr.com/photos/uncle_1389/",
    "license": "CC BY-SA 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Ardeola_bacchus_(19169872143).jpg",
-   "title": "Ardeola bacchus (19169872143).jpg"
+   "title": "Ardeola bacchus (19169872143).jpg",
+   "cardpos": "center 10%"
   },
   "audio": {
    "file": "chi-lu.mp3",
@@ -1668,7 +1670,8 @@
    "license": "CC BY 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Buteo_japonicus1.jpg",
    "title": "Buteo japonicus1.jpg",
-   "pos": "center 4%"
+   "pos": "center 4%",
+   "cardpos": "center 18%"
   },
   "audio": {
    "file": "pu-tong-kuang.mp3",
@@ -2754,7 +2757,8 @@
    "credit": "Alpsdake",
    "license": "CC BY-SA 3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Egretta_intermedia.JPG",
-   "title": "Egretta intermedia.JPG"
+   "title": "Egretta intermedia.JPG",
+   "cardpos": "center 30%"
   },
   "gallery": [
    {
@@ -3603,7 +3607,8 @@
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Black-winged_Kite_in_Tal_Chhapar_Sanctuary_November_2025_by_Tisha_Mukherjee_03.jpg",
    "title": "Black-winged Kite in Tal Chhapar Sanctuary November 2025 by Tisha Mukherjee 03.jpg",
-   "pos": "center 4%"
+   "pos": "center 4%",
+   "cardpos": "center 18%"
   },
   "audio": {
    "file": "hei-chi-yuan.mp3",

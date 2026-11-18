@@ -403,8 +403,8 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 .spot .no{font-family:var(--latin);font-size:11px;letter-spacing:.18em;color:var(--clay)}
 .spot h4{font-size:17px;letter-spacing:.06em;margin:10px 0 8px}
 .spot p{font-size:13.5px;color:var(--ink-2);line-height:1.8;margin:0}
-.spot .birds{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
-.spot .birds span{font-size:11px;color:var(--ink-3);border-bottom:1px solid var(--line);padding-bottom:1px}
+.spot .birds{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px 12px}
+.spot .birds span{font-size:11px;color:var(--ink-3);border-bottom:1px solid var(--line);padding-bottom:1px;white-space:nowrap}
 
 /* ---------------- 守则 ---------------- */
 .ethics{
@@ -463,7 +463,7 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
   padding-bottom:38px;color:#fff;
 }
 .dh-no{font-family:var(--latin);font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.62);overflow-wrap:anywhere}
-.dh-title{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:10px}
+.dh-title{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:22px}
 .dh-title h1{font-size:clamp(2.2rem,5.6vw,4rem);letter-spacing:.12em;color:#fff;line-height:1.05}
 .dh-sci{font-family:var(--latin);font-style:italic;font-size:clamp(14px,1.9vw,20px);color:rgba(255,255,255,.74);padding-bottom:8px;letter-spacing:.02em}
 .dh-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
@@ -801,32 +801,38 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 }
 
 
-/* ---------- 汉语拼音 ---------- */
-.py{
-  font-family:var(--latin);font-style:normal;
-  font-size:11.5px;line-height:1.3;color:var(--ink-4);
-  letter-spacing:.015em;white-space:nowrap;
+/* ---------- 汉语拼音：逐字标在汉字头顶 ---------- */
+ruby.rb{ruby-position:over;ruby-align:center;font-weight:inherit;font-style:normal}
+ruby.rb rt{
+  font-family:var(--latin);font-style:normal;font-weight:400;
+  font-size:10px;line-height:1.05;letter-spacing:.015em;
+  color:var(--ink-4);white-space:nowrap;
 }
-/* 首页卡片：中文名与拼音一组，学名跟在后面 */
-.bc-zh{display:inline-flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-.bc-zh h3{font-size:19px;letter-spacing:.08em}
-.bc-zh .py{font-size:12px;transform:translateY(-1px)}
+/* 没有对齐成功的兜底写法：汉字 + 并排拼音 */
+.py{font-family:var(--latin);font-style:normal;font-size:11.5px;line-height:1.3;color:var(--ink-4);letter-spacing:.015em;white-space:nowrap}
+/* 首页卡片 */
+.bc-name .bc-zh{display:block;margin:0;font-size:19px;letter-spacing:.16em}
+.bc-name .bc-zh ruby.rb{padding:0 .1em}
+.bc-name .bc-zh ruby.rb rt{font-size:10px}
 /* 首页 hero 标签 */
-.hero-tag .py{color:rgba(245,241,231,.7);font-size:.92em;margin:0 .12em}
-/* 详情页标题下方 */
-.dh-py{
-  font-family:var(--latin);font-style:normal;
-  font-size:clamp(13px,1.7vw,17px);color:rgba(255,255,255,.74);
-  letter-spacing:.14em;padding-bottom:10px;
-}
+.hero-tag ruby.rb{padding:0 .1em}
+.hero-tag ruby.rb rt{font-size:9px;color:var(--ink-4);letter-spacing:.03em}
+/* 详情页标题 */
+.dh-title h1 ruby.rb rt{font-size:.3em;color:rgba(255,255,255,.94);letter-spacing:.02em;font-weight:400;text-shadow:0 1px 3px rgba(0,0,0,.6),0 0 14px rgba(0,0,0,.5)}
 /* 相似种 */
-.sim-card .sc-t .py{display:block;font-size:10.5px;color:var(--ink-4);margin-top:2px;letter-spacing:.06em}
+.sim-card .sc-t{letter-spacing:.14em}
+.sim-card .sc-t ruby.rb{padding:0 .08em}
+.sim-card .sc-t ruby.rb rt{font-size:9px;color:var(--ink-4)}
 /* 侧栏资料 */
-.sc-list .v .py{margin-left:8px;font-size:11px;color:var(--ink-4)}
+.sc-list .v ruby.rb{padding:0 .08em}
+.sc-list .v ruby.rb rt{font-size:8.5px;color:var(--ink-3);letter-spacing:.01em}
 /* 上下篇 */
-.pager .nm .py{display:block;font-size:11px;color:var(--ink-4);margin-top:3px;letter-spacing:.04em}
+.pager .nm{letter-spacing:.14em}
+.pager .nm ruby.rb{padding:0 .09em}
+.pager .nm ruby.rb rt{font-size:9.5px;color:var(--ink-4)}
 /* 观鸟地点的鸟种 */
-.spot .birds .py{font-size:9.5px;color:var(--ink-4);margin-left:4px;letter-spacing:.02em}
+.spot .birds span ruby.rb{padding:0 .06em}
+.spot .birds span ruby.rb rt{font-size:9px;color:var(--ink-4);letter-spacing:0}
 
 /* ---------------- 杂项 ---------------- */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

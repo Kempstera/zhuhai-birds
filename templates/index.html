@@ -35,10 +35,10 @@
       <figure class="hero-figure">
         <img src="{{ root }}assets/img/{{ hero.img.big }}" alt="{{ hero.zh }} {{ hero.sci }}" fetchpriority="high" width="{{ hero.img.w }}" height="{{ hero.img.h }}">
       </figure>
-      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} <em class="py">{{ hero.py }}</em> · {{ hero.sci }}</div>
+      <div class="hero-tag"><span class="dot"></span><span class="ht-txt">{{ ruby(hero.zh, hero.py) }} · {{ hero.sci }}</span></div>
       <p class="hero-caption">图片 — {{ hero.img.credit or 'Wikimedia Commons' }} / {{ hero.img.license or '见来源' }}</p>
       {% else %}
-      <div class="hero-tag"><span class="dot"></span>{{ hero.zh }} <em class="py">{{ hero.py }}</em> · {{ hero.sci }}</div>
+      <div class="hero-tag"><span class="dot"></span><span class="ht-txt">{{ ruby(hero.zh, hero.py) }} · {{ hero.sci }}</span></div>
       {% endif %}
     </div>
   </div>
@@ -111,7 +111,8 @@
            data-search="{{ s.zh }} {{ s.sci }} {{ s.en }} {{ s.family }} {{ s.habitat|join(' ') }}">
           <div class="bc-media">
             {% if s.img %}
-            <img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}（{{ s.sci }}）" loading="lazy" width="{{ s.img.w }}" height="{{ s.img.h }}">
+            <img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.zh }}（{{ s.sci }}）" loading="lazy" width="{{ s.img.w }}" height="{{ s.img.h }}"
+                 {% if s.img.cardpos %}style="object-position:{{ s.img.cardpos }}"{% endif %}>
             {% endif %}
             <span class="bc-no">NO. {{ s.no }}</span>
             {% if '一级' in s.protect %}<span class="bc-badge p1">国家一级</span>
@@ -121,7 +122,7 @@
           </div>
           <div class="bc-body">
             <div class="bc-name">
-              <span class="bc-zh"><h3>{{ s.zh }}</h3><em class="py">{{ s.py }}</em></span>
+              <h3 class="bc-zh">{{ ruby(s.zh, s.py) }}</h3>
               <span class="sci">{{ s.sci }}</span>
             </div>
             <div class="bc-meta">
@@ -159,7 +160,7 @@
         <span class="no">{{ s.no }} / {{ s.area }}</span>
         <h4>{{ s.name }}</h4>
         <p>{{ s.desc }}</p>
-        <div class="birds">{% for b in s.birds %}<span>{{ b }}<em class="py">{{ PY.get(b, '') }}</em></span>{% endfor %}</div>
+        <div class="birds">{% for b in s.birds %}<span>{{ ruby(b, PY.get(b, '')) }}</span>{% endfor %}</div>
         <p style="margin-top:12px;font-size:11.5px;color:var(--clay);letter-spacing:.06em">{{ s.season }}</p>
       </article>
       {% endfor %}
