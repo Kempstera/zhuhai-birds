@@ -20,6 +20,7 @@
         <a href="{{ pr }}index.html#groups">{{ T.nav.groups }}</a>
         <a href="{{ pr }}index.html#spots">{{ T.nav.spots }}</a>
         <a href="{{ pr }}guide.html">{{ T.nav.guide }}</a>
+        {% if SB %}<a href="{{ pr }}board/">{{ T.nav.board }}</a>{% endif %}
       </nav>
       <a class="lang" href="{{ alt_url }}" hreflang="{{ 'zh-CN' if hl == 'en' else 'en' }}"
          title="{{ T.switch.title }}">{{ T.switch.text }}</a>
@@ -48,6 +49,7 @@
           <li><a href="{{ pr }}index.html#groups">{{ T.nav.groups }}</a></li>
           <li><a href="{{ pr }}index.html#spots">{{ T.nav.spots }}</a></li>
           <li><a href="{{ pr }}guide.html">{{ T.nav.guide }}</a></li>
+          {% if SB %}<li><a href="{{ pr }}board/">{{ T.foot.board }}</a></li>{% endif %}
         </ul>
       </div>
       <div>

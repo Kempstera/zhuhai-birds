@@ -1,5 +1,33 @@
 {
  "en": {
+  "board": {
+   "as": "Signed in as",
+   "aside1": "Notes are public — no sign-in needed to read.",
+   "aside2": "Posting needs an email account; your display name appears beside the note.",
+   "aside3": "Five notes per person per ten minutes, to keep spam out.",
+   "aside4": "You can delete your own notes at any time.",
+   "aside_h": "About this guestbook",
+   "btn_in": "Sign in",
+   "btn_up": "Create account",
+   "eyebrow": "Guestbook · Leave a Note",
+   "f_email": "Email",
+   "f_nick": "Display name",
+   "f_nick_ph": "This is what others will see",
+   "f_pw": "Password",
+   "f_pw_ph": "At least 6 characters",
+   "fine": "Your email is used for sign-in only. It is never shown or used for marketing.",
+   "h1": "Tell us what you saw",
+   "lede": "Write down the last bird that made you stop — when, where, and what it was doing. Sign up to post; apart from the confirmation link we will never email you.",
+   "list_h": "Notes from visitors",
+   "loading": "Loading…",
+   "off_h": "The guestbook is not connected yet",
+   "off_p": "The backend has not been configured. The page is complete, it just cannot store anything for now.",
+   "out": "Sign out",
+   "ph": "Along the mangroves at Qi'ao this morning I saw…",
+   "send": "Post it",
+   "tab_in": "Sign in",
+   "tab_up": "Sign up"
+  },
   "brand": "Birds of Zhuhai",
   "d": {
    "audio_lic": "Licence",
@@ -64,6 +92,7 @@
   "foot": {
    "admin": "Analytics",
    "all_species": "All species",
+   "board": "Guestbook",
    "bottom": "Keep your distance from wild birds · All wild birds in China are protected by law",
    "browse": "Browse",
    "copyright": "© %d Birds of Zhuhai · 珠海观鸟图鉴",
@@ -127,6 +156,7 @@
   },
   "langname": "English",
   "nav": {
+   "board": "Guestbook",
    "groups": "Groups",
    "guide": "Field Notes",
    "label": "Main",
@@ -140,6 +170,34 @@
   }
  },
  "zh": {
+  "board": {
+   "as": "当前身份",
+   "aside1": "留言公开可见，不需要登录也能读。",
+   "aside2": "发帖需要邮箱注册，昵称会显示在留言旁。",
+   "aside3": "一个人十分钟内最多发五条，防止刷屏。",
+   "aside4": "你可以随时删掉自己的留言。",
+   "aside_h": "关于这个留言板",
+   "btn_in": "登录",
+   "btn_up": "注册",
+   "eyebrow": "Guestbook · 留下你的观察",
+   "f_email": "邮箱",
+   "f_nick": "昵称",
+   "f_nick_ph": "别人会看到这个名字",
+   "f_pw": "密码",
+   "f_pw_ph": "至少 6 位",
+   "fine": "邮箱只用于登录，不会公开、不会用于推送。",
+   "h1": "说说你看到了什么",
+   "lede": "把最近一次让你停下来的鸟写下来——时间、地点、它在做什么。注册一个账号就能留言，除了确认邮件，我们不会给你发任何东西。",
+   "list_h": "大家的留言",
+   "loading": "读取中…",
+   "off_h": "留言板还没接通",
+   "off_p": "后端尚未配置。页面本身是完整的，只是暂时存不了字。",
+   "out": "退出",
+   "ph": "今天在淇澳岛的红树林边，看到一只…",
+   "send": "贴出去",
+   "tab_in": "登录",
+   "tab_up": "注册"
+  },
   "brand": "珠海观鸟图鉴",
   "d": {
    "audio_lic": "许可",
@@ -204,6 +262,7 @@
   "foot": {
    "admin": "统计",
    "all_species": "全部物种",
+   "board": "留言板",
    "bottom": "观察野生鸟类，请保持距离 · 中国境内所有野生鸟类均受法律保护",
    "browse": "浏览",
    "copyright": "© %d 珠海观鸟图鉴 · Field Guide to the Birds of Zhuhai",
@@ -267,6 +326,7 @@
   },
   "langname": "中文",
   "nav": {
+   "board": "留言",
    "groups": "生态类群",
    "guide": "观鸟指南",
    "label": "主导航",

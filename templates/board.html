@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand) }}
+{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ T.board.eyebrow }}</p>
+    <h1>{{ T.board.h1 }}</h1>
+    <p class="lede">{{ T.board.lede }}</p>
+  </div>
+</section>
+
+<section class="board">
+  <div class="wrap bd-grid">
+
+    <div class="bd-main">
+
+      <!-- 未接通 Supabase 时的提示 -->
+      <div class="bd-card bd-off" id="bdOff" hidden>
+        <h3>{{ T.board.off_h }}</h3>
+        <p>{{ T.board.off_p }}</p>
+      </div>
+
+      <!-- 未登录：登录 / 注册 -->
+      <div class="bd-card" id="bdAuth" hidden>
+        <div class="bd-tabs" role="tablist">
+          <button type="button" class="bd-tab on" data-mode="in" id="tabIn">{{ T.board.tab_in }}</button>
+          <button type="button" class="bd-tab" data-mode="up" id="tabUp">{{ T.board.tab_up }}</button>
+        </div>
+
+        <form id="bdForm" novalidate>
+          <label class="bd-field" id="nickRow" hidden>
+            <span>{{ T.board.f_nick }}</span>
+            <input type="text" id="bdNick" maxlength="20" autocomplete="nickname"
+                   placeholder="{{ T.board.f_nick_ph }}">
+          </label>
+          <label class="bd-field">
+            <span>{{ T.board.f_email }}</span>
+            <input type="email" id="bdEmail" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+          <label class="bd-field">
+            <span>{{ T.board.f_pw }}</span>
+            <input type="password" id="bdPw" autocomplete="current-password"
+                   placeholder="{{ T.board.f_pw_ph }}" required>
+          </label>
+          <button type="submit" class="bd-btn" id="bdSubmit"
+                  data-in="{{ T.board.btn_in }}" data-up="{{ T.board.btn_up }}">{{ T.board.btn_in }}</button>
+          <p class="bd-msg" id="bdAuthMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- 已登录：写留言 -->
+      <div class="bd-card" id="bdComposer" hidden>
+        <div class="bd-who">
+          <span>{{ T.board.as }}</span>
+          <b id="bdWho">—</b>
+          <button type="button" class="bd-link" id="bdOut">{{ T.board.out }}</button>
+        </div>
+        <form id="bdPost">
+          <textarea id="bdBody" rows="4" maxlength="800" required
+                    placeholder="{{ T.board.ph }}"></textarea>
+          <div class="bd-row">
+            <span class="bd-count"><i id="bdCount">0</i> / 800</span>
+            <button type="submit" class="bd-btn" id="bdSend">{{ T.board.send }}</button>
+          </div>
+          <p class="bd-msg" id="bdPostMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- 留言列表 -->
+      <div class="bd-list-head">
+        <h2>{{ T.board.list_h }}</h2>
+        <span id="bdTotal"></span>
+      </div>
+      <div class="bd-list" id="bdList">
+        <p class="bd-empty" id="bdLoading">{{ T.board.loading }}</p>
+      </div>
+    </div>
+
+    <aside class="bd-aside">
+      <h4>{{ T.board.aside_h }}</h4>
+      <ul>
+        <li>{{ T.board.aside1 }}</li>
+        <li>{{ T.board.aside2 }}</li>
+        <li>{{ T.board.aside3 }}</li>
+        <li>{{ T.board.aside4 }}</li>
+      </ul>
+      <p class="bd-fine">{{ T.board.fine }}</p>
+    </aside>
+
+  </div>
+</section>
+
+<script src="{{ root }}static/vendor/supabase.js?v={{ SUV }}" defer></script>
+<script src="{{ root }}static/supabase-config.js?v={{ SBV }}" defer></script>
+<script src="{{ root }}static/board.js?v={{ BOV }}" defer></script>
+{% endblock %}

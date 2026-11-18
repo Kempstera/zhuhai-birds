@@ -22,6 +22,7 @@
 index.html          首页：Hero、生态类群、物种名录（可筛选/搜索）、观鸟地点、野外守则
 bird/<slug>.html    65 个物种详情页
 guide.html          观鸟指南：为什么是珠海、四季日历、装备、如何听鸟、记录与分享
+board/index.html    留言板（Supabase 注册 / 登录 / 留言，配置好才进导航）
 404.html            自定义错误页
 admin/index.html    站长后台（访问统计，不参与导航与 sitemap）
 en/                 英文版，目录结构与上面完全镜像
@@ -43,7 +44,10 @@ data/gallery_override.json 人工挑选清单（修正自动检索结果，指�
 data/plate_exclude.json    图版黑名单（海报、地图、报纸版面等不适合入册的扫描件）
 scripts/                   素材采集与整理脚本（见下表）
 templates/                 Jinja2 页面模板
-static/                    样式与脚本（style.css / app.js / beacon.js / admin.js）
+static/                    样式与脚本（style.css / app.js / beacon.js / admin.js / board.js）
+static/vendor/             本地内嵌的第三方库（supabase.js，避免 CDN 被墙或版本漂移）
+static/supabase-config.js  留言板的 Supabase 地址与 anon key（空则整块功能隐藏）
+supabase/schema.sql        留言板建表 / RLS / 触发器，贴进 Supabase SQL Editor 执行一次
 assets/img/                鸟类图片 webp，每张两档尺寸（1600px / 900px）
 assets/audio/              鸟鸣录音 mp3（单声道 32kHz，约 55 秒内）
 dist/                      构建产物（部署这个目录）
@@ -172,6 +176,47 @@ node ~/.npm/_npx/*/node_modules/wrangler/bin/wrangler.js d1 execute zhuhai-birds
 ```
 
 改完在后台点「退出」再重新进入。注意：口令只存在 D1 里，**不要写进仓库**。
+
+## 留言板（Supabase）
+
+`/board/` 与 `/en/board/`：访客用邮箱注册 / 登录，然后写一条留言。数据存在你自己的
+Supabase 项目里，不经过任何第三方服务。
+
+- 页面：`templates/board.html`，前端逻辑：`static/board.js`（Supabase JS SDK v2，本地内嵌，不走 CDN）
+- 表结构、权限、触发器：`supabase/schema.sql`
+- 连接地址：`static/supabase-config.js` 里的 `url` 与 `anon`
+
+### 三步接通
+
+1. 在 <https://supabase.com/dashboard> 建一个项目（区域选 Singapore 或 Tokyo，离华南近）
+2. 打开 **SQL Editor**，把 `supabase/schema.sql` 整段粘进去执行一次（幂等，可重复跑）
+3. **Settings → API** 里复制 `Project URL` 与 `anon public`，填进 `static/supabase-config.js`，
+   然后 `python3 build.py` 重新生成
+
+两项都填好之后，导航栏和页脚才会出现「留言」入口；没填时页面只显示一句「还没接通」。
+`anon` 是**公开**密钥，放进前端没问题，安全由数据库的 RLS 保证。`service_role` 密钥
+**绝对不能**出现在这里。
+
+### 三条设计取舍
+
+| 做法 | 原因 |
+| --- | --- |
+| 昵称由触发器从 `auth.users.raw_user_meta_data` 覆写 | 客户端传什么名字都不算数，避免冒用 |
+| 同一用户 10 分钟内最多 5 条（触发器里 `raise exception 'rate_limited'`） | 防手抖和刷屏，不引入额外服务 |
+| 只有 `select` 开放给匿名，`insert / delete` 仅限本人 | 留言公开可读，但改删只能动自己那条 |
+
+### 邮件确认
+
+Supabase 默认开启邮箱确认（Sign up 后要点邮件里的链接才能登录），前端已经处理：
+注册若拿不到 session，就提示「请到邮箱点确认链接」。
+
+想省掉这一步（方便测试，但会招来垃圾注册）：**Authentication → Providers → Email →
+关掉 Confirm email**，再重建 `board.js` 的提示就自然用不上了，注册后直接登录。
+
+### 自定义邮件里的站点名
+
+**Authentication → URL Configuration** 里的 `Site URL` 填 `https://birds.signupeverywhere.cc`，
+否则确认邮件里的链接会指向 `localhost:3000`。
 
 ## 本地构建与预览
 

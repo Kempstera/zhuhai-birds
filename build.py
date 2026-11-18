@@ -168,6 +168,23 @@ MONTH_ACT = [
 YEAR = datetime.date.today().year
 
 
+def sb_configured():
+    """留言板是否已接通 Supabase。
+
+    配置写在 static/supabase-config.js 里（前端公开信息）。构建时读一眼：
+    两项都填了，导航栏和页脚才出现「留言」入口、页面才进 sitemap；
+    没填时页面照样生成，但只显示一句「还没接通」的说明。
+    """
+    p = os.path.join(ROOT, "static", "supabase-config.js")
+    try:
+        s = open(p, encoding="utf-8").read()
+    except OSError:
+        return False
+    m = re.search(r"url:\s*['\"](https?://[^'\"]+)['\"]", s)
+    k = re.search(r"anon:\s*['\"]([A-Za-z0-9._\-]{20,})['\"]", s)
+    return bool(m and k)
+
+
 def load():
     species = json.load(open(os.path.join(ROOT, "data", "species.json")))
     assets_path = os.path.join(ROOT, "data", "assets.json")
@@ -291,15 +308,25 @@ def main():
     )
     env.globals.update(YEAR=YEAR, CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
                        BV=asset_ver("beacon.js"), AV=asset_ver("admin.js"),
+                       SBV=asset_ver("supabase-config.js"), BOV=asset_ver("board.js"),
+                       SUV=asset_ver("vendor/supabase.js"),
                        ruby=ruby, nm=nm)
+
+    sb_on = sb_configured()
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird", "admin"):
+    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird", "admin",
+              "board", "en/board"):
         os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
     for f in os.listdir(os.path.join(ROOT, "static")):
-        shutil.copy2(os.path.join(ROOT, "static", f), os.path.join(DIST, "static", f))
+        src_p = os.path.join(ROOT, "static", f)
+        dst_p = os.path.join(DIST, "static", f)
+        if os.path.isdir(src_p):          # static/vendor 这类子目录（Supabase SDK）
+            shutil.copytree(src_p, dst_p, dirs_exist_ok=True)
+        else:
+            shutil.copy2(src_p, dst_p)
     for sub in ("img", "audio"):
         src = os.path.join(ROOT, "assets", sub)
         if os.path.isdir(src):
@@ -341,7 +368,7 @@ def main():
 
         common = dict(T=T, hl=hl, lang=lang, total=len(views),
                       GROUPS=groups, SPOTS=spots, ETHICS=ethics,
-                      rank_counts=rank_counts)
+                      rank_counts=rank_counts, SB=sb_on)
 
         # ---- 首页 ----
         hero = by.get("bai-lu", views[0])
@@ -386,6 +413,17 @@ def main():
             alt_url=("../guide.html" if en else "en/guide.html"))
         open(os.path.join(base, "guide.html"), "w").write(html)
 
+        # ---- 留言板 ----
+        bpath = "/en/board/" if en else "/board/"
+        html = env.get_template("board.html").render(
+            **common, root=root_d, pr="../", nav="board",
+            page_title="%s · %s" % (T["board"]["h1"], T["brand"]),
+            page_desc=T["board"]["lede"],
+            canon=SITE + bpath,
+            zh_url=SITE + "/board/", en_url=SITE + "/en/board/",
+            alt_url=("../board/index.html" if en else "../en/board/index.html"))
+        open(os.path.join(base, "board", "index.html"), "w").write(html)
+
         # ---- 404 ----
         html = env.get_template("404.html").render(
             **common, root=root_i, nav="", page_title=T["e"]["title"], page_desc=T["e"]["desc"],
@@ -402,6 +440,8 @@ def main():
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
     pairs = [("/", "/en/"), ("/guide.html", "/en/guide.html")]
+    if sb_on:
+        pairs.append(("/board/", "/en/board/"))
     pairs += [("/bird/%s.html" % s["slug"], "/en/bird/%s.html" % s["slug"]) for s in species]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
@@ -421,6 +461,8 @@ def main():
     n_img = sum(1 for s in species if s["img"])
     n_aud = sum(1 for s in species if s["audio"])
     print("生成完成：%d 个物种 × %d 种语言，%d 图片，%d 音频" % (len(species), len(LANGS), n_img, n_aud))
+    print("留言板：%s" % ("已接通 Supabase，导航已显示入口" if sb_on
+                        else "未配置 —— 填 static/supabase-config.js 后入口才出现"))
     missing = [s["zh"] for s in species if s["slug"] not in sen]
     if missing:
         print("待翻译（%d）：%s" % (len(missing), "、".join(missing)))
