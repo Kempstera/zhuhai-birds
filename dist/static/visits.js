@@ -138,8 +138,12 @@
       }), function (r) { return r.label; });
 
       var when = new Date(d.generatedAt);
-      var stamp = when.toLocaleDateString(L === "en" ? "en-GB" : "zh-CN",
-        { year: "numeric", month: "2-digit", day: "2-digit" }) + " " +
+      // 日期与时间都按北京时间取，否则跨时区访客会看到「日期差一天」
+      var dayStr = when.toLocaleDateString(L === "en" ? "en-GB" : "zh-CN",
+        L === "en"
+          ? { day: "2-digit", month: "short", year: "numeric", timeZone: "Asia/Shanghai" }
+          : { year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Asia/Shanghai" });
+      var stamp = dayStr + " " +
         when.toLocaleTimeString(L === "en" ? "en-GB" : "zh-CN",
         { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Shanghai" });
       $("vsUpdated").textContent = (D.updated || "%s").replace("%s", stamp);
