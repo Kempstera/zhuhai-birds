@@ -565,6 +565,8 @@
         if (!j.rows) { msg("加载失败，稍后再试。"); return; }
 
         try { sessionStorage.setItem(KEY_STORE, key); } catch (e) {}
+        // 给 beacon.js 一个标记：站长本人在这台机器上的浏览不再计入统计
+        try { localStorage.setItem("zb_admin_token", "1"); } catch (e) {}
         gate.hidden = true; body.hidden = false;
         msg("");
 
@@ -589,6 +591,7 @@
 
   $("vdExit").addEventListener("click", function () {
     try { sessionStorage.removeItem(KEY_STORE); } catch (e) {}
+    try { localStorage.removeItem("zb_admin_token"); } catch (e) {}
     state.rows = []; state.key = "";
     body.hidden = true; gate.hidden = false;
     $("vdKey").value = ""; msg("");
