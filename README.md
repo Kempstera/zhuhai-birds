@@ -23,10 +23,9 @@ index.html          首页：Hero、生态类群、物种名录（可筛选/搜�
 bird/<slug>.html    65 个物种详情页
 guide.html          观鸟指南：为什么是珠海、四季日历、装备、如何听鸟、记录与分享
 board/index.html    留言板（Supabase 注册 / 登录 / 留言，配置好才进导航）
-visits/index.html   公开的访问统计（只有聚合数字，页脚「Site statistics」进入）
+visits/index.html   访客看板（站长专用，口令进入；noindex，不进导航与 sitemap）
 404.html            自定义错误页
-admin/index.html    站长后台（明细访问统计，不参与导航与 sitemap）
-zh/                 中文版，目录结构与上面完全镜像
+zh/                 中文版，除访客看板外与上面完全镜像
 robots.txt          搜索引擎规则
 sitemap.xml         站点地图（中英成对 + xhtml:link 互指，x-default 指英文）
 ```
@@ -35,7 +34,7 @@ sitemap.xml         站点地图（中英成对 + xhtml:link 互指，x-default 
 
 ```
 functions/                 Cloudflare Pages Functions（访问统计 + Supabase 同域中转）
-functions/api/visits.js    公开统计接口（无口令，只给聚合数字，边缘缓存 5 分钟）
+functions/api/visitors.js  访客明细接口（Bearer 口令，前端现算全部图表）
 wrangler.toml              Pages 项目配置 + D1 绑定
 data/species.json          物种内容（中文名、学名、特征、习性、鸣声描述、观察点等）
 data/species_en.json       每个物种的英文正文（tagline / summary / features / behavior / voice / tip）
@@ -46,7 +45,7 @@ data/gallery_override.json 人工挑选清单（修正自动检索结果，指�
 data/plate_exclude.json    图版黑名单（海报、地图、报纸版面等不适合入册的扫描件）
 scripts/                   素材采集与整理脚本（见下表）
 templates/                 Jinja2 页面模板
-static/                    样式与脚本（style.css / app.js / beacon.js / admin.js / board.js / visits.js）
+static/                    样式与脚本（style.css / app.js / beacon.js / board.js / visits.js）
 static/vendor/             本地内嵌的第三方库（supabase.js，避免 CDN 被墙或版本漂移）
 static/supabase-config.js  留言板的 Supabase 地址与 anon key（空则整块功能隐藏）
 supabase/schema.sql        留言板建表 / RLS / 触发器，贴进 Supabase SQL Editor 执行一次
@@ -148,34 +147,34 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
 | `probe_photos.py` | 抓候选照片并渲染成对照表，供人工挑选 |
 | `probe_audio.py` / `patch_audio.py` / `fix_audio.py` | 录音补齐与修补 |
 
-## 站长后台与访问统计
+## 访客看板 /visits（站长专用）
 
-站内自建，不依赖第三方统计服务：**没有 cookie、不存 IP、不接追踪脚本**。有两套读法：
+站内自建，不依赖第三方统计服务：**没有 cookie、不存 IP、不接追踪脚本**。
 
-- **公开页**：<https://birds.signupeverywhere.cc/visits/>（中文 `/zh/visits/`，页脚「Site statistics」）
-  只给聚合数字——总量、近三十天柱状图、热门页面、来源站点、国家、设备、界面语言。
-  读 `/api/visits`，无需口令，边缘缓存 5 分钟（`max-age=60, s-maxage=300`）。
-- **站长后台**：<https://birds.signupeverywhere.cc/admin/>（页脚右下角那个很淡的「统计」就是它）
-  口令在 Cloudflare D1 的 `cfg` 表里（`admin_token`），页面本身不含任何口令，只做表单
-
-- 每次浏览由 `static/beacon.js` 向 `/api/hit` 发一条匿名信标
+- 入口：<https://birds.signupeverywhere.cc/visits/>（页脚右下角那个很淡的「统计」；不进导航、不进 sitemap、`noindex`）
+- 打开先要口令。口令只存在 Cloudflare D1 的 `cfg` 表（`admin_token`），页面本身不含任何口令，
+  校验在服务端做；浏览器只在 `sessionStorage` 里记一次，关标签页即失效
+- 输对之后是**一屏看板**：6 个 KPI（访客／浏览／人均页数／今天对昨天／手机占比／中文界面占比）、
+  访问趋势（柱＝浏览、线＝访客）、时段分布（北京时间 24 小时）、七八条自动分析、
+  11 个排行榜（设备／浏览器／语言／页面类型／来源／落地页／国家／中英文地址／星期／访问深度／热门物种），
+  以及带搜索、排序、分页、CSV 导出的逐条明细
+- 时间范围可切 今天／7 天／30 天／90 天／全部，**切换不再打接口**：页面一次取回明细，全部在浏览器里现算
 
 ```
-functions/api/hit.js     收信标 → 写一行记录（爬虫/脚本 UA 直接丢，DNT 不发）
-functions/api/stats.js   读统计，需要 Bearer 口令，口令不对一律 401
-functions/api/visits.js  读统计，公开只读，只有聚合数字
-functions/_lib.js        建表语句与共用小工具（以 _ 开头，不会被注册成路由）
+functions/api/hit.js       收信标 → 写一行记录（爬虫/脚本 UA 直接丢，DNT 不发）
+functions/api/visitors.js  读明细行，需要 Bearer 口令，口令不对一律 401，响应 no-store
+functions/_lib.js          建表语句与共用小工具（以 _ 开头，不会被注册成路由）
 ```
 
 数据在 D1 表 `hit`（`ts / d / h / path / ref / country / lang / dev / br / vid`），
-`d` 与 `h` 是**北京时间**的日期与小时，聚合查询直接按 `d` 分组。
+`d` 与 `h` 是**北京时间**的日期与小时。
 
-- 「独立访客」= `sha256(IP + UA + 盐 + 日期)` 取前 16 位：当日唯一、跨日不可关联、不可逆推
+- 访客指纹 = `sha256(IP + UA + 盐 + 日期)` 取前 16 位：**当日唯一、跨日不可关联、不可逆推**。
+  代价是「访客数」只能按日去重后相加 —— 同一个人隔天再来会再计一次，看板上已注明
 - 国家来自 `CF-IPCountry`，只到国家一级
 - 站长本人登录后台后，自己的浏览不再计入（`beacon.js` 检测本机口令）
 - 两年以上的记录在写入时按 2% 概率顺手清掉
-- 公开页把历史路径里的 `/en/...` 折回同名根路径（`/en/bird/x.html` → `/bird/x.html`），
-  旧地址 301 过去之后不至于在「热门页面」里分成两行
+- 旧的 `/admin/` 与 `/zh/visits/` 都 301 到 `/visits/`
 
 ### 改口令
 

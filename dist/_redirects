@@ -1,2 +1,6 @@
 /en/*  /:splat  301
 /en    /        301
+/admin/*  /visits/  301
+/admin    /visits/  301
+/zh/visits/*  /visits/  301
+/zh/visits    /visits/  301

@@ -30,20 +30,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/zh/visits/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/visits/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/visits/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/visits/"/>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://birds.signupeverywhere.cc/visits/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/visits/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/visits/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/visits/"/>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://birds.signupeverywhere.cc/zh/board/</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/board/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/board/"/>

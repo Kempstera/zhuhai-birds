@@ -2,98 +2,122 @@
 {% import "_macros.html" as m %}
 
 {% block head %}
-{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand) }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>访客数据 · {{ T.brand }}</title>
+<meta name="description" content="站长专用：站点访问的趋势、时段、来源与明细。">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#1B3527">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="{{ root }}static/style.css?v={{ CSSV }}">
 {% endblock %}
 
 {% block content %}
+<section class="vd">
+<div class="wrap">
 
-<section class="page-head">
-  <div class="wrap">
-    <p class="eyebrow">{{ T.visits.eyebrow }}</p>
-    <h1>{{ T.visits.h1 }}</h1>
-    <p class="lede">{{ T.visits.lede }}</p>
+  <!-- ============ 口令闸门 ============ -->
+  <div class="vd__gate" id="vdGate">
+    <div class="vd__gate-card">
+      <p class="vd__k">PRIVATE</p>
+      <h1>站长入口</h1>
+      <p class="vd__gate-sub">这里只给站长本人看：趋势、时段、来源与逐条明细。口令在服务端校验，不随页面下发；表里没有 IP，访客指纹当日唯一、跨日不可关联。</p>
+      <form class="vd__gate-row" id="vdForm" autocomplete="on">
+        <input id="vdKey" type="password" name="key" autocomplete="current-password"
+               spellcheck="false" placeholder="访问口令" aria-label="访问口令" required>
+        <button type="submit" id="vdGo">进入</button>
+      </form>
+      <p class="vd__msg" id="vdMsg" role="status" aria-live="polite"></p>
+    </div>
   </div>
-</section>
 
-<section class="vs" id="vsRoot"
-         data-lang="{{ 'en' if lang == 'en' else 'zh' }}"
-         data-empty="{{ T.visits.empty }}"
-         data-fail="{{ T.visits.fail }}"
-         data-updated="{{ T.visits.updated }}"
-         data-direct="{{ T.visits.direct }}"
-         data-d-desktop="{{ T.visits.dev_desktop }}"
-         data-d-mobile="{{ T.visits.dev_mobile }}"
-         data-d-tablet="{{ T.visits.dev_tablet }}"
-         data-d-unknown="{{ T.visits.dev_unknown }}">
-  <div class="wrap">
+  <!-- ============ 看板 ============ -->
+  <div class="vd__body" id="vdBody" hidden>
 
-    <div class="vs-kpis">
-      <div class="vs-kpi">
-        <span class="k">{{ T.visits.k_all }}</span>
-        <b id="vsAll">—</b>
-        <span class="n" id="vsSince">{{ T.visits.u_pv }}</span>
+    <header class="vd__head">
+      <div class="vd__title">
+        <p class="vd__k">VISITOR DATA</p>
+        <h1>访客数据</h1>
+        <p class="vd__sub" id="vdMeta">—</p>
       </div>
-      <div class="vs-kpi">
-        <span class="k">{{ T.visits.k_uv }}</span>
-        <b id="vsUv">—</b>
-        <span class="n">{{ T.visits.k_uv_n }}</span>
+      <div class="vd__actions">
+        <div class="vd__range" id="vdRange" role="group" aria-label="时间范围">
+          <button type="button" data-days="1">今天</button>
+          <button type="button" data-days="7">7 天</button>
+          <button type="button" data-days="30" class="is-on">30 天</button>
+          <button type="button" data-days="90">90 天</button>
+          <button type="button" data-days="0">全部</button>
+        </div>
+        <button type="button" class="vd__btn" id="vdRefresh">刷新</button>
+        <button type="button" class="vd__btn" id="vdCsv">导出 CSV</button>
+        <button type="button" class="vd__btn" id="vdExit">退出</button>
       </div>
-      <div class="vs-kpi">
-        <span class="k">{{ T.visits.k_today }}</span>
-        <b id="vsToday">—</b>
-        <span class="n">{{ T.visits.u_pv }}</span>
+    </header>
+
+    <p class="vd__banner" id="vdBanner" hidden></p>
+
+    <div class="vd__kpis" id="vdKpis"></div>
+
+    <div class="vd__grid2">
+      <div class="vd__block">
+        <h5>访问趋势 <span class="vd__hint">柱＝浏览量，线＝访客数</span></h5>
+        <div class="vd__chart" id="vdTrend"></div>
       </div>
-      <div class="vs-kpi">
-        <span class="k">{{ T.visits.k_week }}</span>
-        <b id="vsWeek">—</b>
-        <span class="n">{{ T.visits.u_pv }}</span>
+      <div class="vd__block">
+        <h5>时段分布 <span class="vd__hint">北京时间</span></h5>
+        <div class="vd__chart" id="vdHours"></div>
       </div>
     </div>
 
-    <div class="vs-panel">
-      <div class="vs-head">
-        <h2>{{ T.visits.chart_h }}</h2>
-        <div class="vs-legend">
-          <i class="pv"></i><span>{{ T.visits.l_pv }}</span>
-          <i class="uv"></i><span>{{ T.visits.l_uv }}</span>
+    <div class="vd__insights" id="vdInsights"></div>
+
+    <div class="vd__cols">
+      <div class="vd__block"><h5>设备</h5><ul class="vd__bars" id="vdDevice"></ul></div>
+      <div class="vd__block"><h5>浏览器</h5><ul class="vd__bars" id="vdBrowser"></ul></div>
+      <div class="vd__block"><h5>界面语言</h5><ul class="vd__bars" id="vdLang"></ul></div>
+      <div class="vd__block"><h5>页面类型</h5><ul class="vd__bars" id="vdKind"></ul></div>
+    </div>
+
+    <div class="vd__cols">
+      <div class="vd__block"><h5>来源</h5><ul class="vd__bars" id="vdSource"></ul></div>
+      <div class="vd__block"><h5>落地页</h5><ul class="vd__bars" id="vdPage"></ul></div>
+      <div class="vd__block"><h5>国家 / 地区</h5><ul class="vd__bars" id="vdCountry"></ul></div>
+      <div class="vd__block"><h5>中文版 / 英文版地址</h5><ul class="vd__bars" id="vdSide"></ul></div>
+    </div>
+
+    <div class="vd__cols vd__cols--3">
+      <div class="vd__block"><h5>星期分布</h5><ul class="vd__bars" id="vdWeekday"></ul></div>
+      <div class="vd__block"><h5>访问深度 <span class="vd__hint">同一天看几页</span></h5><ul class="vd__bars" id="vdDepth"></ul></div>
+      <div class="vd__block"><h5>看得最多的物种</h5><ul class="vd__bars" id="vdBird"></ul></div>
+    </div>
+
+    <div class="vd__block vd__block--wide">
+      <div class="vd__tablehead">
+        <h5>访问明细 <span class="vd__hint" id="vdCount"></span></h5>
+        <div class="vd__tools">
+          <input id="vdQ" type="search" placeholder="搜索页面 / 来源 / 国家 / 指纹" aria-label="搜索明细">
+          <select id="vdSize" aria-label="每页条数">
+            <option value="25">25 条/页</option>
+            <option value="50" selected>50 条/页</option>
+            <option value="100">100 条/页</option>
+            <option value="300">300 条/页</option>
+          </select>
         </div>
       </div>
-      <div class="vs-bars" id="vsBars"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      <div class="vd__table" id="vdTable"></div>
+      <div class="vd__pager" id="vdPager"></div>
     </div>
 
-    <div class="vs-grid">
-      <div class="vs-panel">
-        <div class="vs-head"><h2>{{ T.visits.paths_h }}</h2></div>
-        <div class="vs-rows" id="vsPaths"><p class="vs-empty">{{ T.visits.loading }}</p></div>
-      </div>
-      <div class="vs-panel">
-        <div class="vs-head"><h2>{{ T.visits.refs_h }}</h2></div>
-        <div class="vs-rows" id="vsRefs"><p class="vs-empty">{{ T.visits.loading }}</p></div>
-      </div>
-    </div>
-
-    <div class="vs-grid three">
-      <div class="vs-panel">
-        <div class="vs-head"><h2>{{ T.visits.geo_h }}</h2></div>
-        <div class="vs-rows" id="vsGeo"><p class="vs-empty">{{ T.visits.loading }}</p></div>
-      </div>
-      <div class="vs-panel">
-        <div class="vs-head"><h2>{{ T.visits.dev_h }}</h2></div>
-        <div class="vs-rows" id="vsDev"><p class="vs-empty">{{ T.visits.loading }}</p></div>
-      </div>
-      <div class="vs-panel">
-        <div class="vs-head"><h2>{{ T.visits.lang_h }}</h2></div>
-        <div class="vs-rows" id="vsLang"><p class="vs-empty">{{ T.visits.loading }}</p></div>
-      </div>
-    </div>
-
-    <p class="vs-fine">
-      {{ T.visits.fine }}
-      <span class="vs-stamp" id="vsUpdated"></span>
+    <p class="vd__fine">
+      数据来自本站自建信标，没有 cookie、没有第三方脚本。访客指纹＝<code>sha256(IP + UA + 盐 + 日期)</code> 前 16 位：
+      当日唯一、跨日不可关联、不可逆推，所以「访客数」是<b>按日去重</b>后的合计，同一个人隔天再来会再计一次。
     </p>
 
   </div>
+</div>
 </section>
 
+<script>window.VD_BIRDS = {{ BIRDS_JSON|safe }};</script>
 <script src="{{ root }}static/visits.js?v={{ VSV }}" defer></script>
 {% endblock %}

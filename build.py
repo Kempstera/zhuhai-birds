@@ -307,7 +307,7 @@ def main():
         trim_blocks=True, lstrip_blocks=True,
     )
     env.globals.update(YEAR=YEAR, CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
-                       BV=asset_ver("beacon.js"), AV=asset_ver("admin.js"),
+                       BV=asset_ver("beacon.js"),
                        SBV=asset_ver("supabase-config.js"), BOV=asset_ver("board.js"),
                        SUV=asset_ver("vendor/supabase.js"), VSV=asset_ver("visits.js"),
                        ruby=ruby, nm=nm)
@@ -316,8 +316,8 @@ def main():
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    for d in ("bird", "zh/bird", "assets/img", "assets/audio", "static", "admin",
-              "board", "zh/board", "visits", "zh/visits"):
+    for d in ("bird", "zh/bird", "assets/img", "assets/audio", "static",
+              "board", "zh/board", "visits"):
         os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
     for f in os.listdir(os.path.join(ROOT, "static")):
@@ -426,17 +426,6 @@ def main():
             alt_url=("../zh/board/index.html" if en else "../../board/index.html"))
         open(os.path.join(base, "board", "index.html"), "w").write(html)
 
-        # ---- 访问统计（公开页，只有聚合数字）----
-        vpath = "/visits/" if en else "/zh/visits/"
-        html = env.get_template("visits.html").render(
-            **common, root=root_d, pr="../", nav="visits",
-            page_title="%s · %s" % (T["visits"]["h1"], T["brand"]),
-            page_desc=T["visits"]["lede"],
-            canon=SITE + vpath,
-            zh_url=SITE + "/zh/visits/", en_url=SITE + "/visits/",
-            alt_url=("../zh/visits/index.html" if en else "../../visits/index.html"))
-        open(os.path.join(base, "visits", "index.html"), "w").write(html)
-
         # ---- 404 ----
         html = env.get_template("404.html").render(
             **common, root=root_i, nav="", page_title=T["e"]["title"], page_desc=T["e"]["desc"],
@@ -445,15 +434,21 @@ def main():
         open(os.path.join(base, "404.html"), "w").write(html)
         totals[lang] = len(views)
 
-    # ---- 站长后台（不进导航、不进 sitemap、robots 屏蔽）----
-    html = env.get_template("admin.html").render(root="../")
-    open(os.path.join(DIST, "admin", "index.html"), "w").write(html)
+    # ---- 访客看板（站长专用：noindex、不进导航与 sitemap、robots 屏蔽）----
+    Tzh = ui["zh"]
+    birds_map = {s["slug"]: s["zh"] for s in species}
+    html = env.get_template("visits.html").render(
+        T=Tzh, hl="zh-CN", lang="zh", nav="", total=totals["zh"], SB=sb_on,
+        root="../", pr="../zh/", alt_url="/zh/",
+        GROUPS=GROUPS, SPOTS=SPOTS, ETHICS=ETHICS, rank_counts=rank_counts,
+        BIRDS_JSON=json.dumps(birds_map, ensure_ascii=False).replace("</", "<\\/"))
+    open(os.path.join(DIST, "visits", "index.html"), "w").write(html)
 
     # ---- robots / sitemap ----
     open(os.path.join(DIST, "robots.txt"), "w").write(
-        "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
+        "User-agent: *\nDisallow: /visits/\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
-    pairs = [("/zh/", "/"), ("/zh/guide.html", "/guide.html"), ("/zh/visits/", "/visits/")]
+    pairs = [("/zh/", "/"), ("/zh/guide.html", "/guide.html")]
     if sb_on:
         pairs.append(("/zh/board/", "/board/"))
     pairs += [("/zh/bird/%s.html" % s["slug"], "/bird/%s.html" % s["slug"]) for s in species]
@@ -475,7 +470,11 @@ def main():
     # 旧地址（英文曾在 /en/ 下）永久跳转到新位置
     open(os.path.join(DIST, "_redirects"), "w").write(
         "/en/*  /:splat  301\n"
-        "/en    /        301\n")
+        "/en    /        301\n"
+        "/admin/*  /visits/  301\n"
+        "/admin    /visits/  301\n"
+        "/zh/visits/*  /visits/  301\n"
+        "/zh/visits    /visits/  301\n")
 
     n_img = sum(1 for s in species if s["img"])
     n_aud = sum(1 for s in species if s["audio"])
