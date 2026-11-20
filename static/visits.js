@@ -65,6 +65,64 @@
     } catch (e) { return "🌐"; }
   }
 
+  /* ---------- 地名与运营商（Cloudflare 只给英文） ---------- */
+  var CN_CITY = {
+    zhuhai: "珠海", shenzhen: "深圳", guangzhou: "广州", zhongshan: "中山", jiangmen: "江门",
+    foshan: "佛山", dongguan: "东莞", huizhou: "惠州", shantou: "汕头", zhuhai_city: "珠海",
+    xiamen: "厦门", fuzhou: "福州", quanzhou: "泉州", putian: "莆田",
+    shanghai: "上海", beijing: "北京", tianjin: "天津", chongqing: "重庆",
+    hangzhou: "杭州", ningbo: "宁波", wenzhou: "温州", nanjing: "南京", suzhou: "苏州",
+    wuxi: "无锡", changzhou: "常州", xuzhou: "徐州", hefei: "合肥", jinan: "济南",
+    qingdao: "青岛", yantai: "烟台", weifang: "潍坊", zhengzhou: "郑州", luoyang: "洛阳",
+    wuhan: "武汉", yichang: "宜昌", xiangyang: "襄阳", changsha: "长沙", zhuzhou: "株洲",
+    nanchang: "南昌", ganzhou: "赣州", shenyang: "沈阳", dalian: "大连", changchun: "长春",
+    harbin: "哈尔滨", shijiazhuang: "石家庄", taiyuan: "太原", xian: "西安", "xi'an": "西安",
+    lanzhou: "兰州", xining: "西宁", yinchuan: "银川", urumqi: "乌鲁木齐", lhasa: "拉萨",
+    hohhot: "呼和浩特", chengdu: "成都", mianyang: "绵阳", kunming: "昆明", guiyang: "贵阳",
+    nanning: "南宁", guilin: "桂林", haikou: "海口", sanya: "三亚", zhoushan: "舟山",
+    "hong kong": "香港", macau: "澳门", macao: "澳门", taipei: "台北", kaohsiung: "高雄",
+    taichung: "台中", singapore: "新加坡", tokyo: "东京", osaka: "大阪", seoul: "首尔",
+    bangkok: "曼谷", "kuala lumpur": "吉隆坡", sydney: "悉尼", melbourne: "墨尔本",
+    london: "伦敦", paris: "巴黎", berlin: "柏林", amsterdam: "阿姆斯特丹",
+    "new york": "纽约", "san francisco": "旧金山", "los angeles": "洛杉矶", seattle: "西雅图",
+    chicago: "芝加哥", toronto: "多伦多", vancouver: "温哥华", dubai: "迪拜",
+  };
+  var CN_REGION = {
+    guangdong: "广东", guangxi: "广西", fujian: "福建", zhejiang: "浙江", jiangsu: "江苏",
+    shandong: "山东", henan: "河南", hubei: "湖北", hunan: "湖南", jiangxi: "江西",
+    anhui: "安徽", hebei: "河北", shanxi: "山西", shaanxi: "陕西", gansu: "甘肃",
+    qinghai: "青海", sichuan: "四川", yunnan: "云南", guizhou: "贵州", hainan: "海南",
+    liaoning: "辽宁", jilin: "吉林", heilongjiang: "黑龙江", xinjiang: "新疆", tibet: "西藏",
+    "inner mongolia": "内蒙古", ningxia: "宁夏", beijing: "北京", shanghai: "上海",
+    tianjin: "天津", chongqing: "重庆", "hong kong": "香港", macau: "澳门", taiwan: "台湾",
+  };
+  function cnCity(v) {
+    if (!v) return "";
+    return CN_CITY[String(v).toLowerCase()] || v;
+  }
+  function cnRegion(v) {
+    if (!v) return "";
+    return CN_REGION[String(v).toLowerCase()] || v;
+  }
+  function shortOrg(v) {
+    var s0 = String(v || "");
+    if (!s0) return "";
+    if (/china telecom/i.test(s0)) return "中国电信";
+    if (/china unicom/i.test(s0)) return "中国联通";
+    if (/china mobile/i.test(s0)) return "中国移动";
+    if (/china education|cer/gi.test(s0) && /network/i.test(s0)) return "教育网 CERNET";
+    if (/alibaba|aliyun/i.test(s0)) return "阿里云";
+    if (/tencent/i.test(s0)) return "腾讯云";
+    if (/baidu/i.test(s0)) return "百度云";
+    if (/huawei/i.test(s0)) return "华为云";
+    if (/cloudflare/i.test(s0)) return "Cloudflare";
+    if (/amazon|aws/i.test(s0)) return "AWS";
+    if (/microsoft|azure/i.test(s0)) return "Azure";
+    if (/google/i.test(s0)) return "Google";
+    return s0.replace(/\b(communications?|corporation|company|co\.?,? ?ltd\.?|limited|inc\.?|llc|group)\b/gi, "")
+      .replace(/\s{2,}/g, " ").trim();
+  }
+
   /* ---------- 归类 ---------- */
   var BIRDS = window.VD_BIRDS || {};
 
@@ -94,6 +152,10 @@
   function prettyRef(r) {
     if (!r) return "直接打开 / 微信内点开";
     return r;
+  }
+  /* 表格里放不下长句，只留短标签，完整说明放 title */
+  function prettyRefShort(r) {
+    return r ? r : "直接打开";
   }
 
   /* ---------- 计数 ---------- */
@@ -185,6 +247,21 @@
     /* 物种热度 */
     var birds = countBy(rows, function (r) { return slugOf(r.p); });
 
+    /* 城市 / 运营商 / 回访（同一 IP 出现在几天里） */
+    var cities = countBy(rows, function (r) { return (r.ci ? cnCity(r.ci) : "") || null; });
+    var orgs = countBy(rows, function (r) {
+      return shortOrg(r.og) || (r.asn ? "AS" + r.asn : null);
+    });
+    var ipDays = {};
+    rows.forEach(function (r) {
+      if (!r.ip) return;
+      if (!ipDays[r.ip]) ipDays[r.ip] = {};
+      ipDays[r.ip][r.d] = 1;
+    });
+    var ipKeys = Object.keys(ipDays);
+    var returning = ipKeys.filter(function (k) { return Object.keys(ipDays[k]).length >= 2; }).length;
+    var withIp = rows.filter(function (r) { return r.ip; }).length;
+
     var mobile = rows.filter(function (r) { return r.dv === "mobile"; }).length;
     var desktop = rows.filter(function (r) { return r.dv === "desktop"; }).length;
     var zh = rows.filter(function (r) { return (r.l || "").toLowerCase().indexOf("zh") === 0; }).length;
@@ -205,6 +282,7 @@
       sources: countBy(rows, function (r) { return prettyRef(r.r); }),
       pages: countBy(rows, function (r) { return r.p || "/"; }),
       countries: countBy(rows, function (r) { return r.c ? flag(r.c) + " " + ccName(r.c) : "未知"; }),
+      cities: cities, orgs: orgs, returning: returning, withIp: withIp, ips: ipKeys.length,
       singles: depths.filter(function (n) { return n === 1; }).length,
     };
   }
@@ -402,16 +480,31 @@
       });
     }
 
-    /* 8 地域 */
-    if (a.countries.length >= 2) {
-      var top3 = a.countries.slice(0, 3);
+    /* 8 地域：有城市就看城市，没有就退回国家 */
+    var geo = a.cities.length ? a.cities : a.countries;
+    if (geo.length >= 2) {
+      var top3 = geo.slice(0, 3);
       var share3 = pct(sum(top3.map(function (x) { return x.c; })), rows);
       out.push({
         ico: "📍",
         b: "访客集中在 " + top3.map(function (x) { return x.k; }).join("、") + "（合计 " + share3 + "%）",
-        p: share3 > 80
-          ? "地域非常集中：目前更像「熟人与本地观鸟圈」的流量。想扩大，得靠能被二次转发的钩子 —— 比如某个季节的候鸟清单。"
-          : "分布比较散，海外也有人在看，说明英文版与搜索引擎都在起作用。",
+        p: (a.cities.length ? "按 Cloudflare 的城市定位统计（大陆能到地级市）。" : "还没记到城市，先按国家看。") +
+          (share3 > 80
+            ? "地域非常集中：目前更像「熟人与本地观鸟圈」的流量。想扩大，得靠能被二次转发的钩子 —— 比如某个季节的候鸟清单。"
+            : "分布比较散，外地与海外都有人在看，说明转发和搜索都在起作用。"),
+      });
+    }
+
+    /* 9 回访：同一个 IP 在不同日期出现过 */
+    if (a.withIp >= 3 && a.ips) {
+      var rs = pct(a.returning, a.ips);
+      out.push({
+        ico: "🔁",
+        cls: rs > 30 ? "good" : "",
+        b: a.ips + " 个 IP 里，" + a.returning + " 个在不同日期出现过（" + rs + "%）",
+        p: rs > 30
+          ? "有相当一批人是一再来查的熟客。可以对他们做点事：把「本季可见」的清单放在首页，或按季节更新物种排序。"
+          : "多数是一次性访问，说明来的多是被链接带来的陌生人 —— 第一眼能不能看到鸟、看到图，比什么都重要。",
       });
     }
 
@@ -469,19 +562,23 @@
 
     var head = '<div class="vd__row vd__row--head">' +
       '<span data-sort="time">时间 ' + (state.dir < 0 ? "↓" : "↑") + "</span>" +
-      "<span>地区</span><span>设备 / 浏览器</span><span>来源</span>" +
+      "<span>IP</span><span>城市 / 地区</span><span>设备 / 浏览器</span><span>来源</span>" +
       "<span>落地页</span><span>语言</span><span>指纹</span></div>";
 
     if (!slice.length) {
       $("vdTable").innerHTML = head + '<div class="vd__row"><span style="grid-column:1/-1">没有匹配的记录</span></div>';
     } else {
       $("vdTable").innerHTML = head + slice.map(function (r) {
-        var where = [r.c ? flag(r.c) : "🌐", ccName(r.c)].join(" ");
+        var place = r.ci
+          ? [cnCity(r.ci), cnRegion(r.rg) && cnRegion(r.rg) !== cnCity(r.ci) ? cnRegion(r.rg) : "", r.c ? flag(r.c) : ""].filter(Boolean).join(" ")
+          : [r.c ? flag(r.c) : "🌐", ccName(r.c)].join(" ");
+        var ipTxt = r.ip || "—";
         return '<div class="vd__row">' +
           '<span class="t">' + esc(fmtTime(r.t)) + "</span>" +
-          '<span class="g">' + esc(where) + "</span>" +
+          '<span class="ip" title="' + esc(ipTxt + (r.og ? " · " + shortOrg(r.og) : "")) + '">' + esc(ipTxt) + "</span>" +
+          '<span class="g" title="' + esc(place) + '">' + esc(place) + "</span>" +
           '<span class="s">' + esc(devName(r.dv).replace(/^\S+\s/, "") + " · " + (r.br || "—")) + "</span>" +
-          '<span class="s">' + esc(prettyRef(r.r)) + "</span>" +
+          '<span class="s" title="' + esc(prettyRef(r.r)) + '">' + esc(prettyRefShort(r.r)) + "</span>" +
           '<span class="p" title="' + esc(r.p) + '">' + esc(pageName(r.p)) + "</span>" +
           '<span class="s">' + esc((r.l || "—").replace(/-.*$/, "")) + "</span>" +
           '<span class="n2">' + esc(r.v || "—") + "</span>" +
@@ -514,12 +611,10 @@
     bars("vdKind", a.kinds, 6);
     bars("vdSource", a.sources, 7);
     bars("vdPage", a.pages, 8, function (x) { return pageName(x.k); });
-    bars("vdCountry", a.countries, 7);
+    bars("vdCountry", a.countries, 8);
+    bars("vdCity", a.cities, 8);
+    bars("vdOrg", a.orgs, 6);
     bars("vdSide", a.sides, 3);
-    bars("vdWeekday", countBy(rows, function (r) {
-      var t = new Date(r.d + "T00:00:00+08:00");
-      return isNaN(t) ? null : WEEK[t.getDay()];
-    }), 7);
     bars("vdDepth", a.depthBars, 4);
     bars("vdBird", a.birds, 8, function (x) { return birdName(x.k); });
 
@@ -629,8 +724,8 @@
 
   $("vdCsv").addEventListener("click", function () {
     var rows = filtered();
-    var cols = ["t", "d", "h", "p", "r", "c", "dv", "br", "l", "v"];
-    var head = "时间,日期,小时,页面,来源,国家,设备,浏览器,语言,指纹";
+    var cols = ["t", "d", "h", "p", "r", "c", "ci", "rg", "ip", "og", "asn", "dv", "br", "l", "v"];
+    var head = "时间,日期,小时,页面,来源,国家,城市,地区,IP,运营商,ASN,设备,浏览器,语言,指纹";
     var body2 = rows.map(function (r) {
       return cols.map(function (c) {
         var v = c === "t" ? fmtTime(r.t) : r[c];

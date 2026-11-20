@@ -12,7 +12,13 @@ export const SCHEMA_STATEMENTS = [
     lang    TEXT    NOT NULL DEFAULT '',
     dev     TEXT    NOT NULL DEFAULT '',
     br      TEXT    NOT NULL DEFAULT '',
-    vid     TEXT    NOT NULL DEFAULT ''   -- 当日访客指纹（哈希后截断，不可逆）
+    vid     TEXT    NOT NULL DEFAULT '',  -- 当日访客指纹（哈希后截断，不可逆）
+    ip      TEXT    NOT NULL DEFAULT '',  -- 访客 IP（只在口令保护的看板里显示）
+    city    TEXT    NOT NULL DEFAULT '',  -- CF-IPCity，中文城市名
+    region  TEXT    NOT NULL DEFAULT '',  -- CF-IPRegion，省 / 州
+    asn     TEXT    NOT NULL DEFAULT '',  -- 运营商 AS 号
+    org     TEXT    NOT NULL DEFAULT '',  -- 运营商名称
+    colo    TEXT    NOT NULL DEFAULT ''   -- Cloudflare 边缘节点
   )`,
   `CREATE INDEX IF NOT EXISTS idx_hit_ts   ON hit(ts)`,
   `CREATE INDEX IF NOT EXISTS idx_hit_d    ON hit(d)`,
@@ -20,9 +26,38 @@ export const SCHEMA_STATEMENTS = [
   `CREATE TABLE IF NOT EXISTS cfg (k TEXT PRIMARY KEY, v TEXT NOT NULL)`,
 ];
 
-/** 建表（幂等）。注意：不能用 db.exec() 跑多行 DDL —— 它按行切分会报 incomplete input。 */
+/* 老库补列：字段名、类型。SQLite 没有 ADD COLUMN IF NOT EXISTS，只能先查再加。 */
+const EXTRA_COLS = [
+  ["ip", "TEXT NOT NULL DEFAULT ''"],
+  ["city", "TEXT NOT NULL DEFAULT ''"],
+  ["region", "TEXT NOT NULL DEFAULT ''"],
+  ["asn", "TEXT NOT NULL DEFAULT ''"],
+  ["org", "TEXT NOT NULL DEFAULT ''"],
+  ["colo", "TEXT NOT NULL DEFAULT ''"],
+];
+
+let schemaReady = false;
+
+/** 建表 + 补列（幂等）。注意：不能用 db.exec() 跑多行 DDL —— 它按行切分会报 incomplete input。 */
 export async function ensureSchema(db) {
+  if (schemaReady) return;
   await db.batch(SCHEMA_STATEMENTS.map((sql) => db.prepare(sql)));
+  // 迁移：早期建的表没有 ip/city 这些列，补上（已有则跳过）
+  try {
+    const info = await db.prepare("PRAGMA table_info(hit)").all();
+    const have = new Set((info.results || []).map((r) => r.name));
+    for (const [col, type] of EXTRA_COLS) {
+      if (have.has(col)) continue;
+      try {
+        await db.prepare(`ALTER TABLE hit ADD COLUMN ${col} ${type}`).run();
+      } catch (e) {
+        /* 并发补列时可能撞车，忽略 */
+      }
+    }
+  } catch (e) {
+    /* 迁移失败不影响写入，后面的 INSERT 会自己报错 */
+  }
+  schemaReady = true;
 }
 
 /** 北京时间日期与小时 */

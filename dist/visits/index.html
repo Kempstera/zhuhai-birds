@@ -10,7 +10,7 @@
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#1B3527">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/style.css?v=541defa3">
+<link rel="stylesheet" href="../static/style.css?v=ce3c9d1a">
 </head>
 <body class="">
 <a class="skiplink" href="#main">跳到主要内容</a>
@@ -43,7 +43,7 @@
     <div class="vd__gate-card">
       <p class="vd__k">PRIVATE</p>
       <h1>站长入口</h1>
-      <p class="vd__gate-sub">这里只给站长本人看：趋势、时段、来源与逐条明细。口令在服务端校验，不随页面下发；表里没有 IP，访客指纹当日唯一、跨日不可关联。</p>
+      <p class="vd__gate-sub">这里只给站长本人看：趋势、时段、来源与逐条明细。口令在服务端校验，不随页面下发。这里能看到 IP、城市、运营商与逐条明细 —— 这些都只存在本站自己的 D1 里。</p>
       <form class="vd__gate-row" id="vdForm" autocomplete="on">
         <input id="vdKey" type="password" name="key" autocomplete="current-password"
                spellcheck="false" placeholder="访问口令" aria-label="访问口令" required>
@@ -103,12 +103,13 @@
     <div class="vd__cols">
       <div class="vd__block"><h5>来源</h5><ul class="vd__bars" id="vdSource"></ul></div>
       <div class="vd__block"><h5>落地页</h5><ul class="vd__bars" id="vdPage"></ul></div>
-      <div class="vd__block"><h5>国家 / 地区</h5><ul class="vd__bars" id="vdCountry"></ul></div>
-      <div class="vd__block"><h5>中文版 / 英文版地址</h5><ul class="vd__bars" id="vdSide"></ul></div>
+      <div class="vd__block"><h5>城市 <span class="vd__hint">Cloudflare 定位</span></h5><ul class="vd__bars" id="vdCity"></ul></div>
+      <div class="vd__block"><h5>网络 / 运营商</h5><ul class="vd__bars" id="vdOrg"></ul></div>
     </div>
 
-    <div class="vd__cols vd__cols--3">
-      <div class="vd__block"><h5>星期分布</h5><ul class="vd__bars" id="vdWeekday"></ul></div>
+    <div class="vd__cols">
+      <div class="vd__block"><h5>国家 / 地区</h5><ul class="vd__bars" id="vdCountry"></ul></div>
+      <div class="vd__block"><h5>中文版 / 英文版</h5><ul class="vd__bars" id="vdSide"></ul></div>
       <div class="vd__block"><h5>访问深度 <span class="vd__hint">同一天看几页</span></h5><ul class="vd__bars" id="vdDepth"></ul></div>
       <div class="vd__block"><h5>看得最多的物种</h5><ul class="vd__bars" id="vdBird"></ul></div>
     </div>
@@ -131,8 +132,11 @@
     </div>
 
     <p class="vd__fine">
-      数据来自本站自建信标，没有 cookie、没有第三方脚本。访客指纹＝<code>sha256(IP + UA + 盐 + 日期)</code> 前 16 位：
-      当日唯一、跨日不可关联、不可逆推，所以「访客数」是<b>按日去重</b>后的合计，同一个人隔天再来会再计一次。
+      数据来自本站自建信标，没有 cookie、没有第三方脚本，所有记录只存在本站自己的 Cloudflare D1 里。
+      每条记录含 IP、城市、地区与运营商（由 Cloudflare 的 <code>request.cf</code> 给出，大陆一般能到城市一级），
+      只在输入口令后可见，页面 <code>noindex</code>、不进导航与 sitemap。
+      访客指纹＝<code>sha256(IP + UA + 盐 + 日期)</code> 前 16 位：当日唯一、跨日不可关联，
+      所以「访客数」是<b>按日去重</b>后的合计，同一个人隔天再来会再计一次 —— 想追同一个人，看 IP 更准。
     </p>
 
   </div>
@@ -140,7 +144,7 @@
 </section>
 
 <script>window.VD_BIRDS = {"jia-yan": "家燕", "shu-ma-que": "树麻雀", "zhu-jing-ban-jiu": "珠颈斑鸠", "bai-tou-bei": "白头鹎", "bai-ji-ling": "白鹡鸰", "chun-se-shan-jiao-ying": "纯色山鹪莺", "huang-mei-liu-ying": "黄眉柳莺", "chi-lu": "池鹭", "bai-lu": "白鹭", "hei-shui-ji": "黑水鸡", "hong-zui-ou": "红嘴鸥", "hei-fu-bin-yu": "黑腹滨鹬", "si-guang-liang-niao": "丝光椋鸟", "wu-dong": "乌鸫", "ba-ge": "八哥", "bei-hong-wei-qu": "北红尾鸲", "zao-juan": "噪鹃", "da-zui-wu-ya": "大嘴乌鸦", "xiao-bai-yao-yu-yan": "小白腰雨燕", "ban-wen-niao": "斑文鸟", "an-lu-xiu-yan-niao": "暗绿绣眼鸟", "zong-shan-wei-ying": "棕扇尾莺", "zong-bei-bo-lao": "棕背伯劳", "bai-hou-hong-tun-bei": "白喉红臀鹎", "hong-er-bei": "红耳鹎", "chang-wei-feng-ye-ying": "长尾缝叶莺", "hei-juan-wei": "黑卷尾", "hei-ling-liang-niao": "黑领椋鸟", "zhong-bai-lu": "中白鹭", "ye-lu": "夜鹭", "da-bai-lu": "大白鹭", "xiao-pi-ti": "小鸊鷉", "niu-bei-lu": "牛背鹭", "bai-xiong-ku-e-niao": "白胸苦恶鸟", "bai-gu-ding": "白骨顶", "lv-chi-ya": "绿翅鸭", "cang-lu": "苍鹭", "pu-tong-lu-ci": "普通鸬鹚", "hui-ban-heng": "灰斑鸻", "huan-jing-heng": "环颈鸻", "ji-yu": "矶鹬", "qing-jiao-yu": "青脚鹬", "hei-chi-chang-jiao-yu": "黑翅长脚鹬", "pu-tong-kuang": "普通鵟", "hong-sun": "红隼", "hei-yuan": "黑鸢", "pu-tong-cui-niao": "普通翠鸟", "bai-xiong-fei-cui": "白胸翡翠", "cha-wei-tai-yang-niao": "叉尾太阳鸟", "hua-mei": "画眉", "he-chi-ya-juan": "褐翅鸦鹃", "hei-hou-zao-mei": "黑喉噪鹛", "feng-tou-pi-ti": "凤头鸊鷉", "lv-lu": "绿鹭", "fan-zui-yu": "反嘴鹬", "bai-yao-shao-yu": "白腰杓鹬", "feng-tou-ying": "凤头鹰", "she-diao": "蛇雕", "e": "鹗", "hei-chi-yuan": "黑翅鸢", "ban-yu-gou": "斑鱼狗", "lan-fei-cui": "蓝翡翠", "hei-zui-ou": "黑嘴鸥", "hei-lian-pi-lu": "黑脸琵鹭", "bai-pi-lu": "白琵鹭"};</script>
-<script src="../static/visits.js?v=578a3079" defer></script>
+<script src="../static/visits.js?v=c6c8b91d" defer></script>
 </main>
 
 <footer class="foot">

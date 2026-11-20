@@ -22,7 +22,7 @@
     <div class="vd__gate-card">
       <p class="vd__k">PRIVATE</p>
       <h1>站长入口</h1>
-      <p class="vd__gate-sub">这里只给站长本人看：趋势、时段、来源与逐条明细。口令在服务端校验，不随页面下发；表里没有 IP，访客指纹当日唯一、跨日不可关联。</p>
+      <p class="vd__gate-sub">这里只给站长本人看：趋势、时段、来源与逐条明细。口令在服务端校验，不随页面下发。这里能看到 IP、城市、运营商与逐条明细 —— 这些都只存在本站自己的 D1 里。</p>
       <form class="vd__gate-row" id="vdForm" autocomplete="on">
         <input id="vdKey" type="password" name="key" autocomplete="current-password"
                spellcheck="false" placeholder="访问口令" aria-label="访问口令" required>
@@ -82,12 +82,13 @@
     <div class="vd__cols">
       <div class="vd__block"><h5>来源</h5><ul class="vd__bars" id="vdSource"></ul></div>
       <div class="vd__block"><h5>落地页</h5><ul class="vd__bars" id="vdPage"></ul></div>
-      <div class="vd__block"><h5>国家 / 地区</h5><ul class="vd__bars" id="vdCountry"></ul></div>
-      <div class="vd__block"><h5>中文版 / 英文版地址</h5><ul class="vd__bars" id="vdSide"></ul></div>
+      <div class="vd__block"><h5>城市 <span class="vd__hint">Cloudflare 定位</span></h5><ul class="vd__bars" id="vdCity"></ul></div>
+      <div class="vd__block"><h5>网络 / 运营商</h5><ul class="vd__bars" id="vdOrg"></ul></div>
     </div>
 
-    <div class="vd__cols vd__cols--3">
-      <div class="vd__block"><h5>星期分布</h5><ul class="vd__bars" id="vdWeekday"></ul></div>
+    <div class="vd__cols">
+      <div class="vd__block"><h5>国家 / 地区</h5><ul class="vd__bars" id="vdCountry"></ul></div>
+      <div class="vd__block"><h5>中文版 / 英文版</h5><ul class="vd__bars" id="vdSide"></ul></div>
       <div class="vd__block"><h5>访问深度 <span class="vd__hint">同一天看几页</span></h5><ul class="vd__bars" id="vdDepth"></ul></div>
       <div class="vd__block"><h5>看得最多的物种</h5><ul class="vd__bars" id="vdBird"></ul></div>
     </div>
@@ -110,8 +111,11 @@
     </div>
 
     <p class="vd__fine">
-      数据来自本站自建信标，没有 cookie、没有第三方脚本。访客指纹＝<code>sha256(IP + UA + 盐 + 日期)</code> 前 16 位：
-      当日唯一、跨日不可关联、不可逆推，所以「访客数」是<b>按日去重</b>后的合计，同一个人隔天再来会再计一次。
+      数据来自本站自建信标，没有 cookie、没有第三方脚本，所有记录只存在本站自己的 Cloudflare D1 里。
+      每条记录含 IP、城市、地区与运营商（由 Cloudflare 的 <code>request.cf</code> 给出，大陆一般能到城市一级），
+      只在输入口令后可见，页面 <code>noindex</code>、不进导航与 sitemap。
+      访客指纹＝<code>sha256(IP + UA + 盐 + 日期)</code> 前 16 位：当日唯一、跨日不可关联，
+      所以「访客数」是<b>按日去重</b>后的合计，同一个人隔天再来会再计一次 —— 想追同一个人，看 IP 更准。
     </p>
 
   </div>

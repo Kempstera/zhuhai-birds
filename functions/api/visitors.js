@@ -3,8 +3,8 @@
 // 与 /api/stats 的区别：这里返回的是**逐条记录**，让 /visits/ 页面像 musicradio 那样
 // 在浏览器里现算 KPI、趋势、时段、洞察与明细表 —— 切时间范围、搜索、排序都不用再打接口。
 //
-// 仍然不返回任何直接识别信息：表里本来就没有 IP，vid 是「ip+UA+盐+当日」的哈希前 8 字节，
-// 只能按日去重，跨日不可关联。
+// 返回的字段里有原始 IP、城市、地区、运营商 —— 这个接口要 Bearer 口令，只给站长用；
+// 页面本身 noindex，不进导航与 sitemap。vid 仍是「ip+UA+盐+当日」的哈希前 8 字节。
 import { ensureSchema, readCfg, safeEqual, json } from "../_lib.js";
 
 export async function onRequestGet({ request, env }) {
@@ -12,14 +12,13 @@ export async function onRequestGet({ request, env }) {
   const token = auth.replace(/^Bearer\s+/i, "").trim();
   if (!token) return json({ ok: false, error: "unauthorized" }, 401);
 
+  // 顺手跑一次建表 + 补列（幂等，CI 里只跑一次），否则老库没有 ip/city 列会 SELECT 失败
   let expected = env.ADMIN_TOKEN || "";
-  if (!expected) {
-    try {
-      await ensureSchema(env.DB);
-      expected = await readCfg(env.DB, "admin_token");
-    } catch (e) {
-      return json({ ok: false, error: "db_not_ready", detail: String(e) }, 503);
-    }
+  try {
+    await ensureSchema(env.DB);
+    if (!expected) expected = await readCfg(env.DB, "admin_token");
+  } catch (e) {
+    return json({ ok: false, error: "db_not_ready", detail: String(e) }, 503);
   }
   if (!expected) return json({ ok: false, error: "not_initialized" }, 503);
   if (!safeEqual(token, expected)) return json({ ok: false, error: "unauthorized" }, 401);
@@ -34,7 +33,8 @@ export async function onRequestGet({ request, env }) {
   try {
     const [r1, r2] = await env.DB.batch([
       env.DB.prepare(
-        `SELECT ts, d, h, path, ref, country, lang, dev, br, vid
+        `SELECT ts, d, h, path, ref, country, lang, dev, br, vid,
+                ip, city, region, asn, org, colo
            FROM hit WHERE d >= ? ORDER BY ts DESC LIMIT ?`
       ).bind(from, limit),
       env.DB.prepare("SELECT COUNT(*) n FROM hit WHERE d >= ?").bind(from),
@@ -63,6 +63,12 @@ export async function onRequestGet({ request, env }) {
       dv: r.dev,
       br: r.br,
       v: r.vid,       // 当日指纹（哈希前 16 位）
+      ip: r.ip || "",
+      ci: r.city || "",
+      rg: r.region || "",
+      asn: r.asn || "",
+      og: r.org || "",
+      co: r.colo || "",
     })),
   });
 

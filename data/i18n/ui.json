@@ -105,8 +105,7 @@
         "Residency reflects Zhuhai and the Pearl River Delta",
         "A non-commercial educational project"
       ],
-      "notes_h": "Notes",
-      "stats": "Site statistics"
+      "notes_h": "Notes"
     },
     "guide": {
       "desc": "A seasonal birding calendar for Zhuhai, notes on the flyway, what to bring, and the ethics of watching wild birds.",
@@ -168,37 +167,6 @@
     "switch": {
       "text": "中文",
       "title": "切换到中文"
-    },
-    "visits": {
-      "eyebrow": "SITE STATISTICS",
-      "h1": "Who is looking for birds here",
-      "lede": "Only totals: how many people read, what they read, where they came from. No cookies, no IP addresses, nothing that points back to a person.",
-      "k_all": "Total pageviews",
-      "k_all_n": "since %s",
-      "k_uv": "Visitors",
-      "k_uv_n": "last 30 days",
-      "k_today": "Today",
-      "k_week": "Last 7 days",
-      "u_pv": "views",
-      "u_uv": "visitors",
-      "chart_h": "Last 30 days",
-      "l_pv": "Views",
-      "l_uv": "Visitors",
-      "paths_h": "Most read",
-      "refs_h": "Where from",
-      "geo_h": "Where in the world",
-      "dev_h": "Devices",
-      "lang_h": "Interface language",
-      "direct": "Direct / bookmark",
-      "loading": "Counting…",
-      "empty": "No data yet.",
-      "fail": "Statistics are unavailable right now — check back later.",
-      "updated": "Updated %s",
-      "dev_desktop": "Desktop",
-      "dev_mobile": "Phone",
-      "dev_tablet": "Tablet",
-      "dev_unknown": "Other",
-      "fine": "How these numbers are made: pageviews only; no cookies, no IP addresses; visitors are de-duplicated per day by a one-way fingerprint that cannot be linked across days; bots and DNT/GPC requests are dropped; country comes from Cloudflare's edge and is country-level only."
     }
   },
   "zh": {
@@ -307,8 +275,7 @@
         "居留型以珠海—珠三角情况为准",
         "本站为非营利的科普项目"
       ],
-      "notes_h": "说明",
-      "stats": "访问统计"
+      "notes_h": "说明"
     },
     "guide": {
       "desc": "珠海的四季观鸟日历、迁徙通道说明、观鸟装备清单与野外守则。了解什么时候、去哪里、怎样不打扰地观察野生鸟类。",
@@ -370,37 +337,6 @@
     "switch": {
       "text": "EN",
       "title": "Switch to English"
-    },
-    "visits": {
-      "eyebrow": "站点统计 · SITE STATISTICS",
-      "h1": "谁在这座城市里找鸟",
-      "lede": "这里只统计总量：多少人在看、看了什么、从哪里来。没有 cookie，没有 IP，没有能指回某个人的东西。",
-      "k_all": "总浏览量",
-      "k_all_n": "自 %s 起",
-      "k_uv": "独立访客",
-      "k_uv_n": "近 30 天",
-      "k_today": "今天",
-      "k_week": "近七天",
-      "u_pv": "次浏览",
-      "u_uv": "位访客",
-      "chart_h": "近三十天",
-      "l_pv": "浏览",
-      "l_uv": "访客",
-      "paths_h": "大家都在看",
-      "refs_h": "从哪儿来",
-      "geo_h": "在哪儿看",
-      "dev_h": "用什么设备",
-      "lang_h": "界面语言",
-      "direct": "直接打开 / 收藏夹",
-      "loading": "正在数……",
-      "empty": "还没有数据。",
-      "fail": "统计暂时取不到，稍后再来。",
-      "updated": "更新于 %s",
-      "dev_desktop": "桌面电脑",
-      "dev_mobile": "手机",
-      "dev_tablet": "平板",
-      "dev_unknown": "其他",
-      "fine": "统计口径：只记页面浏览；不设 cookie、不存 IP；访客按「同一天内同一指纹」去重，跨天不关联；爬虫与 DNT/GPC 请求不计入；国家来自 Cloudflare 边缘判断，只到国家一级。"
     }
   }
 }

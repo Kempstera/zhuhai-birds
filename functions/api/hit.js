@@ -1,5 +1,6 @@
 // POST /api/hit —— 记录一次页面浏览
-// 不写 cookie、不存原始 IP；只落一行聚合所需的字段。
+// 不写 cookie。落一行：IP、城市、地区、运营商（CF 的 request.cf）与设备/来源等；
+// 这些只在口令保护的 /visits/ 看板里可见，不对外、不进 sitemap。
 import { ensureSchema, bj, normPath, deviceOf, browserOf, hostOf, visitorId, readCfg, json } from "../_lib.js";
 
 const BOT =
@@ -45,9 +46,17 @@ export async function onRequestPost({ request, env }) {
 
     const country = (request.headers.get("cf-ipcountry") || "").slice(0, 2).toUpperCase();
     const lang = (body.lang || "").slice(0, 8);
-    const ip = request.headers.get("cf-connecting-ip") || "";
+    const ip = (request.headers.get("cf-connecting-ip") || "").slice(0, 45);
     const dev = deviceOf(ua);
     const br = browserOf(ua);
+
+    // Cloudflare 的地理与网络信息（大陆一般能到城市一级）
+    const cf = request.cf || {};
+    const city = String(cf.city || "").slice(0, 40);
+    const region = String(cf.region || "").slice(0, 40);
+    const asn = cf.asn ? String(cf.asn) : "";
+    const org = String(cf.asOrganization || "").slice(0, 60);
+    const colo = String(cf.colo || "").slice(0, 8);
 
     if (!ready) {
       await ensureSchema(env.DB);
@@ -57,9 +66,10 @@ export async function onRequestPost({ request, env }) {
     const vid = await visitorId(ip, ua, salt, d);
 
     await env.DB.prepare(
-      "INSERT INTO hit (ts,d,h,path,ref,country,lang,dev,br,vid) VALUES (?,?,?,?,?,?,?,?,?,?)"
+      "INSERT INTO hit (ts,d,h,path,ref,country,lang,dev,br,vid,ip,city,region,asn,org,colo)" +
+      " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
     )
-      .bind(now, d, h, path, ref, country, lang, dev, br, vid)
+      .bind(now, d, h, path, ref, country, lang, dev, br, vid, ip, city, region, asn, org, colo)
       .run();
 
     // 偶尔清理两年前的数据，避免库无限增长
