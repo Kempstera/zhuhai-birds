@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>说说你看到了什么 · 珠海观鸟图鉴</title>
+<meta name="description" content="把最近一次让你停下来的鸟写下来——时间、地点、它在做什么。注册一个账号就能留言，邮箱只用来登录，我们不会给你发任何邮件。">
+<meta name="theme-color" content="#1B3527">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../static/style.css?v=50942d7f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="珠海观鸟图鉴">
+<meta property="og:title" content="说说你看到了什么 · 珠海观鸟图鉴">
+<meta property="og:description" content="把最近一次让你停下来的鸟写下来——时间、地点、它在做什么。注册一个账号就能留言，邮箱只用来登录，我们不会给你发任何邮件。">
+<link rel="canonical" href="https://birds.signupeverywhere.cc/zh/board/">
+<link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/board/">
+<link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/board/">
+<link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/">
+
+</head>
+<body class="">
+<a class="skiplink" href="#main">跳到主要内容</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../index.html">
+      <svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 3.6c-.5.8-.7 1.7-.6 2.6-2.2-.4-4.3.4-5.8 2.1-1.1 1.2-1.8 2.7-2 4.3l-2.4.3c-.7.1-1.1.7-1 1.4.1.5.5.8 1 .8l2.2.1c.5 1.9 1.9 3.4 3.7 4.2l-1.5 1.3c-.4.4-.4 1 0 1.4.3.4 1 .4 1.3.1l2.3-1.9c2.1.4 4.4-.2 6-1.9 2-2.2 1.9-5.7-.2-7.8l.6-3c.2-.9-.3-1.8-1.1-2.2-.8-.4-1.7-.2-2.2.4zM8.2 13.9c.9.3 1.7.9 2.3 1.7l-1.9-.1c-.4 0-.7-.2-.9-.5l-.4-.7z"/></svg>
+      <span>珠海观鸟图鉴</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="主导航">
+        <a href="../index.html#species">物种名录</a>
+        <a href="../index.html#groups">生态类群</a>
+        <a href="../index.html#spots">观鸟地点</a>
+        <a href="../guide.html">观鸟指南</a>
+<a href="../board/">留言</a>      </nav>
+      <a class="lang" href="../../board/index.html" hreflang="en"
+         title="Switch to English">EN</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Guestbook · 留下你的观察</p>
+    <h1>说说你看到了什么</h1>
+    <p class="lede">把最近一次让你停下来的鸟写下来——时间、地点、它在做什么。注册一个账号就能留言，邮箱只用来登录，我们不会给你发任何邮件。</p>
+  </div>
+</section>
+
+<section class="board">
+  <div class="wrap bd-grid">
+
+    <div class="bd-main">
+
+      <!-- 未接通 Supabase 时的提示 -->
+      <div class="bd-card bd-off" id="bdOff" hidden>
+        <h3>留言板还没接通</h3>
+        <p>后端尚未配置。页面本身是完整的，只是暂时存不了字。</p>
+      </div>
+
+      <!-- 未登录：登录 / 注册 -->
+      <div class="bd-card" id="bdAuth" hidden>
+        <div class="bd-tabs" role="tablist">
+          <button type="button" class="bd-tab on" data-mode="in" id="tabIn">登录</button>
+          <button type="button" class="bd-tab" data-mode="up" id="tabUp">注册</button>
+        </div>
+
+        <form id="bdForm" novalidate>
+          <label class="bd-field" id="nickRow" hidden>
+            <span>昵称</span>
+            <input type="text" id="bdNick" maxlength="20" autocomplete="nickname"
+                   placeholder="别人会看到这个名字">
+          </label>
+          <label class="bd-field">
+            <span>邮箱</span>
+            <input type="email" id="bdEmail" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+          <label class="bd-field">
+            <span>密码</span>
+            <input type="password" id="bdPw" autocomplete="current-password"
+                   placeholder="至少 6 位" required>
+          </label>
+          <button type="submit" class="bd-btn" id="bdSubmit"
+                  data-in="登录" data-up="注册">登录</button>
+          <p class="bd-msg" id="bdAuthMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- 已登录：写留言 -->
+      <div class="bd-card" id="bdComposer" hidden>
+        <div class="bd-who">
+          <span>当前身份</span>
+          <b id="bdWho">—</b>
+          <button type="button" class="bd-link" id="bdOut">退出</button>
+        </div>
+        <form id="bdPost">
+          <textarea id="bdBody" rows="4" maxlength="800" required
+                    placeholder="今天在淇澳岛的红树林边，看到一只…"></textarea>
+          <div class="bd-row">
+            <span class="bd-count"><i id="bdCount">0</i> / 800</span>
+            <button type="submit" class="bd-btn" id="bdSend">贴出去</button>
+          </div>
+          <p class="bd-msg" id="bdPostMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- 留言列表 -->
+      <div class="bd-list-head">
+        <h2>大家的留言</h2>
+        <span id="bdTotal"></span>
+      </div>
+      <div class="bd-list" id="bdList">
+        <p class="bd-empty" id="bdLoading">读取中…</p>
+      </div>
+    </div>
+
+    <aside class="bd-aside">
+      <h4>关于这个留言板</h4>
+      <ul>
+        <li>留言公开可见，不需要登录也能读。</li>
+        <li>发帖需要邮箱注册，昵称会显示在留言旁。</li>
+        <li>一个人十分钟内最多发五条，防止刷屏。</li>
+        <li>你可以随时删掉自己的留言。</li>
+      </ul>
+      <p class="bd-fine">邮箱只用于登录，不会公开、不会用于推送。</p>
+    </aside>
+
+  </div>
+</section>
+
+<script src="../../static/vendor/supabase.js?v=bcb55476" defer></script>
+<script src="../../static/supabase-config.js?v=f1947770" defer></script>
+<script src="../../static/board.js?v=0aca02f6" defer></script>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 3.6c-.5.8-.7 1.7-.6 2.6-2.2-.4-4.3.4-5.8 2.1-1.1 1.2-1.8 2.7-2 4.3l-2.4.3c-.7.1-1.1.7-1 1.4.1.5.5.8 1 .8l2.2.1c.5 1.9 1.9 3.4 3.7 4.2l-1.5 1.3c-.4.4-.4 1 0 1.4.3.4 1 .4 1.3.1l2.3-1.9c2.1.4 4.4-.2 6-1.9 2-2.2 1.9-5.7-.2-7.8l.6-3c.2-.9-.3-1.8-1.1-2.2-.8-.4-1.7-.2-2.2.4zM8.2 13.9c.9.3 1.7.9 2.3 1.7l-1.9-.1c-.4 0-.7-.2-.9-.5l-.4-.7z"/></svg><span>珠海观鸟图鉴</span></div>
+        <p>一份面向华南、尤其是珠三角与珠海的常见鸟类观察手册。<br>
+        收录 65 种在本地相对容易遇见的鸟类，附辨识要点与野外鸣声。</p>
+        <p style="margin-top:12px;font-size:12px;color:var(--ink-4)">
+          图像与录音来自维基共享资源（Wikimedia Commons）与 iNaturalist，遵循各自的开放许可协议；每个物种页脚注均标注原作者与许可类型。</p>
+      </div>
+      <div>
+        <h5>浏览</h5>
+        <ul>
+          <li><a href="../index.html#species">全部物种</a></li>
+          <li><a href="../index.html#groups">生态类群</a></li>
+          <li><a href="../index.html#spots">观鸟地点</a></li>
+          <li><a href="../guide.html">观鸟指南</a></li>
+<li><a href="../board/">留言板</a></li>          <li><a href="../visits/">访问统计</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>说明</h5>
+        <ul>
+<li>保护级别依据《国家重点保护野生动物名录》（2021）</li><li>濒危等级依据 IUCN 红色名录</li><li>居留型以珠海—珠三角情况为准</li><li>本站为非营利的科普项目</li>        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 珠海观鸟图鉴 · Field Guide to the Birds of Zhuhai</span>
+      <span class="fb-right">
+        <span>观察野生鸟类，请保持距离 · 中国境内所有野生鸟类均受法律保护</span>
+        <a class="foot-admin" href="/admin/" rel="nofollow" title="统计">统计</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../static/app.js?v=732ce5fd" defer></script>
+<script src="../../static/beacon.js?v=e563cea6" defer></script>
+</body>
+</html>

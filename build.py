@@ -309,15 +309,15 @@ def main():
     env.globals.update(YEAR=YEAR, CSSV=asset_ver("style.css"), JSV=asset_ver("app.js"),
                        BV=asset_ver("beacon.js"), AV=asset_ver("admin.js"),
                        SBV=asset_ver("supabase-config.js"), BOV=asset_ver("board.js"),
-                       SUV=asset_ver("vendor/supabase.js"),
+                       SUV=asset_ver("vendor/supabase.js"), VSV=asset_ver("visits.js"),
                        ruby=ruby, nm=nm)
 
     sb_on = sb_configured()
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    for d in ("bird", "assets/img", "assets/audio", "static", "en/bird", "admin",
-              "board", "en/board"):
+    for d in ("bird", "zh/bird", "assets/img", "assets/audio", "static", "admin",
+              "board", "zh/board", "visits", "zh/visits"):
         os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
     for f in os.listdir(os.path.join(ROOT, "static")):
@@ -338,10 +338,12 @@ def main():
     totals = {}
     for lang in LANGS:
         en = lang == "en"
-        sub = "en" if en else ""
+        # 英文是站点默认语言，放在根目录；中文镜像到 /zh/ 下
+        sub = "" if en else "zh"
         base = os.path.join(DIST, sub) if sub else DIST
-        root_i = "../" if en else ""          # 首页所在层级
-        root_d = "../../" if en else "../"    # 详情页所在层级
+        root_i = "" if en else "../"          # 首页所在层级的资源前缀
+        root_d = "../" if en else "../../"    # 详情页所在层级的资源前缀
+        pr_i = ""                             # 同语言内的页面链接（首页与 404 都在本语言根目录）
         T = ui[lang]
         hl = "en" if en else "zh-CN"
         groups = GROUPS_EN if en else GROUPS
@@ -373,12 +375,12 @@ def main():
         # ---- 首页 ----
         hero = by.get("bai-lu", views[0])
         html = env.get_template("index.html").render(
-            **common, root=root_i, pr="", hero=hero, nav="home", species=views,
+            **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=views,
             page_title=T["idx"]["title"] % len(views),
             page_desc=T["idx"]["desc"] % len(views),
-            canon=SITE + ("/en/" if en else "/"),
-            zh_url=SITE + "/", en_url=SITE + "/en/",
-            alt_url=("../index.html" if en else "en/index.html"))
+            canon=SITE + ("/" if en else "/zh/"),
+            zh_url=SITE + "/zh/", en_url=SITE + "/",
+            alt_url=("../zh/index.html" if en else "../index.html"))
         open(os.path.join(base, "index.html"), "w").write(html)
 
         # ---- 详情页 ----
@@ -386,8 +388,8 @@ def main():
             prev = views[(i - 1) % len(views)]
             nxt = views[(i + 1) % len(views)]
             sims = [by[x] for x in v["similar"]]
-            zh_path = "/bird/%s.html" % v["slug"]
-            en_path = "/en/bird/%s.html" % v["slug"]
+            zh_path = "/zh/bird/%s.html" % v["slug"]
+            en_path = "/bird/%s.html" % v["slug"]
             path = en_path if en else zh_path
             title = (T["d"]["title"] % (v["name"], v["sci"]))
             desc = (T["d"]["desc"] % (v["name"], v["sci"], v["tagline"]))
@@ -399,35 +401,47 @@ def main():
                 canon=SITE + path,
                 zh_url=SITE + zh_path,
                 en_url=SITE + en_path,
-                alt_url=("../../bird/%s.html" % v["slug"]) if en
-                        else ("../en/bird/%s.html" % v["slug"]))
+                alt_url=("../../zh/bird/%s.html" % v["slug"]) if en
+                        else ("../../bird/%s.html" % v["slug"]))
             open(os.path.join(base, "bird", v["slug"] + ".html"), "w").write(html)
 
         # ---- 指南页 ----
-        gpath = "/en/guide.html" if en else "/guide.html"
+        gpath = "/guide.html" if en else "/zh/guide.html"
         html = env.get_template("guide_en.html" if en else "guide.html").render(
-            **common, root=root_i, pr="", nav="guide",
+            **common, root=root_i, pr=pr_i, nav="guide",
             page_title=T["guide"]["title"], page_desc=T["guide"]["desc"],
-            canon=SITE + gpath, zh_url=SITE + "/guide.html",
-            en_url=SITE + "/en/guide.html",
-            alt_url=("../guide.html" if en else "en/guide.html"))
+            canon=SITE + gpath, zh_url=SITE + "/zh/guide.html",
+            en_url=SITE + "/guide.html",
+            alt_url=("../zh/guide.html" if en else "../guide.html"))
         open(os.path.join(base, "guide.html"), "w").write(html)
 
         # ---- 留言板 ----
-        bpath = "/en/board/" if en else "/board/"
+        bpath = "/board/" if en else "/zh/board/"
         html = env.get_template("board.html").render(
             **common, root=root_d, pr="../", nav="board",
             page_title="%s · %s" % (T["board"]["h1"], T["brand"]),
             page_desc=T["board"]["lede"],
             canon=SITE + bpath,
-            zh_url=SITE + "/board/", en_url=SITE + "/en/board/",
-            alt_url=("../board/index.html" if en else "../en/board/index.html"))
+            zh_url=SITE + "/zh/board/", en_url=SITE + "/board/",
+            alt_url=("../zh/board/index.html" if en else "../../board/index.html"))
         open(os.path.join(base, "board", "index.html"), "w").write(html)
+
+        # ---- 访问统计（公开页，只有聚合数字）----
+        vpath = "/visits/" if en else "/zh/visits/"
+        html = env.get_template("visits.html").render(
+            **common, root=root_d, pr="../", nav="visits",
+            page_title="%s · %s" % (T["visits"]["h1"], T["brand"]),
+            page_desc=T["visits"]["lede"],
+            canon=SITE + vpath,
+            zh_url=SITE + "/zh/visits/", en_url=SITE + "/visits/",
+            alt_url=("../zh/visits/index.html" if en else "../../visits/index.html"))
+        open(os.path.join(base, "visits", "index.html"), "w").write(html)
 
         # ---- 404 ----
         html = env.get_template("404.html").render(
             **common, root=root_i, nav="", page_title=T["e"]["title"], page_desc=T["e"]["desc"],
-            pr="", canon="", zh_url="", en_url="", alt_url=("../index.html" if en else "en/index.html"))
+            pr=pr_i, canon="", zh_url="", en_url="",
+            alt_url=("../zh/index.html" if en else "../index.html"))
         open(os.path.join(base, "404.html"), "w").write(html)
         totals[lang] = len(views)
 
@@ -439,10 +453,10 @@ def main():
     open(os.path.join(DIST, "robots.txt"), "w").write(
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
-    pairs = [("/", "/en/"), ("/guide.html", "/en/guide.html")]
+    pairs = [("/zh/", "/"), ("/zh/guide.html", "/guide.html"), ("/zh/visits/", "/visits/")]
     if sb_on:
-        pairs.append(("/board/", "/en/board/"))
-    pairs += [("/bird/%s.html" % s["slug"], "/en/bird/%s.html" % s["slug"]) for s in species]
+        pairs.append(("/zh/board/", "/board/"))
+    pairs += [("/zh/bird/%s.html" % s["slug"], "/bird/%s.html" % s["slug"]) for s in species]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
           '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -452,11 +466,16 @@ def main():
             sm.append("    <loc>%s%s</loc>" % (SITE, p))
             sm.append('    <xhtml:link rel="alternate" hreflang="zh-CN" href="%s%s"/>' % (SITE, zh_p))
             sm.append('    <xhtml:link rel="alternate" hreflang="en" href="%s%s"/>' % (SITE, en_p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, zh_p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, en_p))
             sm.append("    <changefreq>monthly</changefreq>")
             sm.append("  </url>")
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w").write("\n".join(sm))
+
+    # 旧地址（英文曾在 /en/ 下）永久跳转到新位置
+    open(os.path.join(DIST, "_redirects"), "w").write(
+        "/en/*  /:splat  301\n"
+        "/en    /        301\n")
 
     n_img = sum(1 for s in species if s["img"])
     n_aud = sum(1 for s in species if s["audio"])

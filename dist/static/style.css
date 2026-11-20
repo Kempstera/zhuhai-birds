@@ -1152,3 +1152,73 @@ html[lang="en"] .more .k{letter-spacing:.2em}
 
 /* [hidden] 必须压过 .bd-field{display:block} —— 否则「昵称」在登录态下也会露出来 */
 .board [hidden]{display:none!important}
+/* ---------- 访问统计 /visits ---------- */
+
+.vs{padding:8px 0 96px}
+.vs-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.vs-kpi{background:var(--paper-2);border:1px solid var(--line-2);border-radius:var(--r-m);
+  padding:20px 22px 18px;display:flex;flex-direction:column;gap:7px}
+.vs-kpi .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);
+  font-family:var(--latin)}
+.vs-kpi b{font-family:var(--latin);font-size:34px;line-height:1;font-weight:400;color:var(--forest);
+  font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.vs-kpi .n{font-size:12px;color:var(--ink-4);letter-spacing:.02em}
+
+.vs-panel{background:var(--paper-2);border:1px solid var(--line-2);border-radius:var(--r-m);
+  padding:22px 24px 20px;margin-bottom:18px}
+.vs-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:20px}
+.vs-head h2{font-family:var(--serif);font-size:19px;font-weight:400;letter-spacing:.02em;
+  margin:0;color:var(--ink)}
+.vs-legend{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink-4);
+  letter-spacing:.04em;white-space:nowrap}
+.vs-legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.vs-legend i.pv{background:var(--moss);opacity:.4}
+.vs-legend i.uv{background:var(--forest);opacity:.85}
+.vs-legend span:nth-of-type(1){margin-right:10px}
+
+.vs-bars{display:flex;align-items:flex-end;gap:4px;height:168px;margin-bottom:24px}
+.vs-day{flex:1;height:100%;position:relative;min-width:0}
+.vs-stack{height:100%;display:flex;align-items:flex-end;justify-content:center;gap:2px}
+.vs-stack i{display:block;width:46%;border-radius:2px 2px 0 0;min-height:2px}
+.vs-stack i.vs-pv{background:var(--moss);opacity:.38}
+.vs-stack i.vs-uv{background:var(--forest);opacity:.82}
+.vs-day .vs-x{position:absolute;left:-6px;right:-6px;bottom:-18px;text-align:center;font-size:10px;
+  color:var(--ink-3);font-family:var(--latin);letter-spacing:.01em;white-space:nowrap}
+.vs-day:not(:nth-child(5n+1)) .vs-x{display:none}
+.vs-day:last-child .vs-x{display:block;left:auto;right:0;width:auto;text-align:right}
+.vs-day:first-child .vs-x{left:0;text-align:left}
+
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vs-grid.three{grid-template-columns:repeat(3,1fr)}
+.vs-grid .vs-panel{margin-bottom:18px}
+
+.vs-rows{display:flex;flex-direction:column;gap:11px}
+.vs-row{display:grid;grid-template-columns:1fr 88px 44px;align-items:center;gap:12px;
+  font-size:13px;line-height:1.4}
+.vs-label{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vs-bar{display:block;height:5px;border-radius:3px;background:var(--moss);opacity:.5;min-width:2px}
+.vs-n{text-align:right;font-family:var(--latin);font-size:12.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.vs-empty{font-size:13px;color:var(--ink-4);margin:0;padding:12px 0}
+
+.vs-fine{font-size:11.5px;line-height:1.95;color:var(--ink-4);max-width:78ch;margin:6px 0 0}
+.vs-stamp{display:block;margin-top:7px;font-family:var(--latin);letter-spacing:.05em;
+  color:var(--ink-4)}
+
+@media (max-width:900px){
+  .vs-kpis{grid-template-columns:1fr 1fr;gap:10px}
+  .vs-kpi{padding:16px 16px 14px}
+  .vs-kpi b{font-size:26px}
+  .vs-grid,.vs-grid.three{grid-template-columns:1fr}
+  .vs-panel{padding:18px 16px 16px}
+  .vs-head{margin-bottom:16px}
+  .vs-head h2{font-size:17px}
+  .vs-bars{height:132px;gap:3px}
+  .vs-stack{gap:1px}
+  .vs-row{grid-template-columns:1fr 60px 40px;gap:9px;font-size:12.5px}
+  .vs-day .vs-x{bottom:-17px}
+  /* 窄屏下柱子只有 8px 宽，5 天一个标签会挤在一起，改成 6 天一个 */
+  .vs-day:nth-child(6n+1) .vs-x{display:block}
+  .vs-day:not(:nth-child(6n+1)) .vs-x{display:none}
+  .vs-day:last-child .vs-x{display:block;left:auto;right:0;width:auto;text-align:right}
+}

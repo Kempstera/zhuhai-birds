@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand) }}
+{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ T.visits.eyebrow }}</p>
+    <h1>{{ T.visits.h1 }}</h1>
+    <p class="lede">{{ T.visits.lede }}</p>
+  </div>
+</section>
+
+<section class="vs" id="vsRoot"
+         data-lang="{{ 'en' if lang == 'en' else 'zh' }}"
+         data-empty="{{ T.visits.empty }}"
+         data-fail="{{ T.visits.fail }}"
+         data-updated="{{ T.visits.updated }}"
+         data-direct="{{ T.visits.direct }}"
+         data-d-desktop="{{ T.visits.dev_desktop }}"
+         data-d-mobile="{{ T.visits.dev_mobile }}"
+         data-d-tablet="{{ T.visits.dev_tablet }}"
+         data-d-unknown="{{ T.visits.dev_unknown }}">
+  <div class="wrap">
+
+    <div class="vs-kpis">
+      <div class="vs-kpi">
+        <span class="k">{{ T.visits.k_all }}</span>
+        <b id="vsAll">—</b>
+        <span class="n" id="vsSince">{{ T.visits.u_pv }}</span>
+      </div>
+      <div class="vs-kpi">
+        <span class="k">{{ T.visits.k_uv }}</span>
+        <b id="vsUv">—</b>
+        <span class="n">{{ T.visits.k_uv_n }}</span>
+      </div>
+      <div class="vs-kpi">
+        <span class="k">{{ T.visits.k_today }}</span>
+        <b id="vsToday">—</b>
+        <span class="n">{{ T.visits.u_pv }}</span>
+      </div>
+      <div class="vs-kpi">
+        <span class="k">{{ T.visits.k_week }}</span>
+        <b id="vsWeek">—</b>
+        <span class="n">{{ T.visits.u_pv }}</span>
+      </div>
+    </div>
+
+    <div class="vs-panel">
+      <div class="vs-head">
+        <h2>{{ T.visits.chart_h }}</h2>
+        <div class="vs-legend">
+          <i class="pv"></i><span>{{ T.visits.l_pv }}</span>
+          <i class="uv"></i><span>{{ T.visits.l_uv }}</span>
+        </div>
+      </div>
+      <div class="vs-bars" id="vsBars"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+    </div>
+
+    <div class="vs-grid">
+      <div class="vs-panel">
+        <div class="vs-head"><h2>{{ T.visits.paths_h }}</h2></div>
+        <div class="vs-rows" id="vsPaths"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      </div>
+      <div class="vs-panel">
+        <div class="vs-head"><h2>{{ T.visits.refs_h }}</h2></div>
+        <div class="vs-rows" id="vsRefs"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      </div>
+    </div>
+
+    <div class="vs-grid three">
+      <div class="vs-panel">
+        <div class="vs-head"><h2>{{ T.visits.geo_h }}</h2></div>
+        <div class="vs-rows" id="vsGeo"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      </div>
+      <div class="vs-panel">
+        <div class="vs-head"><h2>{{ T.visits.dev_h }}</h2></div>
+        <div class="vs-rows" id="vsDev"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      </div>
+      <div class="vs-panel">
+        <div class="vs-head"><h2>{{ T.visits.lang_h }}</h2></div>
+        <div class="vs-rows" id="vsLang"><p class="vs-empty">{{ T.visits.loading }}</p></div>
+      </div>
+    </div>
+
+    <p class="vs-fine">
+      {{ T.visits.fine }}
+      <span class="vs-stamp" id="vsUpdated"></span>
+    </p>
+
+  </div>
+</section>
+
+<script src="{{ root }}static/visits.js?v={{ VSV }}" defer></script>
+{% endblock %}

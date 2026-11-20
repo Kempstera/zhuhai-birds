@@ -16,24 +16,26 @@
 
 ## 站点结构
 
-中英双语，**中文为默认**；`/en/` 为英文版，右上角按钮可互相切换。
+中英双语，**英文为默认**（`/` 根目录放英文，方便境外转发与搜索收录）；`/zh/` 为中文版，右上角按钮可互相切换。旧的 `/en/...` 地址由 `dist/_redirects` 301 到根目录同名路径，不会失效。
 
 ```
 index.html          首页：Hero、生态类群、物种名录（可筛选/搜索）、观鸟地点、野外守则
 bird/<slug>.html    65 个物种详情页
 guide.html          观鸟指南：为什么是珠海、四季日历、装备、如何听鸟、记录与分享
 board/index.html    留言板（Supabase 注册 / 登录 / 留言，配置好才进导航）
+visits/index.html   公开的访问统计（只有聚合数字，页脚「Site statistics」进入）
 404.html            自定义错误页
-admin/index.html    站长后台（访问统计，不参与导航与 sitemap）
-en/                 英文版，目录结构与上面完全镜像
+admin/index.html    站长后台（明细访问统计，不参与导航与 sitemap）
+zh/                 中文版，目录结构与上面完全镜像
 robots.txt          搜索引擎规则
-sitemap.xml         站点地图（中英成对 + xhtml:link 互指）
+sitemap.xml         站点地图（中英成对 + xhtml:link 互指，x-default 指英文）
 ```
 
 ## 目录说明
 
 ```
 functions/                 Cloudflare Pages Functions（访问统计 + Supabase 同域中转）
+functions/api/visits.js    公开统计接口（无口令，只给聚合数字，边缘缓存 5 分钟）
 wrangler.toml              Pages 项目配置 + D1 绑定
 data/species.json          物种内容（中文名、学名、特征、习性、鸣声描述、观察点等）
 data/species_en.json       每个物种的英文正文（tagline / summary / features / behavior / voice / tip）
@@ -44,7 +46,7 @@ data/gallery_override.json 人工挑选清单（修正自动检索结果，指�
 data/plate_exclude.json    图版黑名单（海报、地图、报纸版面等不适合入册的扫描件）
 scripts/                   素材采集与整理脚本（见下表）
 templates/                 Jinja2 页面模板
-static/                    样式与脚本（style.css / app.js / beacon.js / admin.js / board.js）
+static/                    样式与脚本（style.css / app.js / beacon.js / admin.js / board.js / visits.js）
 static/vendor/             本地内嵌的第三方库（supabase.js，避免 CDN 被墙或版本漂移）
 static/supabase-config.js  留言板的 Supabase 地址与 anon key（空则整块功能隐藏）
 supabase/schema.sql        留言板建表 / RLS / 触发器，贴进 Supabase SQL Editor 执行一次
@@ -114,7 +116,7 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
 
 ### 双语机制
 
-`build.py` 对 `LANGS = ("zh", "en")` 循环两遍，中文写进 `dist/`，英文写进 `dist/en/`。
+`build.py` 对 `LANGS = ("zh", "en")` 循环两遍，**英文写进 `dist/`（默认语言），中文写进 `dist/zh/`**。
 同一个模板靠 `make_view()` 产出的视图字典渲染，所以模板里没有 `if 中文 else 英文` 的分支。
 
 - 界面文案 → `data/i18n/ui.json`（`T.nav.species`、`T.d.voice_h` 之类）
@@ -123,13 +125,15 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
   「特征键英文 + 中文正文」，不会崩
 - 页面里 `<html lang>`、`hreflang`、`canonical`、sitemap 的成对 `<url>` 都由构建生成
 
-**两个 root 不要混。** 英文详情页在 `/en/bird/x.html`：
+**两个 root 不要混。** 英文首页在 `/`、详情页在 `/bird/x.html`；中文首页在 `/zh/`、详情页在 `/zh/bird/x.html`：
 
-| 变量 | 值 | 用途 |
-| --- | --- | --- |
-| `root` | `../../` | 指向站点根：`static/`、`assets/` |
-| `pr` | `../` | 指向**本语言**根：`index.html`、`guide.html`、`bird/` |
+| 变量 | 首页层级 | 详情页层级 | 用途 |
+| --- | --- | --- | --- |
+| `root` | `""`（中：`../`） | `../`（中：`../../`） | 指向**站点根**：`static/`、`assets/` |
+| `pr` | `""` | `../` | 指向**本语言根**：`index.html`、`guide.html`、`bird/` |
 
+`root` 是「距站点根几层」的资源前缀，`pr` 是「距本语言根几层」的页面前缀。两种语言的 `pr` 完全一样
+（各自语言的首页、404 都在本语言根目录里），只有 `root` 因为中文多一层 `/zh/` 而不同。
 用 `root` 写页面链接会把英文页的导航带到中文首页去——这是最容易踩的坑。
 
 ### scripts
@@ -146,15 +150,20 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
 
 ## 站长后台与访问统计
 
-站内自建，不依赖第三方统计服务：**没有 cookie、不存 IP、不接追踪脚本**。
+站内自建，不依赖第三方统计服务：**没有 cookie、不存 IP、不接追踪脚本**。有两套读法：
 
-- 入口：<https://birds.signupeverywhere.cc/admin/>（页脚右下角那个很淡的「统计」就是它）
-- 口令在 Cloudflare D1 的 `cfg` 表里（`admin_token`），页面本身不含任何口令，只做表单
+- **公开页**：<https://birds.signupeverywhere.cc/visits/>（中文 `/zh/visits/`，页脚「Site statistics」）
+  只给聚合数字——总量、近三十天柱状图、热门页面、来源站点、国家、设备、界面语言。
+  读 `/api/visits`，无需口令，边缘缓存 5 分钟（`max-age=60, s-maxage=300`）。
+- **站长后台**：<https://birds.signupeverywhere.cc/admin/>（页脚右下角那个很淡的「统计」就是它）
+  口令在 Cloudflare D1 的 `cfg` 表里（`admin_token`），页面本身不含任何口令，只做表单
+
 - 每次浏览由 `static/beacon.js` 向 `/api/hit` 发一条匿名信标
 
 ```
 functions/api/hit.js     收信标 → 写一行记录（爬虫/脚本 UA 直接丢，DNT 不发）
 functions/api/stats.js   读统计，需要 Bearer 口令，口令不对一律 401
+functions/api/visits.js  读统计，公开只读，只有聚合数字
 functions/_lib.js        建表语句与共用小工具（以 _ 开头，不会被注册成路由）
 ```
 
@@ -165,6 +174,8 @@ functions/_lib.js        建表语句与共用小工具（以 _ 开头，不会�
 - 国家来自 `CF-IPCountry`，只到国家一级
 - 站长本人登录后台后，自己的浏览不再计入（`beacon.js` 检测本机口令）
 - 两年以上的记录在写入时按 2% 概率顺手清掉
+- 公开页把历史路径里的 `/en/...` 折回同名根路径（`/en/bird/x.html` → `/bird/x.html`），
+  旧地址 301 过去之后不至于在「热门页面」里分成两行
 
 ### 改口令
 

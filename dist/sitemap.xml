@@ -2,954 +2,968 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://birds.signupeverywhere.cc/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/"/>
+    <loc>https://birds.signupeverywhere.cc/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/"/>
+    <loc>https://birds.signupeverywhere.cc/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birds.signupeverywhere.cc/zh/guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/guide.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/guide.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/guide.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/guide.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/guide.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/visits/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/visits/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/visits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/visits/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birds.signupeverywhere.cc/visits/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/visits/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/visits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/visits/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birds.signupeverywhere.cc/zh/board/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/board/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/board/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/board/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/board/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/board/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/board/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/board/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/board/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/board/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/board/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/board/"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/jia-yan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/jia-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/jia-yan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/jia-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/jia-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/jia-yan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/jia-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/jia-yan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/shu-ma-que.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/shu-ma-que.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/shu-ma-que.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/shu-ma-que.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/shu-ma-que.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/shu-ma-que.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/shu-ma-que.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/shu-ma-que.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/zhu-jing-ban-jiu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zhu-jing-ban-jiu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zhu-jing-ban-jiu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zhu-jing-ban-jiu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/zhu-jing-ban-jiu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zhu-jing-ban-jiu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhu-jing-ban-jiu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-tou-bei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-tou-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-tou-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-tou-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-tou-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-tou-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-tou-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-tou-bei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-ji-ling.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-ji-ling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-ji-ling.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-ji-ling.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-ji-ling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-ji-ling.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-ji-ling.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-ji-ling.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/chun-se-shan-jiao-ying.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chun-se-shan-jiao-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chun-se-shan-jiao-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chun-se-shan-jiao-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/chun-se-shan-jiao-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chun-se-shan-jiao-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chun-se-shan-jiao-ying.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/huang-mei-liu-ying.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/huang-mei-liu-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/huang-mei-liu-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/huang-mei-liu-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/huang-mei-liu-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/huang-mei-liu-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huang-mei-liu-ying.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/chi-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/chi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/chi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chi-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-shui-ji.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-shui-ji.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-shui-ji.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-shui-ji.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-shui-ji.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-shui-ji.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-shui-ji.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-shui-ji.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hong-zui-ou.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hong-zui-ou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hong-zui-ou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-zui-ou.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-fu-bin-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-fu-bin-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-fu-bin-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-fu-bin-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-fu-bin-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-fu-bin-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-fu-bin-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/si-guang-liang-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/si-guang-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/si-guang-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/si-guang-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/si-guang-liang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/si-guang-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/si-guang-liang-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/wu-dong.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/wu-dong.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/wu-dong.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/wu-dong.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/wu-dong.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/wu-dong.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/wu-dong.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/wu-dong.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/ba-ge.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ba-ge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/ba-ge.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ba-ge.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ba-ge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/ba-ge.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ba-ge.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ba-ge.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bei-hong-wei-qu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bei-hong-wei-qu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bei-hong-wei-qu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bei-hong-wei-qu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bei-hong-wei-qu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bei-hong-wei-qu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bei-hong-wei-qu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/zao-juan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zao-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/zao-juan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zao-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zao-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/zao-juan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zao-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zao-juan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/da-zui-wu-ya.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/da-zui-wu-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/da-zui-wu-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/da-zui-wu-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/da-zui-wu-ya.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/da-zui-wu-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-zui-wu-ya.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/xiao-bai-yao-yu-yan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/xiao-bai-yao-yu-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/xiao-bai-yao-yu-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/xiao-bai-yao-yu-yan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/xiao-bai-yao-yu-yan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/xiao-bai-yao-yu-yan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-bai-yao-yu-yan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/ban-wen-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ban-wen-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/ban-wen-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ban-wen-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ban-wen-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/ban-wen-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ban-wen-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-wen-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/an-lu-xiu-yan-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/an-lu-xiu-yan-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/an-lu-xiu-yan-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/an-lu-xiu-yan-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/an-lu-xiu-yan-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/an-lu-xiu-yan-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/an-lu-xiu-yan-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/zong-shan-wei-ying.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zong-shan-wei-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zong-shan-wei-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zong-shan-wei-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/zong-shan-wei-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zong-shan-wei-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-shan-wei-ying.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/zong-bei-bo-lao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zong-bei-bo-lao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zong-bei-bo-lao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zong-bei-bo-lao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/zong-bei-bo-lao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zong-bei-bo-lao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zong-bei-bo-lao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-hou-hong-tun-bei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-hou-hong-tun-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-hou-hong-tun-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-hou-hong-tun-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-hou-hong-tun-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-hou-hong-tun-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-hou-hong-tun-bei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hong-er-bei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-er-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hong-er-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-er-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-er-bei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hong-er-bei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-er-bei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-er-bei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/chang-wei-feng-ye-ying.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chang-wei-feng-ye-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chang-wei-feng-ye-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/chang-wei-feng-ye-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/chang-wei-feng-ye-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/chang-wei-feng-ye-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/chang-wei-feng-ye-ying.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-juan-wei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-juan-wei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-juan-wei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-juan-wei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-juan-wei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-juan-wei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-juan-wei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-juan-wei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-ling-liang-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-ling-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-ling-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-ling-liang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-ling-liang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-ling-liang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-ling-liang-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/zhong-bai-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zhong-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zhong-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/zhong-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/zhong-bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/zhong-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/zhong-bai-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/ye-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ye-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/ye-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ye-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ye-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/ye-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ye-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ye-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/da-bai-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/da-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/da-bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/da-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/da-bai-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/da-bai-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/da-bai-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/da-bai-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/xiao-pi-ti.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/xiao-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/xiao-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/xiao-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/xiao-pi-ti.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/xiao-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/xiao-pi-ti.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/niu-bei-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/niu-bei-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/niu-bei-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/niu-bei-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/niu-bei-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/niu-bei-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/niu-bei-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/niu-bei-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-xiong-ku-e-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-xiong-ku-e-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-xiong-ku-e-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-xiong-ku-e-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-xiong-ku-e-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-xiong-ku-e-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-ku-e-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-gu-ding.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-gu-ding.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-gu-ding.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-gu-ding.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-gu-ding.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-gu-ding.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-gu-ding.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-gu-ding.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/lv-chi-ya.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lv-chi-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/lv-chi-ya.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lv-chi-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lv-chi-ya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/lv-chi-ya.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lv-chi-ya.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-chi-ya.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/cang-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/cang-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/cang-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/cang-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/cang-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/cang-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/cang-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cang-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/pu-tong-lu-ci.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-lu-ci.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-lu-ci.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-lu-ci.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/pu-tong-lu-ci.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-lu-ci.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-lu-ci.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hui-ban-heng.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hui-ban-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hui-ban-heng.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hui-ban-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hui-ban-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hui-ban-heng.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hui-ban-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hui-ban-heng.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/huan-jing-heng.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/huan-jing-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/huan-jing-heng.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/huan-jing-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/huan-jing-heng.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/huan-jing-heng.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/huan-jing-heng.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/huan-jing-heng.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/ji-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ji-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/ji-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ji-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ji-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/ji-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ji-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ji-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/qing-jiao-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/qing-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/qing-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/qing-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/qing-jiao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/qing-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/qing-jiao-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-chi-chang-jiao-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-chi-chang-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-chi-chang-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-chi-chang-jiao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-chi-chang-jiao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-chi-chang-jiao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-chang-jiao-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/pu-tong-kuang.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-kuang.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-kuang.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-kuang.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/pu-tong-kuang.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-kuang.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-kuang.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hong-sun.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-sun.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hong-sun.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-sun.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hong-sun.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hong-sun.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hong-sun.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hong-sun.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-yuan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-yuan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-yuan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-yuan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/pu-tong-cui-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-cui-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-cui-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/pu-tong-cui-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/pu-tong-cui-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/pu-tong-cui-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/pu-tong-cui-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-xiong-fei-cui.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-xiong-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-xiong-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-xiong-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-xiong-fei-cui.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-xiong-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-xiong-fei-cui.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/cha-wei-tai-yang-niao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/cha-wei-tai-yang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/cha-wei-tai-yang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/cha-wei-tai-yang-niao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/cha-wei-tai-yang-niao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/cha-wei-tai-yang-niao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/cha-wei-tai-yang-niao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hua-mei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hua-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hua-mei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hua-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hua-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hua-mei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hua-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hua-mei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/he-chi-ya-juan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/he-chi-ya-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/he-chi-ya-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/he-chi-ya-juan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/he-chi-ya-juan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/he-chi-ya-juan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/he-chi-ya-juan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-hou-zao-mei.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-hou-zao-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-hou-zao-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-hou-zao-mei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-hou-zao-mei.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-hou-zao-mei.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-hou-zao-mei.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/feng-tou-pi-ti.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/feng-tou-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/feng-tou-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/feng-tou-pi-ti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/feng-tou-pi-ti.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/feng-tou-pi-ti.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-pi-ti.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/lv-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lv-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/lv-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lv-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lv-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/lv-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lv-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lv-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/fan-zui-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/fan-zui-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/fan-zui-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/fan-zui-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/fan-zui-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/fan-zui-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/fan-zui-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/fan-zui-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-yao-shao-yu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-yao-shao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-yao-shao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-yao-shao-yu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-yao-shao-yu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-yao-shao-yu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-yao-shao-yu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/feng-tou-ying.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/feng-tou-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/feng-tou-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/feng-tou-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/feng-tou-ying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/feng-tou-ying.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/feng-tou-ying.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/feng-tou-ying.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/she-diao.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/she-diao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/she-diao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/she-diao.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/she-diao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/she-diao.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/she-diao.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/she-diao.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/e.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/e.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/e.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/e.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/e.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/e.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/e.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/e.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/e.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/e.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/e.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/e.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/e.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-chi-yuan.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-chi-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-chi-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-chi-yuan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-chi-yuan.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-chi-yuan.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-chi-yuan.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/ban-yu-gou.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ban-yu-gou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/ban-yu-gou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ban-yu-gou.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/ban-yu-gou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/ban-yu-gou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/ban-yu-gou.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/ban-yu-gou.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/lan-fei-cui.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lan-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/lan-fei-cui.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lan-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/lan-fei-cui.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/lan-fei-cui.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/lan-fei-cui.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/lan-fei-cui.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-zui-ou.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-zui-ou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-zui-ou.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-zui-ou.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-zui-ou.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-zui-ou.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/hei-lian-pi-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-lian-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-lian-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/hei-lian-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/hei-lian-pi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/hei-lian-pi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/hei-lian-pi-lu.html"/>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://birds.signupeverywhere.cc/bird/bai-pi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-pi-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/zh/bird/bai-pi-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://birds.signupeverywhere.cc/en/bird/bai-pi-lu.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/en/bird/bai-pi-lu.html"/>
+    <loc>https://birds.signupeverywhere.cc/bird/bai-pi-lu.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/bird/bai-pi-lu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/bird/bai-pi-lu.html"/>
     <changefreq>monthly</changefreq>
   </url>
