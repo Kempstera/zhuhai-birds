@@ -446,7 +446,8 @@ def main():
 
     # ---- robots / sitemap ----
     open(os.path.join(DIST, "robots.txt"), "w").write(
-        "User-agent: *\nDisallow: /visits/\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
+        # 不在 robots 里写 /visits/：那等于把路径告诉所有人；靠口令 + noindex 就够
+        "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
     pairs = [("/zh/", "/"), ("/zh/guide.html", "/guide.html")]
     if sb_on:

@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /visits/
 Disallow: /admin/
 Disallow: /api/
 Allow: /

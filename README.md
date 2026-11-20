@@ -153,7 +153,9 @@ python3 -c "import json,re;sp=json.load(open('data/species.json'));
 城市、地区与运营商（来自 Cloudflare 的 `CF-Connecting-IP` 与 `request.cf`），
 但只落在自己的 D1 里，只有输对口令才能看到。
 
-- 入口：<https://birds.signupeverywhere.cc/visits/>（页脚右下角那个很淡的「统计」；不进导航、不进 sitemap、`noindex`）
+- **入口只有网址本身**：<https://birds.signupeverywhere.cc/visits/>。站内没有任何链接指向它
+  —— 页脚、导航、sitemap、robots.txt 里都不出现这个路径（robots 里写 `Disallow: /visits/`
+  等于把路径告诉所有看 robots 的人，所以只靠口令 + `noindex` 保护）。建议直接存书签。
 - 打开先要口令。口令只存在 Cloudflare D1 的 `cfg` 表（`admin_token`），页面本身不含任何口令，
   校验在服务端做；浏览器只在 `sessionStorage` 里记一次，关标签页即失效
 - 输对之后是**一屏看板**：6 个 KPI（访客／浏览／人均页数／今天对昨天／手机占比／中文界面占比）、
