@@ -66,7 +66,9 @@ def already_current(month):
     if not zh or not en:
         return False
     title_ok = ("%d 月先认这 12 种" % month) in zh
-    en_ok = ("in %s" % MONTHS_EN[month]) in en
+    # 只认整句标题，不认「in November」——这个片段可能出现在正文里，
+    # 万一标题没换、正文刚好提到，就会被误判成「本月已更新」而永久跳过。
+    en_ok = ("Start with these 12 in %s" % MONTHS_EN[month]) in en
     return title_ok and en_ok
 
 
@@ -129,7 +131,7 @@ def validate(month):
 
     if ("%d 月先认这 12 种" % month) not in read(zh):
         errs.append("中文首页标题不是 %d 月" % month)
-    if ("in %s" % MONTHS_EN[month]) not in read(en):
+    if ("Start with these 12 in %s" % MONTHS_EN[month]) not in read(en):
         errs.append("英文首页标题不是 %s" % MONTHS_EN[month])
 
     zc = cards_of(zh, "过了季节就看不到了")
