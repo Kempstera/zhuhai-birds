@@ -677,6 +677,24 @@ def main():
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
     open(os.path.join(DIST, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY + "\n")
+
+    # ---- 缓存策略 ----
+    # 静态资源都带 ?v=<内容哈希>，文件名没变时内容一定没变，可以放心永久缓存。
+    # 图片和音频同理（文件名即内容），给 7 天足够回访时不重复下载。
+    # HTML 不写规则：默认 max-age=0 是对的，页面要跟着日期变。
+    open(os.path.join(DIST, "_headers"), "w").write(
+        "/*\n"
+        "  X-Content-Type-Options: nosniff\n"
+        "  Referrer-Policy: strict-origin-when-cross-origin\n"
+        "\n"
+        "/static/*\n"
+        "  Cache-Control: public, max-age=31536000, immutable\n"
+        "\n"
+        "/assets/img/*\n"
+        "  Cache-Control: public, max-age=604800\n"
+        "\n"
+        "/assets/audio/*\n"
+        "  Cache-Control: public, max-age=604800\n")
     pairs = [("/zh/", "/"), ("/zh/species.html", "/species.html"),
              ("/zh/guide.html", "/guide.html")]
     if sb_on:
