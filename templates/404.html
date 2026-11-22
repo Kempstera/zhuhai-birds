@@ -6,16 +6,26 @@
 {% endblock %}
 
 {% block content %}
-<section style="padding:170px 0 120px;text-align:center">
+<section class="e404">
   <div class="wrap">
     <p class="eyebrow" style="justify-content:center">Error 404</p>
-    <h1 style="font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.1em">{{ T.e.h1 }}</h1>
-    <p style="color:var(--ink-2);max-width:30em;margin:22px auto 0;line-height:1.95">
-      {{ T.e.body|safe }}
-    </p>
-    <div style="margin-top:36px">
-      <a class="btn" href="{{ pr }}index.html">{{ T.e.back }} {{ m.icon('arrow') }}</a>
-    </div>
+    <h1>{{ T.e.h1 }}</h1>
+    <p class="e404-lede">{{ T.e.body|safe }}</p>
+    <a class="btn" href="{{ pr }}index.html">{{ T.e.back }} {{ m.icon('arrow') }}</a>
   </div>
 </section>
+
+<div class="wrap e404-picks">
+  <p class="sec-label">{{ 'Possibly what you wanted' if lang == 'en' else '也许你想找的是' }}</p>
+  <ul>
+    {% for s in picks %}
+    <li>
+      <a href="{{ pr }}bird/{{ s.slug }}.html">
+        <b>{{ s.name }}</b><span>{{ s.sci }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="e404-all"><a href="{{ pr }}species.html">{{ T.idx.picked_btn|format(total) }} {{ m.icon('arrow') }}</a></p>
+</div>
 {% endblock %}

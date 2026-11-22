@@ -8,7 +8,7 @@
 <meta name="description" content="找不到这个页面。">
 <meta name="theme-color" content="#1B3527">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/style.css?v=a5c9979b">
+<link rel="stylesheet" href="../static/style.css?v=37d9e8b6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="珠海观鸟图鉴">
 <meta property="og:title" content="页面走失了 | 珠海观鸟图鉴">
@@ -26,7 +26,7 @@
     </a>
     <div class="nav-right">
       <nav class="nav-links" aria-label="主导航">
-        <a href="index.html#species">物种名录</a>
+        <a href="species.html">物种名录</a>
         <a href="index.html#groups">生态类群</a>
         <a href="index.html#spots">观鸟地点</a>
         <a href="guide.html">观鸟指南</a>
@@ -38,18 +38,51 @@
 </header>
 
 <main id="main">
-<section style="padding:170px 0 120px;text-align:center">
+<section class="e404">
   <div class="wrap">
     <p class="eyebrow" style="justify-content:center">Error 404</p>
-    <h1 style="font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.1em">这只鸟飞走了</h1>
-    <p style="color:var(--ink-2);max-width:30em;margin:22px auto 0;line-height:1.95">
-      你要找的页面不存在，可能是链接过期，或者这个物种还没有被收录。<br>回到名录，重新找一只吧。
-    </p>
-    <div style="margin-top:36px">
-      <a class="btn" href="index.html">返回首页 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
+    <h1>这只鸟飞走了</h1>
+    <p class="e404-lede">你要找的页面不存在，可能是链接过期，或者这个物种还没有被收录。<br>回到名录，重新找一只吧。</p>
+    <a class="btn" href="index.html">返回首页 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
+
+<div class="wrap e404-picks">
+  <p class="sec-label">也许你想找的是</p>
+  <ul>
+    <li>
+      <a href="bird/jia-yan.html">
+        <b>家燕</b><span>Hirundo rustica</span>
+      </a>
+    </li>
+    <li>
+      <a href="bird/shu-ma-que.html">
+        <b>树麻雀</b><span>Passer montanus</span>
+      </a>
+    </li>
+    <li>
+      <a href="bird/zhu-jing-ban-jiu.html">
+        <b>珠颈斑鸠</b><span>Spilopelia chinensis</span>
+      </a>
+    </li>
+    <li>
+      <a href="bird/bai-tou-bei.html">
+        <b>白头鹎</b><span>Pycnonotus sinensis</span>
+      </a>
+    </li>
+    <li>
+      <a href="bird/bai-ji-ling.html">
+        <b>白鹡鸰</b><span>Motacilla alba</span>
+      </a>
+    </li>
+    <li>
+      <a href="bird/chun-se-shan-jiao-ying.html">
+        <b>纯色山鹪莺</b><span>Prinia inornata</span>
+      </a>
+    </li>
+  </ul>
+  <p class="e404-all"><a href="species.html">查看全部 65 种 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+</div>
 </main>
 
 <footer class="foot">
@@ -65,7 +98,7 @@
       <div>
         <h5>浏览</h5>
         <ul>
-          <li><a href="index.html#species">全部物种</a></li>
+          <li><a href="species.html">全部物种</a></li>
           <li><a href="index.html#groups">生态类群</a></li>
           <li><a href="index.html#spots">观鸟地点</a></li>
           <li><a href="guide.html">观鸟指南</a></li>
@@ -84,7 +117,7 @@
   </div>
 </footer>
 
-<script src="../static/app.js?v=732ce5fd" defer></script>
+<script src="../static/app.js?v=a32a9240" defer></script>
 <script src="../static/beacon.js?v=e563cea6" defer></script>
 </body>
 </html>

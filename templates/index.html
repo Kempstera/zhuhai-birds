@@ -2,9 +2,8 @@
 {% import "_macros.html" as m %}
 
 {% block head %}
-{{ m.head(page_title, page_desc,
-  (root ~ 'assets/img/' ~ hero.img.card) if hero.img else '',
-  root, canon, zh_url, en_url, hl, T.brand) }}
+{{ m.head(page_title, page_desc, hero.og_image, root, canon, zh_url, en_url, hl, T.brand,
+          hero.og_w, hero.og_h, jsonld) }}
 {% endblock %}
 
 {% block content %}
@@ -17,7 +16,7 @@
       <h1>{{ T.idx.h1a }}<br>{{ T.idx.h1b }}<span class="thin">{{ T.idx.h1thin }}</span></h1>
       <p class="lede">{{ T.idx.lede|format(total)|safe }}</p>
       <div class="hero-actions">
-        <a class="btn" href="#species">{{ T.idx.btn_species }} {{ m.icon('arrow') }}</a>
+        <a class="btn" href="{{ species_href }}">{{ T.idx.btn_species }} {{ m.icon('arrow') }}</a>
         <a class="btn ghost" href="{{ pr }}bird/{{ hero.slug }}.html">{{ m.icon('headphone') }} {{ T.idx.btn_audio }}</a>
       </div>
       <ul class="hero-stats">
@@ -57,7 +56,7 @@
 
     <div class="group-grid">
       {% for g in GROUPS %}
-      <a class="group-card reveal" href="#species" data-jump="{{ g.id }}">
+      <a class="group-card reveal" href="{{ species_href }}#{{ g.id }}">
         <h3>{{ g.zh }}</h3>
         {% if g.en %}<p class="en">{{ g.en }}</p>{% endif %}
         <div class="gtags">{% for t in g.tags %}<span>{{ t }}</span>{% endfor %}</div>
@@ -68,40 +67,25 @@
   </div>
 </section>
 
-<!-- ============ 名录 ============ -->
+<!-- ============ 本月精选（完整名录在 species.html） ============ -->
 <section class="index" id="species">
   <div class="wrap">
     <div class="index-head reveal">
       <div>
-        <p class="sec-label">{{ T.idx.index_label }}</p>
-        <h2 class="sec-title">{{ T.idx.index_title|safe }}</h2>
-        <p>{{ T.idx.index_blurb|format(total)|safe }}</p>
+        <p class="sec-label">{{ T.idx.picked_label }}</p>
+        <h2 class="sec-title">{{ T.idx.picked_title|safe }}</h2>
+        <p>{{ T.idx.picked_blurb|format(all_total)|safe }}</p>
       </div>
+      <a class="index-all" href="{{ species_href }}">
+        {{ T.idx.picked_btn|format(all_total) }} {{ m.icon('arrow') }}
+      </a>
     </div>
 
-    <div class="filters" id="filters">
-      <button class="chip on" data-f="all">{{ T.idx.chip_all }} <span class="c">{{ total }}</span></button>
-      {% for g in GROUPS %}
-      <button class="chip" data-f="{{ g.id }}">{{ g.short }} <span class="c">{{ g.count }}</span></button>
-      {% endfor %}
-      <label class="search">
-        {{ m.icon('search') }}
-        <input type="search" id="q" placeholder="{{ T.idx.search_ph }}" aria-label="{{ T.idx.search_ph }}">
-      </label>
-    </div>
-
-    <div class="rarity-legend">
-      {% for i in range(1, 6) %}
-      <span><i class="r{{ i }}"></i>{{ T.idx.legend[i-1] }} <b>{{ rank_counts.get(i, 0) }}</b></span>
-      {% endfor %}
-    </div>
-
-    <ul class="bird-grid" id="grid">
+    <ul class="bird-grid" id="picked">
       {% for s in species %}
       <li>
         <a class="bird-card reveal" href="{{ pr }}bird/{{ s.slug }}.html"
            data-group="{{ s.group }}"
-           data-protect="{{ s.protect }}"
            data-search="{{ s.zh }} {{ s.en }} {{ s.sci }} {{ s.family }} {{ s.habitat|join(' ') }}">
           <div class="bc-media">
             {% if s.img %}
@@ -132,7 +116,6 @@
       </li>
       {% endfor %}
     </ul>
-    <p class="empty" id="empty">{{ T.idx.empty }}</p>
   </div>
 </section>
 

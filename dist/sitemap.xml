@@ -16,6 +16,20 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://birds.signupeverywhere.cc/zh/species.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/species.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/species.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/species.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://birds.signupeverywhere.cc/species.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/species.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/species.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/species.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://birds.signupeverywhere.cc/zh/guide.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/guide.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/guide.html"/>

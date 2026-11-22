@@ -1152,3 +1152,44 @@ html[lang="en"] .more .k{letter-spacing:.2em}
   .vd__title h1{font-size:23px}
   .vd__gate-card{padding:22px 20px 18px}
 }
+
+/* ---------- 名录页（首页瘦身后新增） ---------- */
+.sp-head{padding-bottom:10px}
+.sp-head h1 em{font-style:normal;color:var(--clay)}
+.index-list{padding:0 0 104px}
+.index-all{
+  display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  font-size:13.5px;letter-spacing:.05em;color:var(--ink);
+  border-bottom:1px solid var(--line);padding:0 0 4px;
+  transition:color .28s var(--ease),border-color .28s var(--ease);
+}
+.index-all:hover{color:var(--clay);border-color:var(--clay)}
+.index-all svg{width:14px;height:14px}
+
+@media (max-width:760px){
+  .index-all{font-size:12.5px;margin-top:6px}
+  .index-list{padding-bottom:72px}
+}
+
+/* ---------- 404 ---------- */
+.e404{padding:170px 0 40px;text-align:center}
+.e404 h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.1em}
+.e404-lede{color:var(--ink-2);max-width:30em;margin:22px auto 30px;line-height:1.95}
+.e404-picks{padding:0 0 120px;max-width:760px}
+.e404-picks ul{list-style:none;margin:15px 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line)}
+.e404-picks li{background:var(--paper)}
+.e404-picks a{display:block;padding:15px 16px;text-decoration:none;
+  transition:background .28s var(--ease)}
+.e404-picks a:hover{background:var(--paper-2)}
+.e404-picks b{display:block;font-size:15.5px;font-weight:600;letter-spacing:.02em}
+.e404-picks span{display:block;font-size:11.5px;color:var(--ink-4);font-style:italic;margin-top:3px}
+.e404-all{margin:22px 0 0;font-size:13.5px}
+.e404-all a{display:inline-flex;align-items:center;gap:7px;color:var(--clay);text-decoration:none;
+  border-bottom:1px solid currentColor;padding-bottom:2px}
+.e404-all svg{width:13px;height:13px}
+@media (max-width:640px){
+  .e404{padding:120px 0 30px}
+  .e404-picks ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+}

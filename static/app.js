@@ -67,6 +67,10 @@
       c.addEventListener("click", function () { setFilter(c.dataset.f); });
     });
 
+    /* 首页类群卡跳过来时带 #songbird 这类锚点，进来就直接筛好 */
+    var h0 = (location.hash || "").replace(/^#/, "");
+    if (h0 && chips.some(function (c) { return c.dataset.f === h0; })) setFilter(h0);
+
     if (input) {
       var t;
       input.addEventListener("input", function () {

@@ -21,7 +21,7 @@
 {%- endif -%}
 {%- endmacro %}
 
-{% macro head(title, desc, ogimg='', root='', canonical='', zh_url='', en_url='', hl='zh-CN', site='珠海观鸟图鉴') -%}
+{% macro head(title, desc, ogimg='', root='', canonical='', zh_url='', en_url='', hl='zh-CN', site='珠海观鸟图鉴', ogw=0, ogh=0, jsonld='') -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{{ title }}</title>
@@ -38,5 +38,12 @@
 <link rel="alternate" hreflang="en" href="{{ en_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ en_url }}">
 {% endif %}{% if ogimg %}<meta property="og:image" content="{{ ogimg }}">
-<meta name="twitter:card" content="summary_large_image">{% endif %}
+<meta property="og:image:alt" content="{{ title }}">
+{% if ogw %}<meta property="og:image:width" content="{{ ogw }}">
+<meta property="og:image:height" content="{{ ogh }}">
+{% endif %}<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ ogimg }}">{% endif %}
+{%- if jsonld %}
+{{ jsonld }}
+{%- endif %}
 {%- endmacro %}

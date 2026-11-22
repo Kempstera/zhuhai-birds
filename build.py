@@ -214,6 +214,23 @@ I18N_DIR = os.path.join(ROOT, "data", "i18n")
 SITE = "https://birds.signupeverywhere.cc"
 LANGS = ("zh", "en")
 
+# 分享卡片统一尺寸（1080×1080：微信缩略图是 1:1，横图会被裁掉两侧）
+OG_W, OG_H = 1080, 1080
+
+
+def og_url(slug):
+    """每个物种一张 1200×630 的分享图（scripts/make_og.py 生成）。
+    退回原图是为了兜底：万一某张没生成，至少还有图，不会是光秃秃的灰卡。"""
+    return "%s/assets/og/%s.jpg" % (SITE, slug)
+
+
+def jld(obj):
+    """结构化数据。ensure_ascii=False 让中文原样输出；
+    </ 转义避免提前闭合 script。"""
+    s = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    return Markup('<script type="application/ld+json">%s</script>'
+                  % s.replace("</", "<\\/"))
+
 
 def load_i18n():
     ui = json.load(open(os.path.join(I18N_DIR, "ui.json")))
@@ -232,6 +249,8 @@ def make_view(sp, lang, sen, vocab):
     """把一条物种数据整理成某个语言下可直接渲染的视图。"""
     v = dict(sp)
     v["is_en"] = lang == "en"
+    v["og_image"] = og_url(sp["slug"])
+    v["og_w"], v["og_h"] = OG_W, OG_H
     if lang == "zh":
         v["name"] = sp["zh"]
         return v
@@ -316,7 +335,7 @@ def main():
 
     if os.path.isdir(DIST):
         shutil.rmtree(DIST)
-    for d in ("bird", "zh/bird", "assets/img", "assets/audio", "static",
+    for d in ("bird", "zh/bird", "assets/img", "assets/audio", "assets/og", "static",
               "board", "zh/board", "visits"):
         os.makedirs(os.path.join(DIST, d), exist_ok=True)
 
@@ -327,7 +346,7 @@ def main():
             shutil.copytree(src_p, dst_p, dirs_exist_ok=True)
         else:
             shutil.copy2(src_p, dst_p)
-    for sub in ("img", "audio"):
+    for sub in ("img", "audio", "og"):
         src = os.path.join(ROOT, "assets", sub)
         if os.path.isdir(src):
             for f in os.listdir(src):
@@ -374,14 +393,57 @@ def main():
 
         # ---- 首页 ----
         hero = by.get("bai-lu", views[0])
+        sp_path = "/species.html" if en else "/zh/species.html"
+        sp_canon = SITE + sp_path
+        # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏
+        picked = [v for v in views if v.get("rank", 2) == 1][:12] or views[:12]
+        home_canon = SITE + ("/" if en else "/zh/")
+        home_jld = jld({
+            "@context": "https://schema.org",
+            "@graph": [
+                {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/",
+                 "name": T["brand"], "inLanguage": hl,
+                 "description": (T["idx"]["desc"] % len(views))},
+                {"@type": "CollectionPage", "@id": home_canon,
+                 "url": home_canon, "name": T["idx"]["title"] % len(views),
+                 "isPartOf": {"@id": SITE + "/#website"}, "inLanguage": hl},
+            ],
+        })
         html = env.get_template("index.html").render(
-            **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=views,
+            **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=picked,
+            all_total=len(views), species_href=pr_i + "species.html",
             page_title=T["idx"]["title"] % len(views),
             page_desc=T["idx"]["desc"] % len(views),
             canon=SITE + ("/" if en else "/zh/"),
             zh_url=SITE + "/zh/", en_url=SITE + "/",
-            alt_url=("../zh/index.html" if en else "../index.html"))
+            alt_url=("../zh/index.html" if en else "../index.html"),
+            jsonld=home_jld)
         open(os.path.join(base, "index.html"), "w").write(html)
+
+        # ---- 完整名录（首页瘦身后，65 种搬到这里）----
+        idx_jld = jld({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "url": sp_canon, "name": T["idx"]["index_title"].replace("<em>", "").replace("</em>", ""),
+            "inLanguage": hl, "isPartOf": {"@id": SITE + "/#website"},
+            "mainEntity": {
+                "@type": "ItemList", "numberOfItems": len(views),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "name": v["name"],
+                     "url": SITE + ("/bird/%s.html" % v["slug"] if en else "/zh/bird/%s.html" % v["slug"])}
+                    for i, v in enumerate(views)],
+            },
+        })
+        html = env.get_template("species.html").render(
+            **common, root=root_i, pr=pr_i, nav="species", species=views,
+            page_title=(T["idx"]["index_title"].replace("<em>", "").replace("</em>", "")
+                        + " · " + T["brand"]),
+            page_desc=T["idx"]["desc"] % len(views),
+            canon=sp_canon,
+            zh_url=SITE + "/zh/species.html", en_url=SITE + "/species.html",
+            alt_url=("../zh/species.html" if en else "../species.html"),
+            jsonld=idx_jld)
+        open(os.path.join(base, "species.html"), "w").write(html)
 
         # ---- 详情页 ----
         for i, v in enumerate(views):
@@ -393,6 +455,22 @@ def main():
             path = en_path if en else zh_path
             title = (T["d"]["title"] % (v["name"], v["sci"]))
             desc = (T["d"]["desc"] % (v["name"], v["sci"], v["tagline"]))
+            d_jld = jld({
+                "@context": "https://schema.org",
+                "@graph": [
+                    {"@type": "Taxon", "@id": SITE + path + "#taxon",
+                     "name": v["name"], "scientificName": v["sci"],
+                     "alternateName": [v["sci"], v["en"] if en else v["zh"]],
+                     "url": SITE + path, "image": v["og_image"],
+                     "description": v["tagline"],
+                     "isPartOf": {"@id": SITE + "/#website"}},
+                    {"@type": "BreadcrumbList", "itemListElement": [
+                        {"@type": "ListItem", "position": 1,
+                         "name": T["nav"]["species"], "item": sp_canon},
+                        {"@type": "ListItem", "position": 2,
+                         "name": v["name"], "item": SITE + path}]},
+                ],
+            })
             html = env.get_template("detail.html").render(
                 **common, sp=v, prev=prev, next=nxt, sims=sims, nav="species",
                 root=root_d, pr="../",
@@ -402,7 +480,8 @@ def main():
                 zh_url=SITE + zh_path,
                 en_url=SITE + en_path,
                 alt_url=("../../zh/bird/%s.html" % v["slug"]) if en
-                        else ("../../bird/%s.html" % v["slug"]))
+                        else ("../../bird/%s.html" % v["slug"]),
+                jsonld=d_jld)
             open(os.path.join(base, "bird", v["slug"] + ".html"), "w").write(html)
 
         # ---- 指南页 ----
@@ -430,6 +509,7 @@ def main():
         html = env.get_template("404.html").render(
             **common, root=root_i, nav="", page_title=T["e"]["title"], page_desc=T["e"]["desc"],
             pr=pr_i, canon="", zh_url="", en_url="",
+            picks=views[:6],
             alt_url=("../zh/index.html" if en else "../index.html"))
         open(os.path.join(base, "404.html"), "w").write(html)
         totals[lang] = len(views)
@@ -449,7 +529,8 @@ def main():
         # 不在 robots 里写 /visits/：那等于把路径告诉所有人；靠口令 + noindex 就够
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
-    pairs = [("/zh/", "/"), ("/zh/guide.html", "/guide.html")]
+    pairs = [("/zh/", "/"), ("/zh/species.html", "/species.html"),
+             ("/zh/guide.html", "/guide.html")]
     if sb_on:
         pairs.append(("/zh/board/", "/board/"))
     pairs += [("/zh/bird/%s.html" % s["slug"], "/bird/%s.html" % s["slug"]) for s in species]

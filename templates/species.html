@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block head %}
+{{ m.head(page_title, page_desc, '', root, canon, zh_url, en_url, hl, T.brand, 0, 0, jsonld) }}
+{% endblock %}
+
+{% block content %}
+
+<section class="page-head sp-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ T.idx.index_label }} · {{ total }} {{ 'species' if lang == 'en' else '种' }}</p>
+    <h1>{{ T.idx.index_title|safe }}</h1>
+    <p class="lede">{{ T.idx.species_lede|format(total)|safe }}</p>
+  </div>
+</section>
+
+<section class="index-list">
+  <div class="wrap">
+
+    <div class="filters" id="filters">
+      <button class="chip on" data-f="all">{{ T.idx.chip_all }} <span class="c">{{ total }}</span></button>
+      {% for g in GROUPS %}
+      <button class="chip" data-f="{{ g.id }}">{{ g.short }} <span class="c">{{ g.count }}</span></button>
+      {% endfor %}
+      <label class="search">
+        {{ m.icon('search') }}
+        <input type="search" id="q" placeholder="{{ T.idx.search_ph }}" aria-label="{{ T.idx.search_ph }}">
+      </label>
+    </div>
+
+    <div class="rarity-legend">
+      {% for i in range(1, 6) %}
+      <span><i class="r{{ i }}"></i>{{ T.idx.legend[i-1] }} <b>{{ rank_counts.get(i, 0) }}</b></span>
+      {% endfor %}
+    </div>
+
+    <ul class="bird-grid" id="grid">
+      {% for s in species %}
+      <li>
+        <a class="bird-card reveal" href="{{ pr }}bird/{{ s.slug }}.html"
+           data-group="{{ s.group }}"
+           data-protect="{{ s.protect }}"
+           data-search="{{ s.zh }} {{ s.en }} {{ s.sci }} {{ s.family }} {{ s.habitat|join(' ') }}">
+          <div class="bc-media">
+            {% if s.img %}
+            <img src="{{ root }}assets/img/{{ s.img.card }}" alt="{{ s.name }}{{ '（' ~ s.sci ~ '）' if lang == 'zh' else ' (' ~ s.sci ~ ')' }}" loading="lazy" width="{{ s.img.w }}" height="{{ s.img.h }}"
+                 {% if s.img.cardpos %}style="object-position:{{ s.img.cardpos }}"{% endif %}>
+            {% endif %}
+            <span class="bc-no">NO. {{ s.no }}</span>
+            {% if s.pclass == 'p1' %}<span class="bc-badge p1">{{ T.idx.badge1 }}</span>
+            {% elif s.pclass == 'p2' %}<span class="bc-badge p2">{{ T.idx.badge2 }}</span>{% endif %}
+            {% if s.audio %}<span class="bc-audio" title="{{ 'Field recording' if lang == 'en' else '有鸣声录音' }}">{{ m.icon('play') }}</span>{% endif %}
+          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh">{{ nm(s) }}</h3>
+              <span class="sci">{{ s.sci }}</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r{{ s.rank }}">{{ s.rlabel }}</span>
+              <span class="sep"></span>
+              <span>{{ s.residency }}</span><span class="sep"></span>
+              <span>{{ s.len }}</span>
+            </div>
+            <div class="bc-tags">
+              {% for h in s.habitat[:2] %}<span>{{ h }}</span>{% endfor %}
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="empty" id="empty">{{ T.idx.empty }}</p>
+  </div>
+</section>
+
+{% endblock %}

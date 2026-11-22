@@ -2,9 +2,8 @@
 {% import "_macros.html" as m %}
 
 {% block head %}
-{{ m.head(page_title, page_desc,
-  (root ~ 'assets/img/' ~ sp.img.big) if sp.img else '',
-  root, canon, zh_url, en_url, hl, T.brand) }}
+{{ m.head(page_title, page_desc, sp.og_image, root, canon, zh_url, en_url, hl, T.brand,
+          sp.og_w, sp.og_h, jsonld) }}
 {% endblock %}
 
 {% block bodyclass %}dark-nav{% endblock %}
@@ -16,7 +15,7 @@
   <img src="{{ root }}assets/img/{{ sp.img.big }}" alt="{{ sp.name }} ({{ sp.sci }})" fetchpriority="high" width="{{ sp.img.w }}" height="{{ sp.img.h }}"
        {% if sp.img.pos %}style="object-position:{{ sp.img.pos }}"{% endif %}>
   {% endif %}
-  <a class="back wrap" href="{{ pr }}index.html#species">{{ m.icon('back') }} {{ T.d.back }}</a>
+  <a class="back wrap" href="{{ pr }}species.html">{{ m.icon('back') }} {{ T.d.back }}</a>
   <div class="dh-inner">
     <div class="wrap">
       <p class="dh-no">NO. {{ sp.no }} · {{ group.zh }} / {{ sp.family }}</p>
