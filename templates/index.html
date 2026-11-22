@@ -90,8 +90,8 @@
     <div class="index-head reveal">
       <div>
         <p class="sec-label">{{ T.idx.picked_label }}</p>
-        <h2 class="sec-title">{{ T.idx.picked_title|safe }}</h2>
-        <p>{{ T.idx.picked_blurb|format(all_total)|safe }}</p>
+        <h2 class="sec-title">{{ T.idx.picked_title|format(mon)|safe }}</h2>
+        <p>{{ T.idx.picked_blurb|format(n_seasonal, all_total)|safe }}</p>
       </div>
       <a class="index-all" href="{{ species_href }}">
         {{ T.idx.picked_btn|format(all_total) }} {{ m.icon('arrow') }}

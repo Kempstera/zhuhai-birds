@@ -454,12 +454,35 @@ def main():
         hero_json = json.dumps([hero_entry(v) for v in pool_views],
                                ensure_ascii=False, separators=(",", ":"))
 
-        # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏。
-        # 8 只候选封面全部排在前面，保证「今天听到哪只，低头就能找到它」。
-        picked = list(pool_views)
-        picked += [v for v in views
-                   if v.get("rank", 2) == 1 and v["slug"] not in HERO_POOL]
+        # 首页名录：8 只「全年都在」的常见种 + 4 只「本月才到」的候鸟。
+        # 为什么不全按 rank 排：留鸟每个月的 rank 都一样，排出来 12 个月长得完全相同，
+        # 「这个月」就成了空话。真正随月变化的是候鸟——11 月是红嘴鸥、白鹡鸰，
+        # 7 月换成家燕、噪鹃。这样这块内容每个月都真的不一样，而且都看得到。
+        # 注意：v["residency"] 是本地化之后的值（英文页是 "Winter visitor"），
+        # 判断候鸟必须回到 species.json 里的中文原文，否则英文页会全部判成留鸟。
+        raw_res = {sp["slug"]: (sp.get("residency") or "") for sp in species}
+
+        def is_seasonal(v):
+            r = raw_res.get(v["slug"], "")
+            return ("候鸟" in r or "过境" in r) and "留鸟" not in r
+
+        order = {v["slug"]: i for i, v in enumerate(views)}
+        here = [v for v in views
+                if today.month in (v.get("months") or range(1, 13))]
+
+        picked = [v for v in pool_views if v["slug"] in {x["slug"] for x in here}]
+        seasonal = [v for v in here
+                    if v["slug"] not in HERO_POOL and is_seasonal(v)]
+        seasonal.sort(key=lambda v: (v.get("rank", 9), order[v["slug"]]))
+        picked += seasonal[:4]
+
+        if len(picked) < 12:
+            chosen = {v["slug"] for v in picked}
+            filler = [v for v in here if v["slug"] not in chosen]
+            filler.sort(key=lambda v: (v.get("rank", 9), order[v["slug"]]))
+            picked += filler[:12 - len(picked)]
         picked = picked[:12]
+        n_seasonal = sum(1 for v in picked if is_seasonal(v))
         home_canon = SITE + ("/" if en else "/zh/")
         home_jld = jld({
             "@context": "https://schema.org",
@@ -475,6 +498,8 @@ def main():
         html = env.get_template("index.html").render(
             **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=picked,
             hero_pool=Markup(hero_json), hero_day=today.toordinal(),
+            mon=(datetime.date(2000, today.month, 1).strftime('%B') if en else today.month),
+            n_seasonal=n_seasonal,
             hero_in=hero["audio"].get("hero_in", HERO_WINDOW[0]) if hero.get("audio") else 0,
             hero_out=hero["audio"].get("hero_out", HERO_WINDOW[1]) if hero.get("audio") else 0,
             all_total=len(views), species_href=pr_i + "species.html",
