@@ -212,6 +212,7 @@
         <p>{{ s.desc }}</p>
         <div class="birds">{% for b in s.bird_items %}<span>{{ nm(b) }}</span>{% endfor %}</div>
         <p style="margin-top:12px;font-size:11.5px;color:var(--clay);letter-spacing:.06em">{{ s.season }}</p>
+        {% if s.note %}<p style="margin-top:6px;font-size:11.5px;color:var(--ink-3);letter-spacing:.06em">{{ s.note }}</p>{% endif %}
       </article>
       {% endfor %}
     </div>

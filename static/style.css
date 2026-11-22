@@ -404,6 +404,16 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 .spot .birds{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px 12px}
 .spot .birds span{font-size:11px;color:var(--ink-3);border-bottom:1px solid var(--line);padding-bottom:1px;white-space:nowrap}
 
+/* 七处地点排三列时，最后一行只剩一张卡。让它居中收尾，而不是贴在左边
+   留一个大洞；两列时改成占满整行。这两个选择器都只在「张数是奇数」时才生效，
+   将来增删地点到偶数，它们自动失效，不必回来改。 */
+@media(min-width:901px){
+  .spot-grid>.spot:last-child:nth-child(3n+1){grid-column:2}
+}
+@media(min-width:561px) and (max-width:900px){
+  .spot-grid>.spot:last-child:nth-child(2n+1){grid-column:1/-1}
+}
+
 /* ---------------- 守则 ---------------- */
 .ethics{
   margin:96px 0 0;padding:74px 0;
@@ -779,6 +789,16 @@ body.dark-nav .nav:not(.solid) .nav-links a::after{background:#fff}
 .prose h2{font-size:23px;letter-spacing:.1em;margin:56px 0 18px;padding-top:22px;border-top:1px solid var(--line)}
 .prose h3{font-size:17px;letter-spacing:.08em;margin:32px 0 10px;color:var(--forest)}
 .prose p{color:var(--ink-2);line-height:1.95;margin:0 0 16px}
+/* 正文里的链接必须看得出来。全局 a 是 color:inherit + 无下划线——那是给导航和
+   卡片用的（整块都可点），照搬到长文里链接就等于藏起来了。陶土色配细下划线，
+   和 .spot .birds 的处理保持一致。 */
+.prose a{color:var(--clay);border-bottom:1px solid rgba(162,78,36,.32);transition:border-color .3s var(--ease)}
+.prose a:hover{border-bottom-color:var(--clay)}
+/* 正文里的链接必须看得出来。全局 a 是 color:inherit + 无下划线——那是给导航和
+   卡片用的（整块都可点），照搬到长文里链接就等于藏起来了。陶土色配细下划线，
+   和 .spot .birds 的处理保持一致。 */
+.prose a{color:var(--clay);border-bottom:1px solid rgba(162,78,36,.32);transition:border-color .3s var(--ease)}
+.prose a:hover{border-bottom-color:var(--clay)}
 .prose ul{padding-left:1.2em;color:var(--ink-2)}
 .prose li{margin-bottom:9px;line-height:1.9}
 .prose strong{color:var(--ink);font-weight:600}
