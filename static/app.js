@@ -1,4 +1,14 @@
 /* 珠海观鸟图鉴 · 交互 */
+/* 页面上同时存在两个播放器（封面那只 + 听声辨鸟小测）。
+   谁开始播，就把另一个掐掉——否则两段鸟叫会叠在一起，听着像吵架。 */
+window.__zhAudio = {
+  cur: null,
+  take: function (a) {
+    if (this.cur && this.cur !== a) { try { this.cur.pause(); } catch (e) {} }
+    this.cur = a;
+  }
+};
+
 (function () {
   "use strict";
 
@@ -456,6 +466,7 @@
         if (heroState.out && hlAudio.currentTime >= heroState.out - 0.15) {
           hlAudio.currentTime = heroState.in;
         }
+        if (window.__zhAudio) window.__zhAudio.take(hlAudio);
         hlAudio.play().then(function () {
           hlSet(true);
         }).catch(function () {
@@ -571,4 +582,270 @@
       box.appendChild(dot);
     });
   }
+})();
+
+/* ---------- 听声辨鸟 · 小测 ----------
+   题目在构建时就排好了（build.py 的 build_quiz），这里只管交互。
+   题目按月换一批，同一个月内每次打开都是这套题——不做随机，
+   否则两个人聊起来会对不上号。 */
+(function () {
+  "use strict";
+
+  var board = document.getElementById("quizBoard");
+  var dataEl = document.getElementById("birdQuiz");
+  if (!board || !dataEl) return;
+
+  var Q;
+  try { Q = JSON.parse(dataEl.textContent || "[]"); } catch (err) { return; }
+  if (!Q || !Q.length) return;
+
+  var elProg = document.getElementById("quizProg");
+  var elFill = document.getElementById("quizFill");
+  var elScore = document.getElementById("quizScore");
+  var elPlay = document.getElementById("quizPlay");
+  var elWave = document.getElementById("quizWave");
+  var elAsk = document.getElementById("quizAsk");
+  var elOpts = document.getElementById("quizOpts");
+  var elFb = document.getElementById("quizFb");
+  var elHint = document.getElementById("quizHint");
+
+  /* 文案全部在 data-* 里，模板只负责排版，JS 不硬写中文 */
+  var T = {
+    prog: board.dataset.tProg || "%d / %d",
+    ask: board.dataset.tAsk || "",
+    play: board.dataset.tPlay || "Play",
+    again: board.dataset.tAgain || "Play again",
+    right: board.dataset.tRight || "",
+    wrong: board.dataset.tWrong || "%s",
+    hint: board.dataset.tHint || "%s",
+    listen: board.dataset.tListen || "%s",
+    next: board.dataset.tNext || "Next",
+    result: board.dataset.tResult || "%d / %d",
+    restart: board.dataset.tRestart || "Restart"
+  };
+
+  var PLAY_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
+    '<path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg>';
+
+  var ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return ESC[c]; });
+  }
+  /* 按顺序替换 %s / %d。值一律转义，模板本身是我们自己写的，允许带 <b>。 */
+  function rich(tpl, args) {
+    var n = 0;
+    return String(tpl).replace(/%[sd]/g, function () {
+      return n < args.length ? esc(args[n++]) : "";
+    });
+  }
+  function plain(tpl, args) {
+    var n = 0;
+    return String(tpl).replace(/%[sd]/g, function () {
+      return n < args.length ? String(args[n++]) : "";
+    });
+  }
+
+  var au = null, curOn = null;
+  var st = { i: 0, right: 0, answered: false, heard: false };
+
+  function stopClip() {
+    var a = au;
+    au = null;
+    if (a) { try { a.pause(); } catch (e) {} }
+    if (curOn) { var f = curOn; curOn = null; f(false); }
+  }
+
+  function playClip(item, onState) {
+    stopClip();
+    var i0 = Number(item["in"]) || 0;
+    var i1 = Number(item.out) || 0;
+    var a = new Audio();
+    a.preload = "auto";
+    a.src = item.audio;
+    au = a;
+    curOn = onState;
+    /* 页面上的另一个播放器（封面那只）要先停下来，不然两个声音叠在一起 */
+    if (window.__zhAudio) window.__zhAudio.take(a);
+
+    a.addEventListener("loadedmetadata", function () {
+      if (i0 && a.currentTime < i0) a.currentTime = i0;
+    });
+    /* 到窗口末尾就收声，别整段播完——多数录音有十几二十秒 */
+    a.addEventListener("timeupdate", function () {
+      if (i1 && a.currentTime >= i1) a.pause();
+    });
+    a.addEventListener("ended", function () { onState(false); });
+    a.addEventListener("pause", function () { onState(false); });
+
+    var pr = a.play();
+    if (pr && pr.then) {
+      pr.then(function () { onState(true); st.heard = true; })
+        .catch(function () { onState(false); });
+    } else {
+      onState(true);
+      st.heard = true;
+    }
+  }
+
+  function setMain(on) {
+    elPlay.classList.toggle("playing", !!on);
+    elWave.classList.toggle("on", !!on);
+    if (st.heard) {
+      elHint.textContent = on ? "" : T.again;
+      elHint.classList.toggle("played", !on);
+    }
+  }
+
+  function renderQuestion() {
+    var q = Q[st.i];
+    stopClip();
+    st.answered = false;
+    st.heard = false;
+
+    elFb.hidden = true;
+    elFb.innerHTML = "";
+    elAsk.textContent = T.ask;
+    elHint.textContent = T.play;
+    elHint.classList.remove("played");
+    elProg.textContent = plain(T.prog, [st.i + 1, Q.length]);
+    elFill.style.width = (st.i / Q.length * 100) + "%";
+    elScore.textContent = st.right ? "✓ " + st.right : "";
+
+    elOpts.innerHTML = "";
+    var keys = ["A", "B", "C", "D"];
+    q.opts.forEach(function (o, idx) {
+      var li = document.createElement("li");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("data-slug", o.slug);
+      b.innerHTML = '<span class="qo-k">' + (keys[idx] || "") + '</span>' +
+        '<span class="qo-t"><span class="qo-n"></span><span class="qo-sci"></span></span>';
+      b.querySelector(".qo-n").textContent = o.name;
+      b.querySelector(".qo-sci").textContent = o.sci || "";
+      b.addEventListener("click", function () { pick(o, b, q); });
+      li.appendChild(b);
+      elOpts.appendChild(li);
+    });
+  }
+
+  function pick(o, btn, q) {
+    if (st.answered) return;
+    st.answered = true;
+    stopClip();
+
+    var all = elOpts.querySelectorAll("button");
+    Array.prototype.forEach.call(all, function (x) { x.disabled = true; });
+
+    elFill.style.width = ((st.i + 1) / Q.length * 100) + "%";
+
+    if (o.right) {
+      st.right++;
+      elScore.textContent = "✓ " + st.right;
+      btn.classList.add("is-right");
+      showRight(q);
+      /* 答对了就往下走，不用再点一次。1.8 秒够看清答案。 */
+      setTimeout(function () {
+        if (st.answered && st.i < Q.length) goNext();
+      }, 1800);
+    } else {
+      btn.classList.add("is-wrong");
+      Array.prototype.forEach.call(all, function (x) {
+        if (x.getAttribute("data-slug") === q.slug) x.classList.add("is-right");
+        else if (x !== btn) x.classList.add("dim");
+      });
+      showWrong(q, o);
+    }
+  }
+
+  function showRight(q) {
+    var h = '<p class="fb-line">' + esc(T.right) + " · <b>" + esc(q.answer) + "</b></p>";
+    if (q.tip) h += '<p class="fb-tip">' + esc(q.tip) + "</p>";
+    h += '<div class="fb-acts"><button type="button" class="fb-btn primary" data-act="next">' +
+      esc(T.next) + " <span aria-hidden=\"true\">→</span></button></div>";
+    elFb.innerHTML = h;
+    elFb.hidden = false;
+  }
+
+  function showWrong(q, o) {
+    elScore.textContent = st.right ? "✓ " + st.right : "";
+    var h = '<p class="fb-line">' + rich(T.wrong, [q.answer]) + "</p>";
+    h += '<p class="fb-line">' + esc(plain(T.hint, [o.name])) + "</p>";
+    if (q.tip) h += '<p class="fb-tip">' + esc(q.tip) + "</p>";
+    h += '<div class="fb-acts">' +
+      '<button type="button" class="fb-btn" data-act="cmp" data-slug="' + esc(o.slug) + '">' +
+      PLAY_ICON + esc(plain(T.listen, [o.name])) + "</button>" +
+      '<a class="fb-btn primary" href="' + esc(o.href) + '">' +
+      esc(o.name) + ' <span aria-hidden="true">→</span></a>' +
+      '<button type="button" class="fb-btn" data-act="next">' + esc(T.next) + "</button>" +
+      "</div>";
+    elFb.innerHTML = h;
+    elFb.hidden = false;
+    /* 自动放一遍「你选的那只」，对比才能真正发生；
+       被浏览器拦下也没关系，下面的按钮可以手动放。 */
+    setTimeout(function () {
+      if (!st.answered) return;
+      var cmp = elFb.querySelector('[data-act="cmp"]');
+      if (cmp) playClip(o, function (on) { cmp.classList.toggle("playing", !!on); });
+    }, 500);
+  }
+
+  function goNext() {
+    if (st.i + 1 >= Q.length) { showResult(); return; }
+    st.i++;
+    renderQuestion();
+  }
+
+  function showResult() {
+    stopClip();
+    st.answered = false;
+    elOpts.innerHTML = "";
+    elAsk.textContent = "";
+    elHint.textContent = "";
+    elProg.textContent = "";
+    elFill.style.width = "100%";
+    elScore.textContent = "✓ " + st.right;
+    elFb.innerHTML = '<p class="fb-line">' + esc(plain(T.result, [st.right, Q.length])) +
+      '</p><div class="fb-acts"><button type="button" class="fb-btn primary" data-act="again">' +
+      esc(T.restart) + "</button></div>";
+    elFb.hidden = false;
+  }
+
+  elPlay.addEventListener("click", function () {
+    if (st.answered || !Q[st.i] || !elOpts.children.length) return;
+    var q = Q[st.i];
+    if (elPlay.classList.contains("playing")) { stopClip(); return; }
+    playClip(q, setMain);
+  });
+
+  elFb.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target.closest("[data-act]") : null;
+    if (!t) return;
+    var act = t.getAttribute("data-act");
+    if (act === "cmp") {
+      var q = Q[st.i];
+      var o = null;
+      for (var i = 0; i < q.opts.length; i++) {
+        if (!q.opts[i].right) { o = q.opts[i]; break; }
+      }
+      /* 用按钮身上记的 slug 找回那一条，保证放的是访客真选中的那只 */
+      var slug = null;
+      var sel = elFb.querySelector("[data-act='cmp']");
+      if (sel) slug = sel.getAttribute("data-slug");
+      if (slug) {
+        for (var j = 0; j < q.opts.length; j++) {
+          if (q.opts[j].slug === slug) { o = q.opts[j]; break; }
+        }
+      }
+      if (!o) return;
+      if (t.classList.contains("playing")) { stopClip(); return; }
+      playClip(o, function (on) { t.classList.toggle("playing", !!on); });
+    } else if (act === "next") {
+      goNext();
+    } else if (act === "again") {
+      st.i = 0; st.right = 0;
+      renderQuestion();
+    }
+  });
+
+  renderQuestion();
 })();

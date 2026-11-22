@@ -8,7 +8,7 @@
 <meta name="description" content="面向珠三角与珠海的常见鸟类观察手册：65 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。">
 <meta name="theme-color" content="#1B3527">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../static/style.css?v=45abcd8d">
+<link rel="stylesheet" href="../static/style.css?v=3deafe46">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="珠海观鸟图鉴">
 <meta property="og:title" content="珠海观鸟图鉴 · 65 种华南常见鸟类图文与鸣声指南">
@@ -453,6 +453,73 @@
   </div>
 </section>
 
+<!-- ============ 听声辨鸟（互动） ============ -->
+<section class="quiz" id="quiz">
+  <div class="wrap">
+    <div class="quiz-head reveal">
+      <div>
+        <p class="sec-label">互动 · 听声辨鸟</p>
+        <h2 class="sec-title">听一声，猜是哪只</h2>
+      </div>
+      <p class="quiz-sub">录音都是珠海本地野外采的。答对了自动进下一题；答错了会告诉你正确答案，并把你带到你选的那只鸟的页面——听听它真正的声音，对比一下差在哪。</p>
+    </div>
+
+    <div class="quiz-board reveal" id="quizBoard"
+         data-t-prog="第 %d 题 · 共 %d 题"
+         data-t-ask="这段鸣声，是哪一只？"
+         data-t-play="播放鸣声"
+         data-t-again="再听一次"
+         data-t-right="答对了"
+         data-t-wrong="不对，这是 &lt;b&gt;%s&lt;/b&gt;"
+         data-t-hint="你选的是 %s。它们确实容易混，去听听它真正的声音："
+         data-t-listen="听 %s 的鸣声"
+         data-t-next="下一题"
+         data-t-result="这一轮答对 %d / %d"
+         data-t-restart="再来一轮">
+      <div class="quiz-bar">
+        <span class="quiz-prog" id="quizProg">第 1 题 · 共 8 题</span>
+        <div class="quiz-track"><i id="quizFill" style="width:12.5%"></i></div>
+        <span class="quiz-score" id="quizScore"></span>
+      </div>
+
+      <div class="quiz-stage">
+        <button class="quiz-play" type="button" id="quizPlay" aria-label="播放鸣声">
+          <span class="qp-ic"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/></svg></span>
+        </button>
+        <div class="quiz-wave" id="quizWave" aria-hidden="true"><i style="height:29%"></i><i style="height:66%"></i><i style="height:49%"></i><i style="height:32%"></i><i style="height:69%"></i><i style="height:52%"></i><i style="height:35%"></i><i style="height:18%"></i><i style="height:55%"></i><i style="height:38%"></i><i style="height:21%"></i><i style="height:58%"></i><i style="height:41%"></i><i style="height:24%"></i><i style="height:61%"></i><i style="height:44%"></i><i style="height:27%"></i><i style="height:64%"></i><i style="height:47%"></i><i style="height:30%"></i><i style="height:67%"></i><i style="height:50%"></i><i style="height:33%"></i><i style="height:70%"></i><i style="height:53%"></i><i style="height:36%"></i><i style="height:19%"></i><i style="height:56%"></i><i style="height:39%"></i><i style="height:22%"></i><i style="height:59%"></i><i style="height:42%"></i><i style="height:25%"></i><i style="height:62%"></i></div>
+      </div>
+      <p class="quiz-hint" id="quizHint">播放鸣声</p>
+
+      <p class="quiz-ask" id="quizAsk">这段鸣声，是哪一只？</p>
+      <ul class="quiz-opts" id="quizOpts">
+        <li><button type="button" data-slug="hei-fu-bin-yu" disabled>
+          <span class="qo-k">A</span>
+          <span class="qo-t"><span class="qo-n">黑腹滨鹬</span><span class="qo-sci">Calidris alpina</span></span>
+        </button></li>
+        <li><button type="button" data-slug="ji-yu" disabled>
+          <span class="qo-k">B</span>
+          <span class="qo-t"><span class="qo-n">矶鹬</span><span class="qo-sci">Actitis hypoleucos</span></span>
+        </button></li>
+        <li><button type="button" data-slug="bai-yao-shao-yu" disabled>
+          <span class="qo-k">C</span>
+          <span class="qo-t"><span class="qo-n">白腰杓鹬</span><span class="qo-sci">Numenius arquata</span></span>
+        </button></li>
+        <li><button type="button" data-slug="qing-jiao-yu" disabled>
+          <span class="qo-k">D</span>
+          <span class="qo-t"><span class="qo-n">青脚鹬</span><span class="qo-sci">Tringa nebularia</span></span>
+        </button></li>
+      </ul>
+      <div class="quiz-fb" id="quizFb" role="status" aria-live="polite" hidden></div>
+
+      <noscript>
+        <p class="quiz-noscript">录音都是珠海本地野外采的。答对了自动进下一题；答错了会告诉你正确答案，并把你带到你选的那只鸟的页面——听听它真正的声音，对比一下差在哪。
+          <a href="species.html">查看全部 65 种</a></p>
+      </noscript>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="birdQuiz">[{"slug":"hei-fu-bin-yu","answer":"黑腹滨鹬","sci":"Calidris alpina","audio":"../assets/audio/hei-fu-bin-yu.mp3","in":0,"out":10,"href":"bird/hei-fu-bin-yu.html#voice","tip":"看群体规模：几十只的小群可能是其他鹬，成百上千的「灰云」基本是黑腹滨鹬。近距离找那只喙明显下弯、胸侧有细纹的。","voice":"飞行时发出粗糙的「treep」或「kree」，群飞时此起彼伏。","opts":[{"slug":"hei-fu-bin-yu","name":"黑腹滨鹬","sci":"Calidris alpina","href":"bird/hei-fu-bin-yu.html#voice","audio":"../assets/audio/hei-fu-bin-yu.mp3","in":0,"out":10,"right":true},{"slug":"ji-yu","name":"矶鹬","sci":"Actitis hypoleucos","href":"bird/ji-yu.html#voice","audio":"../assets/audio/ji-yu.mp3","in":0,"out":10,"right":false},{"slug":"bai-yao-shao-yu","name":"白腰杓鹬","sci":"Numenius arquata","href":"bird/bai-yao-shao-yu.html#voice","audio":"../assets/audio/bai-yao-shao-yu.mp3","in":0,"out":10,"right":false},{"slug":"qing-jiao-yu","name":"青脚鹬","sci":"Tringa nebularia","href":"bird/qing-jiao-yu.html#voice","audio":"../assets/audio/qing-jiao-yu.mp3","in":0,"out":10,"right":false}]},{"slug":"hei-shui-ji","answer":"黑水鸡","sci":"Gallinula chloropus","audio":"../assets/audio/hei-shui-ji.mp3","in":0,"out":10,"href":"bird/hei-shui-ji.html#voice","tip":"和骨顶鸡的区别：黑水鸡有红额甲、体侧有白线、腿有红环；骨顶鸡额甲白色、通体黑、趾有瓣蹼。华南城市公园里两者都可能出现。","voice":"叫声多样，常见短促的「kruk」或「kurruk」，以及一连串咕噜般的「kurr-uk-kurr-uk」。受惊时发出尖锐的「kik」声。","opts":[{"slug":"xiao-pi-ti","name":"小鸊鷉","sci":"Tachybaptus ruficollis","href":"bird/xiao-pi-ti.html#voice","audio":"../assets/audio/xiao-pi-ti.mp3","in":0,"out":10,"right":false},{"slug":"bai-xiong-ku-e-niao","name":"白胸苦恶鸟","sci":"Amaurornis phoenicurus","href":"bird/bai-xiong-ku-e-niao.html#voice","audio":"../assets/audio/bai-xiong-ku-e-niao.mp3","in":0,"out":10,"right":false},{"slug":"hei-shui-ji","name":"黑水鸡","sci":"Gallinula chloropus","href":"bird/hei-shui-ji.html#voice","audio":"../assets/audio/hei-shui-ji.mp3","in":0,"out":10,"right":true},{"slug":"bai-gu-ding","name":"白骨顶","sci":"Fulica atra","href":"bird/bai-gu-ding.html#voice","audio":"../assets/audio/bai-gu-ding.mp3","in":0,"out":10,"right":false}]},{"slug":"huang-mei-liu-ying","answer":"黄眉柳莺","sci":"Phylloscopus inornatus","audio":"../assets/audio/huang-mei-liu-ying.mp3","in":0,"out":10,"href":"bird/huang-mei-liu-ying.html#voice","tip":"先听那声上扬的尖哨，再抬头找 3–6 米高的枝叶间。它体型小、动作快，靠「两道翼斑 + 黄眉」确认。","voice":"叫声是一声尖锐上扬的「tseeweet」，常有二至三音节的变体，音色细而带金属感。繁殖期鸣唱为短促的颤音，华南冬季偶尔能听到。","opts":[{"slug":"an-lu-xiu-yan-niao","name":"暗绿绣眼鸟","sci":"Zosterops simplex","href":"bird/an-lu-xiu-yan-niao.html#voice","audio":"../assets/audio/an-lu-xiu-yan-niao.mp3","in":0,"out":10,"right":false},{"slug":"chang-wei-feng-ye-ying","name":"长尾缝叶莺","sci":"Orthotomus sutorius","href":"bird/chang-wei-feng-ye-ying.html#voice","audio":"../assets/audio/chang-wei-feng-ye-ying.mp3","in":0,"out":10,"right":false},{"slug":"huang-mei-liu-ying","name":"黄眉柳莺","sci":"Phylloscopus inornatus","href":"bird/huang-mei-liu-ying.html#voice","audio":"../assets/audio/huang-mei-liu-ying.mp3","in":0,"out":10,"right":true},{"slug":"jia-yan","name":"家燕","sci":"Hirundo rustica","href":"bird/jia-yan.html#voice","audio":"../assets/audio/jia-yan.mp3","in":0,"out":10,"right":false}]},{"slug":"cang-lu","answer":"苍鹭","sci":"Ardea cinerea","audio":"../assets/audio/cang-lu.mp3","in":0,"out":10,"href":"bird/cang-lu.html#voice","tip":"和池鹭的区别：苍鹭是灰白色系的大个子，脖子明显更长；池鹭褐色、体小得多。两者常在同一片水域出现。","voice":"起飞时发出粗粝刺耳的「fraank」，沙哑而响亮，是它最常被听到的声音。繁殖期巢区有多种咕哝与嘎叫。","opts":[{"slug":"cang-lu","name":"苍鹭","sci":"Ardea cinerea","href":"bird/cang-lu.html#voice","audio":"../assets/audio/cang-lu.mp3","in":0,"out":10,"right":true},{"slug":"chi-lu","name":"池鹭","sci":"Ardeola bacchus","href":"bird/chi-lu.html#voice","audio":"../assets/audio/chi-lu.mp3","in":0,"out":10,"right":false},{"slug":"bai-lu","name":"白鹭","sci":"Egretta garzetta","href":"bird/bai-lu.html#voice","audio":"../assets/audio/bai-lu.mp3","in":0,"out":10,"right":false},{"slug":"da-bai-lu","name":"大白鹭","sci":"Ardea alba","href":"bird/da-bai-lu.html#voice","audio":"../assets/audio/da-bai-lu.mp3","in":0,"out":10,"right":false}]},{"slug":"da-zui-wu-ya","answer":"大嘴乌鸦","sci":"Corvus macrorhynchos","audio":"../assets/audio/da-zui-wu-ya.mp3","in":0,"out":10,"href":"bird/da-zui-wu-ya.html#voice","tip":"与黑鸢的区别：乌鸦拍翅连续、尾呈楔形；黑鸢翱翔、尾浅叉。看飞行动作最准。","voice":"低沉粗哑的「kaa—kaa—kaa」，音色比小嘴乌鸦更厚重，节奏较慢；也有咕哝与金属质哨音。","opts":[{"slug":"hei-juan-wei","name":"黑卷尾","sci":"Dicrurus macrocercus","href":"bird/hei-juan-wei.html#voice","audio":"../assets/audio/hei-juan-wei.mp3","in":0,"out":10,"right":false},{"slug":"hei-yuan","name":"黑鸢","sci":"Milvus migrans","href":"bird/hei-yuan.html#voice","audio":"../assets/audio/hei-yuan.mp3","in":0,"out":10,"right":false},{"slug":"da-zui-wu-ya","name":"大嘴乌鸦","sci":"Corvus macrorhynchos","href":"bird/da-zui-wu-ya.html#voice","audio":"../assets/audio/da-zui-wu-ya.mp3","in":0,"out":10,"right":true},{"slug":"jia-yan","name":"家燕","sci":"Hirundo rustica","href":"bird/jia-yan.html#voice","audio":"../assets/audio/jia-yan.mp3","in":0,"out":10,"right":false}]},{"slug":"hei-chi-chang-jiao-yu","answer":"黑翅长脚鹬","sci":"Himantopus himantopus","audio":"../assets/audio/hei-chi-chang-jiao-yu.mp3","in":0,"out":10,"href":"bird/hei-chi-chang-jiao-yu.html#voice","tip":"远看像「一堆黑白小点踩在粉红色的棍子上」——只要看到那双腿，基本不会认错。冬季集群时注意在群里找体型更小、腿更短的混群种。","voice":"响亮尖锐的「kik—kik—kik」或「kee-ack」，常在起飞或受惊时连叫，是滩涂上最容易听到的声音之一。","opts":[{"slug":"hei-chi-chang-jiao-yu","name":"黑翅长脚鹬","sci":"Himantopus himantopus","href":"bird/hei-chi-chang-jiao-yu.html#voice","audio":"../assets/audio/hei-chi-chang-jiao-yu.mp3","in":0,"out":10,"right":true},{"slug":"huan-jing-heng","name":"环颈鸻","sci":"Charadrius alexandrinus","href":"bird/huan-jing-heng.html#voice","audio":"../assets/audio/huan-jing-heng.mp3","in":0,"out":10,"right":false},{"slug":"fan-zui-yu","name":"反嘴鹬","sci":"Recurvirostra avosetta","href":"bird/fan-zui-yu.html#voice","audio":"../assets/audio/fan-zui-yu.mp3","in":0,"out":10,"right":false},{"slug":"qing-jiao-yu","name":"青脚鹬","sci":"Tringa nebularia","href":"bird/qing-jiao-yu.html#voice","audio":"../assets/audio/qing-jiao-yu.mp3","in":0,"out":10,"right":false}]},{"slug":"ban-yu-gou","answer":"斑鱼狗","sci":"Ceryle rudis","audio":"../assets/audio/ban-yu-gou.mp3","in":0,"out":10,"href":"bird/ban-yu-gou.html#voice","tip":"看到一只「黑白花的小鸟在空中定住不动」，那就是斑鱼狗在悬停。这是它和普通翠鸟最直观的区别。","voice":"尖锐的「kwik—kwik」或「chirrick」，音调高、节奏快，飞行时频繁鸣叫。","opts":[{"slug":"pu-tong-cui-niao","name":"普通翠鸟","sci":"Alcedo atthis","href":"bird/pu-tong-cui-niao.html#voice","audio":"../assets/audio/pu-tong-cui-niao.mp3","in":0,"out":10,"right":false},{"slug":"bai-xiong-fei-cui","name":"白胸翡翠","sci":"Halcyon smyrnensis","href":"bird/bai-xiong-fei-cui.html#voice","audio":"../assets/audio/bai-xiong-fei-cui.mp3","in":0,"out":10,"right":false},{"slug":"lan-fei-cui","name":"蓝翡翠","sci":"Halcyon pileata","href":"bird/lan-fei-cui.html#voice","audio":"../assets/audio/lan-fei-cui.mp3","in":0,"out":10,"right":false},{"slug":"ban-yu-gou","name":"斑鱼狗","sci":"Ceryle rudis","href":"bird/ban-yu-gou.html#voice","audio":"../assets/audio/ban-yu-gou.mp3","in":0,"out":10,"right":true}]},{"slug":"e","answer":"鹗","sci":"Pandion haliaetus","audio":"../assets/audio/e.mp3","in":0,"out":10,"href":"bird/e.html#voice","tip":"看到猛禽在水面上方悬停，几乎可以立刻判定是鹗——其他猛禽很少这样「停在空中」。注意翼下腕部的黑斑。","voice":"一连串尖锐的哨音「chewk—chewk—chewk」，常在巢区或受惊时发出。","opts":[{"slug":"hei-yuan","name":"黑鸢","sci":"Milvus migrans","href":"bird/hei-yuan.html#voice","audio":"../assets/audio/hei-yuan.mp3","in":0,"out":10,"right":false},{"slug":"pu-tong-kuang","name":"普通鵟","sci":"Buteo japonicus","href":"bird/pu-tong-kuang.html#voice","audio":"../assets/audio/pu-tong-kuang.mp3","in":0,"out":10,"right":false},{"slug":"e","name":"鹗","sci":"Pandion haliaetus","href":"bird/e.html#voice","audio":"../assets/audio/e.mp3","in":0,"out":10,"right":true},{"slug":"hong-sun","name":"红隼","sci":"Falco tinnunculus","href":"bird/hong-sun.html#voice","audio":"../assets/audio/hong-sun.mp3","in":0,"out":10,"right":false}]}]</script>
+
 <!-- ============ 观鸟点 ============ -->
 <section class="spots" id="spots">
   <div class="wrap">
@@ -591,7 +658,7 @@
   </div>
 </footer>
 
-<script src="../static/app.js?v=ebfdc714" defer></script>
+<script src="../static/app.js?v=83d94433" defer></script>
 <script src="../static/beacon.js?v=e563cea6" defer></script>
 </body>
 </html>

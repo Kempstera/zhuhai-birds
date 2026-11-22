@@ -398,6 +398,182 @@ def nm(x):
     return ruby(x.get("zh") or x["name"], x.get("py", ""))
 
 
+# ---------------------------------------------------------------- 听声辨鸟
+
+QUIZ_N = 8              # 一轮几题。8 题大约 2 分钟，刚好看完又没看完。
+QUIZ_CLIP = 10          # 每题试听窗口（秒）。10 秒够听出句式，又不至于让人干等。
+
+
+def _seed(*parts):
+    """稳定的整数哈希。
+
+    这里不能用内置 hash()：字符串哈希每个进程的盐都不一样，同一份数据两次
+    构建会排出不同的题。自动更新脚本靠「产物有没有 diff」决定要不要提交，
+    一旦用了 hash()，build.py 每次跑都能造出 diff，于是每次都提交一次空改动。
+    """
+    return int(hashlib.md5("|".join(str(p) for p in parts).encode()).hexdigest()[:8], 16)
+
+
+def _clip(v):
+    """一题的播放窗口。返回 (入点, 出点)，单位秒。"""
+    au = v.get("audio") or {}
+    a = au.get("hero_in")
+    b = au.get("hero_out")
+    return (a if a is not None else 0, b if b is not None else QUIZ_CLIP)
+
+
+def build_quiz(views, root, month):
+    """生成「听声辨鸟」的题目。
+
+    选题只从有录音的鸟里挑，干扰项优先取 similar —— 这个字段本来就是
+    「野外最容易认错的那几只」，拿它当选项，题才是真的难。随便凑三只不同科的
+    鸟，人人都会答对，也就没意思了。similar 不够三个时按同一个 group 补。
+
+    难度按「有几个近似的同类」排：近似的越多越难认。前半段用近似的少的，
+    后半段留给那些长得像、叫声也像的，题序自然往上走。
+    """
+    pool = [v for v in views if (v.get("audio") or {}).get("file")]
+    by = {v["slug"]: v for v in pool}
+
+    def fam(v):
+        """「鹎科 · Pycnonotidae」取中文那半截，同科的鸟外形和习性往往更接近。"""
+        return (v.get("family") or "").split("·")[0].strip()
+
+    def peers(v):
+        """候补干扰项，由近到远三层：
+        1. similar —— 数据里本来就写着「野外最容易认错的那几只」；
+        2. 同科 —— similar 不够三个时，同科的通常长得也像；
+        3. 同 group —— 还凑不齐就按生态类群补（都是水鸟/都是猛禽）。
+        再不够才用全体兜底，正常情况走不到这一步。
+        """
+        out = []
+        for s in (v.get("similar") or []):
+            if s in by and s != v["slug"] and s not in out:
+                out.append(s)
+        for x in pool:
+            if fam(x) == fam(v) and x["slug"] != v["slug"] and x["slug"] not in out:
+                out.append(x["slug"])
+        for x in pool:
+            if x["group"] == v["group"] and x["slug"] != v["slug"] and x["slug"] not in out:
+                out.append(x["slug"])
+        for x in pool:
+            if x["slug"] != v["slug"] and x["slug"] not in out:
+                out.append(x["slug"])
+        return out
+
+    cand = [(v, peers(v)) for v in pool]
+    cand = [(v, p) for v, p in cand if len(p) >= 3]
+
+    def n_sim(v):
+        """难度指标：有几个「近似的同类」也带了录音。
+
+        不能拿 len(peers) 当难度——那个函数最后会兜底补上全体物种，
+        结果每只都是 63，等于没排序。真正决定难不难的是 similar 里有几个
+        是可听的：三个近似种都在这儿，光靠耳朵基本分不开。
+        """
+        return len([s for s in (v.get("similar") or []) if s in by])
+
+    def n_near(v):
+        """近亲干扰项有几个（similar ∪ 同科，都要有录音）。
+
+        少于 2 个的题目会变成「鸭子混在鹭里」，一眼就排除掉两个，
+        选项再多也只是摆设。这类物种先不进题池。
+        """
+        near = set(s for s in (v.get("similar") or []) if s in by)
+        near |= set(x["slug"] for x in pool
+                    if fam(x) == fam(v) and x["slug"] != v["slug"])
+        near.discard(v["slug"])
+        return len(near)
+
+    # 先只用「近亲够多」的物种；万一某种月份筛得太狠，再放开补满
+    strong = [t for t in cand if n_near(t[0]) >= 2]
+    if len(strong) >= QUIZ_N * 4:
+        cand = strong
+
+    cand.sort(key=lambda t: (n_sim(t[0]), t[0].get("rank", 9), t[0]["slug"]))
+
+    # 按月取一段：题目跟着月份换一批，但同一个月内每次构建完全一致。
+    # 三段各取 3/3/2 题，形成「容易 → 中等 → 难」的坡。
+    want = [3, 3, QUIZ_N - 6]
+    third = max(1, len(cand) // 3)
+    bands = [cand[:third], cand[third:third * 2], cand[third * 2:]]
+    picked = []
+
+    def group_full(v, cap):
+        n = sum(1 for q in picked if q[0]["group"] == v["group"])
+        return n >= cap
+
+    for i, (band, need) in enumerate(zip(bands, want)):
+        if not band or need <= 0:
+            continue
+        # 用 _seed 做一次确定性轮转，代替随机打乱
+        off = _seed("quiz", month, i) % len(band)
+        rot = band[off:] + band[:off]
+        for cap in (2, 99):
+            for v, p in rot:
+                if need <= 0:
+                    break
+                if any(v["slug"] == q[0]["slug"] for q in picked):
+                    continue
+                if group_full(v, cap):
+                    continue
+                picked.append((v, p))
+                need -= 1
+            if need <= 0:
+                break
+    # 万一某段没凑够，用剩下的补满
+    if len(picked) < QUIZ_N:
+        have = {q[0]["slug"] for q in picked}
+        for v, p in cand:
+            if v["slug"] not in have:
+                picked.append((v, p))
+                if len(picked) >= QUIZ_N:
+                    break
+
+    questions = []
+    for v, p in picked:
+        cin, cout = _clip(v)
+        # 干扰项也带窗口和音频路径：答错后要能当场听见「你选的那只」到底什么声
+        opts = []
+        for s in p[:3]:
+            w = by[s]
+            oin, oout = _clip(w)
+            opts.append({
+                "slug": w["slug"],
+                "name": w.get("name") or w["zh"],
+                "sci": w.get("sci", ""),
+                "href": "bird/" + w["slug"] + ".html#voice",
+                "audio": root + "assets/audio/" + ((w.get("audio") or {}).get("file") or ""),
+                "in": oin, "out": oout,
+            })
+        opts.append({
+            "slug": v["slug"],
+            "name": v.get("name") or v["zh"],
+            "sci": v.get("sci", ""),
+            "href": "bird/" + v["slug"] + ".html#voice",
+            "audio": root + "assets/audio/" + ((v.get("audio") or {}).get("file") or ""),
+            "in": cin, "out": cout,
+        })
+        # 正确答案不能总在第四个
+        k = _seed("pos", month, v["slug"]) % len(opts)
+        opts[k], opts[-1] = opts[-1], opts[k]
+        for o in opts:
+            o["right"] = (o["slug"] == v["slug"])
+        questions.append({
+            "slug": v["slug"],
+            "answer": v.get("name") or v["zh"],
+            "sci": v.get("sci", ""),
+            "audio": root + "assets/audio/" + ((v.get("audio") or {}).get("file") or ""),
+            "in": cin, "out": cout,
+            "href": "bird/" + v["slug"] + ".html#voice",
+            # 答完之后才显示：先让人听，别一上来就把答案写在描述里
+            "tip": v.get("tip") or "",
+            "voice": v.get("voice") or "",
+            "opts": opts,
+        })
+    return questions
+
+
 def main():
     species, assets = load()
     slugs = {s["slug"] for s in species}
@@ -577,11 +753,19 @@ def main():
                  "isPartOf": {"@id": SITE + "/#website"}, "inLanguage": hl},
             ],
         })
+        quiz_qs = build_quiz(views, root_i, today_.month)
         html = env.get_template("index.html").render(
             **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=picked,
             hero_pool=Markup(hero_json), hero_day=today_.toordinal(),
             mon=(datetime.date(2000, today_.month, 1).strftime('%B') if en else today_.month),
             n_seasonal=n_seasonal,
+            # 第一题直接渲染进 HTML：禁 JS 的访客和爬虫也有内容可看，
+            # 而且不会先闪一个空面板再被脚本填满。
+            quiz=Markup(json.dumps(quiz_qs, ensure_ascii=False, separators=(",", ":"))
+                        .replace("</", "<\\/")),
+            quiz_first=quiz_qs[0] if quiz_qs else None,
+            quiz_n=len(quiz_qs),
+            quiz_clip=QUIZ_CLIP,
             hero_in=hero["audio"].get("hero_in", HERO_WINDOW[0]) if hero.get("audio") else 0,
             hero_out=hero["audio"].get("hero_out", HERO_WINDOW[1]) if hero.get("audio") else 0,
             all_total=len(views), species_href=pr_i + "species.html",

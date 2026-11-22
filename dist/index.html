@@ -8,7 +8,7 @@
 <meta name="description" content="A field guide to the birds of Zhuhai and the Pearl River Delta: 65 species with names, identification features, habits, field recordings and where to find them, plus a seasonal calendar and field ethics.">
 <meta name="theme-color" content="#1B3527">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B3527'/%3E%3Cpath d='M18.6 5.4c-.4.6-.5 1.3-.4 2-1.7-.3-3.3.3-4.5 1.6-.9.9-1.4 2.1-1.6 3.3l-1.8.2c-.5.1-.9.5-.8 1.1.1.4.4.6.8.6l1.7.1c.4 1.5 1.5 2.6 2.9 3.2l-1.2 1c-.3.3-.3.8 0 1.1.3.3.7.3 1 .1l1.8-1.5c1.6.3 3.4-.2 4.6-1.5 1.6-1.7 1.5-4.4-.1-6l.4-2.3c.2-.7-.2-1.4-.9-1.7-.6-.3-1.3-.1-1.9.6z' fill='%23F5F1E7'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="static/style.css?v=45abcd8d">
+<link rel="stylesheet" href="static/style.css?v=3deafe46">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Birds of Zhuhai">
 <meta property="og:title" content="Birds of Zhuhai · A Field Guide to 65 Common Birds of South China">
@@ -453,6 +453,73 @@
   </div>
 </section>
 
+<!-- ============ 听声辨鸟（互动） ============ -->
+<section class="quiz" id="quiz">
+  <div class="wrap">
+    <div class="quiz-head reveal">
+      <div>
+        <p class="sec-label">INTERACTIVE · BY EAR</p>
+        <h2 class="sec-title">Hear it, name it</h2>
+      </div>
+      <p class="quiz-sub">Every recording was made in the wild around Zhuhai. Get it right and the next call starts; get it wrong and we tell you the answer, then take you to the bird you picked so you can hear what it actually sounds like.</p>
+    </div>
+
+    <div class="quiz-board reveal" id="quizBoard"
+         data-t-prog="Question %d of %d"
+         data-t-ask="Which bird is this?"
+         data-t-play="Play the call"
+         data-t-again="Play again"
+         data-t-right="That&#39;s it"
+         data-t-wrong="Not quite — that&#39;s the &lt;b&gt;%s&lt;/b&gt;"
+         data-t-hint="You picked the %s. They do get confused — go hear the real thing:"
+         data-t-listen="Hear the %s"
+         data-t-next="Next"
+         data-t-result="You got %d of %d"
+         data-t-restart="Play another round">
+      <div class="quiz-bar">
+        <span class="quiz-prog" id="quizProg">Question 1 of 8</span>
+        <div class="quiz-track"><i id="quizFill" style="width:12.5%"></i></div>
+        <span class="quiz-score" id="quizScore"></span>
+      </div>
+
+      <div class="quiz-stage">
+        <button class="quiz-play" type="button" id="quizPlay" aria-label="Play the call">
+          <span class="qp-ic"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/></svg></span>
+        </button>
+        <div class="quiz-wave" id="quizWave" aria-hidden="true"><i style="height:29%"></i><i style="height:66%"></i><i style="height:49%"></i><i style="height:32%"></i><i style="height:69%"></i><i style="height:52%"></i><i style="height:35%"></i><i style="height:18%"></i><i style="height:55%"></i><i style="height:38%"></i><i style="height:21%"></i><i style="height:58%"></i><i style="height:41%"></i><i style="height:24%"></i><i style="height:61%"></i><i style="height:44%"></i><i style="height:27%"></i><i style="height:64%"></i><i style="height:47%"></i><i style="height:30%"></i><i style="height:67%"></i><i style="height:50%"></i><i style="height:33%"></i><i style="height:70%"></i><i style="height:53%"></i><i style="height:36%"></i><i style="height:19%"></i><i style="height:56%"></i><i style="height:39%"></i><i style="height:22%"></i><i style="height:59%"></i><i style="height:42%"></i><i style="height:25%"></i><i style="height:62%"></i></div>
+      </div>
+      <p class="quiz-hint" id="quizHint">Play the call</p>
+
+      <p class="quiz-ask" id="quizAsk">Which bird is this?</p>
+      <ul class="quiz-opts" id="quizOpts">
+        <li><button type="button" data-slug="hei-fu-bin-yu" disabled>
+          <span class="qo-k">A</span>
+          <span class="qo-t"><span class="qo-n">Dunlin</span><span class="qo-sci">Calidris alpina</span></span>
+        </button></li>
+        <li><button type="button" data-slug="ji-yu" disabled>
+          <span class="qo-k">B</span>
+          <span class="qo-t"><span class="qo-n">Common Sandpiper</span><span class="qo-sci">Actitis hypoleucos</span></span>
+        </button></li>
+        <li><button type="button" data-slug="bai-yao-shao-yu" disabled>
+          <span class="qo-k">C</span>
+          <span class="qo-t"><span class="qo-n">Eurasian Curlew</span><span class="qo-sci">Numenius arquata</span></span>
+        </button></li>
+        <li><button type="button" data-slug="qing-jiao-yu" disabled>
+          <span class="qo-k">D</span>
+          <span class="qo-t"><span class="qo-n">Common Greenshank</span><span class="qo-sci">Tringa nebularia</span></span>
+        </button></li>
+      </ul>
+      <div class="quiz-fb" id="quizFb" role="status" aria-live="polite" hidden></div>
+
+      <noscript>
+        <p class="quiz-noscript">Every recording was made in the wild around Zhuhai. Get it right and the next call starts; get it wrong and we tell you the answer, then take you to the bird you picked so you can hear what it actually sounds like.
+          <a href="species.html">Browse all 65 species</a></p>
+      </noscript>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="birdQuiz">[{"slug":"hei-fu-bin-yu","answer":"Dunlin","sci":"Calidris alpina","audio":"assets/audio/hei-fu-bin-yu.mp3","in":0,"out":10,"href":"bird/hei-fu-bin-yu.html#voice","tip":"Judge by the flock: tens of birds may be another sandpiper; a grey cloud of hundreds is almost certainly Dunlin. At close range look for the clearly downcurved bill and the fine streaking on the breast sides.","voice":"A rough 'treep' or 'kree' in flight, overlapping across a flock.","opts":[{"slug":"hei-fu-bin-yu","name":"Dunlin","sci":"Calidris alpina","href":"bird/hei-fu-bin-yu.html#voice","audio":"assets/audio/hei-fu-bin-yu.mp3","in":0,"out":10,"right":true},{"slug":"ji-yu","name":"Common Sandpiper","sci":"Actitis hypoleucos","href":"bird/ji-yu.html#voice","audio":"assets/audio/ji-yu.mp3","in":0,"out":10,"right":false},{"slug":"bai-yao-shao-yu","name":"Eurasian Curlew","sci":"Numenius arquata","href":"bird/bai-yao-shao-yu.html#voice","audio":"assets/audio/bai-yao-shao-yu.mp3","in":0,"out":10,"right":false},{"slug":"qing-jiao-yu","name":"Common Greenshank","sci":"Tringa nebularia","href":"bird/qing-jiao-yu.html#voice","audio":"assets/audio/qing-jiao-yu.mp3","in":0,"out":10,"right":false}]},{"slug":"hei-shui-ji","answer":"Common Moorhen","sci":"Gallinula chloropus","audio":"assets/audio/hei-shui-ji.mp3","in":0,"out":10,"href":"bird/hei-shui-ji.html#voice","tip":"Versus Eurasian Coot: the Moorhen has a red shield, a white flank line and red leg rings; the Coot has a white shield, an all-black body and lobed toes. Both turn up in city parks here.","voice":"Varied: a short 'kruk' or 'kurruk', and a rolling series 'kurr-uk-kurr-uk'. A sharp 'kik' when startled.","opts":[{"slug":"xiao-pi-ti","name":"Little Grebe","sci":"Tachybaptus ruficollis","href":"bird/xiao-pi-ti.html#voice","audio":"assets/audio/xiao-pi-ti.mp3","in":0,"out":10,"right":false},{"slug":"bai-xiong-ku-e-niao","name":"White-breasted Waterhen","sci":"Amaurornis phoenicurus","href":"bird/bai-xiong-ku-e-niao.html#voice","audio":"assets/audio/bai-xiong-ku-e-niao.mp3","in":0,"out":10,"right":false},{"slug":"hei-shui-ji","name":"Common Moorhen","sci":"Gallinula chloropus","href":"bird/hei-shui-ji.html#voice","audio":"assets/audio/hei-shui-ji.mp3","in":0,"out":10,"right":true},{"slug":"bai-gu-ding","name":"Eurasian Coot","sci":"Fulica atra","href":"bird/bai-gu-ding.html#voice","audio":"assets/audio/bai-gu-ding.mp3","in":0,"out":10,"right":false}]},{"slug":"huang-mei-liu-ying","answer":"Yellow-browed Warbler","sci":"Phylloscopus inornatus","audio":"assets/audio/huang-mei-liu-ying.mp3","in":0,"out":10,"href":"bird/huang-mei-liu-ying.html#voice","tip":"Listen for the rising whistle first, then look 3–6 m up into the foliage. Small and fast: confirm it on the two wingbars and the yellow brow.","voice":"A thin, rising 'tseeweet', often in two- or three-note variants, fine and metallic. The breeding song is a short trill, occasionally heard here in winter.","opts":[{"slug":"an-lu-xiu-yan-niao","name":"Swinhoe's White-eye","sci":"Zosterops simplex","href":"bird/an-lu-xiu-yan-niao.html#voice","audio":"assets/audio/an-lu-xiu-yan-niao.mp3","in":0,"out":10,"right":false},{"slug":"chang-wei-feng-ye-ying","name":"Common Tailorbird","sci":"Orthotomus sutorius","href":"bird/chang-wei-feng-ye-ying.html#voice","audio":"assets/audio/chang-wei-feng-ye-ying.mp3","in":0,"out":10,"right":false},{"slug":"huang-mei-liu-ying","name":"Yellow-browed Warbler","sci":"Phylloscopus inornatus","href":"bird/huang-mei-liu-ying.html#voice","audio":"assets/audio/huang-mei-liu-ying.mp3","in":0,"out":10,"right":true},{"slug":"jia-yan","name":"Barn Swallow","sci":"Hirundo rustica","href":"bird/jia-yan.html#voice","audio":"assets/audio/jia-yan.mp3","in":0,"out":10,"right":false}]},{"slug":"cang-lu","answer":"Grey Heron","sci":"Ardea cinerea","audio":"assets/audio/cang-lu.mp3","in":0,"out":10,"href":"bird/cang-lu.html#voice","tip":"Separating it from Chinese Pond Heron: Grey Heron is a large grey-and-white bird with a visibly longer neck; pond heron is brown and much smaller. The two often share the same stretch of water.","voice":"A harsh, scraping 'fraank' on take-off, raucous and loud — the call you will hear most often. Various grunts and squawks around the breeding colony.","opts":[{"slug":"cang-lu","name":"Grey Heron","sci":"Ardea cinerea","href":"bird/cang-lu.html#voice","audio":"assets/audio/cang-lu.mp3","in":0,"out":10,"right":true},{"slug":"chi-lu","name":"Chinese Pond Heron","sci":"Ardeola bacchus","href":"bird/chi-lu.html#voice","audio":"assets/audio/chi-lu.mp3","in":0,"out":10,"right":false},{"slug":"bai-lu","name":"Little Egret","sci":"Egretta garzetta","href":"bird/bai-lu.html#voice","audio":"assets/audio/bai-lu.mp3","in":0,"out":10,"right":false},{"slug":"da-bai-lu","name":"Great Egret","sci":"Ardea alba","href":"bird/da-bai-lu.html#voice","audio":"assets/audio/da-bai-lu.mp3","in":0,"out":10,"right":false}]},{"slug":"da-zui-wu-ya","answer":"Large-billed Crow","sci":"Corvus macrorhynchos","audio":"assets/audio/da-zui-wu-ya.mp3","in":0,"out":10,"href":"bird/da-zui-wu-ya.html#voice","tip":"Versus Black Kite: a crow flaps continuously and has a wedge-shaped tail; a kite soars and has a shallow fork. Flight action is the surest guide.","voice":"A deep, hoarse 'kaa-kaa-kaa', heavier and slower than the carrion crow's, with grunts and metallic whistles mixed in.","opts":[{"slug":"hei-juan-wei","name":"Black Drongo","sci":"Dicrurus macrocercus","href":"bird/hei-juan-wei.html#voice","audio":"assets/audio/hei-juan-wei.mp3","in":0,"out":10,"right":false},{"slug":"hei-yuan","name":"Black Kite","sci":"Milvus migrans","href":"bird/hei-yuan.html#voice","audio":"assets/audio/hei-yuan.mp3","in":0,"out":10,"right":false},{"slug":"da-zui-wu-ya","name":"Large-billed Crow","sci":"Corvus macrorhynchos","href":"bird/da-zui-wu-ya.html#voice","audio":"assets/audio/da-zui-wu-ya.mp3","in":0,"out":10,"right":true},{"slug":"jia-yan","name":"Barn Swallow","sci":"Hirundo rustica","href":"bird/jia-yan.html#voice","audio":"assets/audio/jia-yan.mp3","in":0,"out":10,"right":false}]},{"slug":"hei-chi-chang-jiao-yu","answer":"Black-winged Stilt","sci":"Himantopus himantopus","audio":"assets/audio/hei-chi-chang-jiao-yu.mp3","in":0,"out":10,"href":"bird/hei-chi-chang-jiao-yu.html#voice","tip":"From a distance it looks like a row of black and white dots on pink sticks — once you see the legs there is little doubt. In winter flocks, check for smaller, shorter-legged species mixed in.","voice":"A loud, sharp 'kik—kik—kik' or 'kee-ack', often repeated on take-off or when alarmed — one of the most audible sounds on a mudflat.","opts":[{"slug":"hei-chi-chang-jiao-yu","name":"Black-winged Stilt","sci":"Himantopus himantopus","href":"bird/hei-chi-chang-jiao-yu.html#voice","audio":"assets/audio/hei-chi-chang-jiao-yu.mp3","in":0,"out":10,"right":true},{"slug":"huan-jing-heng","name":"Kentish Plover","sci":"Charadrius alexandrinus","href":"bird/huan-jing-heng.html#voice","audio":"assets/audio/huan-jing-heng.mp3","in":0,"out":10,"right":false},{"slug":"fan-zui-yu","name":"Pied Avocet","sci":"Recurvirostra avosetta","href":"bird/fan-zui-yu.html#voice","audio":"assets/audio/fan-zui-yu.mp3","in":0,"out":10,"right":false},{"slug":"qing-jiao-yu","name":"Common Greenshank","sci":"Tringa nebularia","href":"bird/qing-jiao-yu.html#voice","audio":"assets/audio/qing-jiao-yu.mp3","in":0,"out":10,"right":false}]},{"slug":"ban-yu-gou","answer":"Pied Kingfisher","sci":"Ceryle rudis","audio":"assets/audio/ban-yu-gou.mp3","in":0,"out":10,"href":"bird/ban-yu-gou.html#voice","tip":"A small black and white bird stopped dead in the air is a Pied Kingfisher hovering — the most immediate way to tell it from a Common Kingfisher.","voice":"A sharp 'kwik—kwik' or 'chirrick', high and fast, given frequently in flight.","opts":[{"slug":"pu-tong-cui-niao","name":"Common Kingfisher","sci":"Alcedo atthis","href":"bird/pu-tong-cui-niao.html#voice","audio":"assets/audio/pu-tong-cui-niao.mp3","in":0,"out":10,"right":false},{"slug":"bai-xiong-fei-cui","name":"White-throated Kingfisher","sci":"Halcyon smyrnensis","href":"bird/bai-xiong-fei-cui.html#voice","audio":"assets/audio/bai-xiong-fei-cui.mp3","in":0,"out":10,"right":false},{"slug":"lan-fei-cui","name":"Black-capped Kingfisher","sci":"Halcyon pileata","href":"bird/lan-fei-cui.html#voice","audio":"assets/audio/lan-fei-cui.mp3","in":0,"out":10,"right":false},{"slug":"ban-yu-gou","name":"Pied Kingfisher","sci":"Ceryle rudis","href":"bird/ban-yu-gou.html#voice","audio":"assets/audio/ban-yu-gou.mp3","in":0,"out":10,"right":true}]},{"slug":"e","answer":"Osprey","sci":"Pandion haliaetus","audio":"assets/audio/e.mp3","in":0,"out":10,"href":"bird/e.html#voice","tip":"A raptor hovering over water is almost certainly an Osprey — very few others do it. Check the black patch at the bend of the underwing.","voice":"A series of sharp whistles, 'chewk—chewk—chewk', usually near the nest or when alarmed.","opts":[{"slug":"hei-yuan","name":"Black Kite","sci":"Milvus migrans","href":"bird/hei-yuan.html#voice","audio":"assets/audio/hei-yuan.mp3","in":0,"out":10,"right":false},{"slug":"pu-tong-kuang","name":"Eastern Buzzard","sci":"Buteo japonicus","href":"bird/pu-tong-kuang.html#voice","audio":"assets/audio/pu-tong-kuang.mp3","in":0,"out":10,"right":false},{"slug":"e","name":"Osprey","sci":"Pandion haliaetus","href":"bird/e.html#voice","audio":"assets/audio/e.mp3","in":0,"out":10,"right":true},{"slug":"hong-sun","name":"Common Kestrel","sci":"Falco tinnunculus","href":"bird/hong-sun.html#voice","audio":"assets/audio/hong-sun.mp3","in":0,"out":10,"right":false}]}]</script>
+
 <!-- ============ 观鸟点 ============ -->
 <section class="spots" id="spots">
   <div class="wrap">
@@ -591,7 +658,7 @@
   </div>
 </footer>
 
-<script src="static/app.js?v=ebfdc714" defer></script>
+<script src="static/app.js?v=83d94433" defer></script>
 <script src="static/beacon.js?v=e563cea6" defer></script>
 </body>
 </html>

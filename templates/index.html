@@ -136,6 +136,63 @@
   </div>
 </section>
 
+<!-- ============ 听声辨鸟（互动） ============ -->
+<section class="quiz" id="quiz">
+  <div class="wrap">
+    <div class="quiz-head reveal">
+      <div>
+        <p class="sec-label">{{ T.idx.quiz_label }}</p>
+        <h2 class="sec-title">{{ T.idx.quiz_title|safe }}</h2>
+      </div>
+      <p class="quiz-sub">{{ T.idx.quiz_sub }}</p>
+    </div>
+
+    <div class="quiz-board reveal" id="quizBoard"
+         data-t-prog="{{ T.idx.quiz_progress|e }}"
+         data-t-ask="{{ T.idx.quiz_ask|e }}"
+         data-t-play="{{ T.idx.quiz_play|e }}"
+         data-t-again="{{ T.idx.quiz_again|e }}"
+         data-t-right="{{ T.idx.quiz_right|e }}"
+         data-t-wrong="{{ T.idx.quiz_wrong|e }}"
+         data-t-hint="{{ T.idx.quiz_wrong_hint|e }}"
+         data-t-listen="{{ T.idx.quiz_listen_pick|e }}"
+         data-t-next="{{ T.idx.quiz_next|e }}"
+         data-t-result="{{ T.idx.quiz_result|e }}"
+         data-t-restart="{{ T.idx.quiz_restart|e }}">
+      <div class="quiz-bar">
+        <span class="quiz-prog" id="quizProg">{% if quiz_first %}{{ T.idx.quiz_progress|format(1, quiz_n) }}{% endif %}</span>
+        <div class="quiz-track"><i id="quizFill"{% if quiz_first %} style="width:{{ (100 / quiz_n)|round(1) }}%"{% endif %}></i></div>
+        <span class="quiz-score" id="quizScore"></span>
+      </div>
+
+      <div class="quiz-stage">
+        <button class="quiz-play" type="button" id="quizPlay" aria-label="{{ T.idx.quiz_play }}">
+          <span class="qp-ic">{{ m.icon('play') }}{{ m.icon('pause') }}</span>
+        </button>
+        <div class="quiz-wave" id="quizWave" aria-hidden="true">{% for i in range(34) %}<i style="height:{{ 18 + (i * 37 + 11) % 54 }}%"></i>{% endfor %}</div>
+      </div>
+      <p class="quiz-hint" id="quizHint">{{ T.idx.quiz_play }}</p>
+
+      <p class="quiz-ask" id="quizAsk">{{ T.idx.quiz_ask }}</p>
+      <ul class="quiz-opts" id="quizOpts">
+        {% if quiz_first %}{% for o in quiz_first.opts %}
+        <li><button type="button" data-slug="{{ o.slug }}" disabled>
+          <span class="qo-k">{{ 'ABCD'[loop.index0] }}</span>
+          <span class="qo-t"><span class="qo-n">{{ o.name }}</span><span class="qo-sci">{{ o.sci }}</span></span>
+        </button></li>
+        {% endfor %}{% endif %}
+      </ul>
+      <div class="quiz-fb" id="quizFb" role="status" aria-live="polite" hidden></div>
+
+      <noscript>
+        <p class="quiz-noscript">{{ T.idx.quiz_sub }}
+          <a href="{{ species_href }}">{{ T.idx.picked_btn|format(all_total) }}</a></p>
+      </noscript>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="birdQuiz">{{ quiz }}</script>
+
 <!-- ============ 观鸟点 ============ -->
 <section class="spots" id="spots">
   <div class="wrap">
