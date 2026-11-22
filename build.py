@@ -230,6 +230,9 @@ def page_url(path):
     return SITE + re.sub(r"\.html$", "", path)
 
 
+DEFAULT_OG = og_url("bai-lu")
+
+
 def jld(obj):
     """结构化数据。ensure_ascii=False 让中文原样输出；
     </ 转义避免提前闭合 script。"""
@@ -449,7 +452,7 @@ def main():
             canon=sp_canon,
             zh_url=page_url("/zh/species.html"), en_url=page_url("/species.html"),
             alt_url=("../zh/species.html" if en else "../species.html"),
-            jsonld=idx_jld)
+            og=DEFAULT_OG, ogw=OG_W, ogh=OG_H, jsonld=idx_jld)
         open(os.path.join(base, "species.html"), "w").write(html)
 
         # ---- 详情页 ----
@@ -498,7 +501,8 @@ def main():
             page_title=T["guide"]["title"], page_desc=T["guide"]["desc"],
             canon=page_url(gpath), zh_url=page_url("/zh/guide.html"),
             en_url=page_url("/guide.html"),
-            alt_url=("../zh/guide.html" if en else "../guide.html"))
+            alt_url=("../zh/guide.html" if en else "../guide.html"),
+            og=DEFAULT_OG, ogw=OG_W, ogh=OG_H)
         open(os.path.join(base, "guide.html"), "w").write(html)
 
         # ---- 留言板 ----
@@ -509,7 +513,8 @@ def main():
             page_desc=T["board"]["lede"],
             canon=SITE + bpath,
             zh_url=SITE + "/zh/board/", en_url=SITE + "/board/",
-            alt_url=("../zh/board/index.html" if en else "../../board/index.html"))
+            alt_url=("../zh/board/index.html" if en else "../../board/index.html"),
+            og=DEFAULT_OG, ogw=OG_W, ogh=OG_H)
         open(os.path.join(base, "board", "index.html"), "w").write(html)
 
         # ---- 404 ----
