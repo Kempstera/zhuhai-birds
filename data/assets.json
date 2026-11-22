@@ -128,11 +128,14 @@
   "audio": {
    "file": "zhu-jing-ban-jiu.mp3",
    "dur": 37.4,
-   "kb": 293,
-   "credit": "Manoj Karingamadathil",
+   "kb": 511,
+   "credit": "Manoj Karingamadathil / xeno-canto XC495643",
    "license": "CC BY-SA 4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Spilopelia_chinensis_-_Spotted_Dove_XC495643.mp3",
-   "title": "File:Spilopelia chinensis - Spotted Dove XC495643.mp3"
+   "title": "Spilopelia chinensis（xeno-canto 野外录音 XC495643）",
+   "note": "原件 48kHz/256kbps；250Hz 高通 + 4.2kHz 低通 + 两遍 loudnorm，SNR 11→21dB",
+   "hero_in": 0,
+   "hero_out": 13.5
   },
   "gallery": [
    {
@@ -241,12 +244,13 @@
   },
   "audio": {
    "file": "wu-dong.mp3",
-   "dur": 15.2,
-   "kb": 119,
-   "credit": "iNaturalist 用户 skystargazer",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/146400103",
-   "title": "Turdus mandarinus（iNaturalist 野外录音）"
+   "dur": 19.0,
+   "kb": 260,
+   "credit": "iNaturalist 用户 shikii",
+   "license": "CC BY-NC-SA",
+   "page": "https://www.inaturalist.org/observations/319494934",
+   "title": "Turdus mandarinus（iNaturalist 野外录音，48kHz 原件）",
+   "note": "旧素材是 64kbps 手机录音，拉响 30dB 后底噪盖过鸟声（SNR 3.4dB）；换成 48kHz 原件重制后 SNR 19dB"
   },
   "gallery": [
    {

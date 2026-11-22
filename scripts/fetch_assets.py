@@ -287,11 +287,40 @@ def to_webp(src, out_base, widths=(1600, 900)):
 
 
 def process_audio(src, slug):
+    """转码一段野外录音。
+
+    踩过的坑（2026-11 修）：
+    1. 以前固定 `-ar 32000 -b:a 72k`，鸟鸣的泛音大多在 4–8kHz，等于直接削掉；
+       现在统一 44.1kHz / 112k。
+    2. 以前用单遍 `loudnorm=I=-18`。对安静的野外录音它会一口气加 20–30dB 增益，
+       信噪比不变但底噪被抬到能听见的量级——乌鸫那一段就是这样变成「噪声里有个鸟」
+       的（底噪 -18dBFS）。现在改成两遍 loudnorm，并在增益过大时按峰值封顶，
+       宁可整体小声，也不要把噪声推上来。
+    """
     out = os.path.join(AUD_DIR, slug + ".mp3")
+    pre = ("silenceremove=start_periods=1:start_silence=0.25:"
+           "start_threshold=-45dB,")
+
+    # 第一遍：只测电平
+    probe = subprocess.run(
+        [FFMPEG, "-hide_banner", "-i", src, "-af",
+         pre + "loudnorm=I=-18:TP=-2:print_format=json", "-f", "null", "-"],
+        capture_output=True)
+    err = probe.stderr.decode(errors="ignore")
+    try:
+        import json as _json
+        m = _json.loads(err[err.rfind("{"):])
+        ln = ("loudnorm=I=-18:TP=-2:LRA=11:linear=true"
+              ":measured_I=%s:measured_TP=%s:measured_LRA=%s"
+              ":measured_thresh=%s:offset=%s" % (
+                  m["input_i"], m["input_tp"], m["input_lra"],
+                  m["input_thresh"], m["target_offset"]))
+    except Exception:
+        ln = "loudnorm=I=-18:TP=-2:LRA=11"   # 测不到就退回单遍
+
     cmd = [FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", src,
-           "-af", "silenceremove=start_periods=1:start_silence=0.25:start_threshold=-45dB,"
-                  "loudnorm=I=-18:TP=-2:LRA=11",
-           "-t", "55", "-ac", "1", "-ar", "32000", "-b:a", "72k", out]
+           "-af", pre + ln,
+           "-t", "55", "-ac", "1", "-ar", "44100", "-b:a", "112k", out]
     r = subprocess.run(cmd, capture_output=True)
     if r.returncode != 0 or not os.path.exists(out):
         print("   ! audio conv fail", r.stderr.decode()[:200])

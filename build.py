@@ -230,7 +230,7 @@ def page_url(path):
     return SITE + re.sub(r"\.html$", "", path)
 
 
-HERO_SLUG = "wu-dong"
+HERO_SLUG = "zhu-jing-ban-jiu"
 DEFAULT_OG = og_url(HERO_SLUG)
 
 
@@ -402,9 +402,11 @@ def main():
                       rank_counts=rank_counts, SB=sb_on)
 
         # ---- 首页 ----
-        # 封面鸟：乌鸫。选它不选白鹭，是因为「点开就有声音」是这个站的主线，
-        # 而白鹭平时沉默、受惊时只有粗哑的「kark」——第一印象就打了折。
-        # 乌鸫是「百舌」，鸣唱婉转、乐句感强，还会模仿别的鸟。
+        # 封面鸟：珠颈斑鸠。要求是「点一下就能听到好听的鸟叫」——
+        # 乌鸫本来是百舌，但站里那份 iNaturalist 手机录音只有 3.4dB 信噪比，
+        # 鸟声埋在整片宽带噪声里，越修越假。斑鸠的咕咕来自 xeno-canto 的
+        # 48kHz/256kbps 原件，做了 250Hz 高通 + 4.2kHz 低通后 SNR 从 11 提到 21，
+        # 而且那段咕咕是珠三角清晨最有辨识度的声音，谁都听过、却多半不知道是谁。
         hero = by.get(HERO_SLUG) or views[0]
         sp_path = "/species.html" if en else "/zh/species.html"
         sp_canon = page_url(sp_path)

@@ -383,7 +383,9 @@
 
   /* ---------- 首页：先听一段鸟鸣（就地播放） ----------
      原来这个按钮只是跳到详情页，落地后既没有滚到鸣声区、也没有声音——
-     用户点完只会觉得「没反应」。现在直接在这里播，按钮变「正在播放 · 乌鸫」。
+     用户点完只会觉得「没反应」。现在直接在这里播，按钮变「正在播放 · 珠颈斑鸠」。
+     data-start / data-end 用来只播「最清楚的那一小段」：像珠颈斑鸠全长 37 秒，
+     丢给第一次点的人太长了，前 13 秒两轮咕咕才是一耳朵能记住的。
      万一被浏览器的自动播放策略拦下，就退回详情页的 #voice。 */
   var hlBtn = document.getElementById("heroListen");
   if (hlBtn) {
@@ -392,6 +394,8 @@
     var hlLabel = hlBtn.dataset.label || "";
     var hlTpl = hlBtn.dataset.playing || "%s";
     var hlTxt = hlBtn.querySelector(".hl-t");
+    var hlIn = parseFloat(hlBtn.dataset.start || "0") || 0;
+    var hlOut = parseFloat(hlBtn.dataset.end || "0") || 0;
     var hlAudio = null;
 
     var hlSet = function (playing) {
@@ -404,13 +408,28 @@
         hlAudio = new Audio();
         hlAudio.preload = "none";
         hlAudio.src = hlSrc;
-        hlAudio.addEventListener("ended", function () { hlSet(false); });
+        hlAudio.addEventListener("ended", function () {
+          hlSet(false);
+          if (hlIn) hlAudio.currentTime = hlIn;
+        });
         hlAudio.addEventListener("pause", function () { hlSet(false); });
+        hlAudio.addEventListener("loadedmetadata", function () {
+          if (hlIn && hlAudio.currentTime < hlIn) hlAudio.currentTime = hlIn;
+        });
+        /* 到窗口末尾就收声，别让试听按钮播满整段 */
+        hlAudio.addEventListener("timeupdate", function () {
+          if (hlOut && hlAudio.currentTime >= hlOut) {
+            hlAudio.pause();
+            hlAudio.currentTime = hlIn;
+          }
+        });
       }
       if (!hlAudio.paused) {
         hlAudio.pause();
         return;
       }
+      /* 上一轮播到窗口末尾自动停了，再点要从头来 */
+      if (hlOut && hlAudio.currentTime >= hlOut - 0.15) hlAudio.currentTime = hlIn;
       hlAudio.play().then(function () {
         hlSet(true);
       }).catch(function () {

@@ -23,6 +23,8 @@
                 data-name="{{ hero.name }}"
                 data-label="{{ T.idx.btn_audio }}"
                 data-playing="{{ T.idx.hero_playing }}"
+                data-start="{{ hero.audio.hero_in|default(0) }}"
+                data-end="{{ hero.audio.hero_out|default(0) }}"
                 data-fallback="{{ pr }}bird/{{ hero.slug }}.html#voice">
           <span class="hl-ic">{{ m.icon('headphone') }}{{ m.icon('pause') }}</span>
           <span class="hl-t">{{ T.idx.btn_audio }}</span>
