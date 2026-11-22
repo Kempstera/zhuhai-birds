@@ -233,6 +233,22 @@ def page_url(path):
 HERO_SLUG = "zhu-jing-ban-jiu"
 DEFAULT_OG = og_url(HERO_SLUG)
 
+# 首页封面每天换一只：按日期取模，选中的鸟连同它的鸣声一起换。
+# 池子里只放「鸣声好听 + 图清楚 + 全年可见」的常见种——封面是引导用户往下看的，
+# 放一只难得一见或叫声难听的，等于第一眼就把人劝走。
+# 顺序固定，不能随手调：日期取模依赖下标，改顺序等于打乱已经排好的日历。
+HERO_POOL = [
+    "zhu-jing-ban-jiu",       # 珠颈斑鸠：咕—咕—咕，最容易被认出的城市声音
+    "wu-dong",                # 乌鸫：百舌，会学别的鸟叫
+    "bai-tou-bei",            # 白头鹎：清晨最吵的那只
+    "hong-er-bei",            # 红耳鹎：哨音上扬，脸上有红点
+    "an-lu-xiu-yan-niao",     # 暗绿绣眼鸟：细碎的铃声
+    "ba-ge",                  # 八哥：会模仿，学得还挺像
+    "pu-tong-cui-niao",       # 普通翠鸟：一道蓝影 + 尖细哨声
+    "chun-se-shan-jiao-ying", # 纯色山鹪莺：草丛里连续冒泡的叫声
+]
+HERO_WINDOW = (0, 14)         # 默认只试听前 14 秒
+
 
 def jld(obj):
     """结构化数据。ensure_ascii=False 让中文原样输出；
@@ -402,20 +418,48 @@ def main():
                       rank_counts=rank_counts, SB=sb_on)
 
         # ---- 首页 ----
-        # 封面鸟：珠颈斑鸠。要求是「点一下就能听到好听的鸟叫」——
-        # 乌鸫本来是百舌，但站里那份 iNaturalist 手机录音只有 3.4dB 信噪比，
-        # 鸟声埋在整片宽带噪声里，越修越假。斑鸠的咕咕来自 xeno-canto 的
-        # 48kHz/256kbps 原件，做了 250Hz 高通 + 4.2kHz 低通后 SNR 从 11 提到 21，
-        # 而且那段咕咕是珠三角清晨最有辨识度的声音，谁都听过、却多半不知道是谁。
-        hero = by.get(HERO_SLUG) or views[0]
+        # 封面鸟每天换：池子里的 8 只都是「鸣声好听 + 图清楚 + 全年可见」的常见种。
+        # 静态页渲染的是「今天」那一只（爬虫和禁 JS 的用户看到的就是它），
+        # 页面里再带一份候选表，浏览器按本地日期重算一次——
+        # 这样既不用每天重新构建，跨过零点也会自动换。
         sp_path = "/species.html" if en else "/zh/species.html"
         sp_canon = page_url(sp_path)
-        # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏
-        picked = [v for v in views if v.get("rank", 2) == 1][:12] or views[:12]
-        # 封面鸟必须在下面这 12 张里。否则用户刚听完乌鸫，低头找不到它，
-        # 「听一声 → 看这一种」这条路就断在第一步。
-        if hero not in picked:
-            picked = [hero] + [v for v in picked if v["slug"] != hero["slug"]][:11]
+
+        pool_views = [by[s] for s in HERO_POOL if s in by]
+        today = datetime.date.today()
+        eligible = [v for v in pool_views
+                    if today.month in (v.get("months") or range(1, 13))] or pool_views
+        hero = eligible[today.toordinal() % len(eligible)]
+
+        def hero_entry(v):
+            img = v.get("img") or {}
+            au = v.get("audio") or {}
+            w_in, w_out = HERO_WINDOW
+            return {
+                "slug": v["slug"],
+                "name": v.get("name") or v["zh"],
+                "sci": v.get("sci", ""),
+                "img": root_i + "assets/img/" + img.get("big", ""),
+                "w": img.get("w", 0),
+                "h": img.get("h", 0),
+                "credit": img.get("credit", ""),
+                "license": img.get("license", ""),
+                "audio": root_i + "assets/audio/" + au.get("file", ""),
+                "in": au.get("hero_in", w_in),
+                "out": au.get("hero_out", w_out),
+                "months": v.get("months") or list(range(1, 13)),
+                "href": pr_i + "bird/" + v["slug"] + ".html#voice",
+            }
+
+        hero_json = json.dumps([hero_entry(v) for v in pool_views],
+                               ensure_ascii=False, separators=(",", ":"))
+
+        # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏。
+        # 8 只候选封面全部排在前面，保证「今天听到哪只，低头就能找到它」。
+        picked = list(pool_views)
+        picked += [v for v in views
+                   if v.get("rank", 2) == 1 and v["slug"] not in HERO_POOL]
+        picked = picked[:12]
         home_canon = SITE + ("/" if en else "/zh/")
         home_jld = jld({
             "@context": "https://schema.org",
@@ -430,6 +474,9 @@ def main():
         })
         html = env.get_template("index.html").render(
             **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=picked,
+            hero_pool=Markup(hero_json), hero_day=today.toordinal(),
+            hero_in=hero["audio"].get("hero_in", HERO_WINDOW[0]) if hero.get("audio") else 0,
+            hero_out=hero["audio"].get("hero_out", HERO_WINDOW[1]) if hero.get("audio") else 0,
             all_total=len(views), species_href=pr_i + "species.html",
             page_title=T["idx"]["title"] % len(views),
             page_desc=T["idx"]["desc"] % len(views),

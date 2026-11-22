@@ -13,12 +13,13 @@
   },
   "audio": {
    "file": "bai-tou-bei.mp3",
-   "dur": 15.2,
-   "kb": 119,
-   "credit": "iNaturalist 用户 skystargazer",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/146180271",
-   "title": "Pycnonotus sinensis（iNaturalist 野外录音）"
+   "dur": 20.8,
+   "kb": 285,
+   "credit": "iNaturalist 用户 rickyp",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/70628783",
+   "title": "Pycnonotus sinensis（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 26.7→27.3 dB"
   },
   "gallery": [
    {
@@ -359,12 +360,13 @@
   },
   "audio": {
    "file": "an-lu-xiu-yan-niao.mp3",
-   "dur": 14.2,
-   "kb": 111,
-   "credit": "iNaturalist 用户 rudyard",
-   "license": "CC0",
-   "page": "https://www.inaturalist.org/observations/81123856",
-   "title": "Zosterops simplex（iNaturalist 野外录音）"
+   "dur": 14.0,
+   "kb": 191,
+   "credit": "iNaturalist 用户 amandavuong",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/79802479",
+   "title": "Zosterops simplex（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 16.4→24.9 dB"
   },
   "gallery": [
    {
@@ -416,12 +418,13 @@
   },
   "audio": {
    "file": "ba-ge.mp3",
-   "dur": 9.8,
-   "kb": 77,
-   "credit": "iNaturalist 用户 skystargazer",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/146510966",
-   "title": "Acridotheres cristatellus（iNaturalist 野外录音）"
+   "dur": 55.0,
+   "kb": 752,
+   "credit": "iNaturalist 用户 johnallcock",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/274673498",
+   "title": "Acridotheres cristatellus（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 14.6→21.7 dB"
   },
   "gallery": [
    {
@@ -704,12 +707,13 @@
   },
   "audio": {
    "file": "cha-wei-tai-yang-niao.mp3",
-   "dur": 20.7,
-   "kb": 162,
-   "credit": "iNaturalist 用户 johnchau",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/195926613",
-   "title": "Aethopyga christinae（iNaturalist 野外录音）"
+   "dur": 14.6,
+   "kb": 199,
+   "credit": "iNaturalist 用户 skystargazer",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/268938032",
+   "title": "Aethopyga christinae（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 15.7→17.0 dB"
   },
   "gallery": [
    {
@@ -877,12 +881,13 @@
   },
   "audio": {
    "file": "da-bai-lu.mp3",
-   "dur": 6.2,
-   "kb": 49,
-   "credit": "Jonathon Jongsma",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Ardea_alba_-_Great_Egret_XC131650.ogg",
-   "title": "File:Ardea alba - Great Egret XC131650.ogg"
+   "dur": 11.3,
+   "kb": 155,
+   "credit": "iNaturalist 用户 doctorg",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/288163661",
+   "title": "Ardea alba（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 15.8→15.7 dB"
   },
   "gallery": [
    {
@@ -992,12 +997,13 @@
   },
   "audio": {
    "file": "ye-lu.mp3",
-   "dur": 54.1,
-   "kb": 423,
-   "credit": "Jan Cibulka",
+   "dur": 45.0,
+   "kb": 615,
+   "credit": "iNaturalist 用户 alreadydone",
    "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax_-_Black-crowned_Night_Heron_XC383999.mp3",
-   "title": "File:Nycticorax nycticorax - Black-crowned Night Heron XC383999.mp3"
+   "page": "https://www.inaturalist.org/observations/85053101",
+   "title": "Nycticorax nycticorax（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 13.1→13.5 dB"
   },
   "gallery": [
    {
@@ -1163,12 +1169,13 @@
   },
   "audio": {
    "file": "xiao-pi-ti.mp3",
-   "dur": 22.2,
-   "kb": 174,
-   "credit": "iNaturalist 用户 christoph_moning",
-   "license": "CC BY",
-   "page": "https://www.inaturalist.org/observations/84833089",
-   "title": "Tachybaptus ruficollis（iNaturalist 野外录音）"
+   "dur": 28.6,
+   "kb": 391,
+   "credit": "iNaturalist 用户 shauns",
+   "license": "cc-by",
+   "page": "https://www.inaturalist.org/observations/377166838",
+   "title": "Tachybaptus ruficollis capensis（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 8.6→19.8 dB"
   },
   "gallery": [
    {
@@ -1392,12 +1399,13 @@
   },
   "audio": {
    "file": "qing-jiao-yu.mp3",
-   "dur": 55.0,
-   "kb": 430,
-   "credit": "Pascal Christe",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Tringa_nebularia_-_Common_Greenshank_XC494033.mp3",
-   "title": "File:Tringa nebularia - Common Greenshank XC494033.mp3"
+   "dur": 24.8,
+   "kb": 339,
+   "credit": "iNaturalist 用户 manojkmohan",
+   "license": "cc-by-sa",
+   "page": "https://www.inaturalist.org/observations/95049470",
+   "title": "Tringa nebularia（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 700Hz 高通×2，SNR 17.1→17.6 dB"
   },
   "gallery": [
    {
@@ -1450,11 +1458,12 @@
   "audio": {
    "file": "hei-zui-ou.mp3",
    "dur": 8.6,
-   "kb": 68,
+   "kb": 118,
    "credit": "iNaturalist 用户 hamsambly",
    "license": "CC BY-NC",
    "page": "https://www.inaturalist.org/observations/331292538",
-   "title": "Saundersilarus saundersi（iNaturalist 野外录音）"
+   "title": "Saundersilarus saundersi（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 700Hz 高通×2，SNR 14.5→15.4 dB"
   },
   "gallery": [
    {
@@ -1907,12 +1916,13 @@
   },
   "audio": {
    "file": "bai-ji-ling.mp3",
-   "dur": 26.8,
-   "kb": 210,
-   "credit": "Pascal Christe",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Motacilla_alba_-_White_Wagtail_XC466458.mp3",
-   "title": "File:Motacilla alba - White Wagtail XC466458.mp3"
+   "dur": 9.0,
+   "kb": 123,
+   "credit": "iNaturalist 用户 marina_gorbunova",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/87710855",
+   "title": "Motacilla alba personata（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 16.9→17.9 dB"
   },
   "gallery": [
    {
@@ -1964,12 +1974,13 @@
   },
   "audio": {
    "file": "huang-mei-liu-ying.mp3",
-   "dur": 1.4,
-   "kb": 12,
-   "credit": "Luis Ramos",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Phylloscopus_inornatus_-_Yellow-browed_Warbler_XC153463.mp3",
-   "title": "File:Phylloscopus inornatus - Yellow-browed Warbler XC153463.mp3"
+   "dur": 26.1,
+   "kb": 357,
+   "credit": "iNaturalist 用户 johnallcock",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/333100595",
+   "title": "Phylloscopus inornatus（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 15.6→18.8 dB"
   },
   "gallery": [
    {
@@ -2250,12 +2261,13 @@
   },
   "audio": {
    "file": "xiao-bai-yao-yu-yan.mp3",
-   "dur": 55.0,
-   "kb": 430,
-   "credit": "JMK",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Apus_affinis,_swerm_sirkel_oor_Austin_Roberts-vr,_Pta,_a.mp3",
-   "title": "File:Apus affinis, swerm sirkel oor Austin Roberts-vr, Pta, a.mp3"
+   "dur": 13.8,
+   "kb": 188,
+   "credit": "iNaturalist 用户 kasikog",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/130965879",
+   "title": "Apus affinis（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 22.7→23.9 dB"
   },
   "gallery": [
    {
@@ -2479,12 +2491,13 @@
   },
   "audio": {
    "file": "bai-hou-hong-tun-bei.mp3",
-   "dur": 28.5,
-   "kb": 224,
-   "credit": "iNaturalist 用户 abidanimallover",
-   "license": "CC BY",
-   "page": "https://www.inaturalist.org/observations/367416446",
-   "title": "Pycnonotus aurigaster（iNaturalist 野外录音）"
+   "dur": 15.0,
+   "kb": 205,
+   "credit": "iNaturalist 用户 nareeratboonchai",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/79756506",
+   "title": "Pycnonotus aurigaster（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 20.3→18.6 dB"
   },
   "gallery": [
    {
@@ -2537,12 +2550,13 @@
   },
   "audio": {
    "file": "hua-mei.mp3",
-   "dur": 40.8,
-   "kb": 319,
-   "credit": "Jidanni",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:%E7%95%AB%E7%9C%89%E9%B3%A5%E5%94%B1%E3%80%8C%E8%AB%8B%E4%BD%A0%E2%80%A6%E6%AD%BB%E7%B5%A6%E4%BD%A0%E7%9C%8B%E3%80%8D.ogg",
-   "title": "File:畫眉鳥唱「請你…死給你看」.ogg"
+   "dur": 16.1,
+   "kb": 220,
+   "credit": "iNaturalist 用户 watermargin",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/135493478",
+   "title": "Garrulax canorus（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 250Hz 高通，SNR 13.1→13.2 dB"
   },
   "gallery": [
    {
@@ -2708,12 +2722,13 @@
   },
   "audio": {
    "file": "niu-bei-lu.mp3",
-   "dur": 23.7,
-   "kb": 186,
-   "credit": "Oliver Komar",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Bubulcus_ibis_-_Western_Cattle_Egret_XC463749.mp3",
-   "title": "File:Bubulcus ibis - Western Cattle Egret XC463749.mp3"
+   "dur": 9.2,
+   "kb": 126,
+   "credit": "iNaturalist 用户 mauro_fioretto",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/302804606",
+   "title": "Ardea ibis（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 22.8→23.1 dB"
   },
   "gallery": [
    {
@@ -2816,12 +2831,13 @@
   },
   "audio": {
    "file": "lv-lu.mp3",
-   "dur": 26.8,
-   "kb": 210,
-   "credit": "Yeo SB",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:XC346389_-_Striated_Heron_-_Butorides_striata.mp3",
-   "title": "File:XC346389 - Striated Heron - Butorides striata.mp3"
+   "dur": 34.3,
+   "kb": 469,
+   "credit": "iNaturalist 用户 efrain_octavio",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/312938079",
+   "title": "Butorides virescens（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 14.7→18.0 dB"
   },
   "gallery": [
    {
@@ -3045,12 +3061,13 @@
   },
   "audio": {
    "file": "lv-chi-ya.mp3",
-   "dur": 15.9,
-   "kb": 125,
-   "credit": "Mikko Heikkinen",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Anas_crecca_-_Eurasian_Teal_XC467849.mp3",
-   "title": "File:Anas crecca - Eurasian Teal XC467849.mp3"
+   "dur": 26.7,
+   "kb": 365,
+   "credit": "iNaturalist 用户 belvedere04",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/261812225",
+   "title": "Anas crecca crecca（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 150Hz 高通，SNR 13.0→13.1 dB"
   },
   "gallery": [
    {
@@ -3102,12 +3119,13 @@
   },
   "audio": {
    "file": "hei-fu-bin-yu.mp3",
-   "dur": 1.3,
-   "kb": 11,
-   "credit": "Luis Alvarez Menendez",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Calidris_alpina_-_Dunlin_XC545082.mp3",
-   "title": "File:Calidris alpina - Dunlin XC545082.mp3"
+   "dur": 19.0,
+   "kb": 259,
+   "credit": "iNaturalist 用户 virgilfab",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/372763745",
+   "title": "Calidris alpina（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 700Hz 高通×2，SNR 22.9→15.4 dB"
   },
   "gallery": [
    {
@@ -3216,12 +3234,13 @@
   },
   "audio": {
    "file": "hui-ban-heng.mp3",
-   "dur": 17.6,
-   "kb": 139,
-   "credit": "iNaturalist 用户 bofrie",
-   "license": "CC BY-NC",
-   "page": "https://www.inaturalist.org/observations/144408859",
-   "title": "Pluvialis squatarola（iNaturalist 野外录音）"
+   "dur": 12.5,
+   "kb": 170,
+   "credit": "iNaturalist 用户 blainespellman",
+   "license": "cc-by-nc",
+   "page": "https://www.inaturalist.org/observations/176068311",
+   "title": "Pluvialis squatarola（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 700Hz 高通×2，SNR 19.4→23.2 dB"
   },
   "gallery": [
    {
@@ -3330,12 +3349,13 @@
   },
   "audio": {
    "file": "pu-tong-lu-ci.mp3",
-   "dur": 13.4,
-   "kb": 105,
-   "credit": "Sonothèque ADVL",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Cormor%C3%A1n_grande_(Phalacrocorax_carbo).mp3",
-   "title": "File:Cormorán grande (Phalacrocorax carbo).mp3"
+   "dur": 10.9,
+   "kb": 149,
+   "credit": "iNaturalist 用户 donalddavesne",
+   "license": "cc-by",
+   "page": "https://www.inaturalist.org/observations/204003248",
+   "title": "Phalacrocorax carbo sinensis（iNaturalist 野外录音）",
+   "note": "2026-11 批量重制：两遍 loudnorm + 700Hz 高通，SNR 22.5→17.3 dB"
   },
   "gallery": [
    {

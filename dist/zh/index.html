@@ -17,12 +17,12 @@
 <link rel="alternate" hreflang="zh-CN" href="https://birds.signupeverywhere.cc/zh/">
 <link rel="alternate" hreflang="en" href="https://birds.signupeverywhere.cc/">
 <link rel="alternate" hreflang="x-default" href="https://birds.signupeverywhere.cc/">
-<meta property="og:image" content="https://birds.signupeverywhere.cc/assets/og/zhu-jing-ban-jiu.jpg">
+<meta property="og:image" content="https://birds.signupeverywhere.cc/assets/og/pu-tong-cui-niao.jpg">
 <meta property="og:image:alt" content="珠海观鸟图鉴 · 65 种华南常见鸟类图文与鸣声指南">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1080">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://birds.signupeverywhere.cc/assets/og/zhu-jing-ban-jiu.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://birds.signupeverywhere.cc/#website","url":"https://birds.signupeverywhere.cc/","name":"珠海观鸟图鉴","inLanguage":"zh-CN","description":"面向珠三角与珠海的常见鸟类观察手册：65 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。"},{"@type":"CollectionPage","@id":"https://birds.signupeverywhere.cc/zh/","url":"https://birds.signupeverywhere.cc/zh/","name":"珠海观鸟图鉴 · 65 种华南常见鸟类图文与鸣声指南","isPartOf":{"@id":"https://birds.signupeverywhere.cc/#website"},"inLanguage":"zh-CN"}]}</script>
+<meta name="twitter:image" content="https://birds.signupeverywhere.cc/assets/og/pu-tong-cui-niao.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://birds.signupeverywhere.cc/#website","url":"https://birds.signupeverywhere.cc/","name":"珠海观鸟图鉴","inLanguage":"zh-CN","description":"面向珠三角与珠海的常见鸟类观察手册：65 种鸟的中文名、学名、辨识特征、习性、野外鸣声录音与观鸟地点，附四季观鸟日历与观鸟守则。"},{"@type":"CollectionPage","@id":"https://birds.signupeverywhere.cc/zh/","url":"https://birds.signupeverywhere.cc/zh/","name":"珠海观鸟图鉴 · 65 种华南常见鸟类图文与鸣声指南","isPartOf":{"@id":"https://birds.signupeverywhere.cc/#website"},"inLanguage":"zh-CN"}]}</script>
 </head>
 <body class="">
 <a class="skiplink" href="#main">跳到主要内容</a>
@@ -58,13 +58,13 @@
       <div class="hero-actions">
         <a class="btn" href="species.html">浏览物种名录 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <button class="btn ghost hero-listen" type="button" id="heroListen"
-                data-src="../assets/audio/zhu-jing-ban-jiu.mp3"
-                data-name="珠颈斑鸠"
+                data-src="../assets/audio/pu-tong-cui-niao.mp3"
+                data-name="普通翠鸟"
                 data-label="先听一段鸟鸣"
                 data-playing="正在播放 · %s"
                 data-start="0"
-                data-end="13.5"
-                data-fallback="bird/zhu-jing-ban-jiu.html#voice">
+                data-end="14"
+                data-fallback="bird/pu-tong-cui-niao.html#voice">
           <span class="hl-ic"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0116 0v3"/><rect x="2.4" y="14.4" width="4" height="6" rx="1.6"/><rect x="17.6" y="14.4" width="4" height="6" rx="1.6"/></svg><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="7" y="5" width="3.6" height="14" rx="1.2"/><rect x="13.4" y="5" width="3.6" height="14" rx="1.2"/></svg></span>
           <span class="hl-t">先听一段鸟鸣</span>
         </button>
@@ -79,13 +79,16 @@
 
     <div class="hero-visual">
       <figure class="hero-figure">
-        <img src="../assets/img/zhu-jing-ban-jiu-1600.webp" alt="珠颈斑鸠 Spilopelia chinensis" fetchpriority="high" width="900" height="601">
+        <img id="heroImg" src="../assets/img/pu-tong-cui-niao-1600.webp" alt="普通翠鸟 Alcedo atthis" fetchpriority="high" width="900" height="675">
       </figure>
-      <a class="hero-tag" href="bird/zhu-jing-ban-jiu.html#voice" title="看这一种的辨识要点与全部鸣声"><span class="dot"></span><span class="ht-txt">珠颈斑鸠 · Spilopelia chinensis</span></a>
-      <p class="hero-caption">图片 — iNaturalist/zinogre / CC BY-SA 4.0</p>
+      <a class="hero-tag" id="heroTag" href="bird/pu-tong-cui-niao.html#voice" title="看这一种的辨识要点与全部鸣声"><span class="dot"></span><span class="ht-txt">普通翠鸟 · Alcedo atthis</span></a>
+      <p class="hero-caption" id="heroCap" data-head="图片 —">图片 — Artemy Voikhansky / CC BY-SA 4.0</p>
     </div>
   </div>
 </section>
+
+<script type="application/json" id="heroPool">[{"slug":"zhu-jing-ban-jiu","name":"珠颈斑鸠","sci":"Spilopelia chinensis","img":"../assets/img/zhu-jing-ban-jiu-1600.webp","w":900,"h":601,"credit":"iNaturalist/zinogre","license":"CC BY-SA 4.0","audio":"../assets/audio/zhu-jing-ban-jiu.mp3","in":0,"out":13.5,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/zhu-jing-ban-jiu.html#voice"},{"slug":"wu-dong","name":"乌鸫","sci":"Turdus mandarinus","img":"../assets/img/wu-dong-1600.webp","w":900,"h":576,"credit":"zinogre","license":"CC BY-SA 4.0","audio":"../assets/audio/wu-dong.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/wu-dong.html#voice"},{"slug":"bai-tou-bei","name":"白头鹎","sci":"Pycnonotus sinensis","img":"../assets/img/bai-tou-bei-1600.webp","w":900,"h":676,"credit":"Earthshine.. at English Wikipedia","license":"CC BY-SA 3.0","audio":"../assets/audio/bai-tou-bei.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/bai-tou-bei.html#voice"},{"slug":"hong-er-bei","name":"红耳鹎","sci":"Pycnonotus jocosus","img":"../assets/img/hong-er-bei-1600.webp","w":900,"h":600,"credit":"myjkccd","license":"Public domain","audio":"../assets/audio/hong-er-bei.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/hong-er-bei.html#voice"},{"slug":"an-lu-xiu-yan-niao","name":"暗绿绣眼鸟","sci":"Zosterops simplex","img":"../assets/img/an-lu-xiu-yan-niao-1600.webp","w":640,"h":480,"credit":"Charles Lam","license":"CC BY-SA 2.0","audio":"../assets/audio/an-lu-xiu-yan-niao.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/an-lu-xiu-yan-niao.html#voice"},{"slug":"ba-ge","name":"八哥","sci":"Acridotheres cristatellus","img":"../assets/img/ba-ge-1600.webp","w":900,"h":675,"credit":"Flickr user CharlesLam . Photo uploaded to commons by user ltshears","license":"CC BY-SA 2.0","audio":"../assets/audio/ba-ge.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/ba-ge.html#voice"},{"slug":"pu-tong-cui-niao","name":"普通翠鸟","sci":"Alcedo atthis","img":"../assets/img/pu-tong-cui-niao-1600.webp","w":900,"h":675,"credit":"Artemy Voikhansky","license":"CC BY-SA 4.0","audio":"../assets/audio/pu-tong-cui-niao.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/pu-tong-cui-niao.html#voice"},{"slug":"chun-se-shan-jiao-ying","name":"纯色山鹪莺","sci":"Prinia inornata","img":"../assets/img/chun-se-shan-jiao-ying-1600.webp","w":900,"h":643,"credit":"Tisha Mukherjee","license":"CC BY-SA 4.0","audio":"../assets/audio/chun-se-shan-jiao-ying.mp3","in":0,"out":14,"months":[1,2,3,4,5,6,7,8,9,10,11,12],"href":"bird/chun-se-shan-jiao-ying.html#voice"}]</script>
+<script>window.__heroDay = 739942;</script>
 
 <!-- ============ 类群 ============ -->
 <section class="groups" id="groups">
@@ -146,6 +149,206 @@
 
     <ul class="bird-grid" id="picked">
       <li>
+        <a class="bird-card reveal" href="bird/zhu-jing-ban-jiu.html"
+           data-group="songbird"
+           data-search="珠颈斑鸠 Spotted Dove Spilopelia chinensis 鸠鸽科 · Columbidae 城市绿地 农田 公园 村落">
+          <div class="bc-media">
+            <img src="../assets/img/zhu-jing-ban-jiu-900.webp" alt="珠颈斑鸠（Spilopelia chinensis）" loading="lazy" width="900" height="601"
+>
+            <span class="bc-no">NO. 003</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">珠<rt>zhū</rt></ruby><ruby class="rb">颈<rt>jǐng</rt></ruby><ruby class="rb">斑<rt>bān</rt></ruby><ruby class="rb">鸠<rt>jiū</rt></ruby></h3>
+              <span class="sci">Spilopelia chinensis</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r1">极常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>28–32 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>城市绿地</span><span>农田</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/wu-dong.html"
+           data-group="songbird"
+           data-search="乌鸫 Chinese Blackbird Turdus mandarinus 鸫科 · Turdidae 公园 校园 林缘 小区草坪">
+          <div class="bc-media">
+            <img src="../assets/img/wu-dong-900.webp" alt="乌鸫（Turdus mandarinus）" loading="lazy" width="900" height="576"
+>
+            <span class="bc-no">NO. 014</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">乌<rt>wū</rt></ruby><ruby class="rb">鸫<rt>dōng</rt></ruby></h3>
+              <span class="sci">Turdus mandarinus</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r2">常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>24–28 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>公园</span><span>校园</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/bai-tou-bei.html"
+           data-group="songbird"
+           data-search="白头鹎 Light-vented Bulbul Pycnonotus sinensis 鹎科 · Pycnonotidae 城市绿地 公园 次生林 村落">
+          <div class="bc-media">
+            <img src="../assets/img/bai-tou-bei-900.webp" alt="白头鹎（Pycnonotus sinensis）" loading="lazy" width="900" height="676"
+>
+            <span class="bc-no">NO. 004</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">白<rt>bái</rt></ruby><ruby class="rb">头<rt>tóu</rt></ruby><ruby class="rb">鹎<rt>bēi</rt></ruby></h3>
+              <span class="sci">Pycnonotus sinensis</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r1">极常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>17–20 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>城市绿地</span><span>公园</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/hong-er-bei.html"
+           data-group="songbird"
+           data-search="红耳鹎 Red-whiskered Bulbul Pycnonotus jocosus 鹎科 · Pycnonotidae 公园 果园 灌丛 红树林边缘">
+          <div class="bc-media">
+            <img src="../assets/img/hong-er-bei-900.webp" alt="红耳鹎（Pycnonotus jocosus）" loading="lazy" width="900" height="600"
+>
+            <span class="bc-no">NO. 025</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">红<rt>hóng</rt></ruby><ruby class="rb">耳<rt>ěr</rt></ruby><ruby class="rb">鹎<rt>bēi</rt></ruby></h3>
+              <span class="sci">Pycnonotus jocosus</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r2">常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>20–22 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>公园</span><span>果园</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/an-lu-xiu-yan-niao.html"
+           data-group="songbird"
+           data-search="暗绿绣眼鸟 Swinhoe&#39;s White-eye Zosterops simplex 绣眼鸟科 · Zosteropidae 公园 果园 林缘 开花乔木">
+          <div class="bc-media">
+            <img src="../assets/img/an-lu-xiu-yan-niao-900.webp" alt="暗绿绣眼鸟（Zosterops simplex）" loading="lazy" width="640" height="480"
+>
+            <span class="bc-no">NO. 021</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">暗<rt>àn</rt></ruby><ruby class="rb">绿<rt>lǜ</rt></ruby><ruby class="rb">绣<rt>xiù</rt></ruby><ruby class="rb">眼<rt>yǎn</rt></ruby><ruby class="rb">鸟<rt>niǎo</rt></ruby></h3>
+              <span class="sci">Zosterops simplex</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r2">常见</span>
+              <span class="sep"></span>
+              <span>留鸟 / 部分越冬</span><span class="sep"></span>
+              <span>10–11 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>公园</span><span>果园</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/ba-ge.html"
+           data-group="songbird"
+           data-search="八哥 Crested Myna Acridotheres cristatellus 椋鸟科 · Sturnidae 城市街区 农田 草地 村落">
+          <div class="bc-media">
+            <img src="../assets/img/ba-ge-900.webp" alt="八哥（Acridotheres cristatellus）" loading="lazy" width="900" height="675"
+>
+            <span class="bc-no">NO. 015</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">八<rt>bā</rt></ruby><ruby class="rb">哥<rt>gē</rt></ruby></h3>
+              <span class="sci">Acridotheres cristatellus</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r2">常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>25–28 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>城市街区</span><span>农田</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/pu-tong-cui-niao.html"
+           data-group="kingfisher"
+           data-search="普通翠鸟 Common Kingfisher Alcedo atthis 翠鸟科 · Alcedinidae 溪流 河涌 鱼塘 公园湖">
+          <div class="bc-media">
+            <img src="../assets/img/pu-tong-cui-niao-900.webp" alt="普通翠鸟（Alcedo atthis）" loading="lazy" width="900" height="675"
+>
+            <span class="bc-no">NO. 047</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">普<rt>pǔ</rt></ruby><ruby class="rb">通<rt>tōng</rt></ruby><ruby class="rb">翠<rt>cuì</rt></ruby><ruby class="rb">鸟<rt>niǎo</rt></ruby></h3>
+              <span class="sci">Alcedo atthis</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r2">常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>16–17 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>溪流</span><span>河涌</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="bird-card reveal" href="bird/chun-se-shan-jiao-ying.html"
+           data-group="songbird"
+           data-search="纯色山鹪莺 Plain Prinia Prinia inornata 扇尾莺科 · Cisticolidae 草丛 稻田 湿地边缘 荒草地">
+          <div class="bc-media">
+            <img src="../assets/img/chun-se-shan-jiao-ying-900.webp" alt="纯色山鹪莺（Prinia inornata）" loading="lazy" width="900" height="643"
+>
+            <span class="bc-no">NO. 006</span>
+<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
+          <div class="bc-body">
+            <div class="bc-name">
+              <h3 class="bc-zh"><ruby class="rb">纯<rt>chún</rt></ruby><ruby class="rb">色<rt>sè</rt></ruby><ruby class="rb">山<rt>shān</rt></ruby><ruby class="rb">鹪<rt>jiāo</rt></ruby><ruby class="rb">莺<rt>yīng</rt></ruby></h3>
+              <span class="sci">Prinia inornata</span>
+            </div>
+            <div class="bc-meta">
+              <span class="rarity r1">极常见</span>
+              <span class="sep"></span>
+              <span>留鸟</span><span class="sep"></span>
+              <span>13–15 cm</span>
+            </div>
+            <div class="bc-tags">
+<span>草丛</span><span>稻田</span>            </div>
+          </div>
+        </a>
+      </li>
+      <li>
         <a class="bird-card reveal" href="bird/jia-yan.html"
            data-group="songbird"
            data-search="家燕 Barn Swallow Hirundo rustica 燕科 · Hirundinidae 村落 农田 城镇上空 水边">
@@ -196,56 +399,6 @@
         </a>
       </li>
       <li>
-        <a class="bird-card reveal" href="bird/zhu-jing-ban-jiu.html"
-           data-group="songbird"
-           data-search="珠颈斑鸠 Spotted Dove Spilopelia chinensis 鸠鸽科 · Columbidae 城市绿地 农田 公园 村落">
-          <div class="bc-media">
-            <img src="../assets/img/zhu-jing-ban-jiu-900.webp" alt="珠颈斑鸠（Spilopelia chinensis）" loading="lazy" width="900" height="601"
->
-            <span class="bc-no">NO. 003</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">珠<rt>zhū</rt></ruby><ruby class="rb">颈<rt>jǐng</rt></ruby><ruby class="rb">斑<rt>bān</rt></ruby><ruby class="rb">鸠<rt>jiū</rt></ruby></h3>
-              <span class="sci">Spilopelia chinensis</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>留鸟</span><span class="sep"></span>
-              <span>28–32 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>城市绿地</span><span>农田</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/bai-tou-bei.html"
-           data-group="songbird"
-           data-search="白头鹎 Light-vented Bulbul Pycnonotus sinensis 鹎科 · Pycnonotidae 城市绿地 公园 次生林 村落">
-          <div class="bc-media">
-            <img src="../assets/img/bai-tou-bei-900.webp" alt="白头鹎（Pycnonotus sinensis）" loading="lazy" width="900" height="676"
->
-            <span class="bc-no">NO. 004</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">白<rt>bái</rt></ruby><ruby class="rb">头<rt>tóu</rt></ruby><ruby class="rb">鹎<rt>bēi</rt></ruby></h3>
-              <span class="sci">Pycnonotus sinensis</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>留鸟</span><span class="sep"></span>
-              <span>17–20 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>城市绿地</span><span>公园</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
         <a class="bird-card reveal" href="bird/bai-ji-ling.html"
            data-group="songbird"
            data-search="白鹡鸰 White Wagtail Motacilla alba 鹡鸰科 · Motacillidae 停车场 河岸 田埂 广场">
@@ -271,31 +424,6 @@
         </a>
       </li>
       <li>
-        <a class="bird-card reveal" href="bird/chun-se-shan-jiao-ying.html"
-           data-group="songbird"
-           data-search="纯色山鹪莺 Plain Prinia Prinia inornata 扇尾莺科 · Cisticolidae 草丛 稻田 湿地边缘 荒草地">
-          <div class="bc-media">
-            <img src="../assets/img/chun-se-shan-jiao-ying-900.webp" alt="纯色山鹪莺（Prinia inornata）" loading="lazy" width="900" height="643"
->
-            <span class="bc-no">NO. 006</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">纯<rt>chún</rt></ruby><ruby class="rb">色<rt>sè</rt></ruby><ruby class="rb">山<rt>shān</rt></ruby><ruby class="rb">鹪<rt>jiāo</rt></ruby><ruby class="rb">莺<rt>yīng</rt></ruby></h3>
-              <span class="sci">Prinia inornata</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>留鸟</span><span class="sep"></span>
-              <span>13–15 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>草丛</span><span>稻田</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
         <a class="bird-card reveal" href="bird/huang-mei-liu-ying.html"
            data-group="songbird"
            data-search="黄眉柳莺 Yellow-browed Warbler Phylloscopus inornatus 柳莺科 · Phylloscopidae 公园乔木 林缘 小区绿化 果园">
@@ -317,131 +445,6 @@
             </div>
             <div class="bc-tags">
 <span>公园乔木</span><span>林缘</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/chi-lu.html"
-           data-group="water"
-           data-search="池鹭 Chinese Pond Heron Ardeola bacchus 鹭科 · Ardeidae 水田 池塘 河涌 湿地">
-          <div class="bc-media">
-            <img src="../assets/img/chi-lu-900.webp" alt="池鹭（Ardeola bacchus）" loading="lazy" width="900" height="1327"
-style="object-position:center 10%">
-            <span class="bc-no">NO. 008</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">池<rt>chí</rt></ruby><ruby class="rb">鹭<rt>lù</rt></ruby></h3>
-              <span class="sci">Ardeola bacchus</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>夏候鸟 / 部分留鸟</span><span class="sep"></span>
-              <span>42–52 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>水田</span><span>池塘</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/bai-lu.html"
-           data-group="water"
-           data-search="白鹭 Little Egret Egretta garzetta 鹭科 · Ardeidae 滩涂 河涌 鱼塘 红树林">
-          <div class="bc-media">
-            <img src="../assets/img/bai-lu-900.webp" alt="白鹭（Egretta garzetta）" loading="lazy" width="900" height="596"
->
-            <span class="bc-no">NO. 009</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">白<rt>bái</rt></ruby><ruby class="rb">鹭<rt>lù</rt></ruby></h3>
-              <span class="sci">Egretta garzetta</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>留鸟</span><span class="sep"></span>
-              <span>55–65 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>滩涂</span><span>河涌</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/hei-shui-ji.html"
-           data-group="water"
-           data-search="黑水鸡 Common Moorhen Gallinula chloropus 秧鸡科 · Rallidae 公园湖 荷塘 河涌 湿地">
-          <div class="bc-media">
-            <img src="../assets/img/hei-shui-ji-900.webp" alt="黑水鸡（Gallinula chloropus）" loading="lazy" width="900" height="634"
->
-            <span class="bc-no">NO. 010</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">黑<rt>hēi</rt></ruby><ruby class="rb">水<rt>shuǐ</rt></ruby><ruby class="rb">鸡<rt>jī</rt></ruby></h3>
-              <span class="sci">Gallinula chloropus</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>留鸟</span><span class="sep"></span>
-              <span>30–38 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>公园湖</span><span>荷塘</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/hong-zui-ou.html"
-           data-group="shore"
-           data-search="红嘴鸥 Black-headed Gull Chroicocephalus ridibundus 鸥科 · Laridae 海边 河口 港湾 城市水域">
-          <div class="bc-media">
-            <img src="../assets/img/hong-zui-ou-900.webp" alt="红嘴鸥（Chroicocephalus ridibundus）" loading="lazy" width="900" height="600"
->
-            <span class="bc-no">NO. 011</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">红<rt>hóng</rt></ruby><ruby class="rb">嘴<rt>zuǐ</rt></ruby><ruby class="rb">鸥<rt>ōu</rt></ruby></h3>
-              <span class="sci">Chroicocephalus ridibundus</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>冬候鸟</span><span class="sep"></span>
-              <span>37–43 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>海边</span><span>河口</span>            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a class="bird-card reveal" href="bird/hei-fu-bin-yu.html"
-           data-group="shore"
-           data-search="黑腹滨鹬 Dunlin Calidris alpina 鹬科 · Scolopacidae 滩涂 沙滩 盐田 河口">
-          <div class="bc-media">
-            <img src="../assets/img/hei-fu-bin-yu-900.webp" alt="黑腹滨鹬（Calidris alpina）" loading="lazy" width="900" height="675"
->
-            <span class="bc-no">NO. 012</span>
-<span class="bc-audio" title="有鸣声录音"><svg class="" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.2c0-.8.9-1.3 1.6-.9l9.1 6c.7.5.7 1.5 0 1.9l-9.1 6c-.7.5-1.6 0-1.6-.9V5.2z"/></svg></span>          </div>
-          <div class="bc-body">
-            <div class="bc-name">
-              <h3 class="bc-zh"><ruby class="rb">黑<rt>hēi</rt></ruby><ruby class="rb">腹<rt>fù</rt></ruby><ruby class="rb">滨<rt>bīn</rt></ruby><ruby class="rb">鹬<rt>yù</rt></ruby></h3>
-              <span class="sci">Calidris alpina</span>
-            </div>
-            <div class="bc-meta">
-              <span class="rarity r1">极常见</span>
-              <span class="sep"></span>
-              <span>冬候鸟</span><span class="sep"></span>
-              <span>17–21 cm</span>
-            </div>
-            <div class="bc-tags">
-<span>滩涂</span><span>沙滩</span>            </div>
           </div>
         </a>
       </li>
@@ -587,7 +590,7 @@ style="object-position:center 10%">
   </div>
 </footer>
 
-<script src="../static/app.js?v=a6da03ac" defer></script>
+<script src="../static/app.js?v=ebfdc714" defer></script>
 <script src="../static/beacon.js?v=e563cea6" defer></script>
 </body>
 </html>

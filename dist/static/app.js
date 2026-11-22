@@ -381,61 +381,142 @@
     });
   }
 
-  /* ---------- 首页：先听一段鸟鸣（就地播放） ----------
-     原来这个按钮只是跳到详情页，落地后既没有滚到鸣声区、也没有声音——
-     用户点完只会觉得「没反应」。现在直接在这里播，按钮变「正在播放 · 珠颈斑鸠」。
-     data-start / data-end 用来只播「最清楚的那一小段」：像珠颈斑鸠全长 37 秒，
-     丢给第一次点的人太长了，前 13 秒两轮咕咕才是一耳朵能记住的。
-     万一被浏览器的自动播放策略拦下，就退回详情页的 #voice。 */
+  /* ---------- 首页封面：每天换一只鸟（连同它的鸣声） ----------
+     静态页里渲染的是构建当天那一只，这里按「浏览器本地日期」再算一次：
+     跨过零点、或者站点很久没重新构建，都会自动换成当天该出现的那只。
+     池子里每种都只试听前十几秒（data-in/out），整段留给详情页。
+     万一 play() 被自动播放策略拦下，就退回详情页的 #voice。 */
   var hlBtn = document.getElementById("heroListen");
-  if (hlBtn) {
-    var hlSrc = hlBtn.dataset.src;
-    var hlName = hlBtn.dataset.name || "";
-    var hlLabel = hlBtn.dataset.label || "";
-    var hlTpl = hlBtn.dataset.playing || "%s";
-    var hlTxt = hlBtn.querySelector(".hl-t");
-    var hlIn = parseFloat(hlBtn.dataset.start || "0") || 0;
-    var hlOut = parseFloat(hlBtn.dataset.end || "0") || 0;
+  var heroImg = document.getElementById("heroImg");
+  var heroTag = document.getElementById("heroTag");
+  var heroCap = document.getElementById("heroCap");
+
+  if (hlBtn || heroImg) {
+    var hlTxt = hlBtn ? hlBtn.querySelector(".hl-t") : null;
+    var hlLabel = hlBtn ? (hlBtn.dataset.label || "") : "";
+    var hlTpl = hlBtn ? (hlBtn.dataset.playing || "%s") : "";
     var hlAudio = null;
 
-    var hlSet = function (playing) {
-      hlBtn.classList.toggle("playing", playing);
-      if (hlTxt) hlTxt.textContent = playing ? hlTpl.replace("%s", hlName) : hlLabel;
+    var heroState = {
+      src: hlBtn ? hlBtn.dataset.src : "",
+      name: hlBtn ? (hlBtn.dataset.name || "") : "",
+      in: hlBtn ? (parseFloat(hlBtn.dataset.start || "0") || 0) : 0,
+      out: hlBtn ? (parseFloat(hlBtn.dataset.end || "0") || 0) : 0,
+      fallback: hlBtn ? (hlBtn.dataset.fallback || "") : ""
     };
 
-    hlBtn.addEventListener("click", function () {
-      if (!hlAudio) {
-        hlAudio = new Audio();
-        hlAudio.preload = "none";
-        hlAudio.src = hlSrc;
-        hlAudio.addEventListener("ended", function () {
-          hlSet(false);
-          if (hlIn) hlAudio.currentTime = hlIn;
-        });
-        hlAudio.addEventListener("pause", function () { hlSet(false); });
-        hlAudio.addEventListener("loadedmetadata", function () {
-          if (hlIn && hlAudio.currentTime < hlIn) hlAudio.currentTime = hlIn;
-        });
-        /* 到窗口末尾就收声，别让试听按钮播满整段 */
-        hlAudio.addEventListener("timeupdate", function () {
-          if (hlOut && hlAudio.currentTime >= hlOut) {
-            hlAudio.pause();
-            hlAudio.currentTime = hlIn;
-          }
-        });
+    var hlSet = function (playing) {
+      if (!hlBtn) return;
+      hlBtn.classList.toggle("playing", playing);
+      if (hlTxt) hlTxt.textContent = playing ? hlTpl.replace("%s", heroState.name) : hlLabel;
+    };
+
+    var heroApplyAudio = function (e) {
+      heroState.src = e.audio;
+      heroState.name = e.name;
+      heroState.in = e.in || 0;
+      heroState.out = e.out || 0;
+      heroState.fallback = e.href;
+      if (hlAudio) {
+        try { hlAudio.pause(); } catch (err) {}
+        hlAudio = null;      /* 换鸟就丢掉旧的播放器，下次点击重新建 */
       }
-      if (!hlAudio.paused) {
-        hlAudio.pause();
-        return;
-      }
-      /* 上一轮播到窗口末尾自动停了，再点要从头来 */
-      if (hlOut && hlAudio.currentTime >= hlOut - 0.15) hlAudio.currentTime = hlIn;
-      hlAudio.play().then(function () {
-        hlSet(true);
-      }).catch(function () {
-        if (hlBtn.dataset.fallback) location.href = hlBtn.dataset.fallback;
+      hlSet(false);
+    };
+
+    if (hlBtn) {
+      hlBtn.addEventListener("click", function () {
+        if (!hlAudio) {
+          hlAudio = new Audio();
+          hlAudio.preload = "none";
+          hlAudio.src = heroState.src;
+          hlAudio.addEventListener("ended", function () {
+            hlSet(false);
+            if (heroState.in) hlAudio.currentTime = heroState.in;
+          });
+          hlAudio.addEventListener("pause", function () { hlSet(false); });
+          hlAudio.addEventListener("loadedmetadata", function () {
+            if (heroState.in && hlAudio.currentTime < heroState.in) {
+              hlAudio.currentTime = heroState.in;
+            }
+          });
+          /* 到窗口末尾就收声，别让试听按钮播满整段 */
+          hlAudio.addEventListener("timeupdate", function () {
+            if (heroState.out && hlAudio.currentTime >= heroState.out) {
+              hlAudio.pause();
+              hlAudio.currentTime = heroState.in;
+            }
+          });
+        }
+        if (!hlAudio.paused) {
+          hlAudio.pause();
+          return;
+        }
+        /* 上一轮播到窗口末尾自动停了，再点要从头来 */
+        if (heroState.out && hlAudio.currentTime >= heroState.out - 0.15) {
+          hlAudio.currentTime = heroState.in;
+        }
+        hlAudio.play().then(function () {
+          hlSet(true);
+        }).catch(function () {
+          if (heroState.fallback) location.href = heroState.fallback;
+        });
       });
-    });
+    }
+
+    /* 按本地日期挑当天那只。算法要和 build.py 完全一致，否则会闪一下再换。 */
+    var heroPoolEl = document.getElementById("heroPool");
+    var heroSwap = function (e) {
+      if (heroImg) {
+        var pre = new Image();
+        pre.onload = function () {
+          heroImg.src = e.img;
+          heroImg.alt = e.name + " " + e.sci;
+          if (e.w) heroImg.width = e.w;
+          if (e.h) heroImg.height = e.h;
+        };
+        pre.src = e.img;
+      }
+      if (heroTag) {
+        heroTag.href = e.href;
+        var t = heroTag.querySelector(".ht-txt");
+        if (t) t.textContent = e.name + " · " + e.sci;
+      }
+      if (heroCap) {
+        var head = heroCap.getAttribute("data-head") || "";
+        heroCap.textContent = head + " " + (e.credit || "Wikimedia Commons") +
+                              " / " + (e.license || "—");
+      }
+      if (hlBtn) {
+        hlBtn.dataset.fallback = e.href;
+        hlBtn.dataset.src = e.audio;      /* 让 DOM 与实际状态一致，方便排查 */
+        hlBtn.dataset.name = e.name;
+      }
+      heroApplyAudio(e);
+    };
+
+    if (heroPoolEl) {
+      try {
+        var pool = JSON.parse(heroPoolEl.textContent || "[]");
+        var now = new Date();
+        /* 调试用：?day=2026-03-01 可以预览某天的封面 */
+        var m = /[?&]day=(\d{4})-(\d{2})-(\d{2})/.exec(location.search);
+        if (m) now = new Date(+m[1], +m[2] - 1, +m[3]);
+
+        var month = now.getMonth() + 1;
+        var usable = pool.filter(function (e) {
+          return !e.months || e.months.indexOf(month) > -1;
+        });
+        if (!usable.length) usable = pool;
+        if (usable.length) {
+          var midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+          var ord = Math.round(midnight.getTime() / 86400000) + 719163; /* 与 Python toordinal 对齐 */
+          var idx = ord % usable.length;
+          var builtDay = window.__heroDay || 0;
+          if (ord !== builtDay) heroSwap(usable[idx]);
+        }
+      } catch (err) {}
+    }
   }
 
   /* ---------- 我见过（只存本机 localStorage，不联网） ---------- */
