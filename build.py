@@ -11,6 +11,42 @@ DIST = os.path.join(ROOT, "dist")
 CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 
 
+def clean_dist():
+    """清空 dist。删不干净也不许崩。
+
+    无人值守的月度构建最怕「因为一个删不掉的条目整个流程静默停止」——那意味着
+    站点永远停在上个月。所以这里先整棵删，失败了再逐个删，剩下的记一笔警告让
+    后面的校验去判断，而不是抛异常把本次更新废掉。
+    """
+    if not os.path.isdir(DIST):
+        return
+    try:
+        shutil.rmtree(DIST)
+        return
+    except OSError:
+        pass
+    left = []
+    for dp, dns, fns in os.walk(DIST, topdown=False):
+        for name in fns:
+            try:
+                os.unlink(os.path.join(dp, name))
+            except OSError:
+                left.append(os.path.join(dp, name))
+        for name in dns:
+            try:
+                os.rmdir(os.path.join(dp, name))
+            except OSError:
+                left.append(os.path.join(dp, name))
+    try:
+        os.rmdir(DIST)
+    except OSError:
+        left.append(DIST)
+    if left:
+        print("  警告：dist 有 %d 项没能清除，产物里可能残留旧文件：%s"
+              % (len(left), left[:5]))
+
+
+
 def ruby(zh, py=""):
     """把拼音逐音节标到对应汉字的头顶（HTML ruby 注音）。
 
@@ -165,7 +201,20 @@ MONTH_ACT = [
     ("7", 0), ("8", 1), ("9", 2), ("10", 3), ("11", 3), ("12", 3),
 ]
 
-YEAR = datetime.date.today().year
+def today():
+    """当前日期。可用 ZHUHAI_TODAY=2026-12-01 覆盖，用来预演别的月份。
+
+    构建脚本里所有「今天」都必须走这里：如果一处用 date.today()、一处用这个
+    覆盖值，产物会自相矛盾（比如标题写 12 月、封面池按 11 月选）。
+    """
+    raw = os.environ.get("ZHUHAI_TODAY")
+    if raw:
+        y, m, d = (int(x) for x in raw.split("-"))
+        return datetime.date(y, m, d)
+    return datetime.date.today()
+
+
+YEAR = today().year
 
 
 def sb_configured():
@@ -359,11 +408,12 @@ def main():
 
     sb_on = sb_configured()
 
-    if os.path.isdir(DIST):
-        shutil.rmtree(DIST)
+    clean_dist()
     for d in ("bird", "zh/bird", "assets/img", "assets/audio", "assets/og", "static",
               "board", "zh/board", "visits"):
-        os.makedirs(os.path.join(DIST, d), exist_ok=True)
+        p = os.path.join(DIST, d)
+        if not os.path.isdir(p):
+            os.makedirs(p)
 
     for f in os.listdir(os.path.join(ROOT, "static")):
         src_p = os.path.join(ROOT, "static", f)
@@ -426,10 +476,10 @@ def main():
         sp_canon = page_url(sp_path)
 
         pool_views = [by[s] for s in HERO_POOL if s in by]
-        today = datetime.date.today()
+        today_ = today()
         eligible = [v for v in pool_views
-                    if today.month in (v.get("months") or range(1, 13))] or pool_views
-        hero = eligible[today.toordinal() % len(eligible)]
+                    if today_.month in (v.get("months") or range(1, 13))] or pool_views
+        hero = eligible[today_.toordinal() % len(eligible)]
 
         def hero_entry(v):
             img = v.get("img") or {}
@@ -468,7 +518,7 @@ def main():
 
         order = {v["slug"]: i for i, v in enumerate(views)}
         here = [v for v in views
-                if today.month in (v.get("months") or range(1, 13))]
+                if today_.month in (v.get("months") or range(1, 13))]
 
         picked = [v for v in pool_views if v["slug"] in {x["slug"] for x in here}]
         seasonal = [v for v in here
@@ -497,8 +547,8 @@ def main():
         })
         html = env.get_template("index.html").render(
             **common, root=root_i, pr=pr_i, hero=hero, nav="home", species=picked,
-            hero_pool=Markup(hero_json), hero_day=today.toordinal(),
-            mon=(datetime.date(2000, today.month, 1).strftime('%B') if en else today.month),
+            hero_pool=Markup(hero_json), hero_day=today_.toordinal(),
+            mon=(datetime.date(2000, today_.month, 1).strftime('%B') if en else today_.month),
             n_seasonal=n_seasonal,
             hero_in=hero["audio"].get("hero_in", HERO_WINDOW[0]) if hero.get("audio") else 0,
             hero_out=hero["audio"].get("hero_out", HERO_WINDOW[1]) if hero.get("audio") else 0,
