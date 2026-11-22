@@ -284,7 +284,7 @@ npx wrangler pages deploy dist --project-name zhuhai-birds
 ```
 
 **必须在仓库根目录执行**：命令会顺带打包根目录下的 `functions/` 与 `wrangler.toml`
-里的 D1 绑定；换到别的目录跑，静态页面照样能传上去，但 `/api/hit` 和 `/api/stats`
+里的 D1 绑定；换到别的目录跑，静态页面照样能传上去，但 `/api/hit` 和 `/api/visitors`
 会变成 404，统计就静默失效了（页面本身不受影响）。部署输出里出现
 `Uploading Functions bundle` 才算带上了函数。
 
@@ -293,6 +293,43 @@ npx wrangler pages deploy dist --project-name zhuhai-birds
 ### 更新内容
 
 修改 `data/species.json` → 运行 `python3 build.py` → 提交并推送。
+
+### 自动按月更新
+
+首页的「M 月先认这 12 种」和封面鸟都是按当天日期算出来的，所以跨月必须重新构建一次。
+这件事交给 `scripts/auto_update.py`，由 launchd 每天 09:17 触发：
+
+- **不存状态文件**：判断「要不要重建」的依据是构建产物本身（`dist/zh/index.html` 里
+  已经是「12 月先认这 12 种」就跳过）。重启、换机器、手工跑过都能对上，不会打架。
+- **幂等**：内容没变就不提交，发布照发（Cloudflare 按文件去重）。
+- **先验证再发布**：构建完先查月份、卡片数、中英一致、3948 条内部链接、封面池是否
+  都在名录里，任一不过就中止，不会把坏页面推上线。
+- **发布后回读**：拉一次 `https://birds.signupeverywhere.cc/zh/` 确认线上真的换了月。
+- 每天跑而不是每月跑：脚本自己会在「已是本月」时几十毫秒退出，成本可以忽略；好处是
+  跨月那一刻、机器休眠错过的时间点、某次发布失败，第二天都能自动补上。
+
+全年名单分四段变化（越冬期 / 3–4 月过渡 / 5–8 月繁殖期 / 9–10 月秋迁），
+8 只留鸟常驻不变，变动的是当月的候鸟——这正是「这个月」有意义的原因。
+
+日志在 `/var/tmp/zhuhai-birds-auto-update.log`。
+
+```bash
+sh scripts/monthly_update.sh                 # 手工跑一次（已是本月就跳过）
+sh scripts/monthly_update.sh --force --dry   # 只构建 + 校验，不提交不发布
+sh scripts/monthly_update.sh --force         # 强制重建并发布
+ZHUHAI_TODAY=2026-12-01 sh scripts/monthly_update.sh --dry   # 预演 12 月的效果
+```
+
+定时任务装在 `~/Library/LaunchAgents/cc.signupeverywhere.zhuhai-birds.plist`：
+
+```bash
+# 重新登录或重启后 launchd 会自动接管；想立刻生效，在系统「终端」里执行：
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/cc.signupeverywhere.zhuhai-birds.plist
+launchctl print   gui/$(id -u)/cc.signupeverywhere.zhuhai-birds | head -20   # 看状态
+launchctl bootout gui/$(id -u)/cc.signupeverywhere.zhuhai-birds              # 卸载
+```
+
+前提是这台机器开着。机器关着的时候不会更新，下次开机后 launchd 会补跑一次。
 
 ## 素材来源与许可
 
