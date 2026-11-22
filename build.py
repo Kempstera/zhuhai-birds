@@ -261,6 +261,9 @@ RARITY_LABEL = {1: "极常见", 2: "常见", 3: "不常见", 4: "局部常见", 
 
 I18N_DIR = os.path.join(ROOT, "data", "i18n")
 SITE = "https://birds.signupeverywhere.cc"
+# IndexNow 密钥：放在站点根目录的 <key>.txt 里，Bing / Yandex / Seznam / Naver
+# 先来取这个文件确认域名归属，之后就能用一次 POST 通知它们 URL 变了。
+INDEXNOW_KEY = "3898acb4267601cdbe79afa64928d45a"
 LANGS = ("zh", "en")
 
 # 分享卡片统一尺寸（1080×1080：微信缩略图是 1:1，横图会被裁掉两侧）
@@ -673,6 +676,7 @@ def main():
         # 不在 robots 里写 /visits/：那等于把路径告诉所有人；靠口令 + noindex 就够
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
         "Sitemap: %s/sitemap.xml\n" % SITE)
+    open(os.path.join(DIST, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY + "\n")
     pairs = [("/zh/", "/"), ("/zh/species.html", "/species.html"),
              ("/zh/guide.html", "/guide.html")]
     if sb_on:
