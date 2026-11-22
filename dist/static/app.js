@@ -381,6 +381,44 @@
     });
   }
 
+  /* ---------- 首页：先听一段鸟鸣（就地播放） ----------
+     原来这个按钮只是跳到详情页，落地后既没有滚到鸣声区、也没有声音——
+     用户点完只会觉得「没反应」。现在直接在这里播，按钮变「正在播放 · 乌鸫」。
+     万一被浏览器的自动播放策略拦下，就退回详情页的 #voice。 */
+  var hlBtn = document.getElementById("heroListen");
+  if (hlBtn) {
+    var hlSrc = hlBtn.dataset.src;
+    var hlName = hlBtn.dataset.name || "";
+    var hlLabel = hlBtn.dataset.label || "";
+    var hlTpl = hlBtn.dataset.playing || "%s";
+    var hlTxt = hlBtn.querySelector(".hl-t");
+    var hlAudio = null;
+
+    var hlSet = function (playing) {
+      hlBtn.classList.toggle("playing", playing);
+      if (hlTxt) hlTxt.textContent = playing ? hlTpl.replace("%s", hlName) : hlLabel;
+    };
+
+    hlBtn.addEventListener("click", function () {
+      if (!hlAudio) {
+        hlAudio = new Audio();
+        hlAudio.preload = "none";
+        hlAudio.src = hlSrc;
+        hlAudio.addEventListener("ended", function () { hlSet(false); });
+        hlAudio.addEventListener("pause", function () { hlSet(false); });
+      }
+      if (!hlAudio.paused) {
+        hlAudio.pause();
+        return;
+      }
+      hlAudio.play().then(function () {
+        hlSet(true);
+      }).catch(function () {
+        if (hlBtn.dataset.fallback) location.href = hlBtn.dataset.fallback;
+      });
+    });
+  }
+
   /* ---------- 我见过（只存本机 localStorage，不联网） ---------- */
   var SEEN_KEY = "zb_seen";
 

@@ -1214,3 +1214,27 @@ html[lang="en"] .more .k{letter-spacing:.2em}
   background:var(--clay);color:#fff;font-size:10px;font-style:normal;font-weight:700;
   transform:translateY(-2px);
 }
+
+/* ---------- 首页「先听一段鸟鸣」：就地播放，不跳页 ---------- */
+.hero-listen{font-family:inherit;cursor:pointer}
+.hero-listen .hl-ic{display:inline-flex;align-items:center;gap:0}
+.hero-listen .hl-ic svg:last-child{display:none}
+.hero-listen.playing .hl-ic svg:first-child{display:none}
+.hero-listen.playing .hl-ic svg:last-child{display:block}
+.hero-listen.playing,
+.hero-listen.playing:hover{
+  background:var(--clay);border-color:transparent;color:#fff;
+  box-shadow:0 8px 22px -12px rgba(162,78,36,.75);
+}
+.hero-listen.playing .hl-t::after{
+  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:#fff;margin-left:9px;vertical-align:middle;
+  animation:hl-pulse 1.4s ease-in-out infinite;
+}
+@keyframes hl-pulse{0%,100%{opacity:.25}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.hero-listen.playing .hl-t::after{animation:none;opacity:.9}}
+
+/* hero-tag 现在是链接，去掉默认下划线，hover 时点一下名字 */
+a.hero-tag{text-decoration:none;transition:border-color .3s var(--ease),box-shadow .3s}
+a.hero-tag:hover{border-color:var(--ink-4);box-shadow:var(--sh-2)}
+a.hero-tag:hover .ht-txt{color:var(--clay)}

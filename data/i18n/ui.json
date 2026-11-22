@@ -159,7 +159,9 @@
    "picked_title": "The 12 you will <em>almost certainly</em> meet",
    "picked_blurb": "Twelve species from the very common end of the list — the park at dawn, the street trees on your commute, the flats at low tide. The full %d, ranked by how often you meet them, live in the index.",
    "picked_btn": "Browse all %d species",
-   "species_lede": "Ranked by <strong style=\"color:var(--clay);font-weight:600\">how often you meet them</strong>, %d species in all. Narrow it down with the group buttons above, or search by name."
+   "species_lede": "Ranked by <strong style=\"color:var(--clay);font-weight:600\">how often you meet them</strong>, %d species in all. Narrow it down with the group buttons above, or search by name.",
+   "hero_playing": "Playing · %s",
+   "hero_view": "Open the full species page"
   },
   "langname": "English",
   "nav": {
@@ -336,7 +338,9 @@
    "picked_title": "这个月最容易<em>遇见</em>的 12 种",
    "picked_blurb": "从「几乎一定看得到」的那一档里挑出 12 种——清晨的公园、通勤路上的行道树、退潮后的滩涂，都是它们的地盘。完整的 %d 种按遇见概率排在名录页。",
    "picked_btn": "查看全部 %d 种",
-   "species_lede": "按<strong style=\"color:var(--clay);font-weight:600\">遇见概率</strong>从高到低排列，共 %d 种。用上方的类群按钮或搜索框缩小范围。"
+   "species_lede": "按<strong style=\"color:var(--clay);font-weight:600\">遇见概率</strong>从高到低排列，共 %d 种。用上方的类群按钮或搜索框缩小范围。",
+   "hero_playing": "正在播放 · %s",
+   "hero_view": "看这一种的辨识要点与全部鸣声"
   },
   "langname": "中文",
   "nav": {

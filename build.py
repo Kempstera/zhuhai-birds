@@ -230,7 +230,8 @@ def page_url(path):
     return SITE + re.sub(r"\.html$", "", path)
 
 
-DEFAULT_OG = og_url("bai-lu")
+HERO_SLUG = "wu-dong"
+DEFAULT_OG = og_url(HERO_SLUG)
 
 
 def jld(obj):
@@ -401,11 +402,18 @@ def main():
                       rank_counts=rank_counts, SB=sb_on)
 
         # ---- 首页 ----
-        hero = by.get("bai-lu", views[0])
+        # 封面鸟：乌鸫。选它不选白鹭，是因为「点开就有声音」是这个站的主线，
+        # 而白鹭平时沉默、受惊时只有粗哑的「kark」——第一印象就打了折。
+        # 乌鸫是「百舌」，鸣唱婉转、乐句感强，还会模仿别的鸟。
+        hero = by.get(HERO_SLUG) or views[0]
         sp_path = "/species.html" if en else "/zh/species.html"
         sp_canon = page_url(sp_path)
         # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏
         picked = [v for v in views if v.get("rank", 2) == 1][:12] or views[:12]
+        # 封面鸟必须在下面这 12 张里。否则用户刚听完乌鸫，低头找不到它，
+        # 「听一声 → 看这一种」这条路就断在第一步。
+        if hero not in picked:
+            picked = [hero] + [v for v in picked if v["slug"] != hero["slug"]][:11]
         home_canon = SITE + ("/" if en else "/zh/")
         home_jld = jld({
             "@context": "https://schema.org",

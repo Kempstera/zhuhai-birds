@@ -17,7 +17,19 @@
       <p class="lede">{{ T.idx.lede|format(total)|safe }}</p>
       <div class="hero-actions">
         <a class="btn" href="{{ species_href }}">{{ T.idx.btn_species }} {{ m.icon('arrow') }}</a>
-        <a class="btn ghost" href="{{ pr }}bird/{{ hero.slug }}.html">{{ m.icon('headphone') }} {{ T.idx.btn_audio }}</a>
+        {% if hero.audio %}
+        <button class="btn ghost hero-listen" type="button" id="heroListen"
+                data-src="{{ root }}assets/audio/{{ hero.audio.file }}"
+                data-name="{{ hero.name }}"
+                data-label="{{ T.idx.btn_audio }}"
+                data-playing="{{ T.idx.hero_playing }}"
+                data-fallback="{{ pr }}bird/{{ hero.slug }}.html#voice">
+          <span class="hl-ic">{{ m.icon('headphone') }}{{ m.icon('pause') }}</span>
+          <span class="hl-t">{{ T.idx.btn_audio }}</span>
+        </button>
+        {% else %}
+        <a class="btn ghost" href="{{ pr }}bird/{{ hero.slug }}.html#voice">{{ m.icon('headphone') }} {{ T.idx.btn_audio }}</a>
+        {% endif %}
       </div>
       <ul class="hero-stats">
         <li><span class="n">{{ total }}</span><span class="t">{{ T.idx.stat[0] }}</span></li>
@@ -32,10 +44,10 @@
       <figure class="hero-figure">
         <img src="{{ root }}assets/img/{{ hero.img.big }}" alt="{{ hero.name }} {{ hero.sci }}" fetchpriority="high" width="{{ hero.img.w }}" height="{{ hero.img.h }}">
       </figure>
-      <div class="hero-tag"><span class="dot"></span><span class="ht-txt">{{ nm(hero) }} · {{ hero.sci }}</span></div>
+      <a class="hero-tag" href="{{ pr }}bird/{{ hero.slug }}.html#voice" title="{{ T.idx.hero_view }}"><span class="dot"></span><span class="ht-txt">{{ hero.name }} · {{ hero.sci }}</span></a>
       <p class="hero-caption">{{ T.idx.hero_cap }} {{ hero.img.credit or 'Wikimedia Commons' }} / {{ hero.img.license or '—' }}</p>
       {% else %}
-      <div class="hero-tag"><span class="dot"></span><span class="ht-txt">{{ nm(hero) }} · {{ hero.sci }}</span></div>
+      <a class="hero-tag" href="{{ pr }}bird/{{ hero.slug }}.html#voice" title="{{ T.idx.hero_view }}"><span class="dot"></span><span class="ht-txt">{{ hero.name }} · {{ hero.sci }}</span></a>
       {% endif %}
     </div>
   </div>
