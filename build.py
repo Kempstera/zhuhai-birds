@@ -224,6 +224,12 @@ def og_url(slug):
     return "%s/assets/og/%s.jpg" % (SITE, slug)
 
 
+def page_url(path):
+    """Pages 会把 /x.html 以 308 跳到 /x，canonical / sitemap 必须写最终地址，
+    否则等于把搜索引擎指向一个重定向。"""
+    return SITE + re.sub(r"\.html$", "", path)
+
+
 def jld(obj):
     """结构化数据。ensure_ascii=False 让中文原样输出；
     </ 转义避免提前闭合 script。"""
@@ -394,7 +400,7 @@ def main():
         # ---- 首页 ----
         hero = by.get("bai-lu", views[0])
         sp_path = "/species.html" if en else "/zh/species.html"
-        sp_canon = SITE + sp_path
+        sp_canon = page_url(sp_path)
         # 首页只放「极常见」的那一批：名录整页 65 张会让首页在手机上滚 40 屏
         picked = [v for v in views if v.get("rank", 2) == 1][:12] or views[:12]
         home_canon = SITE + ("/" if en else "/zh/")
@@ -430,7 +436,8 @@ def main():
                 "@type": "ItemList", "numberOfItems": len(views),
                 "itemListElement": [
                     {"@type": "ListItem", "position": i + 1, "name": v["name"],
-                     "url": SITE + ("/bird/%s.html" % v["slug"] if en else "/zh/bird/%s.html" % v["slug"])}
+                     "url": page_url("/bird/%s.html" % v["slug"] if en
+                                     else "/zh/bird/%s.html" % v["slug"])}
                     for i, v in enumerate(views)],
             },
         })
@@ -440,7 +447,7 @@ def main():
                         + " · " + T["brand"]),
             page_desc=T["idx"]["desc"] % len(views),
             canon=sp_canon,
-            zh_url=SITE + "/zh/species.html", en_url=SITE + "/species.html",
+            zh_url=page_url("/zh/species.html"), en_url=page_url("/species.html"),
             alt_url=("../zh/species.html" if en else "../species.html"),
             jsonld=idx_jld)
         open(os.path.join(base, "species.html"), "w").write(html)
@@ -458,17 +465,17 @@ def main():
             d_jld = jld({
                 "@context": "https://schema.org",
                 "@graph": [
-                    {"@type": "Taxon", "@id": SITE + path + "#taxon",
+                    {"@type": "Taxon", "@id": page_url(path) + "#taxon",
                      "name": v["name"], "scientificName": v["sci"],
                      "alternateName": [v["sci"], v["en"] if en else v["zh"]],
-                     "url": SITE + path, "image": v["og_image"],
+                     "url": page_url(path), "image": v["og_image"],
                      "description": v["tagline"],
                      "isPartOf": {"@id": SITE + "/#website"}},
                     {"@type": "BreadcrumbList", "itemListElement": [
                         {"@type": "ListItem", "position": 1,
                          "name": T["nav"]["species"], "item": sp_canon},
                         {"@type": "ListItem", "position": 2,
-                         "name": v["name"], "item": SITE + path}]},
+                         "name": v["name"], "item": page_url(path)}]},
                 ],
             })
             html = env.get_template("detail.html").render(
@@ -476,9 +483,9 @@ def main():
                 root=root_d, pr="../",
                 group=next(g for g in groups if g["id"] == v["group"]),
                 page_title=title, page_desc=desc,
-                canon=SITE + path,
-                zh_url=SITE + zh_path,
-                en_url=SITE + en_path,
+                canon=page_url(path),
+                zh_url=page_url(zh_path),
+                en_url=page_url(en_path),
                 alt_url=("../../zh/bird/%s.html" % v["slug"]) if en
                         else ("../../bird/%s.html" % v["slug"]),
                 jsonld=d_jld)
@@ -489,8 +496,8 @@ def main():
         html = env.get_template("guide_en.html" if en else "guide.html").render(
             **common, root=root_i, pr=pr_i, nav="guide",
             page_title=T["guide"]["title"], page_desc=T["guide"]["desc"],
-            canon=SITE + gpath, zh_url=SITE + "/zh/guide.html",
-            en_url=SITE + "/guide.html",
+            canon=page_url(gpath), zh_url=page_url("/zh/guide.html"),
+            en_url=page_url("/guide.html"),
             alt_url=("../zh/guide.html" if en else "../guide.html"))
         open(os.path.join(base, "guide.html"), "w").write(html)
 
@@ -540,10 +547,10 @@ def main():
     for zh_p, en_p in pairs:
         for p, other in ((zh_p, en_p), (en_p, zh_p)):
             sm.append("  <url>")
-            sm.append("    <loc>%s%s</loc>" % (SITE, p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="zh-CN" href="%s%s"/>' % (SITE, zh_p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="en" href="%s%s"/>' % (SITE, en_p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>' % (SITE, en_p))
+            sm.append("    <loc>%s</loc>" % page_url(p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="zh-CN" href="%s"/>' % page_url(zh_p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="en" href="%s"/>' % page_url(en_p))
+            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % page_url(en_p))
             sm.append("    <changefreq>monthly</changefreq>")
             sm.append("  </url>")
     sm.append("</urlset>")

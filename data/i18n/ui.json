@@ -80,7 +80,10 @@
    "where_h": "Where to find it in Zhuhai",
    "where_sub": "",
    "zoom": "Zoom",
-   "zoom_aria": "Enlarge"
+   "zoom_aria": "Enlarge",
+   "seen_add": "I have seen this",
+   "seen_has": "Noted",
+   "seen_hint": "Saved in this browser only — never uploaded."
   },
   "e": {
    "back": "Back to the home page",
@@ -254,7 +257,10 @@
    "where_h": "在珠海去哪里找",
    "where_sub": "Where to Watch",
    "zoom": "放大",
-   "zoom_aria": "放大查看"
+   "zoom_aria": "放大查看",
+   "seen_add": "标记「我见过」",
+   "seen_has": "已记下",
+   "seen_hint": "只存在这台设备的浏览器里，不联网、不上传。"
   },
   "e": {
    "back": "返回首页",

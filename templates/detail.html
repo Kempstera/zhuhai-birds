@@ -180,6 +180,11 @@
         <div class="sc-protect">
           <span class="pill {{ sp.pclass }}">{{ sp.protect if sp.pclass != 'p3' else T.d.p3 }}</span>
         </div>
+        <button class="seen-btn" type="button" data-slug="{{ sp.slug }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
+          <span class="sb-off">{{ T.d.seen_add }}</span><span class="sb-on">{{ T.d.seen_has }}</span>
+        </button>
+        <p class="seen-hint">{{ T.d.seen_hint }}</p>
         <div class="sc-mini">
           <div style="margin-bottom:8px;color:var(--ink-4);font-size:11px;letter-spacing:.14em">{{ T.d.habitat_h }}</div>
           <div class="hab-tags">

@@ -380,4 +380,57 @@
       if (e.key === "Escape" && !lb.hidden) closeLb();
     });
   }
+
+  /* ---------- 我见过（只存本机 localStorage，不联网） ---------- */
+  var SEEN_KEY = "zb_seen";
+
+  function seenGet() {
+    try {
+      var a = JSON.parse(localStorage.getItem(SEEN_KEY));
+      return Array.isArray(a) ? a : [];
+    } catch (e) { return []; }
+  }
+
+  function seenSave(a) {
+    try { localStorage.setItem(SEEN_KEY, JSON.stringify(a)); } catch (e) {}
+  }
+
+  function slugOf(href) {
+    var m = /bird\/([^\/#?]+?)(?:\.html)?(?:[#?]|$)/.exec(href || "");
+    return m ? m[1] : "";
+  }
+
+  var seen = seenGet();
+  var seenBtn = document.querySelector(".seen-btn");
+
+  if (seenBtn) {
+    var curSlug = seenBtn.dataset.slug || "";
+    if (curSlug && seen.indexOf(curSlug) > -1) seenBtn.classList.add("on");
+    seenBtn.addEventListener("click", function () {
+      var i = seen.indexOf(curSlug);
+      if (i > -1) {
+        seen.splice(i, 1);
+        seenBtn.classList.remove("on");
+      } else {
+        seen.push(curSlug);
+        seenBtn.classList.add("on");
+      }
+      seenSave(seen);
+    });
+  }
+
+  /* 名录/首页的名片上，把已经见过的标出来 */
+  if (seen.length) {
+    Array.prototype.forEach.call(document.querySelectorAll(".bird-card"), function (card) {
+      var s = slugOf(card.getAttribute("href"));
+      if (!s || seen.indexOf(s) < 0) return;
+      var box = card.querySelector(".bc-name");
+      if (!box || box.querySelector(".seen-dot")) return;
+      var dot = document.createElement("i");
+      dot.className = "seen-dot";
+      dot.textContent = "✓";
+      dot.title = "已见过";
+      box.appendChild(dot);
+    });
+  }
 })();

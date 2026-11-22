@@ -1193,3 +1193,24 @@ html[lang="en"] .more .k{letter-spacing:.2em}
   .e404{padding:120px 0 30px}
   .e404-picks ul{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+/* ---------- 我见过（localStorage，无后端） ---------- */
+.seen-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin:14px 0 0;padding:10px 14px;border-radius:6px;cursor:pointer;
+  font-family:inherit;font-size:13px;letter-spacing:.05em;
+  background:transparent;border:1px solid var(--line);color:var(--ink-2);
+  transition:background .28s var(--ease),border-color .28s var(--ease),color .28s;
+}
+.seen-btn:hover{border-color:var(--ink-4);background:var(--paper-2)}
+.seen-btn svg{width:15px;height:15px}
+.seen-btn.on{background:var(--clay);border-color:transparent;color:#fff;font-weight:600}
+.seen-btn .sb-on{display:none}
+.seen-btn.on .sb-on{display:inline}
+.seen-btn.on .sb-off{display:none}
+.seen-hint{margin:9px 0 18px;font-size:11px;line-height:1.6;color:var(--ink-4);text-align:center}
+.seen-dot{
+  display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;
+  background:var(--clay);color:#fff;font-size:10px;font-style:normal;font-weight:700;
+  transform:translateY(-2px);
+}
