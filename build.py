@@ -282,6 +282,27 @@ def page_url(path):
     return SITE + re.sub(r"\.html$", "", path)
 
 
+_MON3 = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+_DAY3 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def _x(s):
+    """XML 文本转义。& 必须最先换，否则会把后面换出来的 &amp; 再转一次。"""
+    return (str(s).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def _rfc822(d):
+    """RSS 的 pubDate 要 RFC 822 格式，星期与月份必须是英文缩写。
+
+    不能用 strftime("%a %b")：那会跟着系统 locale 走，在中文环境下输出
+    「周六」这种字符串，解析器直接报错、订阅器当成无效条目。
+    """
+    return "%s, %02d %s %04d 00:00:00 +0800" % (
+        _DAY3[d.weekday()], d.day, _MON3[d.month], d.year)
+
+
 HERO_SLUG = "zhu-jing-ban-jiu"
 DEFAULT_OG = og_url(HERO_SLUG)
 
@@ -434,6 +455,7 @@ def main():
                 shutil.copy2(os.path.join(src, f), os.path.join(DIST, "assets", sub, f))
 
     totals = {}
+    feed_picks = {}          # {lang: (月份显示值, 当月 12 只)}，供下面生成 RSS
     for lang in LANGS:
         en = lang == "en"
         # 英文是站点默认语言，放在根目录；中文镜像到 /zh/ 下
@@ -442,6 +464,9 @@ def main():
         root_i = "" if en else "../"          # 首页所在层级的资源前缀
         root_d = "../" if en else "../../"    # 详情页所在层级的资源前缀
         pr_i = ""                             # 同语言内的页面链接（首页与 404 都在本语言根目录）
+        # RSS 自动发现：要在 <head> 里声明，订阅器才知道有这个源。
+        # 两种语言各有一份 feed，所以在这里按语言切换全局变量。
+        env.globals["FEED"] = SITE + ("/feed.xml" if en else "/zh/feed.xml")
         T = ui[lang]
         hl = "en" if en else "zh-CN"
         groups = GROUPS_EN if en else GROUPS
@@ -536,6 +561,10 @@ def main():
             picked += filler[:12 - len(picked)]
         picked = picked[:12]
         n_seasonal = sum(1 for v in picked if is_seasonal(v))
+        # 中文用月份数字（「11 月」），英文用月份名（"November"）——和首页标题一致
+        feed_picks[lang] = (
+            datetime.date(2000, today_.month, 1).strftime("%B") if en else today_.month,
+            picked)
         home_canon = SITE + ("/" if en else "/zh/")
         home_jld = jld({
             "@context": "https://schema.org",
@@ -723,6 +752,54 @@ def main():
         "/admin    /visits/  301\n"
         "/zh/visits/*  /visits/  301\n"
         "/zh/visits    /visits/  301\n")
+
+    # ---- RSS ----
+    # 这条站没有「文章」，唯一真正每月发生的事就是「这个月先认这 12 种」。
+    # 所以一期 = 当月这 12 种，pubDate 用当月 1 日，guid 里带月份：
+    # 订阅者每月收到一次，点进去是具体的物种页，而不是回到主页。
+    for lang, (mon_label, picks_) in feed_picks.items():
+        sub = [] if lang == "en" else ["zh"]
+        pub_day = datetime.date(today_.year, today_.month, 1)
+        items = []
+        for v in picks_:
+            sp_ = next((x for x in species if x["slug"] == v["slug"]), {})
+            name = v.get("name") or v["zh"]
+            path = ("/bird/%s.html" % v["slug"]) if lang == "en" \
+                else ("/zh/bird/%s.html" % v["slug"])
+            url = page_url(path)
+            desc = sp_.get("tagline") or sp_.get("summary") or ""
+            items.append(
+                "  <item>\n"
+                "    <title>%s</title>\n"
+                "    <link>%s</link>\n"
+                "    <guid isPermaLink=\"false\">%s#%s</guid>\n"
+                "    <pubDate>%s</pubDate>\n"
+                "    <description>%s</description>\n"
+                "  </item>" % (
+                    _x(name), url, url, pub_day.strftime("%Y-%m"), _rfc822(pub_day),
+                    _x(desc)))
+        home = page_url("/" if lang == "en" else "/zh/")
+        feed = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            "<channel>\n"
+            "  <title>%s</title>\n"
+            "  <link>%s</link>\n"
+            "  <description>%s</description>\n"
+            "  <language>%s</language>\n"
+            "  <atom:link href=\"%s\" rel=\"self\" type=\"application/rss+xml\"/>\n"
+            "%s\n"
+            "</channel>\n"
+            "</rss>\n" % (
+                _x("珠海观鸟图鉴 · 月度名录" if lang != "en"
+                     else "Zhuhai Birds · Monthly Shortlist"),
+                home,
+                _x("每月 1 日更新：这个月在珠海最容易见到的 12 种鸟。" if lang != "en"
+                     else "Updated monthly: the twelve birds you are most likely to see in Zhuhai right now."),
+                "zh-CN" if lang != "en" else "en",
+                SITE + ("/feed.xml" if lang == "en" else "/zh/feed.xml"),
+                "\n".join(items)))
+        open(os.path.join(DIST, *sub, "feed.xml"), "w").write(feed)
 
     n_img = sum(1 for s in species if s["img"])
     n_aud = sum(1 for s in species if s["audio"])
