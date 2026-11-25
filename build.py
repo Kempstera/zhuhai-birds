@@ -897,8 +897,11 @@ def main():
     # ---- robots / sitemap ----
     open(os.path.join(DIST, "robots.txt"), "w").write(
         # 不在 robots 里写 /visits/：那等于把路径告诉所有人；靠口令 + noindex 就够
+        # 两条 Sitemap 都写：索引是新的入口，扁平那份留在原处不动。
+        # robots.txt 允许多条 Sitemap，Google 会自己去重，不会因此抓两遍。
         "User-agent: *\nDisallow: /admin/\nDisallow: /api/\nAllow: /\n"
-        "Sitemap: %s/sitemap.xml\n" % SITE)
+        "Sitemap: %s/sitemap-index.xml\n"
+        "Sitemap: %s/sitemap.xml\n" % (SITE, SITE))
     open(os.path.join(DIST, INDEXNOW_KEY + ".txt"), "w").write(INDEXNOW_KEY + "\n")
 
     # ---- 缓存策略 ----
@@ -949,6 +952,26 @@ def main():
             sm.append("  </url>")
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w").write("\n".join(sm))
+
+    # 再写一个 sitemap 索引，路径 /sitemap-index.xml。
+    #
+    # 它指向上面那份 sitemap.xml，本身不含任何 URL。看着像是多绕了一道，但要绕的
+    # 理由很具体：GSC 对 /sitemap.xml 这一条记录卡在 "Sitemap could not be read"，
+    # 反复重新提交也不改状态——很可能是这条路径上存着一份早期的失败结果，而 GSC
+    # 的站点地图记录是按「提交的地址」缓存的，删不掉也刷不新（那一行的 ⋮ 里
+    # 没有 Remove sitemap，只有灰掉的 See page indexing）。
+    # 换一个从没被记录过的地址，等于从零开始建一条干净记录。
+    #
+    # 为什么是「索引」而不是「再抄一份 urlset」：索引是 sitemaps.org 里就有的正规结构，
+    # 名字和内容对得上，将来物种多到要按语言拆成两份，直接在这里加一条 <sitemap> 就行，
+    # 不用再改路径。而且索引比 urlset 简单得多——只有一个 <loc>，能被挑剔的地方更少。
+    smi = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+           "  <sitemap>",
+           "    <loc>%s/sitemap.xml</loc>" % SITE,
+           "  </sitemap>",
+           "</sitemapindex>"]
+    open(os.path.join(DIST, "sitemap-index.xml"), "w").write("\n".join(smi))
 
     # 旧地址（英文曾在 /en/ 下）永久跳转到新位置
     open(os.path.join(DIST, "_redirects"), "w").write(
