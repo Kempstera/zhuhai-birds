@@ -923,17 +923,29 @@ def main():
     if sb_on:
         pairs.append(("/zh/board/", "/board/"))
     pairs += [("/zh/bird/%s.html" % s["slug"], "/bird/%s.html" % s["slug"]) for s in species]
+    # sitemap 里每条 URL 只写 <loc>，别的一概不写。
+    #
+    # 原来这里挂了 414 个 <xhtml:link rel="alternate" hreflang>。那套写法按
+    # sitemaps.org 规范是合法的，我也逐项验过：XML 严格解析通过、gzip 与 brotli
+    # 解压后与原文逐字节一致、Content-Type 是 application/xml、状态码 200 无重定向、
+    # 138 条地址域名全部落在本属性内、无空值无重复。可是 Google Search Console
+    # 连着几天报 "Sitemap could not be read"，Discovered pages 恒为 0。
+    # 三个站里只有这一个站的 sitemap 带 <xhtml:link>，另外两个不带——嫌疑只能落在它身上。
+    #
+    # 而 hreflang 其实一点没少：_macros.html 里每页 <head> 都输出了 zh-CN / en /
+    # x-default 三行 <link rel="alternate">，Google 官方也更推荐用 HTML 声明，
+    # sitemap 这套是给几万页的大站省抓取预算用的，本站 138 条用不上。
+    # 所以直接删。一个元素都不多留，就少一个能被解析器挑剔的地方。
+    #
+    # <changefreq> 也一起去掉：Google 公开说明过会忽略它，留着只是噪音。
+    # <lastmod> 不加：全站每次构建都会变，写构建时间等于告诉 Google「每天全站都更新」，
+    # 这种不可信的 lastmod 反而会被整体降权。
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
-          '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for zh_p, en_p in pairs:
-        for p, other in ((zh_p, en_p), (en_p, zh_p)):
+        for p in (zh_p, en_p):
             sm.append("  <url>")
             sm.append("    <loc>%s</loc>" % page_url(p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="zh-CN" href="%s"/>' % page_url(zh_p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="en" href="%s"/>' % page_url(en_p))
-            sm.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % page_url(en_p))
-            sm.append("    <changefreq>monthly</changefreq>")
             sm.append("  </url>")
     sm.append("</urlset>")
     open(os.path.join(DIST, "sitemap.xml"), "w").write("\n".join(sm))
